@@ -2,13 +2,30 @@
 
 Feeds are from **November 25, 2024** to **December 02, 2024**.
 
+##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a>
+
+<table style="width:100%; text-align:left; table-layout:fixed;">
+<tr>
+  <td style="vertical-align:top; width:75%;">
+    Mariners pushing for wind power say investors used to view them as something of a joke. But as they pioneer a comeback for sail-powered cargo ships, they're having the last laugh. 🌐🌎
+    
+    <br><a href="https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lccy4buvuk2y" target="_blank">View Original Post</a>
+  </td>
+  <td style="vertical-align:top; width:25%;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreiexw5v3zemfi52v6uiuzkmw7ngl5bxczyyxvzbgid2a44gocgtiwu@jpeg" style="max-height:150px; width:auto;">
+  </td>
+</tr>
+</table>
+
+---
+
 ##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
   <td style="vertical-align:top; width:75%;">
     🐟 CESAB ONLINE conference 🐟 Fish biodiversity facing global change 📅 Dec 5 ⏰ 2 to 6 pm Paris time 🔗 umontpellier-fr.zoom.us/j/95406319308 👉 Topics will cover imputation of missing fish traits, Red list assessments, heat waves, homogenization, fish stocks and fishery management 🧪🌐🌍🦤 addOcean
-    <br><b>uri:</b> https://umontpellier-fr.zoom.us/j/95406319308<br>
+    <br><b>uri:</b> <a href="https://umontpellier-fr.zoom.us/j/95406319308" target="_blank">https://umontpellier-fr.zoom.us/j/95406319308</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lccwjmzuqs2j" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -59,7 +76,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     Tired of NMDS and other ordinations methods to represent your eDNA metabarcoding data, consider using this approach:
-    <br><b>uri:</b> https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430<br>
+    <br><b>uri:</b> <a href="https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430" target="_blank">https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430</a><br>
     <br><a href="https://bsky.app/profile/did:plc:mu7jphac7v5ehdpbx2f3l2mq/post/3lcbtht3qks2n" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -76,7 +93,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     ❔ Are we entering a new stage of the data FAIR principle ? where data should by coded into knowledge rather than data only "to be correctly interpreted by the ultimate non-specialist: AI" ! 🌍🤖 by @dessimoz.bsky.social & P. Thomas 🌐🧪
-    <br><b>uri:</b> https://www.nature.com/articles/s41597-024-03099-1<br>
+    <br><b>uri:</b> <a href="https://www.nature.com/articles/s41597-024-03099-1" target="_blank">https://www.nature.com/articles/s41597-024-03099-1</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lcbqg6iftk2k" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -297,7 +314,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     🪲 Issues with the InsectChange database ? errors in insect counts, sampling biases, inclusion of non-insect data by L. Gaume & M. Desquilbet 👉 🔑 They call for meticulous data verification for accurate assessments of insect population changes 🧪🌍🦤🌐
-    <br><b>uri:</b> https://peercommunityjournal.org/articles/10.24072/pcjournal.469/#r28<br>
+    <br><b>uri:</b> <a href="https://peercommunityjournal.org/articles/10.24072/pcjournal.469/#r28" target="_blank">https://peercommunityjournal.org/articles/10.24072/pcjournal.469/#r28</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lc3i6widdc2g" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -348,7 +365,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     Our new paper about three-dimensional conservation prioritization with the prior3D R package is online: Developed in the framework of MarinePlan Horizon project Prior3D is available in CRAN: MarineEcology 🧪🌐
-    <br><b>uri:</b> https://authors.elsevier.com/c/1k2dq15DJ-DHe5<br>
+    <br><b>uri:</b> <a href="https://authors.elsevier.com/c/1k2dq15DJ-DHe5" target="_blank">https://authors.elsevier.com/c/1k2dq15DJ-DHe5</a><br>
     <br><a href="https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lbzv4isu7z2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -399,7 +416,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     DATA CALL - DEADLINE APPROACHING We want to add new sites to our European longtime series database of freshwater biodiversity (see doi.org/10.1038/s415...) To contribute check the link with all the details of the data call Thank you very much! freshwaterecology
-    <br><b>uri:</b> https://www.senckenberg.de/en/call-for-long-term-data/<br>
+    <br><b>uri:</b> <a href="https://www.senckenberg.de/en/call-for-long-term-data/" target="_blank">https://www.senckenberg.de/en/call-for-long-term-data/</a><br>
     <br><a href="https://bsky.app/profile/did:plc:3enbd3jz2qzu6wswyatdc3ea/post/3lbzccggqpk2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -433,7 +450,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     It’s out!! We subjected soils from 30 different locations across Europe to extreme events and found that soil fungal and bacterial communities showed consistent responses that could be predicted from their origin! With @knightjar.bsky.social and many collaborators!
-    <br><b>uri:</b> https://www.nature.com/articles/s41586-024-08185-3<br>
+    <br><b>uri:</b> <a href="https://www.nature.com/articles/s41586-024-08185-3" target="_blank">https://www.nature.com/articles/s41586-024-08185-3</a><br>
     <br><a href="https://bsky.app/profile/did:plc:qodgyv466crrkcntlwwnro6q/post/3lbxcynxba22d" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -450,7 +467,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     The biodiversity data deluge is here - the equivalent of MooresLaw but for biodiversity data? "we estimated that the total number of plant distribution records doubles every 17 years and the number of spatially unique records doubles every 21 years." 🌎🧪🦋🦫
-    <br><b>uri:</b> https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13497<br>
+    <br><b>uri:</b> <a href="https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13497" target="_blank">https://onlinelibrary.wiley.com/doi/full/10.1111/geb.13497</a><br>
     <br><a href="https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lbwuevby5c2a" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -501,7 +518,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     Linking ant diversity to the terrestrial angiosperm revolution reveals that plant diversification acted as a buffer against ant extinction! C. Jouault et al. in @pnas.org 👉 🔑 A nod to Gaia theory: life reshapes Earth, fostering diversification across lineages. 🌱🐜 🌐
-    <br><b>uri:</b> https://www.pnas.org/doi/10.1073/pnas.2317795121<br>
+    <br><b>uri:</b> <a href="https://www.pnas.org/doi/10.1073/pnas.2317795121" target="_blank">https://www.pnas.org/doi/10.1073/pnas.2317795121</a><br>
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lbw5obliy226" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -518,7 +535,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     Using species traits, circuit, and network theories to assess landscape connectivity. By Marie-Caroline Prima et al. in @methodsinecoevol.bsky.social 👉 🔑 highlights low connectivity for protected areas and propose conservation strategies for different species groups 🌐🧪🌍🦤
-    <br><b>uri:</b> https://doi.org/10.1111/2041-210X.14444<br>
+    <br><b>uri:</b> <a href="https://doi.org/10.1111/2041-210X.14444" target="_blank">https://doi.org/10.1111/2041-210X.14444</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbvw74kius2o" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -756,7 +773,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     Are threatened species important for glueing interaction networks together? 🌐🌍 Ecology
-    <br><b>uri:</b> https://doi.org/10.1016/j.pecon.2024.11.003<br>
+    <br><b>uri:</b> <a href="https://doi.org/10.1016/j.pecon.2024.11.003" target="_blank">https://doi.org/10.1016/j.pecon.2024.11.003</a><br>
     <br><a href="https://bsky.app/profile/did:plc:3fqvnrlvmegfmaq3ygnbcthd/post/3lbsd72fvdc2y" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -790,7 +807,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     🚀 The CESAB is launching its 1st training course “AI for Ecologists: a Toolkit”! 📅 May 19–23, 2025, Montpellier, France 💡 Learn AI concepts & tools : lectures + hands-on practice on ecological data 🎯 Adapt algorithms for your research 👉 250€ (lunch included). Registration : bit.ly/3ZmClyI 🧪🌍🌐
-    <br><b>uri:</b> https://bit.ly/3ZmClyI<br>
+    <br><b>uri:</b> <a href="https://bit.ly/3ZmClyI" target="_blank">https://bit.ly/3ZmClyI</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbricwp5zs2e" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -892,7 +909,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     What can 44 whole-community transplant experiments from 22 mountain ranges tell us about mountain plant biodiversity? 🌿🏔️ Our first paper from the TransPlant Network is published today in @ecography.bsky.social !
-    <br><b>uri:</b> https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07378<br>
+    <br><b>uri:</b> <a href="https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07378" target="_blank">https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07378</a><br>
     <br><a href="https://bsky.app/profile/did:plc:eji3hxbal23oltc2ny4pejh3/post/3lbf4zt3syc2n" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -909,7 +926,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
 <tr>
   <td style="vertical-align:top; width:75%;">
     📢 Migrating is not enough for planktonic foraminifera in a changing ocean ! Check our the last publication from our CESAB group FORCIS, by soniachaabane.bsky.social tdegaridel.bsky.social their abundances have already decreased by 24 % ! 🧪🌍🦑
-    <br><b>uri:</b> https://soniachaabane.bsky.social<br>
+    <br><b>uri:</b> <a href="https://soniachaabane.bsky.social" target="_blank">https://soniachaabane.bsky.social</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbeo2pbvkc2t" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
