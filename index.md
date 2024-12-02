@@ -2,7 +2,33 @@
 
 ## Record 2
 
+Tired of NMDS and other ordinations methods to represent your #eDNA metabarcoding data, consider using this approach: besjournals.onlinelibrary.wiley.com/doi/full/10....https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430
+
+---
+
+## Record 3
+
+❔ Are we entering a new stage of the data FAIR principle ? where data should by coded into knowledge rather than data only "to be correctly interpreted by  ... the ultimate non-specialist: AI" ! 🌍🤖
+
+
+
+by @dessimoz.bsky.social & P. Thomas
+
+www.nature.com/articles/s41...
+
+
+
+🌐🧪https://www.nature.com/articles/s41597-024-03099-1
+
+---
+
+## Record 2
+
 Tired of NMDS and other ordinations methods to represent your #eDNA metabarcoding data, consider using this approach: besjournals.onlinelibrary.wiley.com/doi/full/10....
+
+**URI:** https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430
+
+
 
 ---
 
@@ -19,6 +45,10 @@ www.nature.com/articles/s41...
 
 
 🌐🧪
+
+**URI:** https://www.nature.com/articles/s41597-024-03099-1
+
+
 
 ---
 
