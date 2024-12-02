@@ -204,12 +204,12 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <table style="width:100%; table-layout:fixed; border-collapse:collapse;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box;">
-    Take-home message ➡️ Nitrogen depositions 🌧️💩🚗🛫 decrease the diversity of nitrogen-fixing plants 🌿☘️🌲🌳 at large continental scale 🌐
-    
-    <br><a href="https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lc5swp5o7c24" target="_blank">View Original Post</a>
+    The history of nitrogen (N) depositions links to decreases in the number & proportion of N-fixing plants in temperate forests 🌳 in both 🇪🇺 & Northern America. This has important implications for N cycling ⬇️ shorturl.at/UIBut
+    <br><b>uri:</b> <a href="https://shorturl.at/UIBut" target="_blank">https://shorturl.at/UIBut</a><br>
+    <br><a href="https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lc5shhx2s224" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%; padding:10px; box-sizing:border-box;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ccptei5u7ypzamihe4tp4cxm/bafkreiav4ivwo4jerxad52gytnuocnof45ythntsi7ljhxlod2d7fejcea@jpeg" style="max-height:150px; width:100%; object-fit:contain;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ccptei5u7ypzamihe4tp4cxm/bafkreifgcb4vptvxibxgk4fbphiohwurnqjub3tgugiphlu66jtslsekaq@jpeg" style="max-height:150px; width:100%; object-fit:contain;">
   </td>
 </tr>
 </table>
@@ -692,4 +692,5 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
+![Visitors](https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg)
 
