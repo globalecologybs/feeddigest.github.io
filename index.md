@@ -35,7 +35,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌱 How does Gaia breathe? Water availability regulates positive ecosystem respiration’s feedback to global warming by @cyi12.bsky.social et al. 👉 🔑 This feedback is likely to be weakened by water limitation. A delicate balance for Earth’s self-regulation ! 🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lccr5kfopk2b" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -103,7 +103,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     As promised, here's a list of women doing research in Ecology & Evolution. You can pin it to your home and then follow these wonderful scientists by clicking the about tab. If you want to be added just comment or DM me. Please share far and wide :) 🧪🌍🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/post/3lcbj7vuacc2l" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -120,7 +120,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🥁 Ecologist working in mountains: We still have spots in the Mountain Ecology Starter Pack for Scientists working on various aspects of Mountain Ecology ⛰️ 🏞️🌄 👇. Let me know if you would like to be included. 🌎 🧪 🌐 go.bsky.app/V5Ydank
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:uhmh247mes66udzpxzlls2bs/post/3lcatqgerls27" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -137,7 +137,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Desertification: The degraded area is already 15 million km2, an area greater than Antarctica, the scientific report says, and it calls for an urgent course correction to avoid land abuse “irretrievably compromising Earth’s capacity to support human and environmental wellbeing” 🌐🌎
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    <br><b>uri:</b> <a href="https://www.theguardian.com/environment/2024/dec/01/land-degradation-expanding-by-1m-sq-km-a-year-study-shows" target="_blank">https://www.theguardian.com/environment/2024/dec/01/land-degradation-expanding-by-1m-sq-km-a-year-study-shows</a><br>
     <br><a href="https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lcasycbno22l" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -154,7 +154,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Phylogenetic turnover of seed plants 🌱 at a global 🌐 and across phylogenetic scales:
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    <br><b>uri:</b> <a href="https://www.nature.com/articles/s41559-024-02599-y" target="_blank">https://www.nature.com/articles/s41559-024-02599-y</a><br>
     <br><a href="https://bsky.app/profile/did:plc:372jahoh5hnmw6yh3w5roxsc/post/3lcamyrcges2t" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -171,7 +171,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     I have just created a starter pack on biodiversity 🦠🌳🌲🦋🐸🐠🦅🦔 redistribution aka species range shifts or species on the move SOTM and community composition changes in response to global change drivers 🌐🌍🌎🌏 Let me know if you are interested to join the list go.bsky.app/6KqEpb9
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lc6txnmfgc24" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -188,7 +188,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     A starter pack with Latin American ecologists ☺️ 🧪🌎🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/post/3lc6rm3albc2j" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -205,7 +205,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Take-home message ➡️ Nitrogen depositions 🌧️💩🚗🛫 decrease the diversity of nitrogen-fixing plants 🌿☘️🌲🌳 at large continental scale 🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lc5swp5o7c24" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -222,7 +222,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌐 Did you know? “Desert” “rainforest” “tundra” “grassland” or “savanna” are widely used terms in common language, but each have multiple definitions and no universally accepted spatial distribution. Find out more in our recent paper 👉 biome ecology biogeography
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:mvmjgpop3wsadjmmeofw7cz6/post/3lc42xtsepk2c" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -239,7 +239,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Large-scale biodiversity monitoring is fundamental for detection of population declines, range shifts, new invasive species and biodiversity changes. All of these are needed to propose management actions and protect biodiversity, including in our productive systems. 🧵 🌐🧪
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:eobcca3fkarvesjs5pxkbyve/post/3lc3vdckxx22n" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -256,7 +256,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Today let’s honor Ramon Margalef (1919-2004) who pioneering works on ecosystem organization, energy dynamics, and biodiversity. While indirect his work align conceptually with the holistic approach of Gaia theory, emphasizing the intricate ties between life and the environment. 🧪🌍🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lc3ijcz2b224" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -290,7 +290,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Updating the IUCN status of marine fish using AI shows that x5 more species are threatened with extinction than previously thought! see our study in Plos Biol with @nloiseau.bsky.social 👉 🔑 This silent extinction affects 12,7% of marine fishes (1337 species) ! 🧪🌐🌍🦤🦑
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lc37othl5c2n" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -307,7 +307,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Socioeconomic biases in biodiversity data can misguide ecological conclusions and limit justice-focused conservation. by Diego Ellis-Soto et al. in Trends in Ecology & Evolution 👉 🔑 Addressing these gaps is crucial to benefit both people and nature 🧪🌍🦤🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbzwcqft6k22" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -341,7 +341,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🚨Fully-Funded UK PhD Opportunity!🚨 I’m hiring a PhD exploring the complexities of biodiversity change across space and time 🌐. Join @cmbeale.bsky.social and me at York and for this exciting opportunity! Please share and/or message me if interested. More info and how to apply: shorturl.at/Zu7ED
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:yre35rwn5ido54ykrsvhx2w7/post/3lbzusrnihc2l" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -358,7 +358,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌞 Glynn Gorick’s stunning artwork shows how energy flows across biological scales. A masterpiece of art and science! Glynn Gorick is celebrated for his fantastic drawings of ecological processes. His work bridges art & science of Earth’s complex systems 🌍💚💙 🧪🦤🦑
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lbzsdpjmpc2t" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -392,7 +392,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Ocean Acidification is reshaping life and biogeochemical cycles. In our latest study, Niki Gruber and I reconstructed its progression in the global ocean interior over the industrial era, based on our previous estimates of anthropogenic carbon accumulation. A 🧵about the
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    <br><b>uri:</b> <a href="https://doi.org/10.1126/sciadv.ado3103" target="_blank">https://doi.org/10.1126/sciadv.ado3103</a><br>
     <br><a href="https://bsky.app/profile/did:plc:vnatj6ys5y2fjs6suxxokbh4/post/3lbyqisnb222l" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -443,7 +443,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌿 Outstanding CESAB SynTreeSys online seminar series : Understanding Tropical Forests 📅 Nov 28 - Dec 6 ⏰ 1 PM São Paulo | 5 PM Paris 28/11 H. Steege 29/11 R. Lima 03/12 T. Scalley 04/12 @tobypennington.bsky.social 05/12 C. Fortunel 06/12 J. Chave 👉 meet.google.com/gsq-gqgf-vug 🧪🌐🌍🦤🦑🪴🌾
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbwmtwupcc24" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -460,7 +460,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Randomising spatial patterns supports the integration of intraspecific variation in ecological niche models https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07289 ENM Null_models SDM
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:gzozs2g2etnvprbwjby4ujhu/post/3lbw764rhnh2o" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -511,7 +511,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     📢 If you're an acoustician or have computational skills and are interested in unlocking the secrets of underwater soundscapes of critical habitats, the application deadline has been extended. Application details can be found here: euraxess.ec.europa.eu/jobs/294128 🦑🌎🧪 🔈🌐 prattle 💬 bioacoustics
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:acoa3gvtvjbb26odaredylru/post/3lbv6jfvth22e" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -528,7 +528,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     ✨ Hi everyone! I’m thrilled to join Blue Sky as PachaGaia! Let's explore the Gaia Hypothesis. Ecosystems as self-regulating systems, hrough a scientific lens & a special focus on biodiversity & global changes. Celebrating our living planet together! 💙💚🌍 Gaia Illustrations (c) Glynn Gorick
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lbuzbgkk4k2s" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -545,7 +545,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🔥 Global emergence of regional heatwave hotspots outpaces climate model simulations by @kornhuber.bsky.social et al. @pnas.org 👉 Climate models underestimating warming by 4x for the most extreme temperatures Biodiversity calls for more research on heatwaves now! 🧪🌍🦤🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbus3kiom22i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -562,7 +562,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Paper just out by Spanish conservation biologists voicing similar concerns 🌍🌐 not rewilding
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:sdtiecb2gwh7rvre33iwlt7j/post/3lbuqvvwj2s2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -579,7 +579,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     I have just received a copy of the last issue of Le Courrier de la Nature ⬇️ in which I wrote a research outreach article on range shifting species colonizing cold environments under anthropogenic ClimateChange 🌐 BioShifts
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lbulnbk6ms2x" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -596,7 +596,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🚨 phdposition study the interplay between globalchange & animal personality in hermitcrabs 😍 with Mark Briffa, Pete Cotton (Plymouth) & myself Deadline: 8.1.2025 ▶️ shorturl.at/FGLec 🧪🦑🌊🌐🦀 marineecology marinebiology marinelife animalbehaviour sensoryecology lightpollution noisepollution
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:5gs4jgqeuvzkrs7can56qerp/post/3lbuiup33mh2f" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -613,7 +613,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     “Our knowledge about the planet is extremely biased. Most research comes from a few wealthy counties. To the point that 7 countries produce 70% of the scientific papers”🧪🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:33ysfequbrxzifutidlkco7a/post/3lbuhjbujpc2a" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -630,7 +630,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Glad to share our first article with S. Bekeraitė and I. Juchnevičiūtė on the assembly rules of Eurasian Pleistocene large mammals. Here we've tested the association patterns and their temporal evolution using Bayesian networks 1/n 🧪 Paleobio ⚒️ Geology EvoBio
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/post/3lbuajbyyzs2q" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -647,7 +647,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     It's time to watch out for phdpositions in the UK. Many more adverts are coming out 🧪 🦑🌐🌊
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:5gs4jgqeuvzkrs7can56qerp/post/3lbu6ykkxsp2f" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -664,7 +664,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Carbon trading should prioritize climate imperatives rather than succumbing to short-term political views.🌐 "The new rules contain several serious flaws that years of debate have failed to fix. It means the system may essentially give countries and companies permissions to keep polluting" COP29
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    <br><b>uri:</b> <a href="https://theconversation.com/after-nearly-10-years-of-debate-cop29s-carbon-trading-deal-is-seriously-flawed-244493" target="_blank">https://theconversation.com/after-nearly-10-years-of-debate-cop29s-carbon-trading-deal-is-seriously-flawed-244493</a><br>
     <br><a href="https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lbu5nuf6322w" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -681,7 +681,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Continental-scale nutrient and contaminant delivery by Pacific salmon to freshwater ecosystems Jessica E. Brandt et al Salmon deliver tonnes of nutrients and pollutants to freshwaters every year! How do these inputs balance out in the functioning of ecosystems? 🧪🌍🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    <br><b>uri:</b> <a href="https://www.nature.com/articles/s41586-024-07980-2" target="_blank">https://www.nature.com/articles/s41586-024-07980-2</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbtv2vtkas2s" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -698,7 +698,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Reef fishes most threatened by extinction (worldwide) receive less scientific and public attention! see our publication in Science Advances : Let’s (re)balance our focus to protect all marine life !! and beyond 🧪🌍🦤🦑🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbttrkzxfx2k" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -715,7 +715,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Data Paper in ESA Ecology with native range maps for 10,000+ butterfly species 🦋 worldwide by Barnabas H. Daru 👉 🌐
-    <br><b>uri:</b> <a href="https://www.idiv.de/research/sdiv/calls/" target="_blank">https://www.idiv.de/research/sdiv/calls/</a><br>
+    
     <br><a href="https://bsky.app/profile/did:plc:cttvuxvchc54lwb56p7fswca/post/3lbtfqyclac2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
