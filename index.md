@@ -1,25 +1,49 @@
 # 📢 Global Ecology Feed!
 
-📢 Global Ecology feed ! 
+## Record 2
+
+Tired of NMDS and other ordinations methods to represent your #eDNA metabarcoding data, consider using this approach: besjournals.onlinelibrary.wiley.com/doi/full/10....
+
+---
+
+## Record 3
+
+❔ Are we entering a new stage of the data FAIR principle ? where data should by coded into knowledge rather than data only "to be correctly interpreted by  ... the ultimate non-specialist: AI" ! 🌍🤖
 
 
 
-A new feed for large scale biodiversity, ecosystems and conservation sciences, covering both terrestrial & marine realms
+by @dessimoz.bsky.social & P. Thomas
+
+www.nature.com/articles/s41...
 
 
 
-- DM @nmouquet.bsky.social to be added as contributors
+🌐🧪
 
+---
 
+## Record 4
 
-- Tag posts with globe meridian emoji 🌐 to show up in this feed
+As promised, here's a list of women doing research in Ecology & Evolution.
 
+You can pin it to your home and then follow these wonderful scientists by clicking the about tab.
 
+If you want to be added just comment or DM me.
 
-bsky.app/profile/nmou...
+Please share far and wide :)
 
+🧪🌍🌐
 
+bsky.app/profile/did:...
 
-🧪🌍🦤🦑🌐
+---
+
+## Record 5
+
+🥁 Ecologist working in mountains: We still have spots in the Mountain Ecology Starter Pack for Scientists working on various aspects of Mountain Ecology ⛰️ 🏞️🌄 👇. Let me know if you would like to be included. 🌎 🧪 🌐
+
+go.bsky.app/V5Ydank
+
+---
 
 
