@@ -1,4 +1,6 @@
-# 📢 Global Ecology Feed!
+# 📢 [Global Ecology Feed Digest!](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology)
+
+Feeds are from **November 25, 2024** to **December 02, 2024**.
 
 ### post by [@loicpellissier.bsky.social](https://bsky.app/profile/loicpellissier.bsky.social)
 
