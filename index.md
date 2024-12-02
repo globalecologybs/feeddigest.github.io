@@ -35,7 +35,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌱 How does Gaia breathe? Water availability regulates positive ecosystem respiration’s feedback to global warming by @cyi12.bsky.social et al. 👉 🔑 This feedback is likely to be weakened by water limitation. A delicate balance for Earth’s self-regulation ! 🌐
-    
+    <br><b>uri:</b> <a href="https://www.nature.com/articles/s41559-024-02501-w" target="_blank">https://www.nature.com/articles/s41559-024-02501-w</a><br>
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lccr5kfopk2b" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -103,7 +103,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     As promised, here's a list of women doing research in Ecology & Evolution. You can pin it to your home and then follow these wonderful scientists by clicking the about tab. If you want to be added just comment or DM me. Please share far and wide :) 🧪🌍🌐
-    
+    <br><b>uri:</b> <a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/lists/3lcaivrsbiq2a" target="_blank">https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/lists/3lcaivrsbiq2a</a><br>
     <br><a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/post/3lcbj7vuacc2l" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -120,7 +120,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🥁 Ecologist working in mountains: We still have spots in the Mountain Ecology Starter Pack for Scientists working on various aspects of Mountain Ecology ⛰️ 🏞️🌄 👇. Let me know if you would like to be included. 🌎 🧪 🌐 go.bsky.app/V5Ydank
-    
+    <br><b>uri:</b> <a href="https://go.bsky.app/V5Ydank" target="_blank">https://go.bsky.app/V5Ydank</a><br>
     <br><a href="https://bsky.app/profile/did:plc:uhmh247mes66udzpxzlls2bs/post/3lcatqgerls27" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -222,7 +222,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌐 Did you know? “Desert” “rainforest” “tundra” “grassland” or “savanna” are widely used terms in common language, but each have multiple definitions and no universally accepted spatial distribution. Find out more in our recent paper 👉 biome ecology biogeography
-    
+    <br><b>uri:</b> <a href="https://doi.org/10.1002/ecm.1615" target="_blank">https://doi.org/10.1002/ecm.1615</a><br>
     <br><a href="https://bsky.app/profile/did:plc:mvmjgpop3wsadjmmeofw7cz6/post/3lc42xtsepk2c" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -290,7 +290,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Updating the IUCN status of marine fish using AI shows that x5 more species are threatened with extinction than previously thought! see our study in Plos Biol with @nloiseau.bsky.social 👉 🔑 This silent extinction affects 12,7% of marine fishes (1337 species) ! 🧪🌐🌍🦤🦑
-    
+    <br><b>uri:</b> <a href="https://doi.org/10.1371/journal.pbio.3002773" target="_blank">https://doi.org/10.1371/journal.pbio.3002773</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lc37othl5c2n" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -307,7 +307,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Socioeconomic biases in biodiversity data can misguide ecological conclusions and limit justice-focused conservation. by Diego Ellis-Soto et al. in Trends in Ecology & Evolution 👉 🔑 Addressing these gaps is crucial to benefit both people and nature 🧪🌍🦤🌐
-    
+    <br><b>uri:</b> <a href="https://www.sciencedirect.com/science/article/abs/pii/S0169534724002568" target="_blank">https://www.sciencedirect.com/science/article/abs/pii/S0169534724002568</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbzwcqft6k22" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -358,7 +358,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌞 Glynn Gorick’s stunning artwork shows how energy flows across biological scales. A masterpiece of art and science! Glynn Gorick is celebrated for his fantastic drawings of ecological processes. His work bridges art & science of Earth’s complex systems 🌍💚💙 🧪🦤🦑
-    
+    <br><b>uri:</b> <a href="https://fishlarvae.org/galleries/a-gallery-of-glynn-goricks-art/" target="_blank">https://fishlarvae.org/galleries/a-gallery-of-glynn-goricks-art/</a><br>
     <br><a href="https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lbzsdpjmpc2t" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -375,7 +375,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     DATA CALL - DEADLINE APPROACHING We want to add new sites to our European longtime series database of freshwater biodiversity (see doi.org/10.1038/s415...) To contribute check the link with all the details of the data call Thank you very much! freshwaterecology
-    <br><b>uri:</b> <a href="https://www.senckenberg.de/en/call-for-long-term-data/" target="_blank">https://www.senckenberg.de/en/call-for-long-term-data/</a><br>
+    <br><b>uri:</b> <a href="https://doi.org/10.1038/s41586-023-06400-1" target="_blank">https://doi.org/10.1038/s41586-023-06400-1</a><br>
     <br><a href="https://bsky.app/profile/did:plc:3enbd3jz2qzu6wswyatdc3ea/post/3lbzccggqpk2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -443,7 +443,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🌿 Outstanding CESAB SynTreeSys online seminar series : Understanding Tropical Forests 📅 Nov 28 - Dec 6 ⏰ 1 PM São Paulo | 5 PM Paris 28/11 H. Steege 29/11 R. Lima 03/12 T. Scalley 04/12 @tobypennington.bsky.social 05/12 C. Fortunel 06/12 J. Chave 👉 meet.google.com/gsq-gqgf-vug 🧪🌐🌍🦤🦑🪴🌾
-    
+    <br><b>uri:</b> <a href="https://meet.google.com/gsq-gqgf-vug" target="_blank">https://meet.google.com/gsq-gqgf-vug</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbwmtwupcc24" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -460,7 +460,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Randomising spatial patterns supports the integration of intraspecific variation in ecological niche models https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07289 ENM Null_models SDM
-    
+    <br><b>uri:</b> <a href="https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07289" target="_blank">https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07289</a><br>
     <br><a href="https://bsky.app/profile/did:plc:gzozs2g2etnvprbwjby4ujhu/post/3lbw764rhnh2o" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -511,7 +511,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     📢 If you're an acoustician or have computational skills and are interested in unlocking the secrets of underwater soundscapes of critical habitats, the application deadline has been extended. Application details can be found here: euraxess.ec.europa.eu/jobs/294128 🦑🌎🧪 🔈🌐 prattle 💬 bioacoustics
-    
+    <br><b>uri:</b> <a href="https://euraxess.ec.europa.eu/jobs/294128" target="_blank">https://euraxess.ec.europa.eu/jobs/294128</a><br>
     <br><a href="https://bsky.app/profile/did:plc:acoa3gvtvjbb26odaredylru/post/3lbv6jfvth22e" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -545,7 +545,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🔥 Global emergence of regional heatwave hotspots outpaces climate model simulations by @kornhuber.bsky.social et al. @pnas.org 👉 Climate models underestimating warming by 4x for the most extreme temperatures Biodiversity calls for more research on heatwaves now! 🧪🌍🦤🌐
-    
+    <br><b>uri:</b> <a href="https://www.pnas.org/doi/10.1073/pnas.2411258121" target="_blank">https://www.pnas.org/doi/10.1073/pnas.2411258121</a><br>
     <br><a href="https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lbus3kiom22i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -562,7 +562,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Paper just out by Spanish conservation biologists voicing similar concerns 🌍🌐 not rewilding
-    
+    <br><b>uri:</b> <a href="https://conbio.onlinelibrary.wiley.com/doi/10.1111/csp2.13221" target="_blank">https://conbio.onlinelibrary.wiley.com/doi/10.1111/csp2.13221</a><br>
     <br><a href="https://bsky.app/profile/did:plc:sdtiecb2gwh7rvre33iwlt7j/post/3lbuqvvwj2s2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -596,7 +596,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     🚨 phdposition study the interplay between globalchange & animal personality in hermitcrabs 😍 with Mark Briffa, Pete Cotton (Plymouth) & myself Deadline: 8.1.2025 ▶️ shorturl.at/FGLec 🧪🦑🌊🌐🦀 marineecology marinebiology marinelife animalbehaviour sensoryecology lightpollution noisepollution
-    
+    <br><b>uri:</b> <a href="https://shorturl.at/FGLec" target="_blank">https://shorturl.at/FGLec</a><br>
     <br><a href="https://bsky.app/profile/did:plc:5gs4jgqeuvzkrs7can56qerp/post/3lbuiup33mh2f" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -630,7 +630,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Glad to share our first article with S. Bekeraitė and I. Juchnevičiūtė on the assembly rules of Eurasian Pleistocene large mammals. Here we've tested the association patterns and their temporal evolution using Bayesian networks 1/n 🧪 Paleobio ⚒️ Geology EvoBio
-    
+    <br><b>uri:</b> <a href="https://link.springer.com/article/10.1007/s10914-024-09735-2" target="_blank">https://link.springer.com/article/10.1007/s10914-024-09735-2</a><br>
     <br><a href="https://bsky.app/profile/did:plc:qb6x3o2dt7vkteqeqrqpjtxc/post/3lbuajbyyzs2q" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -698,7 +698,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Reef fishes most threatened by extinction (worldwide) receive less scientific and public attention! see our publication in Science Advances : Let’s (re)balance our focus to protect all marine life !! and beyond 🧪🌍🦤🦑🌐
-    
+    <br><b>uri:</b> <a href="https://www.science.org/doi/10.1126/sciadv.adj9510" target="_blank">https://www.science.org/doi/10.1126/sciadv.adj9510</a><br>
     <br><a href="https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lbttrkzxfx2k" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
@@ -715,7 +715,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 <tr>
   <td style="vertical-align:top; width:75%;">
     Data Paper in ESA Ecology with native range maps for 10,000+ butterfly species 🦋 worldwide by Barnabas H. Daru 👉 🌐
-    
+    <br><b>uri:</b> <a href="https://doi.org/10.1002/ecy.4462" target="_blank">https://doi.org/10.1002/ecy.4462</a><br>
     <br><a href="https://bsky.app/profile/did:plc:cttvuxvchc54lwb56p7fswca/post/3lbtfqyclac2i" target="_blank">View Original Post</a>
   </td>
   <td style="vertical-align:top; width:25%;">
