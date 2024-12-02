@@ -1,6 +1,6 @@
 # 📢 Global Ecology Feed!
 
-## Record 2
+### post by [@loicpellissier.bsky.social](https://bsky.app/profile/loicpellissier.bsky.social)
 
 Tired of NMDS and other ordinations methods to represent your #eDNA metabarcoding data, consider using this approach: besjournals.onlinelibrary.wiley.com/doi/full/10....
 
@@ -10,7 +10,7 @@ Tired of NMDS and other ordinations methods to represent your #eDNA metabarcodin
 
 ---
 
-## Record 3
+### post by [@global-ecology.bsky.social](https://bsky.app/profile/global-ecology.bsky.social)
 
 ❔ Are we entering a new stage of the data FAIR principle ? where data should by coded into knowledge rather than data only "to be correctly interpreted by  ... the ultimate non-specialist: AI" ! 🌍🤖
 
@@ -30,7 +30,7 @@ www.nature.com/articles/s41...
 
 ---
 
-## Record 4
+### post by [@pauliarancibia.bsky.social](https://bsky.app/profile/pauliarancibia.bsky.social)
 
 As promised, here's a list of women doing research in Ecology & Evolution.
 
@@ -46,7 +46,7 @@ bsky.app/profile/did:...
 
 ---
 
-## Record 5
+### post by [@dovciak-lab.bsky.social](https://bsky.app/profile/dovciak-lab.bsky.social)
 
 🥁 Ecologist working in mountains: We still have spots in the Mountain Ecology Starter Pack for Scientists working on various aspects of Mountain Ecology ⛰️ 🏞️🌄 👇. Let me know if you would like to be included. 🌎 🧪 🌐
 
