@@ -3,7 +3,7 @@
   <link rel='icon' href='/favicon.png' type='image/x-icon'>
   <!-- Open Graph Metadata -->
   <meta property='og:title' content='Global Ecology Feed Digest'>
-  <meta property='og:description' content='A feed on biodiversity, ecosystems, and conservation at large scales. Terrestrial and marine realms.'>
+  <meta property='og:description' content='Digest of the bluesky Global Ecology feed on biodiversity, ecosystems, and conservation at large scales. Terrestrial and marine realms.'>
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
   <meta property='og:type' content='website'>
