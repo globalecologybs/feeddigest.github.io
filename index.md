@@ -1,5 +1,5 @@
 <head>
-  <title>Global Ecology Feed Digest</title>
+  <title>Global Ecology</title>
   <link rel='icon' href='/favicon.png' type='image/x-icon'>
   <!-- Open Graph Metadata -->
   <meta property='og:title' content='Global Ecology Feed Digest'>
