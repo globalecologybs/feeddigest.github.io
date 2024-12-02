@@ -1,10 +1,6 @@
----
-title: "<img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!"
----
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!
 
-Bluesky Feed from **November 25, 2024** to **December 02, 2024**.
-
-<br><br>
+Feeds are from **November 25, 2024** to **December 02, 2024**.
 
 ##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
 
