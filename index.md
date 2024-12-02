@@ -1,6 +1,6 @@
 <head>
   <title>Global Ecology</title>
-  <link rel='icon' href='/favicon.png' type='image/x-icon'>
+  <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
   <meta property='og:title' content='Global Ecology Feed Digest'>
   <meta property='og:description' content='Digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems, and conservation at large scales. Terrestrial and marine realms.'>
