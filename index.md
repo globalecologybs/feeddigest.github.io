@@ -13,7 +13,7 @@
 
 Feeds are from **November 26, 2024** to **December 02, 2024**.
 
-Digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scale. Terrestrial & marine realms.
+For the lazy (yes we are) and friends who don't like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a ... digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scale. Terrestrial & marine realms.
 
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
