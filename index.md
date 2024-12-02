@@ -7,7 +7,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 - **SCIENCE ONLY**
 - DM [@global-ecology.bsky.social](https://bsky.app/profile/global-ecology.bsky.social) to contribute
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on December 02, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -24,7 +24,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on December 02, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -41,7 +41,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/smartenwinter.bsky.social" target="_blank">@smartenwinter.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/smartenwinter.bsky.social" target="_blank">@smartenwinter.bsky.social</a> on December 02, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -58,7 +58,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/loicpellissier.bsky.social" target="_blank">@loicpellissier.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/loicpellissier.bsky.social" target="_blank">@loicpellissier.bsky.social</a> on December 02, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -75,7 +75,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -92,7 +92,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -109,7 +109,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/dovciak-lab.bsky.social" target="_blank">@dovciak-lab.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/dovciak-lab.bsky.social" target="_blank">@dovciak-lab.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -126,7 +126,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -143,7 +143,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/patrickweigelt.bsky.social" target="_blank">@patrickweigelt.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/patrickweigelt.bsky.social" target="_blank">@patrickweigelt.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -160,7 +160,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on December 01, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -177,7 +177,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on November 30, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -194,7 +194,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on November 30, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -211,7 +211,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on November 30, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -228,7 +228,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on November 30, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -245,7 +245,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/toinechampreux.bsky.social" target="_blank">@toinechampreux.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/toinechampreux.bsky.social" target="_blank">@toinechampreux.bsky.social</a> on November 29, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -262,7 +262,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/cnmeynard.bsky.social" target="_blank">@cnmeynard.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/cnmeynard.bsky.social" target="_blank">@cnmeynard.bsky.social</a> on November 29, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -279,7 +279,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on November 29, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -296,7 +296,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on November 29, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -313,7 +313,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 29, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -330,7 +330,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -347,7 +347,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/skatsanevakis.bsky.social" target="_blank">@skatsanevakis.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/skatsanevakis.bsky.social" target="_blank">@skatsanevakis.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -364,7 +364,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/inesismartins.bsky.social" target="_blank">@inesismartins.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/inesismartins.bsky.social" target="_blank">@inesismartins.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -381,7 +381,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -398,7 +398,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/miluelbarbaro.bsky.social" target="_blank">@miluelbarbaro.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/miluelbarbaro.bsky.social" target="_blank">@miluelbarbaro.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -415,7 +415,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/jens-d-mueller.bsky.social" target="_blank">@jens-d-mueller.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/jens-d-mueller.bsky.social" target="_blank">@jens-d-mueller.bsky.social</a> on November 28, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -432,7 +432,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/frantecol.bsky.social" target="_blank">@frantecol.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/frantecol.bsky.social" target="_blank">@frantecol.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -449,7 +449,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -466,7 +466,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -483,7 +483,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/ecography.bsky.social" target="_blank">@ecography.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/ecography.bsky.social" target="_blank">@ecography.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -500,7 +500,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -517,7 +517,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on November 27, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -534,7 +534,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/diioriolucia1.bsky.social" target="_blank">@diioriolucia1.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/diioriolucia1.bsky.social" target="_blank">@diioriolucia1.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -551,7 +551,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -568,7 +568,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -585,7 +585,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/alexanderlees.bsky.social" target="_blank">@alexanderlees.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/alexanderlees.bsky.social" target="_blank">@alexanderlees.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -602,7 +602,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -619,7 +619,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -636,7 +636,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/martin-nunez.bsky.social" target="_blank">@martin-nunez.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/martin-nunez.bsky.social" target="_blank">@martin-nunez.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -653,7 +653,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/andrejpaleo.bsky.social" target="_blank">@andrejpaleo.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/andrejpaleo.bsky.social" target="_blank">@andrejpaleo.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -670,7 +670,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -687,7 +687,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -704,7 +704,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -721,7 +721,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -738,7 +738,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/biodiful.bsky.social" target="_blank">@biodiful.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/biodiful.bsky.social" target="_blank">@biodiful.bsky.social</a> on November 26, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -755,7 +755,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/fmestre.bsky.social" target="_blank">@fmestre.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/fmestre.bsky.social" target="_blank">@fmestre.bsky.social</a> on November 25, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -772,7 +772,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/methodsinecoevol.bsky.social" target="_blank">@methodsinecoevol.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/methodsinecoevol.bsky.social" target="_blank">@methodsinecoevol.bsky.social</a> on November 25, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -789,7 +789,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 25, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -806,7 +806,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 25, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -823,7 +823,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/zurelllab.bsky.social" target="_blank">@zurelllab.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/zurelllab.bsky.social" target="_blank">@zurelllab.bsky.social</a> on November 24, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -840,7 +840,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/ingolfkuehn.bsky.social" target="_blank">@ingolfkuehn.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/ingolfkuehn.bsky.social" target="_blank">@ingolfkuehn.bsky.social</a> on November 24, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -857,7 +857,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/drkevinwood.bsky.social" target="_blank">@drkevinwood.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/drkevinwood.bsky.social" target="_blank">@drkevinwood.bsky.social</a> on November 21, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -874,7 +874,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/ibartomeus.bsky.social" target="_blank">@ibartomeus.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/ibartomeus.bsky.social" target="_blank">@ibartomeus.bsky.social</a> on November 21, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -891,7 +891,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/billurbektas.bsky.social" target="_blank">@billurbektas.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/billurbektas.bsky.social" target="_blank">@billurbektas.bsky.social</a> on November 20, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -908,7 +908,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 20, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -925,7 +925,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/funecology.bsky.social" target="_blank">@funecology.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/funecology.bsky.social" target="_blank">@funecology.bsky.social</a> on November 15, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -942,7 +942,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/jcsvenning.bsky.social" target="_blank">@jcsvenning.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/jcsvenning.bsky.social" target="_blank">@jcsvenning.bsky.social</a> on November 11, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -959,7 +959,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on November 11, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -976,7 +976,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a> on November 09, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
@@ -993,7 +993,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ---
 
-##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a>
+##### Post by <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a> on May 09, 2024
 
 <table style="width:100%; text-align:left; table-layout:fixed;">
 <tr>
