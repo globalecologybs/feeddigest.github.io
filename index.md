@@ -14,7 +14,7 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 
 ##### Post by Nicolas Mouquet <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on 2024-12-02
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🐟 CESAB ONLINE conference 🐟 Fish biodiversity facing global change 📅 Dec 5 ⏰ 2 to 6 pm Paris time 🔗 umontpellier-fr.zoom.us/j/95406319308 👉 Topics will cover imputation of missing fish traits, Red list assessments, heat waves, homogenization, fish stocks and fishery management 🧪🌐🌍🦤 addOcean
@@ -27,11 +27,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Gaia Lovejoy <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on 2024-12-02
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🌱 How does Gaia breathe? Water availability regulates positive ecosystem respiration’s feedback to global warming by @cyi12.bsky.social et al. 👉 🔑 This feedback is likely to be weakened by water limitation. A delicate balance for Earth’s self-regulation ! 🌐
@@ -44,11 +43,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Marten Winter <a href="https://bsky.app/profile/smartenwinter.bsky.social" target="_blank">@smartenwinter.bsky.social</a> on 2024-12-02
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
      NEW FUNDING OPPORTUNITY  Global Joint Synthesis Call "𝗜𝗻𝘁𝗲𝗿𝗮𝗰𝘁𝗶𝗼𝗻𝘀 𝗯𝗲𝘁𝘄𝗲𝗲𝗻 𝗕𝗶𝗼𝗱𝗶𝘃𝗲𝗿𝘀𝗶𝘁𝘆 𝗮𝗻𝗱 𝗖𝗹𝗶𝗺𝗮𝘁𝗲 𝗖𝗵𝗮𝗻𝗴𝗲" Funding of: ➡️ Working groups ➡️ Postdocs @several synthesis centres/initiatives🔥❤️😍 PLEASE SPREAD WIDELY! THX!
@@ -61,11 +59,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Loïc Pellissier  <a href="https://bsky.app/profile/loicpellissier.bsky.social" target="_blank">@loicpellissier.bsky.social</a> on 2024-12-02
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Tired of NMDS and other ordinations methods to represent your eDNA metabarcoding data, consider using this approach:
@@ -78,11 +75,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-12-01
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     ❔ Are we entering a new stage of the data FAIR principle ? where data should by coded into knowledge rather than data only "to be correctly interpreted by the ultimate non-specialist: AI" ! 🌍🤖 by @dessimoz.bsky.social & P. Thomas 🌐🧪
@@ -95,11 +91,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Paulina Arancibia <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on 2024-12-01
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     As promised, here's a list of women doing research in Ecology & Evolution. You can pin it to your home and then follow these wonderful scientists by clicking the about tab. If you want to be added just comment or DM me. Please share far and wide :) 🧪🌍🌐
@@ -112,11 +107,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Martin Dovciak🌳🌱🌻 <a href="https://bsky.app/profile/dovciak-lab.bsky.social" target="_blank">@dovciak-lab.bsky.social</a> on 2024-12-01
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🥁 Ecologist working in mountains: We still have spots in the Mountain Ecology Starter Pack for Scientists working on various aspects of Mountain Ecology ⛰️ 🏞️🌄 👇. Let me know if you would like to be included. 🌎 🧪 🌐 go.bsky.app/V5Ydank
@@ -129,11 +123,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Nicolas Mainville <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a> on 2024-12-01
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Desertification: The degraded area is already 15 million km2, an area greater than Antarctica, the scientific report says, and it calls for an urgent course correction to avoid land abuse “irretrievably compromising Earth’s capacity to support human and environmental wellbeing” 🌐🌎
@@ -146,11 +139,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Patrick Weigelt <a href="https://bsky.app/profile/patrickweigelt.bsky.social" target="_blank">@patrickweigelt.bsky.social</a> on 2024-12-01
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Phylogenetic turnover of seed plants 🌱 at a global 🌐 and across phylogenetic scales:
@@ -163,11 +155,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Jonathan Lenoir 🌳🌲🌴 <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on 2024-11-30
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     I have just created a starter pack on biodiversity 🦠🌳🌲🦋🐸🐠🦅🦔 redistribution aka species range shifts or species on the move SOTM and community composition changes in response to global change drivers 🌐🌍🌎🌏 Let me know if you are interested to join the list go.bsky.app/6KqEpb9
@@ -180,11 +171,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Paulina Arancibia <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on 2024-11-30
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     A starter pack with Latin American ecologists ☺️ 🧪🌎🌐
@@ -197,11 +187,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Jonathan Lenoir 🌳🌲🌴 <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on 2024-11-30
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     The history of nitrogen (N) depositions links to decreases in the number & proportion of N-fixing plants in temperate forests 🌳 in both 🇪🇺 & Northern America. This has important implications for N cycling ⬇️ shorturl.at/UIBut
@@ -214,11 +203,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Antoine Champreux <a href="https://bsky.app/profile/toinechampreux.bsky.social" target="_blank">@toinechampreux.bsky.social</a> on 2024-11-29
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🌐 Did you know? “Desert” “rainforest” “tundra” “grassland” or “savanna” are widely used terms in common language, but each have multiple definitions and no universally accepted spatial distribution. Find out more in our recent paper 👉 biome ecology biogeography
@@ -231,11 +219,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Christine N Meynard <a href="https://bsky.app/profile/cnmeynard.bsky.social" target="_blank">@cnmeynard.bsky.social</a> on 2024-11-29
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Large-scale biodiversity monitoring is fundamental for detection of population declines, range shifts, new invasive species and biodiversity changes. All of these are needed to propose management actions and protect biodiversity, including in our productive systems. 🧵 🌐🧪
@@ -248,11 +235,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Gaia Lovejoy <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on 2024-11-29
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Today let’s honor Ramon Margalef (1919-2004) who pioneering works on ecosystem organization, energy dynamics, and biodiversity. While indirect his work align conceptually with the holistic approach of Gaia theory, emphasizing the intricate ties between life and the environment. 🧪🌍🌐
@@ -265,11 +251,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-11-29
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🪲 Issues with the InsectChange database ? errors in insect counts, sampling biases, inclusion of non-insect data by L. Gaume & M. Desquilbet 👉 🔑 They call for meticulous data verification for accurate assessments of insect population changes 🧪🌍🦤🌐
@@ -282,11 +267,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Nicolas Mouquet <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on 2024-11-29
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Updating the IUCN status of marine fish using AI shows that x5 more species are threatened with extinction than previously thought! see our study in Plos Biol with @nloiseau.bsky.social 👉 🔑 This silent extinction affects 12,7% of marine fishes (1337 species) ! 🧪🌐🌍🦤🦑
@@ -299,11 +283,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-11-28
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Socioeconomic biases in biodiversity data can misguide ecological conclusions and limit justice-focused conservation. by Diego Ellis-Soto et al. in Trends in Ecology & Evolution 👉 🔑 Addressing these gaps is crucial to benefit both people and nature 🧪🌍🦤🌐
@@ -316,11 +299,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Stelios Katsanevakis <a href="https://bsky.app/profile/skatsanevakis.bsky.social" target="_blank">@skatsanevakis.bsky.social</a> on 2024-11-28
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Our new paper about three-dimensional conservation prioritization with the prior3D R package is online: Developed in the framework of MarinePlan Horizon project Prior3D is available in CRAN: MarineEcology 🧪🌐
@@ -333,11 +315,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Inês Martins <a href="https://bsky.app/profile/inesismartins.bsky.social" target="_blank">@inesismartins.bsky.social</a> on 2024-11-28
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🚨Fully-Funded UK PhD Opportunity!🚨 I’m hiring a PhD exploring the complexities of biodiversity change across space and time 🌐. Join @cmbeale.bsky.social and me at York and for this exciting opportunity! Please share and/or message me if interested. More info and how to apply: shorturl.at/Zu7ED
@@ -350,11 +331,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Dr. Andrés Peredo Arce <a href="https://bsky.app/profile/miluelbarbaro.bsky.social" target="_blank">@miluelbarbaro.bsky.social</a> on 2024-11-28
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     DATA CALL - DEADLINE APPROACHING We want to add new sites to our European longtime series database of freshwater biodiversity (see doi.org/10.1038/s415...) To contribute check the link with all the details of the data call Thank you very much! freshwaterecology
@@ -367,11 +347,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Jens Daniel Müller <a href="https://bsky.app/profile/jens-d-mueller.bsky.social" target="_blank">@jens-d-mueller.bsky.social</a> on 2024-11-28
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Ocean Acidification is reshaping life and biogeochemical cycles. In our latest study, Niki Gruber and I reconstructed its progression in the global ocean interior over the industrial era, based on our previous estimates of anthropogenic carbon accumulation. A 🧵about the
@@ -384,11 +363,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Franciska de Vries 🦠🍄‍🟫🪱🌱🍂🌎🌡️ <a href="https://bsky.app/profile/frantecol.bsky.social" target="_blank">@frantecol.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     It’s out!! We subjected soils from 30 different locations across Europe to extreme events and found that soil fungal and bacterial communities showed consistent responses that could be predicted from their origin! With @knightjar.bsky.social and many collaborators!
@@ -401,11 +379,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Brian J. Enquist <a href="https://bsky.app/profile/bjenquist.bsky.social" target="_blank">@bjenquist.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     The biodiversity data deluge is here - the equivalent of MooresLaw but for biodiversity data? "we estimated that the total number of plant distribution records doubles every 17 years and the number of spatially unique records doubles every 21 years." 🌎🧪🦋🦫
@@ -418,11 +395,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Nicolas Mouquet <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🌿 Outstanding CESAB SynTreeSys online seminar series : Understanding Tropical Forests 📅 Nov 28 - Dec 6 ⏰ 1 PM São Paulo | 5 PM Paris 28/11 H. Steege 29/11 R. Lima 03/12 T. Scalley 04/12 @tobypennington.bsky.social 05/12 C. Fortunel 06/12 J. Chave 👉 meet.google.com/gsq-gqgf-vug 🧪🌐🌍🦤🦑🪴🌾
@@ -435,11 +411,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Ecography <a href="https://bsky.app/profile/ecography.bsky.social" target="_blank">@ecography.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Randomising spatial patterns supports the integration of intraspecific variation in ecological niche models https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07289 ENM Null_models SDM
@@ -452,11 +427,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Gaia Lovejoy <a href="https://bsky.app/profile/pachagaia.bsky.social" target="_blank">@pachagaia.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Linking ant diversity to the terrestrial angiosperm revolution reveals that plant diversification acted as a buffer against ant extinction! C. Jouault et al. in @pnas.org 👉 🔑 A nod to Gaia theory: life reshapes Earth, fostering diversification across lineages. 🌱🐜 🌐
@@ -469,11 +443,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-11-27
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Using species traits, circuit, and network theories to assess landscape connectivity. By Marie-Caroline Prima et al. in @methodsinecoevol.bsky.social 👉 🔑 highlights low connectivity for protected areas and propose conservation strategies for different species groups 🌐🧪🌍🦤
@@ -486,11 +459,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Lucia DI IORIO <a href="https://bsky.app/profile/diioriolucia1.bsky.social" target="_blank">@diioriolucia1.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     📢 If you're an acoustician or have computational skills and are interested in unlocking the secrets of underwater soundscapes of critical habitats, the application deadline has been extended. Application details can be found here: euraxess.ec.europa.eu/jobs/294128 🦑🌎🧪 🔈🌐 prattle 💬 bioacoustics
@@ -503,11 +475,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🔥 Global emergence of regional heatwave hotspots outpaces climate model simulations by @kornhuber.bsky.social et al. @pnas.org 👉 Climate models underestimating warming by 4x for the most extreme temperatures Biodiversity calls for more research on heatwaves now! 🧪🌍🦤🌐
@@ -520,11 +491,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Alexander Lees <a href="https://bsky.app/profile/alexanderlees.bsky.social" target="_blank">@alexanderlees.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Paper just out by Spanish conservation biologists voicing similar concerns 🌍🌐 not rewilding
@@ -537,11 +507,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Jonathan Lenoir 🌳🌲🌴 <a href="https://bsky.app/profile/jonlen.bsky.social" target="_blank">@jonlen.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     I have just received a copy of the last issue of Le Courrier de la Nature ⬇️ in which I wrote a research outreach article on range shifting species colonizing cold environments under anthropogenic ClimateChange 🌐 BioShifts
@@ -554,11 +523,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Svenja Tidau <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     🚨 phdposition study the interplay between globalchange & animal personality in hermitcrabs 😍 with Mark Briffa, Pete Cotton (Plymouth) & myself Deadline: 8.1.2025 ▶️ shorturl.at/FGLec 🧪🦑🌊🌐🦀 marineecology marinebiology marinelife animalbehaviour sensoryecology lightpollution noisepollution
@@ -571,11 +539,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Martin A. Nuñez <a href="https://bsky.app/profile/martin-nunez.bsky.social" target="_blank">@martin-nunez.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     “Our knowledge about the planet is extremely biased. Most research comes from a few wealthy counties. To the point that 7 countries produce 70% of the scientific papers”🧪🌐
@@ -588,11 +555,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Andrej Spiridonov <a href="https://bsky.app/profile/andrejpaleo.bsky.social" target="_blank">@andrejpaleo.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Glad to share our first article with S. Bekeraitė and I. Juchnevičiūtė on the assembly rules of Eurasian Pleistocene large mammals. Here we've tested the association patterns and their temporal evolution using Bayesian networks 1/n 🧪 Paleobio ⚒️ Geology EvoBio
@@ -605,11 +571,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Svenja Tidau <a href="https://bsky.app/profile/svenjatidau.bsky.social" target="_blank">@svenjatidau.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     It's time to watch out for phdpositions in the UK. Many more adverts are coming out 🧪 🦑🌐🌊
@@ -622,11 +587,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Nicolas Mainville <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Carbon trading should prioritize climate imperatives rather than succumbing to short-term political views.🌐 "The new rules contain several serious flaws that years of debate have failed to fix. It means the system may essentially give countries and companies permissions to keep polluting" COP29
@@ -639,11 +603,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Global Ecology 🌐 <a href="https://bsky.app/profile/global-ecology.bsky.social" target="_blank">@global-ecology.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Continental-scale nutrient and contaminant delivery by Pacific salmon to freshwater ecosystems Jessica E. Brandt et al Salmon deliver tonnes of nutrients and pollutants to freshwaters every year! How do these inputs balance out in the functioning of ecosystems? 🧪🌍🌐
@@ -656,11 +619,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Nicolas Mouquet <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Reef fishes most threatened by extinction (worldwide) receive less scientific and public attention! see our publication in Science Advances : Let’s (re)balance our focus to protect all marine life !! and beyond 🧪🌍🦤🦑🌐
@@ -673,11 +635,10 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ##### Post by Biodiful <a href="https://bsky.app/profile/biodiful.bsky.social" target="_blank">@biodiful.bsky.social</a> on 2024-11-26
 
-<table style="width:100%; table-layout:fixed; border-collapse:collapse;">
+<table style="width:100%; table-layout:fixed; border:none;">
 <tr>
   <td style="vertical-align:top; width:75%; padding:10px; box-sizing:border-box; overflow-wrap:break-word; word-wrap:break-word; hyphens:auto;">
     Data Paper in ESA Ecology with native range maps for 10,000+ butterfly species 🦋 worldwide by Barnabas H. Daru 👉 🌐
@@ -690,7 +651,6 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
 </tr>
 </table>
 
----
-
+<br><br>
 ![Visitors](https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg)
 
