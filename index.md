@@ -27,7 +27,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     <br><b>URI:</b> https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/2041-210X.14430
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mu7jphac7v5ehdpbx2f3l2mq/bafkreiankyjgbzautardcrcu77oj7lf3yvuraw46j3duj34lm23apewn5i@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:mu7jphac7v5ehdpbx2f3l2mq/bafkreiankyjgbzautardcrcu77oj7lf3yvuraw46j3duj34lm23apewn5i@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -43,7 +43,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     <br><b>URI:</b> https://www.nature.com/articles/s41597-024-03099-1
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hkd2vm267wimnpuu3wratda4/bafkreiahtv6micyzrz6ogvwb6lvuby4npxouv5yobftjchrzepp6nlne44@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hkd2vm267wimnpuu3wratda4/bafkreiahtv6micyzrz6ogvwb6lvuby4npxouv5yobftjchrzepp6nlne44@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -91,7 +91,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreifalk4y3hol7lfnax753vxqnk4q4a6vauz7pfmd2jqtji26ku3o7u@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreifalk4y3hol7lfnax753vxqnk4q4a6vauz7pfmd2jqtji26ku3o7u@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -107,7 +107,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:372jahoh5hnmw6yh3w5roxsc/bafkreiefymrt2rdfg7hjhgdtxhxgtpdowe6wwhjo666sq3ykraoot4kxlq@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:372jahoh5hnmw6yh3w5roxsc/bafkreiefymrt2rdfg7hjhgdtxhxgtpdowe6wwhjo666sq3ykraoot4kxlq@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -443,7 +443,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vnatj6ys5y2fjs6suxxokbh4/bafkreibewlamlzkfqtsflvt6qpvt7hfglbjq3a4cmwlkon32zxgrpzya4u@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vnatj6ys5y2fjs6suxxokbh4/bafkreibewlamlzkfqtsflvt6qpvt7hfglbjq3a4cmwlkon32zxgrpzya4u@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -459,7 +459,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     <br><b>URI:</b> https://www.nature.com/articles/s41586-024-08185-3
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qodgyv466crrkcntlwwnro6q/bafkreib5xwcmvs56rgmgvve2idvlqda7ketqhypqj7hbfoy6tisexsoewy@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:qodgyv466crrkcntlwwnro6q/bafkreib5xwcmvs56rgmgvve2idvlqda7ketqhypqj7hbfoy6tisexsoewy@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -699,7 +699,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreifoqb6alshvmm6eaujhdwksdzvtqpl7ouabr4ysoqtekv4hfjnsmq@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreifoqb6alshvmm6eaujhdwksdzvtqpl7ouabr4ysoqtekv4hfjnsmq@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -715,7 +715,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hkd2vm267wimnpuu3wratda4/bafkreico6azahhtzxm32zszwwhmaofz45bfuubb2le2hn5hhxpjmj3x24q@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:hkd2vm267wimnpuu3wratda4/bafkreico6azahhtzxm32zszwwhmaofz45bfuubb2le2hn5hhxpjmj3x24q@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -795,7 +795,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     <br><b>URI:</b> https://bit.ly/3ZmClyI
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ppsghcl5bbpgjcljnhra353s/bafkreic6qs74g55acbgl25ls7szkcjls67puwvuk7yki2lv75wqfcddjsq@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ppsghcl5bbpgjcljnhra353s/bafkreic6qs74g55acbgl25ls7szkcjls67puwvuk7yki2lv75wqfcddjsq@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -827,7 +827,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:j6fz3vqzjtpyrcnozlgz3nmq/bafkreielibxonttdxm4lhvk7qmcbf4ydflyufuv27rbvndrxxmpwohoe6y@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:j6fz3vqzjtpyrcnozlgz3nmq/bafkreielibxonttdxm4lhvk7qmcbf4ydflyufuv27rbvndrxxmpwohoe6y@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -875,7 +875,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ehpfzb33ti63eth45mqwipy6/bafkreib4mj55gtbdeedimktypvxbjcdusop4ndmxibvlsjkdikcoe32kbm@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ehpfzb33ti63eth45mqwipy6/bafkreib4mj55gtbdeedimktypvxbjcdusop4ndmxibvlsjkdikcoe32kbm@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -891,7 +891,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     <br><b>URI:</b> https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07378
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eji3hxbal23oltc2ny4pejh3/bafkreic6gefnfv2tn6nbwfdlr7nbwaszydywtwrahwzgvelhg3kth277ga@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:eji3hxbal23oltc2ny4pejh3/bafkreic6gefnfv2tn6nbwfdlr7nbwaszydywtwrahwzgvelhg3kth277ga@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -923,7 +923,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pixg4ym2m5niw5huglzfj4yg/bafkreifk3tarinlqart2jxhabweojjssltc6zm2se2b6cevqea5uooo72q@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:pixg4ym2m5niw5huglzfj4yg/bafkreifk3tarinlqart2jxhabweojjssltc6zm2se2b6cevqea5uooo72q@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
@@ -939,7 +939,7 @@ Feeds are from **November 25, 2024** to **December 02, 2024**.
     
   </td>
   <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vo4aavnlpxx554hsl534zi3a/bafkreih4urhoqmsh6xnaockrxf6ijnfrbj4o6b2hkpydnfpsrjc3dmam5u@jpeg" style="max-height:4em; width:auto;">
+    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:vo4aavnlpxx554hsl534zi3a/bafkreih4urhoqmsh6xnaockrxf6ijnfrbj4o6b2hkpydnfpsrjc3dmam5u@jpeg" style="max-height:2em; width:auto;">
   </td>
 </tr>
 </table>
