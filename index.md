@@ -1,3 +1,7 @@
+<head>
+  <link rel='icon' href='favicon.ico' type='image/x-icon'>
+</head>
+
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest!
 
 Feeds are from **November 26, 2024** to **December 02, 2024**.
