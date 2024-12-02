@@ -1,23 +1,11 @@
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!
 
-Feeds are from **November 25, 2024** to **December 02, 2024**.
+Feeds are from **November 26, 2024** to **December 02, 2024**.
 
-##### Post by <a href="https://bsky.app/profile/carbonick.bsky.social" target="_blank">@carbonick.bsky.social</a>
+A feed on research in biodiversity, ecosystems & conservation at large scale. Terrestrial & marine realms. Sounds like Global Ecology!
 
-<table style="width:100%; text-align:left; table-layout:fixed;">
-<tr>
-  <td style="vertical-align:top; width:75%;">
-    Mariners pushing for wind power say investors used to view them as something of a joke. But as they pioneer a comeback for sail-powered cargo ships, they're having the last laugh. 🌐🌎
-    
-    <br><a href="https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lccy4buvuk2y" target="_blank">View Original Post</a>
-  </td>
-  <td style="vertical-align:top; width:25%;">
-    <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:2jt4bs5p2dpltzxehiwjkokc/bafkreiexw5v3zemfi52v6uiuzkmw7ngl5bxczyyxvzbgid2a44gocgtiwu@jpeg" style="max-height:150px; width:auto;">
-  </td>
-</tr>
-</table>
-
----
+- **SCIENCE ONLY**
+- DM [@global-ecology.bsky.social](https://bsky.app/profile/global-ecology.bsky.social) to contribute
 
 ##### Post by <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a>
 
