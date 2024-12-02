@@ -18,6 +18,16 @@ Digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems 
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> on 2024-12-02
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  ✨For the lazy (yes we are) and friends who don't like social media (yes they can) but could benefit from the news on the Global Ecology feed here is a DIGEST 🚀 of the Global Ecology feed. ! ✨ Will post every Monday from now on. Please share. 🧪🌐🌍🦤🦑
+<br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lcdbb7xx4c22' target='_blank'>View Original Post</a>
+</div>
+
+---
+
 ##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> on 2024-12-02
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
