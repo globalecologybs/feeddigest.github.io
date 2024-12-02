@@ -1,4 +1,4 @@
-# <img src="https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg" alt="Global Ecology" style="height: 1em; vertical-align: middle;"> 📢 [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!
+# <img src="https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg" alt="Global Ecology" style="height: 1em; vertical-align: middle;"> [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!
 
 Feeds are from **November 30, 2024** to **December 02, 2024**.
 
