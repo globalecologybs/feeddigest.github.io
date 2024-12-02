@@ -1,11 +1,11 @@
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> [Global Ecology Feed](https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology) Digest!
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest!
 
 Feeds are from **November 26, 2024** to **December 02, 2024**.
 
 A feed on research in biodiversity, ecosystems & conservation at large scale. Terrestrial & marine realms. Sounds like Global Ecology!
 
 - **SCIENCE ONLY**
-- DM [@global-ecology.bsky.social](https://bsky.app/profile/global-ecology.bsky.social) to contribute
+- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
 ##### Post by Nicolas Mouquet <a href="https://bsky.app/profile/nmouquet.bsky.social" target="_blank">@nmouquet.bsky.social</a> on December 02, 2024
 
@@ -154,40 +154,6 @@ A feed on research in biodiversity, ecosystems & conservation at large scale. Te
   </td>
   <td style="vertical-align:top; width:25%;">
     <img src="https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:372jahoh5hnmw6yh3w5roxsc/bafkreiefymrt2rdfg7hjhgdtxhxgtpdowe6wwhjo666sq3ykraoot4kxlq@jpeg" style="max-height:150px; width:auto;">
-  </td>
-</tr>
-</table>
-
----
-
-##### Post by Paulina Arancibia <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on December 01, 2024
-
-<table style="width:100%; text-align:left; table-layout:fixed;">
-<tr>
-  <td style="vertical-align:top; width:75%;">
-    Wow I did not expect this to fill out so soon! we reached the 150 mark in less than 12h so I am now creating a "list" with those who I couldn't include. I will share that soon so if you want to be added or have more recommendations, just keep them coming! 🧪🌎🌐
-    
-    <br><a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/post/3lcaj7jh3oc2m" target="_blank">View Original Post</a>
-  </td>
-  <td style="vertical-align:top; width:25%;">
-    
-  </td>
-</tr>
-</table>
-
----
-
-##### Post by Paulina Arancibia <a href="https://bsky.app/profile/pauliarancibia.bsky.social" target="_blank">@pauliarancibia.bsky.social</a> on November 30, 2024
-
-<table style="width:100%; text-align:left; table-layout:fixed;">
-<tr>
-  <td style="vertical-align:top; width:75%;">
-    I created this stater pack with women in ecology and evolution. If you want to be added you can comment or DM me, but also please suggest the names of those I am missing 🧪🌎🌐 go.bsky.app/8jFH7cS
-    
-    <br><a href="https://bsky.app/profile/did:plc:6k6ajlumwci777ge2caearzc/post/3lc76oqsazc2p" target="_blank">View Original Post</a>
-  </td>
-  <td style="vertical-align:top; width:25%;">
-    
   </td>
 </tr>
 </table>
