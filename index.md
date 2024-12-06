@@ -9,7 +9,7 @@
   <meta property='og:type' content='website'>
 </head>
 
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest#2!
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest #2
 
 Feeds are from **November 30, 2024** to **December 06, 2024**.
 
@@ -17,6 +17,8 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
+
+---
 
 ##### Post by Nick Dulvy <a href='https://bsky.app/profile/nickdulvy.bsky.social' target='_blank'>@nickdulvy.bsky.social</a> on 2024-12-05
 

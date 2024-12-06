@@ -30,12 +30,15 @@ markdown_text <- paste0(
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
   "  <meta property='og:type' content='website'>\n",
   "</head>\n\n",
-  "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest#", X,"!\n\n",
+  "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>Global Ecology Feed</a> Digest #", X,"\n\n",
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**.\n\n",
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.\n\n",
   "- **SCIENCE ONLY**\n",
-  "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n"
+  "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
+  "---\n\n" # Separator
 )
+
+
 
 # Loop through the feed and format posts
 for (i in 2:dim(feed)[1]) {
