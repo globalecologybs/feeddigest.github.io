@@ -9,7 +9,11 @@
   <meta property='og:type' content='website'>
 </head>
 
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed 🌐</a> Digest #2
+<div style='width:100%; text-align:center; margin-bottom:20px;'>
+  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/Glob_eco_banner.png' alt='Global Ecology Banner' style='width:100%; max-height:200px; object-fit:cover;'>
+</div>
+
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
 Feeds are from **November 30, 2024** to **December 06, 2024**. Total posts: **18**.
 
