@@ -27,12 +27,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nicolas Mainville <a href='https://bsky.app/profile/carbonick.bsky.social' target='_blank'>@carbonick.bsky.social</a> on 2024-12-06
+##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> on 2024-12-06
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  In case it wasn't clear enough...Historical emissions and energy overconsumption by North Americans puts CO2/capita WAY ABOVE any other regions in the World. This climate legacy means much greater responsibility to fix what has been broken 🌐
-<br><b>uri:</b> <a href='https://www.visualcapitalist.com/charted-per-capita-co2-emissions-by-global-region-1960-2022/' target='_blank'>https://www.visualcapitalist.com/charted-per-capita-co2-emissions-by-global-region-1960-2022/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lcncgxz5p22a' target='_blank'>View Original Post</a>
+  Fish communities can simultaneously contribute to nature and people across the world’s tropical reefs See our ms in One Earth 👉 🔑Measuring 29 fish community contributions, we found that trade-offs aren’t the rule and bright-spots can be in any country 🧪🌐🌍🦤🦑‪
+<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/abs/pii/S2590332224004767' target='_blank'>https://www.sciencedirect.com/science/article/abs/pii/S2590332224004767</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lcndymk5x22b' target='_blank'>View Original Post</a>
 </div>
 
 ---
