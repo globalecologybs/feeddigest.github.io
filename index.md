@@ -54,7 +54,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Curious about success stories in top predator conservation (and more)? Check out our paper published earlier this year! MarineEcology 🧪🌐🌍 GES4SEAS
-
+<br>
   <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lcl6dpyf7s2p' target='_blank'>View Original Post</a>
 </div>
 
@@ -124,7 +124,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Interesting study showing how interactions with animals help plants to move upslope in response to a warming climate on Mt Teide, Tenerife. 🧪🍁🌐🌏
-
+<br>
   <br><a href='https://bsky.app/profile/did:plc:a4xdr42cg3quvnormjg74et2/post/3lcijfw7z3k26' target='_blank'>View Original Post</a>
 </div>
 
@@ -154,7 +154,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   💡 Tip to see all posts in the Global Ecology feed 🌐 Go to your Bluesky app settings ⚙️, set “Content Languages” to “All languages” by unticking all named languages. Otherwise, posts (even in English) from users with a different "Primary Language" won't appear. ✨ This actually applies to all feeds!
-
+<br>
   <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lci2bwmy7k2f' target='_blank'>View Original Post</a>
 </div>
 

@@ -41,7 +41,7 @@ markdown_text <- paste0(
 
 
 # Loop through the feed and format posts
-for (i in 2:dim(feed)[1]) {
+for (i in 1:dim(feed)[1]) {
   #i=1
   text <- feed$record[[i]]$text
   
@@ -101,7 +101,11 @@ for (i in 2:dim(feed)[1]) {
     "##### Post by ", author_name, " ", author_link, " on ", post_date, "\n\n", # Add header
     "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n", # Container for text
     "  ", gsub("\n", " ", text), "\n", # Post content
-    if (!is.null(uri)) paste0("<br><b>uri:</b> ", uri_hyperlink, "<br>"), "\n", # Add URI as hyperlink if available
+    if (!is.null(uri)) {
+      paste0("<br><b>uri:</b> ", uri_hyperlink, "<br>")
+    } else {
+      "<br>"
+    }, "\n", # Add URI as hyperlink if available
     "  <br><a href='", bluesky_link, "' target='_blank'>View Original Post</a>\n", # Link to the original post
     "</div>\n\n",
     "---\n\n" # Separator
