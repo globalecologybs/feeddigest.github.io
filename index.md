@@ -12,7 +12,7 @@
   <meta name='author' content='Global Ecology Team'>
 </head>
 
-<div style='width:70%; text-align:center; margin-bottom:20px;'>
+<div style='width:100%; text-align:center; margin-bottom:20px;'>
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
