@@ -20,6 +20,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> on 2024-12-06
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  From data to knowledge : 📊🤖✨ Process-informed neural networks (PINNs) in Ecology and Beyond ! by Marieke Wesselkamp et al. | Ecology Letters 👉 🔑 PINNs outperform traditional models in ecological predictions, particularly in data-sparse scenarios ! 🧪🌐🌍
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/ele.70012' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/ele.70012</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lcmvfp3uwk2d' target='_blank'>View Original Post</a>
+</div>
+
+---
+
 ##### Post by Nick Dulvy <a href='https://bsky.app/profile/nickdulvy.bsky.social' target='_blank'>@nickdulvy.bsky.social</a> on 2024-12-05
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
