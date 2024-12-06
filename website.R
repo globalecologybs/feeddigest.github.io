@@ -2,6 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
+X <- 2
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -23,7 +24,7 @@ markdown_text <- paste0(
   "  <title>Global Ecology</title>\n",
   "  <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>\n",
   "  <!-- Open Graph Metadata -->\n",
-  "  <meta property='og:title' content='Global Ecology Feed Digest'>\n",
+  "  <meta property='og:title' content='🦋 bluesky Global Ecology Feed Digest #", X, "'>\n", # Add X dynamically
   "  <meta property='og:description' content='For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.'>\n",
   "  <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>\n",
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
