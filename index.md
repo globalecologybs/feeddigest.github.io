@@ -12,18 +12,28 @@
   <meta name='author' content='Global Ecology Team'>
 </head>
 
-<div style='width:100%; text-align:center; margin-bottom:20px;'>
+<div style='width:70%; text-align:center; margin-bottom:20px;'>
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
-Feeds are from **November 30, 2024** to **December 06, 2024**. Total posts: **18**.
+Feeds are from **November 30, 2024** to **December 06, 2024**. Total posts: **19**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
+
+---
+
+##### Post by Nicolas Mainville <a href='https://bsky.app/profile/carbonick.bsky.social' target='_blank'>@carbonick.bsky.social</a> on 2024-12-06
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  In case it wasn't clear enough...Historical emissions and energy overconsumption by North Americans puts CO2/capita WAY ABOVE any other regions in the World. This climate legacy means much greater responsibility to fix what has been broken 🌐
+<br><b>uri:</b> <a href='https://www.visualcapitalist.com/charted-per-capita-co2-emissions-by-global-region-1960-2022/' target='_blank'>https://www.visualcapitalist.com/charted-per-capita-co2-emissions-by-global-region-1960-2022/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lcncgxz5p22a' target='_blank'>View Original Post</a>
+</div>
 
 ---
 

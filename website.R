@@ -34,7 +34,7 @@ markdown_text <- paste0(
   "  <meta name='author' content='Global Ecology Team'>\n",
   "</head>\n\n",
   # Add banner image at the top
-  "<div style='width:100%; text-align:center; margin-bottom:20px;'>\n",
+  "<div style='width:70%; text-align:center; margin-bottom:20px;'>\n",
   "  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>\n",
   "</div>\n\n",
   "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #", X, "\n\n",
