@@ -7,10 +7,13 @@
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
   <meta property='og:type' content='website'>
+  <!-- SEO Keywords -->
+  <meta name='keywords' content='Global Ecology, Biogeography, Macroecology, Biodiversity, Ecosystems, Conservation, Marine Ecology, Terrestrial Ecology, Environmental Science, Climate Change, Sustainability, Bluesky Feed'>
+  <meta name='author' content='Global Ecology Team'>
 </head>
 
 <div style='width:100%; text-align:center; margin-bottom:20px;'>
-  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/Glob_eco_banner.png' alt='Global Ecology Banner' style='width:100%; max-height:200px; object-fit:cover;'>
+  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/banner.jpg' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
@@ -205,4 +208,8 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 ---
 
 ![Visitors](https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg)
+
+<div style='text-align:left; font-size:small; color:gray;'>
+  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' style='color:gray;'>Nicolas Mouquet</a>
+</div>
 

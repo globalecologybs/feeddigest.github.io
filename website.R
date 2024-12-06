@@ -29,10 +29,13 @@ markdown_text <- paste0(
   "  <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>\n",
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
   "  <meta property='og:type' content='website'>\n",
+  "  <!-- SEO Keywords -->\n",
+  "  <meta name='keywords' content='Global Ecology, Biogeography, Macroecology, Biodiversity, Ecosystems, Conservation, Marine Ecology, Terrestrial Ecology, Environmental Science, Climate Change, Sustainability, Bluesky Feed'>\n",
+  "  <meta name='author' content='Global Ecology Team'>\n",
   "</head>\n\n",
   # Add banner image at the top
   "<div style='width:100%; text-align:center; margin-bottom:20px;'>\n",
-  "  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/Glob_eco_banner.png' alt='Global Ecology Banner' style='width:100%; max-height:200px; object-fit:cover;'>\n",
+  "  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/banner.jpg' alt='Global Ecology Banner' style='width:100%; height:auto;'>\n",
   "</div>\n\n",
   "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #", X, "\n\n",
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nrow(feed), "**.\n\n",
@@ -119,7 +122,10 @@ for (i in 1:dim(feed)[1]) {
 # Add the visitor counter at the end of the site
 markdown_text <- paste0(
   markdown_text,
-  "![Visitors](https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg)\n"
+  "![Visitors](https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg)\n\n",
+  "<div style='text-align:left; font-size:small; color:gray;'>\n",
+  "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' style='color:gray;'>Nicolas Mouquet</a>\n",
+  "</div>\n"
 )
 
 # Specify the file path to save as index.md
