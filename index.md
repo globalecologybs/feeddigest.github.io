@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
-Feeds are from **December 01, 2024** to **December 08, 2024**. Total posts: **30**.
+Feeds are from **December 01, 2024** to **December 08, 2024**. Total posts: **31**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -315,6 +315,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Cool paper! Love working with Tianna Peller (www.tiannapeller.com/research) & @florianaltermatt.bsky.social‬. I hear Tianna might also be looking for students in her new position at @uoft.bsky.social 👀🌍 🌐 🟦↔️🟩 💧 sci 🧪
 <br><b>uri:</b> <a href='https://www.tiannapeller.com/research' target='_blank'>https://www.tiannapeller.com/research</a><br>
   <br><a href='https://bsky.app/profile/did:plc:jsg4qcw4mx3on3q5rte7wicx/post/3lcfrdnjw222g' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Michela Leonardi <a href='https://bsky.app/profile/mikleonardi.bsky.social' target='_blank'>@mikleonardi.bsky.social</a> on 2024-12-02
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  If you are interested in modelling in ecology and paleoecology, my MEE live! " tidysdm: tidy Species Distribution Models in R" is now available online! ▶️ Paper: Thanks @methodsinecoevol.bsky.social, @britishecolsoc.bsky.social!
+<br><b>uri:</b> <a href='https://www.youtube.com/watch?v=4InGRZ05SmY&ab_channel=MethodsEcolEvol' target='_blank'>https://www.youtube.com/watch?v=4InGRZ05SmY&ab_channel=MethodsEcolEvol</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:b4sorzs2pekywlkuwyrn2xob/post/3lcdbnduxvs26' target='_blank'>View Original Post</a>
 </div>
 
 ---
