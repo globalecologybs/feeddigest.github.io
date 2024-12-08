@@ -42,6 +42,7 @@ markdown_text <- paste0(
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.\n\n",
   "- **SCIENCE ONLY**\n",
   "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
+  "- Here to <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>like the Global Ecology</a> feed\n\n",
   "---\n\n" # Separator
 )
 
