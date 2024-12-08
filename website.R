@@ -15,7 +15,7 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 6
+start_date <- Sys.Date() - 7
 
 # Initialize Markdown content with metadata and header
 
