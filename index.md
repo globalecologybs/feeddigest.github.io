@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
-Feeds are from **December 01, 2024** to **December 08, 2024**. Total posts: **32**.
+Feeds are from **December 01, 2024** to **December 08, 2024**. Total posts: **30**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -55,6 +55,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   An important review - The ecology of plant extinctions - "Recent warm-edge extirpations demonstrate the growing impact of anthropogenic climate change & show that predictions of massive climate-driven extinctions later this century are plausible" 🌾🌎🧪🌐
 <br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0169534724002805?dgcid=author' target='_blank'>https://www.sciencedirect.com/science/article/pii/S0169534724002805?dgcid=author</a><br>
   <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lcpniv3a622a' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Dr. Drew harvell <a href='https://bsky.app/profile/drewharvell.bsky.social' target='_blank'>@drewharvell.bsky.social</a> on 2024-12-07
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Beautiful paper about the global danger of ship strikes for large whales and the value of slowing down shipping. @seattletimes-rss.bsky.social focussed on more local SalishSea dangers for whales and shipping. kudos anna nisi, @trevorabranch.bsky.social, team.
+<br><b>uri:</b> <a href='https://www.science.org/doi/10.1126/science.adp1950' target='_blank'>https://www.science.org/doi/10.1126/science.adp1950</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:leshkmlftv6dvzz7czxufa6q/post/3lcopammwwc27' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -305,36 +315,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Cool paper! Love working with Tianna Peller (www.tiannapeller.com/research) & @florianaltermatt.bsky.social‬. I hear Tianna might also be looking for students in her new position at @uoft.bsky.social 👀🌍 🌐 🟦↔️🟩 💧 sci 🧪
 <br><b>uri:</b> <a href='https://www.tiannapeller.com/research' target='_blank'>https://www.tiannapeller.com/research</a><br>
   <br><a href='https://bsky.app/profile/did:plc:jsg4qcw4mx3on3q5rte7wicx/post/3lcfrdnjw222g' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Conor Waldock <a href='https://bsky.app/profile/conorwaldock.bsky.social' target='_blank'>@conorwaldock.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  What is a species "shadow distribution"? This infographic helps communicate "shadow distributions" with stakeholders and environmental managers. We used species distribution models to quantify this conservation concept for Swiss fishes. 🌐🌎 macroecology
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41467-024-52993-0' target='_blank'>https://www.nature.com/articles/s41467-024-52993-0</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ic5awe2ipmdodzxgffm6slzq/post/3lcfox4i5z22j' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  🧨 Systematic reviews are in peril ! AI will be soon (if not already) massively be used to generate tons of fake and/or replicated papers; this wave will becomes a tsunami 🌊 There really is a need for falsification/copy control in science now! 🧪🌐🌍🦤
-<br><b>uri:</b> <a href='https://www.science.org/content/article/systematic-reviews-aim-extract-broad-conclusions-many-studies-are-peril' target='_blank'>https://www.science.org/content/article/systematic-reviews-aim-extract-broad-conclusions-many-studies-are-peril</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lcffidrjok2g' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by John Dwyer <a href='https://bsky.app/profile/john-m-dwyer.bsky.social' target='_blank'>@john-m-dwyer.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  🔥 in Ecology Letters 🔥 Traits describing hydraulic strategies and deciduousness explain the occurrence trends of almost 300 rainforest tree species across a steep rainfall gradient in Australia. FunctionalTraits
-<br><b>uri:</b> <a href='http://dx.doi.org/10.1111/ele.70014' target='_blank'>http://dx.doi.org/10.1111/ele.70014</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:psvdztpqhlcy7hkqzf72jkiq/post/3lcfclmrzcc2k' target='_blank'>View Original Post</a>
 </div>
 
 ---
