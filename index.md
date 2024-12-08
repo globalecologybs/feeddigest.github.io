@@ -25,7 +25,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
-- Here to <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>like the Global Ecology</a> feed
+- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
 
 ---
 
