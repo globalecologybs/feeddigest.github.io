@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
-Feeds are from **December 02, 2024** to **December 09, 2024**. Total posts: **33**.
+Feeds are from **December 02, 2024** to **December 09, 2024**. Total posts: **34**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -26,6 +26,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
 - Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
+
+---
+
+##### Post by Methods in Ecology and Evolution <a href='https://bsky.app/profile/methodsinecoevol.bsky.social' target='_blank'>@methodsinecoevol.bsky.social</a> on 2024-12-09
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  📖Published📖 In our new Research Article, Hu et al. shed light on the potential of deep learning methods in the domain of species distribution modelling, providing valuable insights for future research and applications in this field 🌎 🧪 👇
+<br><b>uri:</b> <a href='https://buff.ly/41bVxR9' target='_blank'>https://buff.ly/41bVxR9</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jb2f2agkyzhvzoj6ox5zgabh/post/3lcuhqsppm52t' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
