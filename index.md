@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #2
 
-Feeds are from **December 01, 2024** to **December 08, 2024**. Total posts: **31**.
+Feeds are from **December 02, 2024** to **December 09, 2024**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -26,6 +26,66 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
 - Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
+
+---
+
+##### Post by Garry Peterson <a href='https://bsky.app/profile/resiliencesci.bsky.social' target='_blank'>@resiliencesci.bsky.social</a> on 2024-12-09
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Seed dispersal kernel of the largest surviving megaherbivore Bunney+ Elephants are key long distance seed dispersers on savanna ecosystems cross-scale functional diversity is key part of ecological resilience
+<br><b>uri:</b> <a href='https://doi.org/10.1111/btp.12423' target='_blank'>https://doi.org/10.1111/btp.12423</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ywyuzuhkwv4v7mmacshr6nyc/post/3lcuh4vww6s2x' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> on 2024-12-09
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Latitudinal gradients in air density create ‘invisible topography’, influencing bird flight costs at the global scale by @elcshepard.bsky.social et al. in @currentbiology.bsky.social 👉 🔑 Important implications for species (re)distribution under climate change 🧪🌐🌍🦤
+<br><b>uri:</b> <a href='https://doi.org/10.1016/j.cub.2024.10.064' target='_blank'>https://doi.org/10.1016/j.cub.2024.10.064</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lcuefvdycs2y' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> on 2024-12-09
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Fish can simultaneously contribute to nature and people across the world’s tropical reefs See our ms in One Earth : 👉 🔑 Measuring 29 fish contributions to nature and people, we found that trade-offs aren’t the rule and bright-spots can be in any country 🧪🌐🌍🦤🦑 addOcean
+<br><b>uri:</b> <a href='https://doi.org/10.1016/j.oneear.2024.09.011' target='_blank'>https://doi.org/10.1016/j.oneear.2024.09.011</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lcue5nxyys2u' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Sabina Burrascano <a href='https://bsky.app/profile/sabina-burrascano.bsky.social' target='_blank'>@sabina-burrascano.bsky.social</a> on 2024-12-09
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Do ForestEurope indicators work for biodiversity? We tested them against field-sampled multi-taxon data (a lot of them!) and only some of them moderately relate to species richness! Read the recent article led by YoanPaillet Time for a data-driven revision!
+<br><b>uri:</b> <a href='https://doi.org/10.1016/j.biocon.2024.110874' target='_blank'>https://doi.org/10.1016/j.biocon.2024.110874</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:edohrvfmy2tyxzvjeo76z2ln/post/3lcu2m62i3c2t' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Elsa Ordway <a href='https://bsky.app/profile/elsaordway.bsky.social' target='_blank'>@elsaordway.bsky.social</a> on 2024-12-08
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  I'm delighted to share the final PANGEA White Paper: tropicalforestscoping.com/news-2/ (English, French, Spanish, Portuguese, & Indonesian) Thank you to the 800+(!) ppl who contributed their ideas, input, time, & energy. Truly a community concept for a NASA Terrestrial Ecology Field Campaign
+<br><b>uri:</b> <a href='https://tropicalforestscoping.com/news-2/' target='_blank'>https://tropicalforestscoping.com/news-2/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:bshverukwq6panhf5kuskykv/post/3lct2rwhbn22r' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by NordBorN <a href='https://bsky.app/profile/nordborn.bsky.social' target='_blank'>@nordborn.bsky.social</a> on 2024-12-08
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Tree-planting in the Arctic can accelerate rather than decelerate climate warming 🌲 Check out our recent paper in Nature Geoscience superbly led by @jeep4x4.bsky.social: (figure credit @laurabp.bsky.social)
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41561-024-01573-4' target='_blank'>https://www.nature.com/articles/s41561-024-01573-4</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ulfgu4fw4hi3wampghgdkfi2/post/3lcs5edmzoc2m' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
@@ -45,6 +105,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   An excellent example demonstrating that invasive/nonnative/native/conservation status is context dependent and defines *populations* not species.
 <br><b>uri:</b> <a href='https://phys.org/news/2024-12-nature-paradox-invasive-species-threatened.html' target='_blank'>https://phys.org/news/2024-12-nature-paradox-invasive-species-threatened.html</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ikyx4nfohoiu27ay7ajxke5q/post/3lcrgxyeoxf2j' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Vojtech Brlik <a href='https://bsky.app/profile/ecobrlik.bsky.social' target='_blank'>@ecobrlik.bsky.social</a> on 2024-12-07
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  15 000 fieldworkers | 28 countries | decades of effort | 170 bird species🐦 Data paper on European long-term population changes in birds: Data: ornithology
+<br><b>uri:</b> <a href='https://doi.org/10.1038/s41597-021-00804-2' target='_blank'>https://doi.org/10.1038/s41597-021-00804-2</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jgipuqt2drgiz77pqspt2nzj/post/3lcqowv33zk2a' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -115,6 +185,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   New GlobalSharkTrends study published in @science.org reveals overfishing has more than halved shark & ray populations over the past 50-years causing widespread erosion of ecological function and exceptionally high extinction risk 👉Full article bit.ly/GlobalSharkTrends 🧵1/20
 <br><b>uri:</b> <a href='https://bit.ly/GlobalSharkTrends' target='_blank'>https://bit.ly/GlobalSharkTrends</a><br>
   <br><a href='https://bsky.app/profile/did:plc:apr6yf3twvvhfe3az46hufsn/post/3lcloevouhk2j' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Simon Donner <a href='https://bsky.app/profile/simondonner.bsky.social' target='_blank'>@simondonner.bsky.social</a> on 2024-12-05
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Warming up, just not too hard, can help you survive an intense workout. In a new study led by Xinru Li, we found that "priming" - sub-lethal exposure to heat stress - can also help coral reefs survive heat provided the heat waves are not too severe.
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.17592' target='_blank'>https://onlinelibrary.wiley.com/doi/full/10.1111/gcb.17592</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:zij25ev763zos5cdeo5ybqqa/post/3lclh3kxhts2m' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -249,26 +329,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Erika C. Freeman <a href='https://bsky.app/profile/ecfreewoman.bsky.social' target='_blank'>@ecfreewoman.bsky.social</a> on 2024-12-04
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Things are changing and as academics, we will have to adapt. How can we strategically position ourselves to leverage these new tools to ensure our work continues to me maximally valuable to our own community and society? 🧪🌎🌐WetSci
-<br><b>uri:</b> <a href='https://www.pnas.org/doi/full/10.1073/pnas.2414955121' target='_blank'>https://www.pnas.org/doi/full/10.1073/pnas.2414955121</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jsg4qcw4mx3on3q5rte7wicx/post/3lchlorm2kc2d' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jonathan Myers <a href='https://bsky.app/profile/jamyersecology.bsky.social' target='_blank'>@jamyersecology.bsky.social</a> on 2024-12-04
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Happy to share a new paper—led by Justin Baldwin—exploring how avian dispersal ability shapes species-area relationships on islands worldwide 🐦‍⬛ 🏝️ 🌐 (1/2)
-<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/ele.70020' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/ele.70020</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:h5qgr4b5a3prsejjs5pufad6/post/3lch2cmzs322t' target='_blank'>View Original Post</a>
-</div>
-
----
-
 ##### Post by Anthony Ricciardi <a href='https://bsky.app/profile/ecoinvasions.bsky.social' target='_blank'>@ecoinvasions.bsky.social</a> on 2024-12-04
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
@@ -279,42 +339,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> on 2024-12-03
+##### Post by Garry Peterson <a href='https://bsky.app/profile/resiliencesci.bsky.social' target='_blank'>@resiliencesci.bsky.social</a> on 2024-12-03
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  🌳 New findings 🌳 Phylogenetic diversity cannot be used as a proxy for functional diversity in vascular plant communities 🌲🌳🌴🌵🌱🍀🌾🌼 We used the sPlot database & found a pronounced decoupling between phylogenetic & functional diversity ⬇️ 🧪🌐🌏🍁 @natureecoevo.bsky.social shorturl.at/Bf5IK
-<br><b>uri:</b> <a href='https://shorturl.at/Bf5IK' target='_blank'>https://shorturl.at/Bf5IK</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lcgjktxehc25' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Exotic plants are better at hitchhiking upslope 🏔 than natives ⬇️ A very important result which supports former findings on exotic plants shifting and expanding their elevation ranges upslope at a rapid pace RangeX BioShifts 🧪🌐🌏🍁 shorturl.at/h846l
-<br><b>uri:</b> <a href='https://shorturl.at/h846l' target='_blank'>https://shorturl.at/h846l</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lcg7ft3ibc25' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mainville <a href='https://bsky.app/profile/carbonick.bsky.social' target='_blank'>@carbonick.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  All caribou herds in Quebec are declining, some going extinct, mostly due to habitat loss from logging and road building. The Innu Nation of Pessamit are seeking to create a protected area where the remaining 200 caribou of Pipmuakan can continue to live freely — and eventually make a comeback. 🌐🌎
-<br><b>uri:</b> <a href='https://www.nytimes.com/2024/12/03/world/americas/caribou-quebec-canada.html?smid=url-share' target='_blank'>https://www.nytimes.com/2024/12/03/world/americas/caribou-quebec-canada.html?smid=url-share</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:2jt4bs5p2dpltzxehiwjkokc/post/3lcg475lkns2z' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Erika C. Freeman <a href='https://bsky.app/profile/ecfreewoman.bsky.social' target='_blank'>@ecfreewoman.bsky.social</a> on 2024-12-03
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Cool paper! Love working with Tianna Peller (www.tiannapeller.com/research) & @florianaltermatt.bsky.social‬. I hear Tianna might also be looking for students in her new position at @uoft.bsky.social 👀🌍 🌐 🟦↔️🟩 💧 sci 🧪
-<br><b>uri:</b> <a href='https://www.tiannapeller.com/research' target='_blank'>https://www.tiannapeller.com/research</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jsg4qcw4mx3on3q5rte7wicx/post/3lcfrdnjw222g' target='_blank'>View Original Post</a>
+  Biosphere Futures 2.0 www.biospherefutures.net is our online database of socialEcologicalScenarios case studies the database has >100 cases that have been contributed scenario practitioners from around the world for more info see paper we welcome more contributions
+<br><b>uri:</b> <a href='https://www.biospherefutures.net' target='_blank'>https://www.biospherefutures.net</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ywyuzuhkwv4v7mmacshr6nyc/post/3lcfqatt7ks2c' target='_blank'>View Original Post</a>
 </div>
 
 ---
