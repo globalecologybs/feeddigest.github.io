@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #3
 
-Feeds are from **December 09, 2024** to **December 16, 2024**. Total posts: **32**.
+Feeds are from **December 09, 2024** to **December 16, 2024**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -29,12 +29,42 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
+##### Post by Martin Jung <a href='https://bsky.app/profile/martinjung.bsky.social' target='_blank'>@martinjung.bsky.social</a> on 2024-12-16
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Our new (mini) review on computational methods in landscape ecology has just come out 😃🥳 Nice little collaboration led by Max Hesselbarth and involving @nowosad.fosstodon.org.ap.brid.gy Computational Methods in Landscape Ecology
+<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s40823-024-00104-6' target='_blank'>https://link.springer.com/article/10.1007/s40823-024-00104-6</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:7kqv3ebb3pifqiv23o4supxi/post/3ldgdowqrac2n' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Koenraad Van Meerbeek <a href='https://bsky.app/profile/kvanmeerbeek.bsky.social' target='_blank'>@kvanmeerbeek.bsky.social</a> on 2024-12-16
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  🌍 How do climatic extremes impact species distributions? Our new paper in Journal of Biogeography led by Ward Fonteyn introduces a method to better capture the effects of extremee climatic events in species distribution models (SDMs). 🌳 🔗 A 🧵 (1/6)
+<br><b>uri:</b> <a href='https://doi.org/10.1111/jbi.15067' target='_blank'>https://doi.org/10.1111/jbi.15067</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:qxkoosmrh57prqeseivp7aum/post/3ldgd56bh622f' target='_blank'>View Original Post</a>
+</div>
+
+---
+
 ##### Post by Journal of Applied Ecology <a href='https://bsky.app/profile/jappliedecology.bsky.social' target='_blank'>@jappliedecology.bsky.social</a> on 2024-12-16
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Remote sensing approaches to monitor tropical forest restoration: Current methods and future possibilities 🛰️ 🌏 🧪 Discusses technologies, such as: 👉very-high-resolution RGB imagery 👉hyperspectral imaging 👉lidar 👉radar 👉thermal-infrared technologies 🔗
 <br><b>uri:</b> <a href='https://buff.ly/4ijI7si' target='_blank'>https://buff.ly/4ijI7si</a><br>
   <br><a href='https://bsky.app/profile/did:plc:rksoynyvcrgqyxa54fgzolcn/post/3ldg2zdb7xm2f' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Ecospat Group <a href='https://bsky.app/profile/ecospat-ch.bsky.social' target='_blank'>@ecospat-ch.bsky.social</a> on 2024-12-16
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Check out some work from a former Marie-Curie fellow at Ecospat, Federico Riva, and his project "Protect butterflies across Europe through climate refugia": tinyurl.com/3jkukuvk 🦋
+<br><b>uri:</b> <a href='https://tinyurl.com/3jkukuvk' target='_blank'>https://tinyurl.com/3jkukuvk</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:gdz3i4qn6i2sx5wh6csrjlcb/post/3ldg2uo4bfs2c' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -305,26 +335,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Forest Carbon Monitoring tool integrates GEDI LiDAR data with AI tools to estimate carbon stocks 🌏🌐
 <br><b>uri:</b> <a href='https://news.mongabay.com/2024/12/satellites-and-lidar-get-ai-boost-to-count-forest-carbon-stock-worldwide/' target='_blank'>https://news.mongabay.com/2024/12/satellites-and-lidar-get-ai-boost-to-count-forest-carbon-stock-worldwide/</a><br>
   <br><a href='https://bsky.app/profile/did:plc:xwpv6cro3w4pniyn56fadtu4/post/3ld27jtxqi22q' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Prof. Vigdis Vandvik <a href='https://bsky.app/profile/vvandvik.bsky.social' target='_blank'>@vvandvik.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Today we celebrate alpine biodiversity and ecosystems, but also the mountains (ahem) of exciting science these systems have insipired through the ages!
-<br><b>uri:</b> <a href='https://www.science.org/doi/10.1126/science.aax0149' target='_blank'>https://www.science.org/doi/10.1126/science.aax0149</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:2yxnamt5hvmzft4mxwnnxyc6/post/3lczyglbgc22g' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Gaia Lovejoy <a href='https://bsky.app/profile/pachagaia.bsky.social' target='_blank'>@pachagaia.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Is it appropriate to regard evolution as an environment-coupled cycle ? The tale of oxygen says yes ! From cyanobacteria sparking the great oxidation event 🌊 to land plants reshaping ecosystems 🌿, life and environment are binded in a feedback loop ✨🔄 👉 X. Dong et al. bit.ly/3D9V8EK Gaia
-<br><b>uri:</b> <a href='https://bit.ly/3D9V8EK' target='_blank'>https://bit.ly/3D9V8EK</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lczuzhwrc22o' target='_blank'>View Original Post</a>
 </div>
 
 ---
