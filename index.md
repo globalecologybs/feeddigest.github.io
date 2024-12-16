@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #3
 
-Feeds are from **December 08, 2024** to **December 15, 2024**. Total posts: **34**.
+Feeds are from **December 09, 2024** to **December 16, 2024**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -26,6 +26,26 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
 - Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
+
+---
+
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> on 2024-12-15
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  bioinvasions MarineEcology 🧪 Mediterranean 🌐 Our new contribution has just been published in Science Talks. It is about a controversial topic: "Lessepsian migration in the Mediterranean Sea in an era of climate change: Plague or boon?" ⬇️check below for more
+<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S2772569324001208' target='_blank'>https://www.sciencedirect.com/science/article/pii/S2772569324001208</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3ldeqqb7wgd2c' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Robert W. Gray <a href='https://bsky.app/profile/firebobbc.bsky.social' target='_blank'>@firebobbc.bsky.social</a> on 2024-12-15
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  In 2024, wildfires burned a record number of forests participating in California's forest offset program, exposing the danger of relying on forests to slow climate change.
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/gcb.17599' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/gcb.17599</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:lieoend477zz2rusv477siyt/post/3ldehisni3s2r' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
@@ -39,12 +59,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Martin Dovciak🌳🌱🌻 <a href='https://bsky.app/profile/dovciak-lab.bsky.social' target='_blank'>@dovciak-lab.bsky.social</a> on 2024-12-13
+##### Post by Michael Kearney <a href='https://bsky.app/profile/ecophys.bsky.social' target='_blank'>@ecophys.bsky.social</a> on 2024-12-14
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  I really enjoyed giving this 👇 webinar on forest 🌳🌲 ecosystems on our changing planet 🌎🌐 earlier today for the U.S. Society for Ecological Economics in the seminar series titled Putting Ecology into Ecological Economics. Thanks for having me & for the great questions! @sunyesf.bsky.social
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:uhmh247mes66udzpxzlls2bs/post/3ld7s2jinsk2h' target='_blank'>View Original Post</a>
+  I'm happy to use my first Bluesky post to announce that there's now a shiny app for the endotherm model of the NicheMapR package
+<br><b>uri:</b> <a href='http://bioforecasts.science.unimelb.edu.au/app_direct/endotherm/' target='_blank'>http://bioforecasts.science.unimelb.edu.au/app_direct/endotherm/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:lpbkpvh4b62lpfd6pbzvqk6k/post/3ldam73sgrk2m' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -309,42 +329,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Miguel Bastos Araújo, PhD <a href='https://bsky.app/profile/miguelbaraujo.bsky.social' target='_blank'>@miguelbaraujo.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Moderate views are not very popular these days, but here our view on one of the environmental policy debates of our times: Climate Policy Beyond Ideological Trenches.
-<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s11625-024-01597-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20241210&utm_content=10.1007/s11625-024-01597-0' target='_blank'>https://link.springer.com/article/10.1007/s11625-024-01597-0?utm_source=rct_congratemailt&utm_medium=email&utm_campaign=oa_20241210&utm_content=10.1007/s11625-024-01597-0</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:qekeaoei3dzmpupjhgdg22xw/post/3lcz7doxua22p' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jonathan Tonkin <a href='https://bsky.app/profile/jdtonkin.bsky.social' target='_blank'>@jdtonkin.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Applying a nonparametric causal discovery approach to a 30-year time series containing annual abundances of benthic invertebrates across 66 locations in New Zealand rivers, we found a strong negative causal relationship between species gains and losses directly driven by predation.
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41598-024-72405-z' target='_blank'>https://www.nature.com/articles/s41598-024-72405-z</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:zlimqgj5tdvetkaf2zlx3cp6/post/3lcz5kcmrbs2f' target='_blank'>View Original Post</a>
-</div>
-
----
-
 ##### Post by Felipe Melo <a href='https://bsky.app/profile/fplmelo.bsky.social' target='_blank'>@fplmelo.bsky.social</a> on 2024-12-10
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   In this paper, we elucidate the mechanism of “winner-loser replacement” that occurs in tropical landscapes when they become fragmented and subjected to other human-caused disturbances and disentangle the effects of landscape structure and local degradation.
 <br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-024-02592-5' target='_blank'>https://www.nature.com/articles/s41559-024-02592-5</a><br>
   <br><a href='https://bsky.app/profile/did:plc:sblrk64g3pdb2n7r2goi4tp6/post/3lcxgbvjts22v' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Emilio Vilanova <a href='https://bsky.app/profile/evilanova.bsky.social' target='_blank'>@evilanova.bsky.social</a> on 2024-12-09
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  In 2023, I was part of the symposium “Anthromes, CO2, and Terrestrial Carbon: From the deep past to net-zero”, after which J. Aaron Hogan masterfully led an interesting analysis on how the concept of Anthromes can be used to understand global land carbon.
-<br><b>uri:</b> <a href='https://nph.onlinelibrary.wiley.com/doi/10.1002/ppp3.10609' target='_blank'>https://nph.onlinelibrary.wiley.com/doi/10.1002/ppp3.10609</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:763k4j4b62ih74rvpxntktnt/post/3lcv7u42wwk2n' target='_blank'>View Original Post</a>
 </div>
 
 ---
