@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #3
 
-Feeds are from **December 09, 2024** to **December 16, 2024**. Total posts: **33**.
+Feeds are from **December 09, 2024** to **December 16, 2024**. Total posts: **32**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -26,6 +26,26 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
 - Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
+
+---
+
+##### Post by Journal of Applied Ecology <a href='https://bsky.app/profile/jappliedecology.bsky.social' target='_blank'>@jappliedecology.bsky.social</a> on 2024-12-16
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Remote sensing approaches to monitor tropical forest restoration: Current methods and future possibilities 🛰️ 🌏 🧪 Discusses technologies, such as: 👉very-high-resolution RGB imagery 👉hyperspectral imaging 👉lidar 👉radar 👉thermal-infrared technologies 🔗
+<br><b>uri:</b> <a href='https://buff.ly/4ijI7si' target='_blank'>https://buff.ly/4ijI7si</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rksoynyvcrgqyxa54fgzolcn/post/3ldg2zdb7xm2f' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Ana Novoa <a href='https://bsky.app/profile/ananovoaperez.bsky.social' target='_blank'>@ananovoaperez.bsky.social</a> on 2024-12-16
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  In our paper recently published in @cp-trendsecolevo.bsky.social we discuss the fantastic opportunities that Culturomics and iEcology provide to study the human and social dimensions of alienspecies introductions ☺️ @pavelpipek.bsky.social @ivanjaric.bsky.social
+<br><b>uri:</b> <a href='https://doi.org/10.1016/j.tree.2024.08.012' target='_blank'>https://doi.org/10.1016/j.tree.2024.08.012</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ikasmfsv4ehm27pubj5xztvh/post/3ldfwjfq4fk2m' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
@@ -55,6 +75,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   What a cool paper! 🤩 Using @inaturalist.bsky.social observations, Mayer et al. found that there are more melanistic snakes in colder regions than in warmer ones AND that melanistic snakes are more abundant with ⬆️ avian predator density 🐍🐦 Have look at it here:
 <br><b>uri:</b> <a href='https://doi.org/10.1111/jbi.15062' target='_blank'>https://doi.org/10.1111/jbi.15062</a><br>
   <br><a href='https://bsky.app/profile/did:plc:nk5lepf57egn3jd6o7zcefsu/post/3ldeekq65ms2o' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Macroecology lab @unipotsdam <a href='https://bsky.app/profile/zurelllab.bsky.social' target='_blank'>@zurelllab.bsky.social</a> on 2024-12-14
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Big shout-out to PhD candidate Valén Holle for her new preprint assessing uncertainty in SDM-based blacklists of invasive species related to species & environmental data & SDM algorithm. Pacific plants 1/2
+<br><b>uri:</b> <a href='https://doi.org/10.1101/2024.12.11.627501' target='_blank'>https://doi.org/10.1101/2024.12.11.627501</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:j6fz3vqzjtpyrcnozlgz3nmq/post/3ldc6hcgibc22' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -295,36 +325,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Is it appropriate to regard evolution as an environment-coupled cycle ? The tale of oxygen says yes ! From cyanobacteria sparking the great oxidation event 🌊 to land plants reshaping ecosystems 🌿, life and environment are binded in a feedback loop ✨🔄 👉 X. Dong et al. bit.ly/3D9V8EK Gaia
 <br><b>uri:</b> <a href='https://bit.ly/3D9V8EK' target='_blank'>https://bit.ly/3D9V8EK</a><br>
   <br><a href='https://bsky.app/profile/did:plc:zknmj3m5ohsc4sw5fgh2rpqq/post/3lczuzhwrc22o' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  The Global Ecology starter pack is now curated! ✨ and some slots are open 😊 Studying global biodiversity, ecosystem functioning, or conservation across terrestrial and marine realms ? 📚 Published in these fields? 👉 You are welcome to join ! just reply to be added. go.bsky.app/V6tN4cv 🧪🌐🌍🦤🦑
-<br><b>uri:</b> <a href='https://go.bsky.app/V6tN4cv' target='_blank'>https://go.bsky.app/V6tN4cv</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lczun3ypv22o' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Billur Bektaş 🍃 <a href='https://bsky.app/profile/billurbektas.bsky.social' target='_blank'>@billurbektas.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Did you know that the seminars of the European Chapter of Ecological Forecasting Initiative are recorded? You can watch them later if you miss them!
-<br><b>uri:</b> <a href='https://euro-ecoforecast.wordpress.com/seminar-series/' target='_blank'>https://euro-ecoforecast.wordpress.com/seminar-series/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:eji3hxbal23oltc2ny4pejh3/post/3lczucg4nu22o' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Julia PG Jones <a href='https://bsky.app/profile/juliajones.bsky.social' target='_blank'>@juliajones.bsky.social</a> on 2024-12-11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Are you interested in Biodiversity Credits? Read the inaugral Georgina Mace Review in @royalsociety.org: 'What is a unit of nature? Measurement challenges in the emerging biodiversity credit market' out today.
-<br><b>uri:</b> <a href='https://royalsocietypublishing.org/doi/10.1098/rspb.2024.2353' target='_blank'>https://royalsocietypublishing.org/doi/10.1098/rspb.2024.2353</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:hhl72yrmjlfddf3wy6t4n6fr/post/3lczaolpons2g' target='_blank'>View Original Post</a>
 </div>
 
 ---
