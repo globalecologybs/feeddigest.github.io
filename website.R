@@ -111,7 +111,7 @@ for (i in 1:dim(feed)[1]) {
   # Ensure the URI is displayed
   markdown_text <- paste0(
     markdown_text,
-    "##### Post by ", author_name, " ", author_link, " on ", post_date,"   💚 ",likes, "\n\n", # Add header
+    "##### Post by ", author_name, " ", author_link, " on ", post_date," -  💚 ",likes, "\n\n", # Add header
     "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n", # Container for text
     "  ", gsub("\n", " ", text), "\n", # Post content
     if (!is.null(uri)) {
