@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 3
+X <- 4
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -15,7 +15,7 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
+start_date <- Sys.Date() - 17
 
 # Initialize Markdown content with metadata and header
 
