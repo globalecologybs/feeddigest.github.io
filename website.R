@@ -11,11 +11,11 @@ if (!require("bskyr")) {
 
 # Fetch feed
 feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.generator/global.ecology',
-                           limit=100)
+                           limit=150)
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 17
+start_date <- Sys.Date() - 18
 
 # Initialize Markdown content with metadata and header
 

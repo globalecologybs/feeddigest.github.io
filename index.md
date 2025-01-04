@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #4
 
-Feeds are from **December 18, 2024** to **January 04, 2025**. Total posts: **118**.
+Feeds are from **December 17, 2024** to **January 04, 2025**. Total posts: **118**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -469,6 +469,86 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   How will AI revolutionise biodiversity conservation? We identify 21 key ideas, incl. species recognition, multimodal models to improve biodiversity loss predictions, monitoring wildlife trade, and addressing human–wildlife conflict. But potential risks too.
 <br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0169534724002866?via%3Dihub' target='_blank'>https://www.sciencedirect.com/science/article/pii/S0169534724002866?via%3Dihub</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ohc67bjxzrmcwsfbjp6uajlp/post/3ldl4c6jvh22d' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Kevin Anchukaitis <a href='https://bsky.app/profile/thirstygecko.bsky.social' target='_blank'>@thirstygecko.bsky.social</a> - 2024-12-17 -   💚 36
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Lots of interesting findings here: 'Large global-scale vegetation sensitivity to daily rainfall variability' 'daily rainfall variability and its trends are affecting global vegetation photosynthesis, with potential implications for the carbon cycle and food security'
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41586-024-08232-z' target='_blank'>https://www.nature.com/articles/s41586-024-08232-z</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:j2s63bvrj6q73vuoaxpu55ri/post/3ldjqoq7dbc2a' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Matthias C. Rillig <a href='https://bsky.app/profile/mrillig.bsky.social' target='_blank'>@mrillig.bsky.social</a> - 2024-12-17 -   💚 30
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Variability of functional and biodiversity responses to perturbations is predictable and informative - Nature Communications @jamesaorr.bsky.social et al.
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41467-024-54540-3' target='_blank'>https://www.nature.com/articles/s41467-024-54540-3</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ss2gkhwoqww2db4pc4jey357/post/3ldjpl5pvm22i' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> - 2024-12-17 -   💚 50
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Everything you ever wanted to know to get started on microclimate is compiled there ⬇️ in 🔟 guidelines 🤓 Unpack each 1️⃣ to select the right variable, the most relevant spatiotemporal scale, the best sampling design & to tailor your analyses to your study question 🧪🌐🍁 shorturl.at/VYP8f
+<br><b>uri:</b> <a href='https://shorturl.at/VYP8f' target='_blank'>https://shorturl.at/VYP8f</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3ldjfsasf6k24' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Madison Earhart, PhD <a href='https://bsky.app/profile/madisonearhart.bsky.social' target='_blank'>@madisonearhart.bsky.social</a> - 2024-12-17 -   💚 57
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  ohhh lookie here it’s our paper!! 🧪🌎🌐🐠👩🏻‍🔬🐡🎨 sturgeon are more thermally plastic than other fish (they can increase their thermal tolerance per acclimation degree) !! but warm temperatures seem to have negative impacts on growth and survival in early life stages. We need WAY more data on older fish
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:wek3zozm5d6vajb3zwxk3oxd/post/3ldj5sqw7mk23' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Dave Klinges <a href='https://bsky.app/profile/thenaturedave.bsky.social' target='_blank'>@thenaturedave.bsky.social</a> - 2024-12-17 -   💚 17
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Interested in more of this type of work? Follow the microclimate ecology starter park with all these great people inside! go.bsky.app/7at8uFX
+<br><b>uri:</b> <a href='https://go.bsky.app/7at8uFX' target='_blank'>https://go.bsky.app/7at8uFX</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:4bk5kai4cnkgsibdaaqzmt6a/post/3ldiqihttns2r' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2024-12-17 -   💚 33
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  New study highlights 8 critical Antarctic tipping points, including ice sheets, ocean acidification, and species redistribution. Cascading effects will reshape ecosystems and governance globally ! by @idakub.bsky.social et al. in @ambio-journal.bsky.social 👉 🌐🌍
+<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s13280-024-02101-9' target='_blank'>https://link.springer.com/article/10.1007/s13280-024-02101-9</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3ldio7yhc222w' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Department of Geoecology <a href='https://bsky.app/profile/spacetimeeco.bsky.social' target='_blank'>@spacetimeeco.bsky.social</a> - 2024-12-17 -   💚 52
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Ten practical guidelines for microclimate research in terrestrial ecosystems from SoilTemp core group, lead by @pieterdefrenne.bsky.social
+<br><b>uri:</b> <a href='https://doi.org/10.1111/2041-210X.14476' target='_blank'>https://doi.org/10.1111/2041-210X.14476</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:t34wpyhgedh7fvgr3lo25phv/post/3ldibs6f65k2d' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Dax Kellie <a href='https://bsky.app/profile/daxkellie.bsky.social' target='_blank'>@daxkellie.bsky.social</a> - 2024-12-17 -   💚 215
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  ✅ Do you use R or Python? ✅ Are you an ecologist/biologist? Then you might find our website ALA Labs useful! ALA Labs is full of how-to articles to visualise or analyse biodiversity data. Some are for beginners, others are advanced/experimental 😀 labs.ala.org.au 🧪🌏 rstats python quartopub
+<br><b>uri:</b> <a href='https://labs.ala.org.au/' target='_blank'>https://labs.ala.org.au/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:vbfhaesxxwv5dfj462btcat6/post/3ldi4bdi7fk2e' target='_blank'>View Original Post</a>
 </div>
 
 ---
