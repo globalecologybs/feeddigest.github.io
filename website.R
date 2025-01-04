@@ -15,7 +15,7 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 21
+start_date <- Sys.Date() - 17
 
 # Initialize Markdown content with metadata and header
 
@@ -44,7 +44,7 @@ markdown_text <- paste0(
   "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed\n\n",
   "- Global Ecology starter pack Vol. 1 <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lali4hzwwh2v' target='_blank'>here </a>\n\n",
-  "- Global Ecology starter pack Vol. 2 <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>here</a> feed\n\n",
+  "- Global Ecology starter pack Vol. 2 <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>here</a>\n\n",
   
   "---\n\n" # Separator
 )
