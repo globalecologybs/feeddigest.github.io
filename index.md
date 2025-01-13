@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #5
 
-Feeds are from **January 06, 2025** to **January 13, 2025**. Total posts: **25**.
+Feeds are from **January 06, 2025** to **January 13, 2025**. Total posts: **23**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -32,7 +32,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nick Graham <a href='https://bsky.app/profile/nickajgraham.bsky.social' target='_blank'>@nickajgraham.bsky.social</a> - 2025-01-13 -   💚 12
+##### Post by Nick Graham <a href='https://bsky.app/profile/nickajgraham.bsky.social' target='_blank'>@nickajgraham.bsky.social</a> - 2025-01-13 -   💚 13
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Big paper drop by @reefjav.bsky.social ! Reef fish communities are undergoing substantial change on the Great Barrier Reef, with latitude and through time. Changing coral composition, not simply coral cover, a major driver. @lec-reefs.bsky.social
@@ -48,16 +48,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   A recent study highlights that Indigenous peoples protect over 80% of global biodiversity, yet their governance & ethics remain undervalued in policy.🌿To combat climate & biodiversity crises, land-based practices must prioritize Indigenous justice: (SP)
 <br><b>uri:</b> <a href='https://www.tandfonline.com/doi/full/10.1080/26395916.2024.2409165#abstract' target='_blank'>https://www.tandfonline.com/doi/full/10.1080/26395916.2024.2409165#abstract</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ihik6cx7ya37yy2ulwfggfvu/post/3lfmcju2zcs2m' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Madison Earhart, PhD <a href='https://bsky.app/profile/madisonearhart.bsky.social' target='_blank'>@madisonearhart.bsky.social</a> - 2025-01-12 -   💚 45
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  it’s sturgeonsaturday on sunday! 🧪🌎🌐👩🏻‍🔬 heatwaves are one of the largest threats to global biodiversity, so i investigated how juvenile sturgeon handle heatwaves turns out baby sturgeon are SUPER resilient & heatwave exposure increased plasticity to other stressors 👇🏼
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41598-023-42652-7' target='_blank'>https://www.nature.com/articles/s41598-023-42652-7</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:wek3zozm5d6vajb3zwxk3oxd/post/3lfkszredjk2k' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -78,16 +68,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Save ecology field studies from extinction! Even though they are less productive, they are vital for generating ideas and fine-tuning intuitions. 🌐🪶🧪
 <br>
   <br><a href='https://bsky.app/profile/did:plc:a4xdr42cg3quvnormjg74et2/post/3lfhqnipmxs2d' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> - 2025-01-11 -   💚 15
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Thanks @cnrs.bsky.social & @cnrsecologie.bsky.social for featuring our findings published just before 🎅❄ on the surprising decoupling between functional & phylogenetic diversity of vascular plants at the global extent 🌐🌏🧪 Text in 🇨🇵 w/ link to the paper in 🇬🇧 at the end of the blog shorturl.at/9grlg
-<br><b>uri:</b> <a href='https://shorturl.at/9grlg' target='_blank'>https://shorturl.at/9grlg</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lfhhmvmqkc2o' target='_blank'>View Original Post</a>
 </div>
 
 ---
