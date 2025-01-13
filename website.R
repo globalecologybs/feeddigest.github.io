@@ -13,6 +13,18 @@ if (!require("bskyr")) {
 feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.generator/global.ecology',
                            limit=150)
 
+nb_post=0
+for (i in 1:nrow(feed)){
+  post_date <- tryCatch(
+    as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
+    error = function(e) NA
+  )
+  if (is.na(post_date) || post_date > start_date & post_date < end_date) {
+    nb_post=nb_post+1
+  }
+}
+ 
+
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
 start_date <- Sys.Date() - 7
@@ -38,7 +50,7 @@ markdown_text <- paste0(
   "  <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>\n",
   "</div>\n\n",
   "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #", X, "\n\n",
-  "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nrow(feed), "**.\n\n",
+  "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nb_post, "**.\n\n",
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.\n\n",
   "- **SCIENCE ONLY**\n",
   "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
