@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 5
+X <- 6
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -153,3 +153,4 @@ file_path <- "index.md"
 writeLines(markdown_text, file_path)
 
 cat("Markdown file saved as:", file_path, "\n")
+cat("nb_post=",nb_post)
