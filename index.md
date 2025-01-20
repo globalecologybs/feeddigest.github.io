@@ -25,9 +25,9 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - **SCIENCE ONLY**
 - DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute
 
-- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like the Global Ecology</a> feed
+- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed
 
-- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lali4hzwwh2v' target='_blank'>Global Ecology starter pack Vol. 1</a>
+- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
 
 ---
@@ -42,7 +42,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Matthias C. Rillig <a href='https://bsky.app/profile/mrillig.bsky.social' target='_blank'>@mrillig.bsky.social</a> - 2025-01-20 -   💚 16
+##### Post by Matthias C. Rillig <a href='https://bsky.app/profile/mrillig.bsky.social' target='_blank'>@mrillig.bsky.social</a> - 2025-01-20 -   💚 17
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Climate change refugia are places to which species can migrate as the climate changes. But there is more to anthropogenic effects than climate change, giving rise to the idea of global change refugia. Find out more in my recent paper in Nature Review Biodiversity 🧪
@@ -172,7 +172,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Liangzhi Chen <a href='https://bsky.app/profile/liangzhi-chen.bsky.social' target='_blank'>@liangzhi-chen.bsky.social</a> - 2025-01-16 -   💚 92
+##### Post by Liangzhi Chen <a href='https://bsky.app/profile/liangzhi-chen.bsky.social' target='_blank'>@liangzhi-chen.bsky.social</a> - 2025-01-16 -   💚 93
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   New paper in @science.org ! Where and when did the multiyear-droughts occur around the world? Have they become more prevailing? We identified over 10,000 such events and found that they have been increasingly occupying the terrestrial land. (1/6) www.science.org/doi/10.1126/science.ado4245
