@@ -4,6 +4,10 @@ bskyr::set_bluesky_pass(BLUESKY_PASS)
 
 X <- 6
 
+# Get the current date and 7 days ago
+end_date <- Sys.Date()
+start_date <- Sys.Date() - 7
+
 # Install necessary package if not already installed
 if (!require("bskyr")) {
   install.packages("bskyr")
@@ -25,10 +29,6 @@ for (i in 1:nrow(feed)){
 }
  
 
-# Get the current date and 7 days ago
-end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
-
 # Initialize Markdown content with metadata and header
 
 markdown_text <- paste0(
@@ -37,7 +37,7 @@ markdown_text <- paste0(
   "  <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>\n",
   "  <!-- Open Graph Metadata -->\n",
   "  <meta property='og:title' content='bluesky Global Ecology Feed Digest #", X, "'>\n", # Add X dynamically
-  "  <meta property='og:description' content='For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & Marine realms.'>\n",
+  "  <meta property='og:description' content='For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms..'>\n",
   "  <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>\n",
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
   "  <meta property='og:type' content='website'>\n",
