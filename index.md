@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #8
 
-Feeds are from **January 27, 2025** to **February 03, 2025**. Total posts: **34**.
+Feeds are from **January 27, 2025** to **February 03, 2025**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.
 
@@ -58,16 +58,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Global decline in net primary production underestimated by climate models. 🌐
 <br><b>uri:</b> <a href='https://www.nature.com/articles/s43247-025-02051-4?utm_campaign=related_content&utm_source=HEALTH&utm_medium=communities' target='_blank'>https://www.nature.com/articles/s43247-025-02051-4?utm_campaign=related_content&utm_source=HEALTH&utm_medium=communities</a><br>
   <br><a href='https://bsky.app/profile/did:plc:upn3dyq3h7cazfuovyayaqfh/post/3lh5xn7rtss2m' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Marius Münstermann <a href='https://bsky.app/profile/muenstem.bsky.social' target='_blank'>@muenstem.bsky.social</a> - 2025-02-01 -   💚 25
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  The re-wetted raised bog (Hochmoor) in the Solling low mountain rage in Germany. Destroyed over a hundred years ago for peat & spruce plantations (for🎄). Regeneration of the 10ha wetland + surrounding meadows started in 2008, assisted by rare regional cattle breed 🐮Rotes Höhenvieh🌱🌐 moormussnass
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:jlx7yhzh5nlbyxrkghpmpzkq/post/3lh544lvokc2m' target='_blank'>View Original Post</a>
 </div>
 
 ---
