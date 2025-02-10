@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 8
+X <- 9
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
@@ -37,7 +37,7 @@ markdown_text <- paste0(
   "  <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>\n",
   "  <!-- Open Graph Metadata -->\n",
   "  <meta property='og:title' content='bluesky Global Ecology Feed Digest #", X, "'>\n", # Add X dynamically
-  "  <meta property='og:description' content='For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms..'>\n",
+  "  <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>\n",
   "  <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>\n",
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
   "  <meta property='og:type' content='website'>\n",
@@ -51,7 +51,7 @@ markdown_text <- paste0(
   "</div>\n\n",
   "# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #", X, "\n\n",
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nb_post, "**.\n\n",
-  "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial & marine realms.\n\n",
+  "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.\n\n",
   "- **SCIENCE ONLY**\n",
   "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
@@ -152,5 +152,24 @@ file_path <- "index.md"
 # Save the Markdown content to a file
 writeLines(markdown_text, file_path)
 
+# Save the list of handle concerned 
+handles <- do.call(rbind,lapply (1:nrow(feed), function(i){
+  post_date <- tryCatch(
+    as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
+    error = function(e) NA
+  )
+  if (is.na(post_date) || post_date > start_date & post_date < end_date) {
+    paste0('@',feed$author[[i]]$handle)
+  }
+}))
+colnames(handles) <- "handles"
+
+handles <- handles[!duplicated(handles)]
+handles_path <- file.path(dirname(here::here()), "postdm", "global_digest.csv")
+write.csv2(handles,handles_path,row.names = F)
+
+#done
+
 cat("Markdown file saved as:", file_path, "\n")
+cat("Handles file saved as", handles_path,"\n")
 cat("nb_post=",nb_post)
