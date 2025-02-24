@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #10
 
-Feeds are from **February 11, 2025** to **February 24, 2025**. Total posts: **57**.
+Feeds are from **February 11, 2025** to **February 24, 2025**. Total posts: **56**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -33,7 +33,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2025-02-24 -   💚 2
+##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2025-02-24 -   💚 3
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Places on Earth Too Hot For Humans Will Triple This Century, Scientists Warn. 🌐
@@ -179,16 +179,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Zoonotic Host Richness in the Global Wildland–Urban Interface 📄 https://buff.ly/4gsHdYl urbanization zoonoticdisease infectiousdisease
 <br><b>uri:</b> <a href='https://buff.ly/4gsHdYl' target='_blank'>https://buff.ly/4gsHdYl</a><br>
   <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3limuknb7ef2c' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jérémy Carlot <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank'>@jerem-carlot.bsky.social</a> - 2025-02-20 -   💚 15
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Some literature related to our last study on Vulnerability of benthic trait diversity across the Mediterranean Sea following Mass Mortality Events: 🌐
-<br><b>uri:</b> <a href='https://communities.springernature.com/posts/vulnerability-of-benthic-trait-diversity-across-the-mediterranean-sea-following-mass-mortality-events' target='_blank'>https://communities.springernature.com/posts/vulnerability-of-benthic-trait-diversity-across-the-mediterranean-sea-following-mass-mortality-events</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:geytktsrkn74y3b6lpwszt66/post/3limfohnzas2a' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -609,16 +599,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Very happy to announce our latest piece of research: „Mapping Butterfly Species Richness and Abundance in Mountain Grasslands—Spatial Application of a Biodiversity Indicator“ in @consbiog.bsky.social 1/2 butterflies biodiversity minitoring @
 <br><b>uri:</b> <a href='http://dx.doi.org/10.1111/ddi.70000' target='_blank'>http://dx.doi.org/10.1111/ddi.70000</a><br>
   <br><a href='https://bsky.app/profile/did:plc:mizxkcq3mtrbxbcsb5uf7nve/post/3lhw2qrqius2f' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Marten Winter <a href='https://bsky.app/profile/smartenwinter.bsky.social' target='_blank'>@smartenwinter.bsky.social</a> - 2025-02-11 -   💚 12
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  still ▶️▶️𝐄𝐱𝐜𝐢𝐭𝐢𝐧𝐠 𝐌𝐚𝐜𝐫𝐨𝐞𝐜𝐨𝐥𝐨𝐠𝐲 & 𝐄𝐜𝐨𝐧𝐨𝐦𝐢𝐜𝐬 𝟐𝐲𝐫 𝐏𝐨𝐬𝐭𝐝𝐨𝐜 𝐨𝐟𝐟𝐞𝐫 𝐰𝐢𝐭𝐡 𝐦𝐞!!! in Leipzig @iDiv !!!◀️◀️ ▶️Interested to have an impact on a huge conservation issue, bird srikes on glass structures?◀️ APPLY! Macroecology Ecology Postdocjob postdoc
-<br><b>uri:</b> <a href='https://uni-leipzig.b-ite.careers/jobposting/984db2a3c4e78fc86685f5b3463a0765e79ce53b0' target='_blank'>https://uni-leipzig.b-ite.careers/jobposting/984db2a3c4e78fc86685f5b3463a0765e79ce53b0</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:cp2bv7opu2hea33vkbz6o56z/post/3lhvkow5pi22z' target='_blank'>View Original Post</a>
 </div>
 
 ---
