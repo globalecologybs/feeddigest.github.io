@@ -29,7 +29,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
-
 - <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>
 
 ---

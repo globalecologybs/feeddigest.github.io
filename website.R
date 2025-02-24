@@ -56,7 +56,7 @@ markdown_text <- paste0(
   "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>\n",
-  "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>\n\n",
+  "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>\n",
   "- <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>\n\n",
   
   "---\n\n" # Separator
