@@ -2,11 +2,11 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 9
+X <- 10
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
+start_date <- Sys.Date() - 13
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -57,6 +57,7 @@ markdown_text <- paste0(
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>\n\n",
+  "- <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>\n\n",
   
   "---\n\n" # Separator
 )

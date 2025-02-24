@@ -30,9 +30,11 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
 
+- <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>
+
 ---
 
-##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2025-02-24 -   💚 1
+##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2025-02-24 -   💚 2
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Places on Earth Too Hot For Humans Will Triple This Century, Scientists Warn. 🌐
@@ -112,7 +114,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Wolfgang Cramer <a href='https://bsky.app/profile/wolfgangcramer.net' target='_blank'>@wolfgangcramer.net</a> - 2025-02-22 -   💚 79
+##### Post by Wolfgang Cramer <a href='https://bsky.app/profile/wolfgangcramer.net' target='_blank'>@wolfgangcramer.net</a> - 2025-02-22 -   💚 80
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Large-scale loss of Mediterranean coastal marshes under rising sea levels by 2100 "For Egypt, France, and Algeria, we predict (near) total loss of coastal marshes by 2100..." @claudiawolff.bsky.social @avafeidis.bsky.social
@@ -122,7 +124,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Ricard Solé <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank'>@ricardsole.bsky.social</a> - 2025-02-21 -   💚 28
+##### Post by Ricard Solé <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank'>@ricardsole.bsky.social</a> - 2025-02-21 -   💚 30
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Is evolution predictable? Would the biosphere look the same if we re-played the tape of evolution, as conjectured by SJ Gould? Here's an excellent paper on this challenging problem by Michael Lässig, Ville Mustonen and Aleksandra M. Walczak
