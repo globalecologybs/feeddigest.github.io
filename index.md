@@ -33,7 +33,17 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Ecography <a href='https://bsky.app/profile/ecography.bsky.social' target='_blank'>@ecography.bsky.social</a> - 2025-03-03 -   💚 2
+##### Post by Trends in Ecology & Evolution <a href='https://bsky.app/profile/cp-trendsecolevo.bsky.social' target='_blank'>@cp-trendsecolevo.bsky.social</a> - 2025-03-03 -   💚 1
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Online now: Shifting, expanding, or contracting? Range movement consequences for biodiversity
+<br><b>uri:</b> <a href='http://dlvr.it/TJHyVw' target='_blank'>http://dlvr.it/TJHyVw</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ucweiriru6vm6hvatihaziuq/post/3ljhyru6rjb2z' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Ecography <a href='https://bsky.app/profile/ecography.bsky.social' target='_blank'>@ecography.bsky.social</a> - 2025-03-03 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   The role of climate and species interactions in determining the distribution of two elevationally segregated species of small mammals through time https://nsojournals.onlinelibrary.wiley.com/doi/10.1111/ecog.07556 Mammals SDM ClimateChange
@@ -43,7 +53,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-03-03 -   💚 27
+##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-03-03 -   💚 30
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Global insect invasions are increasing, driven by advances in globalization and technology. A Review in Nature Reviews Biodiversity discusses the effects of increasing trade and transport on insect invasions worldwide, and strategies for mitigation. https://go.nature.com/3X6QkHk
@@ -163,7 +173,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Laura Antao <a href='https://bsky.app/profile/lauraantao.bsky.social' target='_blank'>@lauraantao.bsky.social</a> - 2025-02-28 -   💚 30
+##### Post by Laura Antao <a href='https://bsky.app/profile/lauraantao.bsky.social' target='_blank'>@lauraantao.bsky.social</a> - 2025-02-28 -   💚 31
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   📢New paper!! 📢using BioTIME timeseries we showed that faster rates of turnover in community composition were associated with faster rates of temperature change across biomes, for both cooling & warming + microclimate availability & human impacts modulate these responses go.nature.com/3WD7cWa
