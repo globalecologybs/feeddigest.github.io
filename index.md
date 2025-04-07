@@ -2,7 +2,7 @@
   <title>Global Ecology</title>
   <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
-  <meta property='og:title' content='bluesky Global Ecology Feed Digest #13'>
+  <meta property='og:title' content='bluesky Global Ecology Feed Digest #14'>
   <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
@@ -16,9 +16,9 @@
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #13
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #14
 
-Feeds are from **March 31, 2025** to **April 07, 2025**. Total posts: **32**.
+Feeds are from **March 31, 2025** to **April 07, 2025**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -33,7 +33,27 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Laura Paltrinieri <a href='https://bsky.app/profile/laura-paltrinieri.bsky.social' target='_blank'>@laura-paltrinieri.bsky.social</a> - 2025-04-06 -   💚 9
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-04-07 -   💚 12
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  A Global Synthesis of How Plants Respond to Climate Warming From Traits to Fitness 🧪🌐🌾
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70114?campaign=woletoc' target='_blank'>https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70114?campaign=woletoc</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lm72sf6zwc2x' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Julian Schrader <a href='https://bsky.app/profile/julianschrader.bsky.social' target='_blank'>@julianschrader.bsky.social</a> - 2025-04-06 -   💚 8
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  New Research in Ecology Letters led by David Coleman: Island Plant Species Distributions Contracted at the Cooler Edge Compared to Mainland Why? We're not entirely sure — we'd love to hear additional hypotheses beyond the ones we proposed in the paper.
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/ele.70099' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/ele.70099</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:bbjipicukwprdakfqcvvpwfz/post/3lm6k326kqk2k' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Laura Paltrinieri <a href='https://bsky.app/profile/laura-paltrinieri.bsky.social' target='_blank'>@laura-paltrinieri.bsky.social</a> - 2025-04-06 -   💚 11
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   🎉My first paper is finally out! We tested Allen’s and Bergmann’s rules on 20 European bat species🦇, exploring how their morphology changes across space and time in response to temperature🌡️ and precipitation🌧️ shifts. 📖Check it out here:
@@ -63,7 +83,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-04-04 -   💚 8
+##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-04-04 -   💚 9
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Timescale Matters: Finer Temporal Resolution Influences Driver Contributions to Global Soil Respiration 📄 buff.ly/IetrqlS carboncycle
@@ -103,7 +123,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nature Reviews Biodiversity <a href='https://bsky.app/profile/natrevbiodiv.bsky.social' target='_blank'>@natrevbiodiv.bsky.social</a> - 2025-04-04 -   💚 23
+##### Post by Nature Reviews Biodiversity <a href='https://bsky.app/profile/natrevbiodiv.bsky.social' target='_blank'>@natrevbiodiv.bsky.social</a> - 2025-04-04 -   💚 26
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   New online! Causes and consequences of insect decline in tropical forests
@@ -163,7 +183,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Luciano Bosso <a href='https://bsky.app/profile/lucianobosso.bsky.social' target='_blank'>@lucianobosso.bsky.social</a> - 2025-04-03 -   💚 15
+##### Post by Luciano Bosso <a href='https://bsky.app/profile/lucianobosso.bsky.social' target='_blank'>@lucianobosso.bsky.social</a> - 2025-04-03 -   💚 16
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Have you read our latest study, just published in Conservation Biology? If you want to learn more about the effects of climatechange on European bats, you must read it 🦇🌐 Here's the link to the manuscript: It's also open access; what more could you ask for?
@@ -173,7 +193,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by The International Association for Vegetation Science <a href='https://bsky.app/profile/iavs5.bsky.social' target='_blank'>@iavs5.bsky.social</a> - 2025-04-03 -   💚 53
+##### Post by The International Association for Vegetation Science <a href='https://bsky.app/profile/iavs5.bsky.social' target='_blank'>@iavs5.bsky.social</a> - 2025-04-03 -   💚 54
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   🏅 Congratulations to Jens-Christian Svenning from Aarhus University, Denmark, on receiving the Alexander von Humboldt Medal! 🎉 His achievement will be celebrated at the 68th IAVS Symposium in 2026 in Gijón, Spain. Join us at the upcoming IAVS symposia to hear the awardees' inspiring lectures!
@@ -213,7 +233,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Carlos P Carmona <a href='https://bsky.app/profile/cpcarmona.bsky.social' target='_blank'>@cpcarmona.bsky.social</a> - 2025-04-02 -   💚 84
+##### Post by Carlos P Carmona <a href='https://bsky.app/profile/cpcarmona.bsky.social' target='_blank'>@cpcarmona.bsky.social</a> - 2025-04-02 -   💚 86
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Excited to announce our new paper, “Global impoverishment of natural vegetation revealed by dark diversity,” out today in Nature – and it’s open access! Huge global collaboration led by Meelis Pärtel 🌐@macroecologyut.bsky.social
@@ -223,7 +243,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Tyson Wepprich <a href='https://bsky.app/profile/tysonwepprich.bsky.social' target='_blank'>@tysonwepprich.bsky.social</a> - 2025-04-02 -   💚 39
+##### Post by Tyson Wepprich <a href='https://bsky.app/profile/tysonwepprich.bsky.social' target='_blank'>@tysonwepprich.bsky.social</a> - 2025-04-02 -   💚 40
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   New paper with Erica Henry & @nickhaddad.bsky.social Q: What happens when butterflies, responding to climate warming, attempt an extra generation as summers get longer? A: Long-term monitoring shows overwinter population growth increases! 🧪🦋🐛https://onlinelibrary.wiley.com/doi/10.1111/ele.70018
