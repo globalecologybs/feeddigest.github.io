@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 15
+X <- 17
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
@@ -28,7 +28,7 @@ for (i in 1:nrow(feed)){
   }
 }
  
-
+#i=1
 # Initialize Markdown content with metadata and header
 
 markdown_text <- paste0(
