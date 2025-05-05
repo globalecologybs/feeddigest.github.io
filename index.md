@@ -2,7 +2,7 @@
   <title>Global Ecology</title>
   <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
-  <meta property='og:title' content='bluesky Global Ecology Feed Digest #18'>
+  <meta property='og:title' content='bluesky Global Ecology Feed Digest #17'>
   <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
@@ -16,7 +16,7 @@
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #18
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #17
 
 Feeds are from **April 28, 2025** to **May 05, 2025**. Total posts: **31**.
 
@@ -33,7 +33,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Felix Neff <a href='https://bsky.app/profile/felixneff.bsky.social' target='_blank'>@felixneff.bsky.social</a> - 2025-05-05 -   💚 2
+##### Post by Felix Neff <a href='https://bsky.app/profile/felixneff.bsky.social' target='_blank'>@felixneff.bsky.social</a> - 2025-05-05 -   💚 3
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   newPaper published about how moth communities vary with season, weather, elevation, and landscape composition Based on an incredible dataset collected by Ladislaus Rezbanyai-Reser over 50 years in Switzerland moths Lepidoptera insects phenology temperature
@@ -53,7 +53,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Ricard Solé <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank'>@ricardsole.bsky.social</a> - 2025-05-04 -   💚 18
+##### Post by Ricard Solé <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank'>@ricardsole.bsky.social</a> - 2025-05-04 -   💚 19
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Is there a global pattern in our planet's chemistry consistent with life? Looking at our atmosphere, Mars, Venus, and interstellar space, we found that Earth follows the same architecture as a living cell, while the others do not. Would this be used as a biosignature?
@@ -73,7 +73,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Jérémy Carlot <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank'>@jerem-carlot.bsky.social</a> - 2025-05-02 -   💚 12
+##### Post by Jérémy Carlot <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank'>@jerem-carlot.bsky.social</a> - 2025-05-02 -   💚 13
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   🎓 Are you a marine MSc or PhD student passionate about climate change and biodiversity? Join our Summer School in Ischia, Italy! 📅 Sept 14–20, 2025 📝 Apply by May 26 → bit.ly/42VRjfL 🔬 Explore seawater chemistry, R & GitHub, blue carbon, drone surveys, and photogrammetry — right in the field 🌊🌐🧪🦤
