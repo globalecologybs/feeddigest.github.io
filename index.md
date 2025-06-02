@@ -1,5 +1,5 @@
 <head>
-  <title>Global Ecology</title>
+  <title>Global Ecology T</title>
   <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
   <meta property='og:title' content='bluesky Global Ecology Feed Digest #21'>
@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **19**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **20**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -33,7 +33,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 1
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 3
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Amazon rainforest adjusts to long-term experimental drought ..."After elevated tree mortality during the first 15 years, ecosystem-level structural changes resulted in the remaining trees no longer experiencing drought stress." 🧪🌐🌾
@@ -249,6 +249,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   🌾 What do changing rainfall patterns mean for the world’s nourishing grasslands and the food we rely on? Read @ybuckley.bsky.social's piece in @irishtimes.com: @tcddublin.bsky.social
 <br><b>uri:</b> <a href='https://www.irishtimes.com/environment/2025/05/22/what-do-changing-rainfall-patterns-mean-for-the-worlds-nourishing-grasslands/' target='_blank'>https://www.irishtimes.com/environment/2025/05/22/what-do-changing-rainfall-patterns-mean-for-the-worlds-nourishing-grasslands/</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ez46l665g5gsqkladz7fy6mz/post/3lqchzi747227' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Peer Community Journal <a href='https://bsky.app/profile/peercomjournal.bsky.social' target='_blank'>@peercomjournal.bsky.social</a> - 2025-05-29 -   💚 5
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Now published in Peer Community Journal, ecology section: On the quest for novelty in ecology
+<br><b>uri:</b> <a href='https://buff.ly/7fSuWTj' target='_blank'>https://buff.ly/7fSuWTj</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:6uacctzycpd3ixjwpm2sqj6g/post/3lqchkuobgg2g' target='_blank'>View Original Post</a>
 </div>
 
 ---
