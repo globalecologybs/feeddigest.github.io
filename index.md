@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **24**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **21**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -30,6 +30,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
 - <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>
+
+---
+
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 0
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Amazon rainforest adjusts to long-term experimental drought ..."After elevated tree mortality during the first 15 years, ecosystem-level structural changes resulted in the remaining trees no longer experiencing drought stress." 🧪🌐🌾
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-025-02702-x' target='_blank'>https://www.nature.com/articles/s41559-025-02702-x</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lqmip2esp22e' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
@@ -259,36 +269,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Outstanding postdoc position on ecology and biogeography with @biogeokreft.bsky.social @unigoettingen.bsky.social
 <br><b>uri:</b> <a href='https://www.uni-goettingen.de/en/644546.html?filters={%22vollzeit%22:[],%22befristet%22:[],%22gruppe%22:[],%22besoldGrp%22:[]}&details=75938' target='_blank'>https://www.uni-goettingen.de/en/644546.html?filters={%22vollzeit%22:[],%22befristet%22:[],%22gruppe%22:[],%22besoldGrp%22:[]}&details=75938</a><br>
   <br><a href='https://bsky.app/profile/did:plc:bbjipicukwprdakfqcvvpwfz/post/3lqcbxcer4k2b' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Markus Eichhorn <a href='https://bsky.app/profile/markuseichhorn.bsky.social' target='_blank'>@markuseichhorn.bsky.social</a> - 2025-05-29 -   💚 39
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Territorial behaviour in ecology and conservation damages careers and impedes progress in the field. 🌏🧪🌐
-<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S259033222500140X' target='_blank'>https://www.sciencedirect.com/science/article/pii/S259033222500140X</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:xwpv6cro3w4pniyn56fadtu4/post/3lqcaublinc2v' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Erin E. Saupe <a href='https://bsky.app/profile/eesaupe.bsky.social' target='_blank'>@eesaupe.bsky.social</a> - 2025-05-29 -   💚 56
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  🚨🚨🚨!Post doc opportunity! 🚨🚨🚨 35 month post doc on niche modelling of migratory whales in my lab with Katrina Jones. Job advert below: Please get in touch with questions!
-<br><b>uri:</b> <a href='https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=179897' target='_blank'>https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=179897</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:va5fm2vghqltxa2puratn2k5/post/3lqbgchazgk2j' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by BTO | British Trust for Ornithology <a href='https://bsky.app/profile/btobirds.bsky.social' target='_blank'>@btobirds.bsky.social</a> - 2025-05-28 -   💚 64
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  ⚠️ BTO research predicts devastating declines in seabird populations in Britain & Ireland under future climate change. Some species face staggering losses by 2050, with up to 90% declines for Puffin and more than 70% declines for Arctic Tern and Fulmar. ➡️ bit.ly/seabirds-climate Ornithology
-<br><b>uri:</b> <a href='https://bit.ly/seabirds-climate' target='_blank'>https://bit.ly/seabirds-climate</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:54gz42no6k3vh6ju4z4wquza/post/3lqavopepq32v' target='_blank'>View Original Post</a>
 </div>
 
 ---
