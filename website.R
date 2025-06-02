@@ -18,7 +18,8 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
                            limit=150)
 feed <- feed[!sapply(feed$uri, is.na),]
 feed <- feed[!sapply(feed$embed, is.null),]
-feed <- feed[1:24,]
+#feed <- feed[-24,]
+#feed <- feed[1:24,]
 
 nb_post=0
 for (i in 1:nrow(feed)){
@@ -131,19 +132,34 @@ for (i in 1:dim(feed)[1]) {
   }
   
   # Ensure the URI is displayed
+  # markdown_text <- paste0(
+  #   markdown_text,
+  #   "##### Post by ", author_name, " ", author_link, " - ", post_date," -   💚 ",likes, "\n\n", # Add header
+  #   "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n", # Container for text
+  #   "  ", gsub("\n", " ", text), "\n", # Post content
+  #   if (!is.null(uri)) {
+  #     paste0("<br><b>uri:</b> ", uri_hyperlink, "<br>")
+  #   } else {
+  #     "<br>"
+  #   }, "\n", # Add URI as hyperlink if available
+  #   "  <br><a href='", bluesky_link, "' target='_blank'>View Original Post</a>\n", # Link to the original post
+  #   "</div>\n\n",
+  #   "---\n\n" # Separator
+  # )
+  
   markdown_text <- paste0(
     markdown_text,
-    "##### Post by ", author_name, " ", author_link, " - ", post_date," -   💚 ",likes, "\n\n", # Add header
-    "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n", # Container for text
-    "  ", gsub("\n", " ", text), "\n", # Post content
+    "##### Post by ", author_name, " ", author_link, " - ", post_date," -   💚 ",likes, "\n\n",
+    "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n",
+    "  {% raw %}", gsub("\n", " ", text), "{% endraw %}\n",
     if (!is.null(uri)) {
       paste0("<br><b>uri:</b> ", uri_hyperlink, "<br>")
     } else {
       "<br>"
-    }, "\n", # Add URI as hyperlink if available
-    "  <br><a href='", bluesky_link, "' target='_blank'>View Original Post</a>\n", # Link to the original post
+    }, "\n",
+    "  <br><a href='", bluesky_link, "' target='_blank'>View Original Post</a>\n",
     "</div>\n\n",
-    "---\n\n" # Separator
+    "---\n\n"
   )
 }
 
