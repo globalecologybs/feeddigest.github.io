@@ -6,7 +6,7 @@ X <- 21
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 4
+start_date <- Sys.Date() - 7
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -17,7 +17,7 @@ if (!require("bskyr")) {
 feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.generator/global.ecology',
                            limit=150)
 #feed <- feed[!sapply(feed$embed, is.null),]
-feed <- feed[1:6,]
+feed <- feed[1:8,]
 
 nb_post=0
 for (i in 1:nrow(feed)){

@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 29, 2025** to **June 02, 2025**. Total posts: **4**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **6**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -89,6 +89,26 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   All environmental problems are social problems. A stepwise process for actionable environmental science research ecology
 <br><b>uri:</b> <a href='https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2854' target='_blank'>https://esajournals.onlinelibrary.wiley.com/doi/10.1002/fee.2854</a><br>
   <br><a href='https://bsky.app/profile/did:plc:gzpztkir762tg3mn7ejrjsqi/post/3lqhxrdt73c2v' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Methods in Ecology and Evolution <a href='https://bsky.app/profile/methodsinecoevol.bsky.social' target='_blank'>@methodsinecoevol.bsky.social</a> - 2025-05-31 -   💚 0
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  📖Published📖 In our new research article, Wesselkamp et al. synthesise existing approaches to define empirical forecast limits in a unified framework for assessing ecological predictability and offer recipes for their computation 🌍 🧪
+<br><b>uri:</b> <a href='https://buff.ly/ueDiJTO' target='_blank'>https://buff.ly/ueDiJTO</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jb2f2agkyzhvzoj6ox5zgabh/post/3lqhbr533ke2o' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-05-31 -   💚 14
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Join this GuardIAS initiative on iNaturalist to improve detection and monitoring of invasive species in Europe. bioinvasions MarineEcology AquaticEcolosy 🧪🌍🌐 @guardias.bsky.social
+<br><b>uri:</b> <a href='https://www.inaturalist.org/projects/aquatic-invasive-alien-species-occuring-in-europe' target='_blank'>https://www.inaturalist.org/projects/aquatic-invasive-alien-species-occuring-in-europe</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lqh4xixpfc2o' target='_blank'>View Original Post</a>
 </div>
 
 ---
