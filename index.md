@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 28, 2025** to **June 02, 2025**. Total posts: **25**.
+Feeds are from **May 29, 2025** to **June 02, 2025**. Total posts: **13**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -289,106 +289,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   🚨🚨🚨!Post doc opportunity! 🚨🚨🚨 35 month post doc on niche modelling of migratory whales in my lab with Katrina Jones. Job advert below: Please get in touch with questions!
 <br><b>uri:</b> <a href='https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=179897' target='_blank'>https://my.corehr.com/pls/uoxrecruit/erq_jobspec_version_4.display_form?p_company=10&p_internal_external=E&p_display_in_irish=N&p_process_type=&p_applicant_no=&p_form_profile_detail=&p_display_apply_ind=Y&p_refresh_search=Y&p_recruitment_id=179897</a><br>
   <br><a href='https://bsky.app/profile/did:plc:va5fm2vghqltxa2puratn2k5/post/3lqbgchazgk2j' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by BTO | British Trust for Ornithology <a href='https://bsky.app/profile/btobirds.bsky.social' target='_blank'>@btobirds.bsky.social</a> - 2025-05-28 -   💚 64
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  ⚠️ BTO research predicts devastating declines in seabird populations in Britain & Ireland under future climate change. Some species face staggering losses by 2050, with up to 90% declines for Puffin and more than 70% declines for Arctic Tern and Fulmar. ➡️ bit.ly/seabirds-climate Ornithology
-<br><b>uri:</b> <a href='https://bit.ly/seabirds-climate' target='_blank'>https://bit.ly/seabirds-climate</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:54gz42no6k3vh6ju4z4wquza/post/3lqavopepq32v' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Giacomo Puglielli <a href='https://bsky.app/profile/gpuglielli.bsky.social' target='_blank'>@gpuglielli.bsky.social</a> - 2025-05-28 -   💚 12
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  New data paper out! Insect feeding guilds information (> 4000 insect species!) in relation to host plants for Northern Hemisphere woody species (>600 species!)
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41597-025-05229-9' target='_blank'>https://www.nature.com/articles/s41597-025-05229-9</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:bj5agqqte5rnagt2vmo3tamg/post/3lqak7qmvik2b' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nature Ecology & Evolution <a href='https://bsky.app/profile/natecoevo.nature.com' target='_blank'>@natecoevo.nature.com</a> - 2025-05-28 -   💚 6
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  A high-resolution time-series map of the age of regenerating tropical moist forests reveals that most are ≤5 years old, with forest characteristics and geography explaining patterns better than climate or human pressure
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-025-02721-8?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol' target='_blank'>https://www.nature.com/articles/s41559-025-02721-8?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vxpbqky6dsgs2vnedakzfusk/post/3lqadigvz522n' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by James Bullock <a href='https://bsky.app/profile/jmbecologist.bsky.social' target='_blank'>@jmbecologist.bsky.social</a> - 2025-05-28 -   💚 36
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  How do we decide on conservation actions in the face of context dependency? In our new paper on ‘Precision Ecology’ we show how methods developed in medicine & marketing can be applied to predict site-specific outcomes allowing effective & targeted conservation
-<br><b>uri:</b> <a href='https://doi.org/10.1038/s41559-025-02733-4' target='_blank'>https://doi.org/10.1038/s41559-025-02733-4</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:n5f6mgg4yicla5z3e2blr3kz/post/3lqa3lkinfc26' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-05-28 -   💚 3
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  The GuardIAS webinar on the past, present and future of non-native species risk analysis starts in less than one hour. Don't miss it! bioinvasions OneStop MarineEcology AquaticEcology 🌍🌐
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lqa2rpzons2o' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> - 2025-05-28 -   💚 14
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Still time to apply to the CESAB IdeaShare & DataShare call to advance BIODIVERSITY research & interdisciplinary collaboration 💡 IdeaShare: develop new concepts, models & methods 📊 DataShare: assemble, curate & share biodiversity datasets 📆 deadline: september 2025 👉 bit.ly/4loI2oI 🌐🧪🌍🦤🍁
-<br><b>uri:</b> <a href='https://bit.ly/4loI2oI' target='_blank'>https://bit.ly/4loI2oI</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lq7zp4c2gs2m' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-05-28 -   💚 31
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Simple, Universal Rules Predict Trophic Interaction Strengths scaling allometry bodysize 🧪🌐https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70126?campaign=woletoc
-<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70126?campaign=woletoc' target='_blank'>https://onlinelibrary.wiley.com/doi/full/10.1111/ele.70126?campaign=woletoc</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lq7wyvcgdk2z' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Biodiversa+ (European Biodiversity Partnership) <a href='https://bsky.app/profile/biodiversa.eu' target='_blank'>@biodiversa.eu</a> - 2025-05-28 -   💚 5
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  📅 Save the date! Explore solutions for biodiversity loss & climate change. Online: BiodivClim final conference, 10–11 June 2025. Showcasing 21 project findings & the power of Nature-based Solutions for adaptation/mitigation. Info & registrations:
-<br><b>uri:</b> <a href='https://www.biodiversa.eu/2025/05/27/biodivclim-final-events/' target='_blank'>https://www.biodiversa.eu/2025/05/27/biodivclim-final-events/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:473yevfe6eqf7qefz6jvnww4/post/3lq7oo3gbgu2p' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Rebecca Sear <a href='https://bsky.app/profile/rebeccasear.bsky.social' target='_blank'>@rebeccasear.bsky.social</a> - 2025-05-28 -   💚 12
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  "we estimate climate trends have caused global yields of wheat, maize & barley to be 10, 4 & 13% lower than they would have otherwise been. These losses likely exceeded the benefits of CO2 increases over the same period, whereas CO2 benefits likely exceeded climate-related losses for soybean & rice"
-<br><b>uri:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2502789122?utm_source=TOC&utm_medium=ealert&TOC_v122_i20=&ref=d20645' target='_blank'>https://www.pnas.org/doi/10.1073/pnas.2502789122?utm_source=TOC&utm_medium=ealert&TOC_v122_i20=&ref=d20645</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:46e3r3fp37dl3alwheajaez7/post/3lq7jziseu22c' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-05-28 -   💚 19
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  fish and crustaceans that live deeper are ingesting more microplastics than those closer to the surface 🌐🧪https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lno.12370
-<br><b>uri:</b> <a href='https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lno.12370' target='_blank'>https://aslopubs.onlinelibrary.wiley.com/doi/abs/10.1002/lno.12370</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lq7jixuxl22r' target='_blank'>View Original Post</a>
 </div>
 
 ---
