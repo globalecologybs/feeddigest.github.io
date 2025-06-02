@@ -1,8 +1,8 @@
 <head>
-  <title>Global Ecology T</title>
+  <title>Global Ecology </title>
   <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
-  <meta property='og:title' content='bluesky Global Ecology Feed Digest #21'>
+  <meta property='og:title' content='bluesky Global Ecology Feed Digest T #21'>
   <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **20**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **21**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -33,7 +33,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 3
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Amazon rainforest adjusts to long-term experimental drought ..."After elevated tree mortality during the first 15 years, ecosystem-level structural changes resulted in the remaining trees no longer experiencing drought stress." 🧪🌐🌾
@@ -53,7 +53,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-06-02 -   💚 24
+##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-06-02 -   💚 25
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Drought is a growing issue in tropical rainforests. A study in Nature Ecology & Evolution revisits a long-term rainfall manipulation experiment in the Amazon to show that tree mortality was followed by community-level adjustments to reduced precipitation. go.nature.com/4kbQbfu 🧪
@@ -259,6 +259,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Now published in Peer Community Journal, ecology section: On the quest for novelty in ecology
 <br><b>uri:</b> <a href='https://buff.ly/7fSuWTj' target='_blank'>https://buff.ly/7fSuWTj</a><br>
   <br><a href='https://bsky.app/profile/did:plc:6uacctzycpd3ixjwpm2sqj6g/post/3lqchkuobgg2g' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Julian Schrader <a href='https://bsky.app/profile/julianschrader.bsky.social' target='_blank'>@julianschrader.bsky.social</a> - 2025-05-29 -   💚 5
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Outstanding postdoc position on ecology and biogeography with @biogeokreft.bsky.social @unigoettingen.bsky.social
+<br><b>uri:</b> <a href='https://www.uni-goettingen.de/en/644546.html?filters={%22vollzeit%22:[],%22befristet%22:[],%22gruppe%22:[],%22besoldGrp%22:[]}&details=75938' target='_blank'>https://www.uni-goettingen.de/en/644546.html?filters={%22vollzeit%22:[],%22befristet%22:[],%22gruppe%22:[],%22besoldGrp%22:[]}&details=75938</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:bbjipicukwprdakfqcvvpwfz/post/3lqcbxcer4k2b' target='_blank'>View Original Post</a>
 </div>
 
 ---
