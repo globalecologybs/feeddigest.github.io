@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **10**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **9**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -139,16 +139,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Super excited to release a huge evolution project on the works for many years: Evolution experiments synchronized across climates to understand rapid adaptation Preprint: All data available: www.grene-net.org/data MOILAB @ucberkeleyofficial.bsky.social @hhmi.org 🧵👇
 <br><b>uri:</b> <a href='https://doi.org/10.1101/2025.05.28.654549' target='_blank'>https://doi.org/10.1101/2025.05.28.654549</a><br>
   <br><a href='https://bsky.app/profile/did:plc:4s434nybepdan6ji2i5ygxtd/post/3lqfsjshqkc2m' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Institut Natura e Teoria ※ Pireneus (INTP) <a href='https://bsky.app/profile/intp-science.bsky.social' target='_blank'>@intp-science.bsky.social</a> - 2025-05-30 -   💚 5
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  📣Post-doc opportunity in thermal ecology & species interactions with Arnaud Sentis at INRAE Aix-en-Provence, France. 🌡️Explore how antagonistic interactions shape thermal tolerance in freshwater organisms. 📆 Start: Nov. 2025 | Duration: 2 years 📩 Sept. 8, 2025 Info 👉 🌐🧪🌍
-<br><b>uri:</b> <a href='https://www.inrae.fr/en/news/erc-grant-evaluate-thermal-limits-lake-communities' target='_blank'>https://www.inrae.fr/en/news/erc-grant-evaluate-thermal-limits-lake-communities</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ojhu5hugdadurowr4wsqrv47/post/3lqf63m4wtc2t' target='_blank'>View Original Post</a>
 </div>
 
 ---
