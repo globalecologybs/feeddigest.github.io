@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **6**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **8**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -109,6 +109,26 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Join this GuardIAS initiative on iNaturalist to improve detection and monitoring of invasive species in Europe. bioinvasions MarineEcology AquaticEcolosy 🧪🌍🌐 @guardias.bsky.social
 <br><b>uri:</b> <a href='https://www.inaturalist.org/projects/aquatic-invasive-alien-species-occuring-in-europe' target='_blank'>https://www.inaturalist.org/projects/aquatic-invasive-alien-species-occuring-in-europe</a><br>
   <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lqh4xixpfc2o' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Jonas Lembrechts <a href='https://bsky.app/profile/jlembrechts.bsky.social' target='_blank'>@jlembrechts.bsky.social</a> - 2025-05-31 -   💚 30
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  The word is out officially, now: SoilTemp has finished its transformation into 'The MEB-network' - a fully-fledged research network that goes far beyond just being a database. And boy, does that make me proud! Let me show you all the ways you can get involved here:
+<br><b>uri:</b> <a href='https://the3dlab.org/2025/05/31/soiltemp-is-now-meb/' target='_blank'>https://the3dlab.org/2025/05/31/soiltemp-is-now-meb/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:3fbqr6o45njrwteegpbwuzir/post/3lqgwjno6ss2r' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Anthony Ricciardi <a href='https://bsky.app/profile/ecoinvasions.bsky.social' target='_blank'>@ecoinvasions.bsky.social</a> - 2025-05-31 -   💚 34
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  In an attempt to exculpate invasive species or downplay their impacts, some people have claimed that "native invaders" cause as much disruption. In terms of global biodiversity loss, this claim is contradicted by empirical evidence:
+<br><b>uri:</b> <a href='https://redpath-staff.mcgill.ca/ricciardi/Blackburn_etal2019.pdf' target='_blank'>https://redpath-staff.mcgill.ca/ricciardi/Blackburn_etal2019.pdf</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ikyx4nfohoiu27ay7ajxke5q/post/3lqgsitktxw2j' target='_blank'>View Original Post</a>
 </div>
 
 ---
