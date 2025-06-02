@@ -33,7 +33,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 4
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-06-02 -   💚 9
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   Amazon rainforest adjusts to long-term experimental drought ..."After elevated tree mortality during the first 15 years, ecosystem-level structural changes resulted in the remaining trees no longer experiencing drought stress." 🧪🌐🌾

@@ -18,7 +18,7 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
                            limit=150)
 feed <- feed[!sapply(feed$uri, is.na),]
 feed <- feed[!sapply(feed$embed, is.null),]
-#feed <- feed[1:15,]
+feed <- feed[1:24,]
 
 nb_post=0
 for (i in 1:nrow(feed)){
@@ -36,10 +36,10 @@ for (i in 1:nrow(feed)){
 
 markdown_text <- paste0(
   "<head>\n",
-  "  <title>Global Ecology</title>\n",
+  "  <title>Global Ecology </title>\n",
   "  <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>\n",
   "  <!-- Open Graph Metadata -->\n",
-  "  <meta property='og:title' content='bluesky Global Ecology Feed Digest #", X, "'>\n", # Add X dynamically
+  "  <meta property='og:title' content='bluesky Global Ecology Feed Digest T #", X, "'>\n", # Add X dynamically
   "  <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>\n",
   "  <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>\n",
   "  <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>\n",
@@ -77,7 +77,10 @@ for (i in 1:dim(feed)[1]) {
   words <- words[!grepl("[.…]{3,}$", words)] # Remove words ending with "…" or "...."
   text <- paste(words, collapse = " ")
   text <- gsub("#", "", text)
-  
+  text <- gsub("\\{%", "{{'{%'}}", text)
+  text <- gsub("\\{\\{", "{{'{{'}}", text)
+  text <- gsub("\\.\\.\\.+", "...", text)
+
   # Skip posts with less than 40 characters
   if (nchar(text) < 50) {
     next
