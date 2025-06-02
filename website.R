@@ -16,8 +16,8 @@ if (!require("bskyr")) {
 # Fetch feed
 feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.generator/global.ecology',
                            limit=150)
-feed <- feed[!sapply(feed$embed, is.null),]
-
+#feed <- feed[!sapply(feed$embed, is.null),]
+feed <- feed[1:6,]
 
 nb_post=0
 for (i in 1:nrow(feed)){
