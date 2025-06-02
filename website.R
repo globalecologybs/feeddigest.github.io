@@ -6,7 +6,7 @@ X <- 21
 
 # Get the current date and 7 days ago
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
+start_date <- Sys.Date() - 1
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -74,8 +74,6 @@ for (i in 1:dim(feed)[1]) {
   words <- words[!grepl("[.…]{3,}$", words)] # Remove words ending with "…" or "...."
   text <- paste(words, collapse = " ")
   text <- gsub("#", "", text)
-  text <- gsub("\\{%", "{{'{%'}}", text) #new
-  text <- gsub("\\{\\{", "{{'{{'}}", text) #new
   
   # Skip posts with less than 40 characters
   if (nchar(text) < 50) {
