@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **16**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **20**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -209,6 +209,46 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Land Use is (also) Cooling Earth 🌐 Radiative forcing reduced by early twenty-first century increase in land albedo @nature.com rdcu.be/eojI7
 <br><b>uri:</b> <a href='https://rdcu.be/eojI7' target='_blank'>https://rdcu.be/eojI7</a><br>
   <br><a href='https://bsky.app/profile/did:plc:u4usv72et3hzaeejegzcppxi/post/3lqd3vy55q223' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Pablo Garcia-Diaz <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank'>@pablo-ecology.bsky.social</a> - 2025-05-29 -   💚 6
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  This paper transformed the way I think about community ecology and modelling: So Many Variables: Joint Modeling in Community Ecology 🌎🧪🌐
+<br><b>uri:</b> <a href='https://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(15)00240-2' target='_blank'>https://www.cell.com/trends/ecology-evolution/abstract/S0169-5347(15)00240-2</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3lqcxfzjius24' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-05-29 -   💚 13
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Somehow missed this one " Huxman et al. An impossible dream to inspire possible synthesis" = how experimental designs that employ common gardens to integrate processes across scales hold special promise 🧪🌐🌾 traitbasedecology
+<br><b>uri:</b> <a href='https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.13793' target='_blank'>https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2745.13793</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lqcjt4qctk2m' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Co-Centre for Climate + Biodiversity + Water <a href='https://bsky.app/profile/climatecocentre.bsky.social' target='_blank'>@climatecocentre.bsky.social</a> - 2025-05-29 -   💚 2
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  🌾 What do changing rainfall patterns mean for the world’s nourishing grasslands and the food we rely on? Read @ybuckley.bsky.social's piece in @irishtimes.com: @tcddublin.bsky.social
+<br><b>uri:</b> <a href='https://www.irishtimes.com/environment/2025/05/22/what-do-changing-rainfall-patterns-mean-for-the-worlds-nourishing-grasslands/' target='_blank'>https://www.irishtimes.com/environment/2025/05/22/what-do-changing-rainfall-patterns-mean-for-the-worlds-nourishing-grasslands/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ez46l665g5gsqkladz7fy6mz/post/3lqchzi747227' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Peer Community Journal <a href='https://bsky.app/profile/peercomjournal.bsky.social' target='_blank'>@peercomjournal.bsky.social</a> - 2025-05-29 -   💚 5
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Now published in Peer Community Journal, ecology section: On the quest for novelty in ecology
+<br><b>uri:</b> <a href='https://buff.ly/7fSuWTj' target='_blank'>https://buff.ly/7fSuWTj</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:6uacctzycpd3ixjwpm2sqj6g/post/3lqchkuobgg2g' target='_blank'>View Original Post</a>
 </div>
 
 ---
