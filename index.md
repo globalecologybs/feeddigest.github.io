@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **13**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **16**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -179,6 +179,36 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   "Native plants provide multiple ecosystem functions in urban greenspaces, supporting urban biodiversity and provisioning ecosystem services than non-native plant species and should be prioritized in urban horticulture activities."
 <br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s11252-024-01610-5' target='_blank'>https://link.springer.com/article/10.1007/s11252-024-01610-5</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ehf22wvsmxsiezpfbdtbjbpj/post/3lqdin6pzx22p' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Garry Peterson <a href='https://bsky.app/profile/resiliencesci.bsky.social' target='_blank'>@resiliencesci.bsky.social</a> - 2025-05-29 -   💚 1
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Using species ranges and macroeconomic data to fill the gap in costs of biological invasions Soto+ "...global costs potentially estimated to be 1,646% higher for these species than previously recorded. This discrepancy was uneven geographically and taxonomically"
+<br><b>uri:</b> <a href='https://doi.org/10.1038/s41559-025-02697-5' target='_blank'>https://doi.org/10.1038/s41559-025-02697-5</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ywyuzuhkwv4v7mmacshr6nyc/post/3lqdezbf4pk26' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Shinichi Nakagawa <a href='https://bsky.app/profile/itchyshin.bsky.social' target='_blank'>@itchyshin.bsky.social</a> - 2025-05-29 -   💚 45
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  The biggest "meta-analysis" ever? - 17 million effect sizes - elifesciences.org/articles/95857 With wonderful @coreytcallaghan.bsky.social and Will Cornwell We question the abundance-occupancy relationships using ebird data - we find ~ zero correlation
+<br><b>uri:</b> <a href='https://elifesciences.org/articles/95857' target='_blank'>https://elifesciences.org/articles/95857</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:mofhibgtyyoecutv5dvv3iri/post/3lqdaaiecfs24' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Erle Ellis <a href='https://bsky.app/profile/erleellis.bsky.social' target='_blank'>@erleellis.bsky.social</a> - 2025-05-29 -   💚 3
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Land Use is (also) Cooling Earth 🌐 Radiative forcing reduced by early twenty-first century increase in land albedo @nature.com rdcu.be/eojI7
+<br><b>uri:</b> <a href='https://rdcu.be/eojI7' target='_blank'>https://rdcu.be/eojI7</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:u4usv72et3hzaeejegzcppxi/post/3lqd3vy55q223' target='_blank'>View Original Post</a>
 </div>
 
 ---
