@@ -69,7 +69,7 @@ markdown_text <- paste0(
 
 # Loop through the feed and format posts
 for (i in 1:dim(feed)[1]) {
-  #i=1
+  #i=24
   text <- feed$record[[i]]$text
   
   # Split the text into words and remove any word ending with "…" or "...."
@@ -80,6 +80,9 @@ for (i in 1:dim(feed)[1]) {
   text <- gsub("\\{%", "{{'{%'}}", text)
   text <- gsub("\\{\\{", "{{'{{'}}", text)
   text <- gsub("\\.\\.\\.+", "...", text)
+  text <- gsub("https?://[^\\s]+\\.\\.\\.", "", text)  # supprime les liens tronqués
+  text <- gsub("[<>]", "", text)                 # supprime balises HTML brisées
+  text <- gsub("[\u2028\u2029\u000b]", " ", text) # supprime séparateurs invisibles
 
   # Skip posts with less than 40 characters
   if (nchar(text) < 50) {
