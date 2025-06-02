@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **44**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **45**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -30,6 +30,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
 - <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>
+
+---
+
+##### Post by Graham Appleton <a href='https://bsky.app/profile/wadertales.bsky.social' target='_blank'>@wadertales.bsky.social</a> - 2025-05-30 -   💚 14
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Defining the boundaries of a potentail World Heritage Site? Global Wader team mapped feeding locations of tracked waders from several schemes, to support an application for the Bijagos archipelago ⬇️ ⚫hotspots More about Global Wader: ConservationScience🌍
+<br><b>uri:</b> <a href='https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/' target='_blank'>https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:46npc5pdkizvzmmxghb7ss7c/post/3lqepalmdrk2e' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
