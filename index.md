@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #21
 
-Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **11**.
+Feeds are from **May 26, 2025** to **June 02, 2025**. Total posts: **13**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -159,6 +159,26 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   Invasion success among insects is unevenly distributed and strongly influenced by both taxonomic identity and trophic group, with herbivorous Hemiptera and Thysanoptera notably over-represented among non-native species. 🔗
 <br><b>uri:</b> <a href='https://doi.org/10.3897/neobiota.99.151227' target='_blank'>https://doi.org/10.3897/neobiota.99.151227</a><br>
   <br><a href='https://bsky.app/profile/did:plc:la7wru2ud6gz2itsn7pe75m4/post/3lqellqhl422m' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Jonathan Tonkin <a href='https://bsky.app/profile/jdtonkin.bsky.social' target='_blank'>@jdtonkin.bsky.social</a> - 2025-05-29 -   💚 181
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  If you think the seasons are feeling… different, you may be right. Our new review in Science (@science.org) shows that Earth’s changing rhythms could have major and underestimated consequences for life on Earth. 🌍🧵
+<br><b>uri:</b> <a href='https://www.science.org/doi/10.1126/science.ads4880' target='_blank'>https://www.science.org/doi/10.1126/science.ads4880</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:zlimqgj5tdvetkaf2zlx3cp6/post/3lqdrz5x4ic2d' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Thank you Judge Illston <a href='https://bsky.app/profile/dendromecon27.bsky.social' target='_blank'>@dendromecon27.bsky.social</a> - 2025-05-29 -   💚 30
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  "Native plants provide multiple ecosystem functions in urban greenspaces, supporting urban biodiversity and provisioning ecosystem services than non-native plant species and should be prioritized in urban horticulture activities."
+<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s11252-024-01610-5' target='_blank'>https://link.springer.com/article/10.1007/s11252-024-01610-5</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ehf22wvsmxsiezpfbdtbjbpj/post/3lqdin6pzx22p' target='_blank'>View Original Post</a>
 </div>
 
 ---
