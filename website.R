@@ -74,6 +74,8 @@ for (i in 1:dim(feed)[1]) {
   words <- words[!grepl("[.…]{3,}$", words)] # Remove words ending with "…" or "...."
   text <- paste(words, collapse = " ")
   text <- gsub("#", "", text)
+  text <- gsub("\\{%", "{{'{%'}}", text) #new
+  text <- gsub("\\{\\{", "{{'{{'}}", text) #new
   
   # Skip posts with less than 40 characters
   if (nchar(text) < 50) {

@@ -33,16 +33,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Graham Appleton <a href='https://bsky.app/profile/wadertales.bsky.social' target='_blank'>@wadertales.bsky.social</a> - 2025-05-30 -   💚 14
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  Defining the boundaries of a potentail World Heritage Site? Global Wader team mapped feeding locations of tracked waders from several schemes, to support an application for the Bijagos archipelago ⬇️ ⚫hotspots More about Global Wader: ConservationScience🌍
-<br><b>uri:</b> <a href='https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/' target='_blank'>https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:46npc5pdkizvzmmxghb7ss7c/post/3lqepalmdrk2e' target='_blank'>View Original Post</a>
-</div>
-
----
-
 ##### Post by Florian Altermatt <a href='https://bsky.app/profile/florianaltermatt.bsky.social' target='_blank'>@florianaltermatt.bsky.social</a> - 2025-06-02 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
@@ -159,6 +149,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   📣Post-doc opportunity in thermal ecology & species interactions with Arnaud Sentis at INRAE Aix-en-Provence, France. 🌡️Explore how antagonistic interactions shape thermal tolerance in freshwater organisms. 📆 Start: Nov. 2025 | Duration: 2 years 📩 Sept. 8, 2025 Info 👉 🌐🧪🌍
 <br><b>uri:</b> <a href='https://www.inrae.fr/en/news/erc-grant-evaluate-thermal-limits-lake-communities' target='_blank'>https://www.inrae.fr/en/news/erc-grant-evaluate-thermal-limits-lake-communities</a><br>
   <br><a href='https://bsky.app/profile/did:plc:ojhu5hugdadurowr4wsqrv47/post/3lqf63m4wtc2t' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Graham Appleton <a href='https://bsky.app/profile/wadertales.bsky.social' target='_blank'>@wadertales.bsky.social</a> - 2025-05-30 -   💚 14
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  Defining the boundaries of a potentail World Heritage Site? Global Wader team mapped feeding locations of tracked waders from several schemes, to support an application for the Bijagos archipelago ⬇️ ⚫hotspots More about Global Wader: ConservationScience🌍
+<br><b>uri:</b> <a href='https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/' target='_blank'>https://wadertales.wordpress.com/2025/05/06/making-full-use-of-tracking-data/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:46npc5pdkizvzmmxghb7ss7c/post/3lqepalmdrk2e' target='_blank'>View Original Post</a>
 </div>
 
 ---
