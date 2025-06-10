@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #22
 
-Feeds are from **June 03, 2025** to **June 10, 2025**. Total posts: **32**.
+Feeds are from **June 03, 2025** to **June 10, 2025**. Total posts: **29**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -143,32 +143,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Roman Goergen  <a href='https://bsky.app/profile/romangoergen.bsky.social' target='_blank'>@romangoergen.bsky.social</a> - 2025-06-07 -   💚 42
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🦏 Dehorning rhinos works🌍A new study🧪 from Greater Kruger shows a 78% drop in poaching across 8 reserves. But it's no silver bullet — poverty, horn demand & corruption still fuel killings🌐 Conservation Poaching WildlifeCrime Africa Wildlife{% endraw %}
-<br><b>uri:</b> <a href='https://theconversation.com/dehorning-rhinos-tips-the-balance-against-poaching-new-study-258315' target='_blank'>https://theconversation.com/dehorning-rhinos-tips-the-balance-against-poaching-new-study-258315</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:qgslfi4c67z7v5wz3tcqo5yr/post/3lqyyhgzqks2h' target='_blank'>View Original Post</a>
-</div>
-
----
-
 ##### Post by Matthew R. Helmus <a href='https://bsky.app/profile/mrhelmus.bsky.social' target='_blank'>@mrhelmus.bsky.social</a> - 2025-06-07 -   💚 6
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Here's that awesome study everyone is talking about on how hummingbird beaks have evolved to better use hummingbird feeders 🕊️🐦🌐 ecology{% endraw %}
 <br>
   <br><a href='https://bsky.app/profile/did:plc:gzpztkir762tg3mn7ejrjsqi/post/3lqy6wsn3d22e' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Martin Dovciak🌳🌱🌻 <a href='https://bsky.app/profile/dovciak-lab.bsky.social' target='_blank'>@dovciak-lab.bsky.social</a> - 2025-06-06 -   💚 46
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌎🧪🌐 My amazing field team @sunyesf.bsky.social led by my CoPI & postdoc @nathankiel.bsky.social have just completed the first week of installing Tomst sensors to quantify microclimate across temperate-boreal 🌳🌲forest ecotones on mountains in the northeastern US. Exciting and…more to come❗️{% endraw %}
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:uhmh247mes66udzpxzlls2bs/post/3lqxmhnays222' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -243,12 +223,12 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-06-05 -   💚 0
+##### Post by Christine N Meynard <a href='https://bsky.app/profile/cnmeynard.bsky.social' target='_blank'>@cnmeynard.bsky.social</a> - 2025-06-05 -   💚 6
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}The GES4SEAS MOOC on Tipping Points TIPP has started: 5-30 June. Stay tuned!!! 🧪🌍🌐{% endraw %}
+  {% raw %}We are still accepting applications for this 2-year postdoc in France! The central theme is on modelling species distributions in the context of agricultural pest risk assessments at large scales, so we are looking for someone with strong quantitative skills. Please advertise widely! 🌐{% endraw %}
 <br>
-  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lqurajspis2u' target='_blank'>View Original Post</a>
+  <br><a href='https://bsky.app/profile/did:plc:eobcca3fkarvesjs5pxkbyve/post/3lquec4j2b227' target='_blank'>View Original Post</a>
 </div>
 
 ---
@@ -269,16 +249,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}BioTIME 2.0 - the largest biodiversity time-series database - now spans 12 million records from 553,000 locations, tracking ecosystem changes since 1874! 📊 @uniofstandrews.bsky.social @idiv-research.bsky.social @erc.europa.eu @jon-chase03.bsky.social{% endraw %}
 <br><b>uri:</b> <a href='https://www.idiv.de/major-update-to-biotime-2-0-worlds-largest-biodiversity-time-series-database/' target='_blank'>https://www.idiv.de/major-update-to-biotime-2-0-worlds-largest-biodiversity-time-series-database/</a><br>
   <br><a href='https://bsky.app/profile/did:plc:iptnf7q76swax7mniro75usi/post/3lquco3cegk2a' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> - 2025-06-05 -   💚 10
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Our next CESABINAR will take place on June 19th, 4:00-5:15 pm, Paris time B. Mérigot and D. Palomares will present the work of the FISHGLOB group: 👉 Fish biodiversity under global change: a worldwide assessment zoom : key: 333782 🧪🌐🌍🦑🦤{% endraw %}
-<br><b>uri:</b> <a href='https://us06web.zoom.us/j/89690284311?pwd=jX9Kzaz2C44zeXrm2J6TvQMRAmjIra.1' target='_blank'>https://us06web.zoom.us/j/89690284311?pwd=jX9Kzaz2C44zeXrm2J6TvQMRAmjIra.1</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3lqu7nizowk24' target='_blank'>View Original Post</a>
 </div>
 
 ---
