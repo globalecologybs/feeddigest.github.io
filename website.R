@@ -3,8 +3,8 @@ bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
 X <- 25
-
-# Get the current date and 7 days ago
+ 
+# Get the current date and 7 days ago included
 end_date <- Sys.Date()
 start_date <- Sys.Date() - 7
 
