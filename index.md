@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #27
 
-Feeds are from **July 07, 2025** to **July 15, 2025**. Total posts: **26**.
+Feeds are from **July 08, 2025** to **July 15, 2025**. Total posts: **18**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -349,56 +349,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}New global review in Nature Reviews Biodiversity, incl. CCRC’s Alex Sen Gupta, shows marine heatwaves are reshaping ecosystems from coral bleaching to kelp loss disrupting fisheries,food webs & coastal livelihoods. Urgent need to cut emissions, build resilience & adapt fast.{% endraw %}
 <br><b>uri:</b> <a href='https://doi.org/10.1038/s44358-025-00058-5' target='_blank'>https://doi.org/10.1038/s44358-025-00058-5</a><br>
   <br><a href='https://bsky.app/profile/did:plc:j2krhcgvou57borckh4nyokg/post/3ltga7r4qzc2a' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Moritz Kraemer <a href='https://bsky.app/profile/mugkraemer.bsky.social' target='_blank'>@mugkraemer.bsky.social</a> - 2025-07-07 -   💚 50
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}BEAST X for Bayesian phylogenetic, phylogeographic and phylodynamic inference{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41592-025-02751-x' target='_blank'>https://www.nature.com/articles/s41592-025-02751-x</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:udyxktleyqnyss6mfto7r2a5/post/3ltffvwqbv22g' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nicolas Mouquet <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank'>@nmouquet.bsky.social</a> - 2025-07-07 -   💚 12
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Check out our new study by Gita Alisa et al., showing that large-scale restoration of coral reefs not only brings back ecological health but recovers aesthetic value to levels of healthy reefs in three years only ! 👉 Beauty, biodiversity, and people, all connected 💙 🔗 🧪🌐🦑🦤{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1038/s41598-025-06373-3' target='_blank'>https://doi.org/10.1038/s41598-025-06373-3</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3ltewquarhs24' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Center for Theoretical Study <a href='https://bsky.app/profile/cts.cuni.cz' target='_blank'>@cts.cuni.cz</a> - 2025-07-07 -   💚 3
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌍 New in Science: Consistent energy–diversity relationships in terrestrial vertebrates Co-authored by @elbohdalkova.bsky.social & David Storch from @cts.cuni.cz 📌 Temperature drives richness in ectotherms (metabolic theory) and has indirect effects in endotherms 🔗{% endraw %}
-<br><b>uri:</b> <a href='https://www.science.org/doi/10.1126/science.adu2590' target='_blank'>https://www.science.org/doi/10.1126/science.adu2590</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:zox2uc27q5qxexfbb6yki4d5/post/3ltemtsnqm22u' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Journal of Forestry Research <a href='https://bsky.app/profile/forestryjfr.bsky.social' target='_blank'>@forestryjfr.bsky.social</a> - 2025-07-07 -   💚 11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}This SoilConservationDay reminds us that forests thrive when soils are alive! From root support to nutrient cycling, soil is the silent engine of forest health. 📚 Learn more in the Journal of Forestry Research. Growth ForestEcology Forestryresearch Soil 🌏🌐🌺🌱🌿{% endraw %}
-<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s11676-025-01857-4' target='_blank'>https://link.springer.com/article/10.1007/s11676-025-01857-4</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:pyvexmxevlikxwts5n33lsyp/post/3lteges2jrs2r' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by WSL Umweltforschung <a href='https://bsky.app/profile/wslresearch.bsky.social' target='_blank'>@wslresearch.bsky.social</a> - 2025-07-07 -   💚 4
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🖥️🧬 Sciencejob Alert! Good knowledge of plant ecology and experience in coding? Our Research Group Dynamic Macroecology offers a position for six-months: AIModels Biome PlantEcology Macroecology{% endraw %}
-<br><b>uri:</b> <a href='https://apply.refline.ch/273855/1746/pub/2/index.html' target='_blank'>https://apply.refline.ch/273855/1746/pub/2/index.html</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:zg7isofjz35u3qufmpf35xfw/post/3lte5ftz4p22g' target='_blank'>View Original Post</a>
 </div>
 
 ---
