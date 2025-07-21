@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #28
 
-Feeds are from **July 14, 2025** to **July 21, 2025**. Total posts: **45**.
+Feeds are from **July 15, 2025** to **July 21, 2025**. Total posts: **27**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -469,46 +469,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}½ of resources in threatened species conservation plans are allocated to research & monitoring overall, species with higher proportions of budgets allocated to research & monitoring have poorer recovery outcomes"{% endraw %}
 <br><b>uri:</b> <a href='https://www.nature.com/articles/s41467-020-18486-6' target='_blank'>https://www.nature.com/articles/s41467-020-18486-6</a><br>
   <br><a href='https://bsky.app/profile/did:plc:yus4md34g5x2e4uoelyztxsl/post/3ltxu5ha3e22g' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2025-07-14 -   💚 12
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Macrosystems ecology: A new engine and frontier in contemporary ecosystem science ? let's have a look : 🌐🧪{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1016/j.geosus.2025.100334' target='_blank'>https://doi.org/10.1016/j.geosus.2025.100334</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3ltwu5onv3k22' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Nature Ecology & Evolution <a href='https://bsky.app/profile/natecoevo.nature.com' target='_blank'>@natecoevo.nature.com</a> - 2025-07-14 -   💚 7
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Human contributions to global soundscapes are less predictable than the acoustic rhythms of wildlife{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-025-02786-5?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol' target='_blank'>https://www.nature.com/articles/s41559-025-02786-5?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vxpbqky6dsgs2vnedakzfusk/post/3ltwqa72brs2k' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Kevin Wood <a href='https://bsky.app/profile/drkevinwood.bsky.social' target='_blank'>@drkevinwood.bsky.social</a> - 2025-07-14 -   💚 25
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Global change asymmetrically rewires ecosystems 🌍 🧪 🦤{% endraw %}
-<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/ele.70174' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/ele.70174</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rall7y6xng7s7uymalfaaj5l/post/3ltwhh5oayc2n' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jens-Christian Svenning <a href='https://bsky.app/profile/jcsvenning.bsky.social' target='_blank'>@jcsvenning.bsky.social</a> - 2025-07-14 -   💚 57
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌱Alien plants are reshaping the tropics -our review @ninadm.bsky.social et al explores how they interact w land-use & climatechange driving novel ecosystems🌴We call for nuanced adaptive strategies incl nature-based solutions to navigate tropical futures 🔗Free access{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s44358-025-00068-3.epdf?sharing_token=oPJIKg3qfQxC0nO9xUK1pNRgN0jAjWel9jnR3ZoTv0NMnkWBqwiQiAGnpxh0LrCYO-LbNoy1IhkYowScrumAofOnECgYPymcvw6KfjOyI4CIuv-7_TQxfWabiSCkQzYVWCbCZUySWtpxvQoZNkkuYBYbz3suCPnc8HdTJZEkEaU%3D' target='_blank'>https://www.nature.com/articles/s44358-025-00068-3.epdf?sharing_token=oPJIKg3qfQxC0nO9xUK1pNRgN0jAjWel9jnR3ZoTv0NMnkWBqwiQiAGnpxh0LrCYO-LbNoy1IhkYowScrumAofOnECgYPymcvw6KfjOyI4CIuv-7_TQxfWabiSCkQzYVWCbCZUySWtpxvQoZNkkuYBYbz3suCPnc8HdTJZEkEaU%3D</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vo4aavnlpxx554hsl534zi3a/post/3ltw7at3dhk2x' target='_blank'>View Original Post</a>
 </div>
 
 ---
