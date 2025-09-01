@@ -2,11 +2,11 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 28
+X <- 29
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 6
+start_date <- Sys.Date() - 30
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
