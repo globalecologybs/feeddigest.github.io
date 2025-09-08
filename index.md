@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #30
 
-Feeds are from **September 01, 2025** to **September 08, 2025**. Total posts: **42**.
+Feeds are from **September 02, 2025** to **September 08, 2025**. Total posts: **33**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -53,7 +53,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Julian Schrader <a href='https://bsky.app/profile/julianschrader.bsky.social' target='_blank'>@julianschrader.bsky.social</a> - 2025-09-07 -   💚 12
+##### Post by Julian Schrader <a href='https://bsky.app/profile/julianschrader.bsky.social' target='_blank'>@julianschrader.bsky.social</a> - 2025-09-07 -   💚 14
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Our paper on species and trait abundance distributions in @jappliedecology.bsky.social is now out in an issue: Led by Werner Ulrich and many other great colleagues.{% endraw %}
@@ -143,7 +143,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Tommaso Jucker <a href='https://bsky.app/profile/tommaso-jucker.bsky.social' target='_blank'>@tommaso-jucker.bsky.social</a> - 2025-09-05 -   💚 150
+##### Post by Tommaso Jucker <a href='https://bsky.app/profile/tommaso-jucker.bsky.social' target='_blank'>@tommaso-jucker.bsky.social</a> - 2025-09-05 -   💚 151
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Only a pre-print for now, but after 4 years of hard work I couldn't resist sharing this! The Global Canopy Atlas: analysis-ready maps of 3D structure for the world's woody ecosystems 📜: Huge team effort led by the brilliant Fabian Fischer!{% endraw %}
@@ -469,46 +469,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}How does trophic connectivity between different ecosystems work at a landscape scale? We applied a novel conceptual framework with functional traits and fatty acid biomarkers to assess direct and indirect effects of landscape drivers on cross-ecosystem connectivity in stream-riparian foodwebs{% endraw %}
 <br><b>uri:</b> <a href='https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.70025' target='_blank'>https://esajournals.onlinelibrary.wiley.com/doi/10.1002/ecm.70025</a><br>
   <br><a href='https://bsky.app/profile/did:plc:hogz5yygw2s5lmt3fk2netxh/post/3lxtg35ptrk2p' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Royal Society Publishing <a href='https://bsky.app/profile/royalsocietypublishing.org' target='_blank'>@royalsocietypublishing.org</a> - 2025-09-01 -   💚 3
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Are you an oceanographer or marine biologist with an interest in marine biodiversity and climate change? Join our upcoming scientific meeting at the Royal Society in London: @heriotwattuni.bsky.social @noc.ac.uk @unisouthampton.bsky.social{% endraw %}
-<br><b>uri:</b> <a href='https://royalsociety.org/science-events-and-lectures/2025/12/marine-biodiversity/' target='_blank'>https://royalsociety.org/science-events-and-lectures/2025/12/marine-biodiversity/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:2yb5szx2psmxzy5xnwjwwp5f/post/3lxrnq2y3uq2u' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2025-09-01 -   💚 14
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌐 Global Ecology feed Digest 29, August, 58 posts! ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
-<br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lxrng3o6gc2b' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Patrik Michaelsen <a href='https://bsky.app/profile/michaelsen.bsky.social' target='_blank'>@michaelsen.bsky.social</a> - 2025-09-01 -   💚 43
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}New: Strong global support for the 30x30 conservation target *Data from 5 continents (N=12k) show 82% in support of 30x30 *2 experiments find highly consistent expansion policy preferences, incl. prioritization of nature and rich countries bearing higher costs Out now OA in @pnas.org. Viz. below.{% endraw %}
-<br><b>uri:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2503355122' target='_blank'>https://www.pnas.org/doi/10.1073/pnas.2503355122</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ucpyg4kj3u63flqipxjopm4c/post/3lxre25wqcc2b' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Journal of Applied Ecology <a href='https://bsky.app/profile/jappliedecology.bsky.social' target='_blank'>@jappliedecology.bsky.social</a> - 2025-09-01 -   💚 10
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Large marine protected areas can encompass movements of diverse megafauna 🌊🌏 Provides evidence for the value of the large scale of the Chagos Archipelago very large marine protected area for protection of taxonomically diverse mobile megafauna 🐢🧪 🔗{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1111/1365-2664.70117' target='_blank'>https://doi.org/10.1111/1365-2664.70117</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rksoynyvcrgqyxa54fgzolcn/post/3lxraini3by2n' target='_blank'>View Original Post</a>
 </div>
 
 ---
