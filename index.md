@@ -2,7 +2,7 @@
   <title>Global Ecology </title>
   <link rel='icon' href='/feeddigest.github.io/favicon.png' type='image/png'>
   <!-- Open Graph Metadata -->
-  <meta property='og:title' content='bluesky Global Ecology Feed Digest #32'>
+  <meta property='og:title' content='bluesky Global Ecology Feed Digest #33'>
   <meta property='og:description' content='Curated digest of the bluesky Global Ecology feed on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.'>
   <meta property='og:image' content='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg'>
   <meta property='og:url' content='https://globalecologybs.github.io/feeddigest.github.io/'>
@@ -16,9 +16,9 @@
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
-# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #32
+# <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #33
 
-Feeds are from **September 15, 2025** to **September 22, 2025**. Total posts: **26**.
+Feeds are from **September 22, 2025** to **September 29, 2025**. Total posts: **23**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -33,362 +33,342 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Thomas R. Holtz, Jr. <a href='https://bsky.app/profile/arctomet.bsky.social' target='_blank'>@arctomet.bsky.social</a> - 2025-09-21 -   💚 46
+##### Post by Milan Chytrý <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank'>@milanchytry.bsky.social</a> - 2025-09-29 -   💚 2
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}How many mammal species are there now? Updates and trends in taxonomic, nomenclatural, and geographic knowledge url:{% endraw %}
-<br><b>uri:</b> <a href='https://academic.oup.com/jmammal/article/doi/10.1093/jmammal/gyaf047/8253815' target='_blank'>https://academic.oup.com/jmammal/article/doi/10.1093/jmammal/gyaf047/8253815</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ynb5mi4c2ualp4htuu6ljxwr/post/3lzdxw3mvts2x' target='_blank'>View Original Post</a>
+  {% raw %}In our new article, Zdenka Preislerová and I review the trends in describing new syntaxa of European vegetation from the early 20th century to the publication of the EuroVegChecklist (Mucina et al. 2016) and beyond. @applvegsci.bsky.social @euroveg.bsky.social 🔗Open access:{% endraw %}
+<br><b>uri:</b> <a href='https://doi.org/10.1111/avsc.70042' target='_blank'>https://doi.org/10.1111/avsc.70042</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hm2e3dgvcx4jjk5iqcriel3v/post/3lzy4y57rgs2n' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Corey Bradshaw <a href='https://bsky.app/profile/conservbytes.bsky.social' target='_blank'>@conservbytes.bsky.social</a> - 2025-09-21 -   💚 40
+##### Post by Florian Altermatt <a href='https://bsky.app/profile/florianaltermatt.bsky.social' target='_blank'>@florianaltermatt.bsky.social</a> - 2025-09-29 -   💚 5
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Trait-space disparity in fish communities spanning 380 million years from the Late Devonian to present traits fish evolution ecology 🌏🧪{% endraw %}
-<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0031018225005796' target='_blank'>https://www.sciencedirect.com/science/article/pii/S0031018225005796</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:yus4md34g5x2e4uoelyztxsl/post/3lzctylsm2k23' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by CREAF <a href='https://bsky.app/profile/creaf.cat' target='_blank'>@creaf.cat</a> - 2025-09-20 -   💚 19
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🚀 Do you work with data analysis, maps, GIS or climatemodels? We need you! Together with the European Space Agency - ESA @esa.int we are developing a new High-Resolution Land Cover product of ALL the planet 🌐 👇{% endraw %}
+  {% raw %}In massive collaborative effort, we assembled published & unpublished fish 🐟 eDNA 🧬 metabarcoding datasets, covering ~2000 sampling sites/100 river systems globally. 🐟 🐠 🐡 🌐 🌍 Now results out in 2 parallel preprints @biorxiv-ecology.bsky.social aquatic biodiversity meta-analysis 1/6🧵{% endraw %}
 <br>
-  <br><a href='https://bsky.app/profile/did:plc:baaptfvj3tmui3znab25j2je/post/3lzbxjtrjjm2q' target='_blank'>View Original Post</a>
+  <br><a href='https://bsky.app/profile/did:plc:ydzmya3tppgd3h2udjzu4iph/post/3lzy4oeygrs24' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Martin Dovciak🌳🌱🌻 <a href='https://bsky.app/profile/dovciak-lab.bsky.social' target='_blank'>@dovciak-lab.bsky.social</a> - 2025-09-20 -   💚 18
+##### Post by Journal of Ecology <a href='https://bsky.app/profile/journalofecology.bsky.social' target='_blank'>@journalofecology.bsky.social</a> - 2025-09-29 -   💚 3
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🥁New paper from Northeastern Mtn🏔️ Network❗️The patterns of herbivory & resource utilization vary along elevational gradients & affect tree seedling 🌱 survival, thus shaping species range shifts. @sunyesf.bsky.social @sunyofficial.bsky.social @appmtnclub.bsky.social{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1007/s10021-025-00994-5' target='_blank'>https://doi.org/10.1007/s10021-025-00994-5</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:uhmh247mes66udzpxzlls2bs/post/3lzbsbl6nj22n' target='_blank'>View Original Post</a>
+  {% raw %}💧Ecosystems with high species diversity and community stoichiometric homeostasis of phosphorus are more resistant and stable in response to external algal bloom disturbances 👇{% endraw %}
+<br><b>uri:</b> <a href='https://buff.ly/9m4ZBf9' target='_blank'>https://buff.ly/9m4ZBf9</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:wkytvpjriqhr7q54cr4wqk7t/post/3lzy352p36z2x' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> - 2025-09-19 -   💚 30
+##### Post by Methods in Ecology and Evolution <a href='https://bsky.app/profile/methodsinecoevol.bsky.social' target='_blank'>@methodsinecoevol.bsky.social</a> - 2025-09-29 -   💚 7
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Happy to have contributed to this nice study just published in GCB on plants' phenological shifts across China's subtropical mountains: we used data from herbarium specimens to generate time series of flowering time at the species level & infer phenological shifts 🌺🌸💮🏵🌎🌐🍁🍂 shorturl.at/26dwH{% endraw %}
-<br><b>uri:</b> <a href='https://shorturl.at/26dwH' target='_blank'>https://shorturl.at/26dwH</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:ccptei5u7ypzamihe4tp4cxm/post/3lz7dequhoc2i' target='_blank'>View Original Post</a>
+  {% raw %}📖Published📖 Described in their applications paper, Missik et al. developed ECODATA, a suite of open-source tools to support exploration, analysis and visualization of animal movements and dynamic geospatial data layers 🐺 🦌 👇 buff.ly/nhPx7Nt 🌍 🧪{% endraw %}
+<br><b>uri:</b> <a href='https://buff.ly/nhPx7Nt' target='_blank'>https://buff.ly/nhPx7Nt</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jb2f2agkyzhvzoj6ox5zgabh/post/3lzxuc5a74c2p' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Pablo Garcia-Diaz <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank'>@pablo-ecology.bsky.social</a> - 2025-09-19 -   💚 4
+##### Post by Steve Ormerod <a href='https://bsky.app/profile/steveormerod.bsky.social' target='_blank'>@steveormerod.bsky.social</a> - 2025-09-29 -   💚 5
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Uncertainty in blacklisting potential Pacific plant invaders using species distribution models 🌎🌐{% endraw %}
-<br><b>uri:</b> <a href='https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.70163' target='_blank'>https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.70163</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3lz763mpisc2l' target='_blank'>View Original Post</a>
+  {% raw %}How climatechange is reshaping fish communities in the United States as temperatures rise and non-native fishes proliferate: @ian-vaughan.bsky.social overviews recent extensive work by @rumschsl.bsky.social{% endraw %}
+<br><b>uri:</b> <a href='https://www.nature.com/articles/d41586-025-02826-x' target='_blank'>https://www.nature.com/articles/d41586-025-02826-x</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:dlsl4ii4pinsd3jqo57fjxwd/post/3lzxrvffzfc2s' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-09-19 -   💚 22
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-09-27 -   💚 74
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}a global focus on three core traits of ectotherms: metabolic rate, development time and fecundity. ShareTrait: Towards interoperable and reusable individual trait-based data in ectotherms OpenTraits FunctionalTraits 🧪🌐{% endraw %}
-<br><b>uri:</b> <a href='https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.70147' target='_blank'>https://besjournals.onlinelibrary.wiley.com/doi/abs/10.1111/1365-2435.70147</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lz6vpvupfc2w' target='_blank'>View Original Post</a>
+  {% raw %}Genomic divergence across the tree of life 🧪🌐https://www.pnas.org/doi/10.1073/pnas.2319389122{% endraw %}
+<br><b>uri:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2319389122' target='_blank'>https://www.pnas.org/doi/10.1073/pnas.2319389122</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lzsnri5kzc25' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Functional Ecology  <a href='https://bsky.app/profile/funecology.bsky.social' target='_blank'>@funecology.bsky.social</a> - 2025-09-19 -   💚 8
+##### Post by Jens-Christian Svenning <a href='https://bsky.app/profile/jcsvenning.bsky.social' target='_blank'>@jcsvenning.bsky.social</a> - 2025-09-27 -   💚 19
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}📰Published📰 Bigger habitats hold more variety in bird lifestyles, but small ones can still be special!🐦 buff.ly/Abw2Kjp 🧪🌍{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/Abw2Kjp' target='_blank'>https://buff.ly/Abw2Kjp</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:pixg4ym2m5niw5huglzfj4yg/post/3lz6fiq54ql2x' target='_blank'>View Original Post</a>
+  {% raw %}Interested in alien species - check our graduated framework for nativeness here 🌿🌐 invasivespecies nonnative{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:vo4aavnlpxx554hsl534zi3a/post/3lzs6yhgmxs22' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by biodiversityDS. <a href='https://bsky.app/profile/biodiversityds.bsky.social' target='_blank'>@biodiversityds.bsky.social</a> - 2025-09-19 -   💚 7
+##### Post by Joaquín Hortal <a href='https://bsky.app/profile/jhortal.bsky.social' target='_blank'>@jhortal.bsky.social</a> - 2025-09-26 -   💚 13
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}New publication! We mapped the global genetic diversity of marine forests of brown macroalgae. Using genetic data, machine learning & past climate projections (LGM, ~20k yrs ago), we identify hotspots of diversity that shape resilience & conservation priorities. 🌍 🌊 Link:{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1038/s42003-025-08023-w' target='_blank'>https://doi.org/10.1038/s42003-025-08023-w</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:t4e7p3puwxmklu7jvd5ooafr/post/3lz6fgsxd6k2u' target='_blank'>View Original Post</a>
+  {% raw %}Who said that biogeography is necessarily a correlative science? This is the way to do ecological experiments with a biogeographical perspective. Read this nice thread about a superb functionalbiogeography work (spoiler: they find regional variations and habitat effects in antipredation traits)🧪🌐{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:wmnlhixtryuerzk4wo5fzopu/post/3lzqn2db6s22f' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nick Freymueller <a href='https://bsky.app/profile/smilodontology.bsky.social' target='_blank'>@smilodontology.bsky.social</a> - 2025-09-19 -   💚 12
+##### Post by Journal of Forestry Research <a href='https://bsky.app/profile/forestryjfr.bsky.social' target='_blank'>@forestryjfr.bsky.social</a> - 2025-09-26 -   💚 2
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}FAMM will be particularly useful for researchers seeking to use inter-disciplinary techniques to understand how Arctic marine mammals will respond to the current ClimateCrisis Open-Access Link: 🧵 🦴/🦴{% endraw %}
-<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/geb.70120' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/geb.70120</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:7czd6jszokl7jxxskymzu322/post/3lz5yniq46c2y' target='_blank'>View Original Post</a>
+  {% raw %}🌲 Trees are nature's air purifiers, filtering pollutants while releasing life-giving oxygen. This WorldEnvironmentDay, discover how forest ecosystems actively clean our air and protect human health. Learn how forests fight air pollution naturally: JFR 🌐🍁🌺🌱🌿🦤{% endraw %}
+<br><b>uri:</b> <a href='https://link.springer.com/article/10.1007/s11676-025-01909-9' target='_blank'>https://link.springer.com/article/10.1007/s11676-025-01909-9</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:pyvexmxevlikxwts5n33lsyp/post/3lzqjlrpqis2z' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-09-18 -   💚 5
+##### Post by IPBES <a href='https://bsky.app/profile/ipbes.net' target='_blank'>@ipbes.net</a> - 2025-09-26 -   💚 32
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}COMMENTARY Long‐Term Human Disturbance Accelerates Soil Carbon Loss in Earth's Driest Ecosystems{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/6zHLdDH' target='_blank'>https://buff.ly/6zHLdDH</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3lz5iotxxg52d' target='_blank'>View Original Post</a>
+  {% raw %}The IPBES NexusAssessment Report finds that using a ‘nexus’ approach to address intertwined environmental, social and economic crises is more effective than a siloed approach. Read more: https://www.ipbes.net/nexus/media-release{% endraw %}
+<br><b>uri:</b> <a href='https://www.ipbes.net/nexus/media-release' target='_blank'>https://www.ipbes.net/nexus/media-release</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:q5dy2sxcoahc6hjkx4wv2ind/post/3lzptqahort2f' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by GBIF <a href='https://bsky.app/profile/gbif.org' target='_blank'>@gbif.org</a> - 2025-09-18 -   💚 12
+##### Post by Li Li 李黎 <a href='https://bsky.app/profile/lireactivewater.bsky.social' target='_blank'>@lireactivewater.bsky.social</a> - 2025-09-25 -   💚 35
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🚨Have your say on the new conceptual model and Data Package Guide for DarwinCore The @tdwg.org Darwin Core Maintenance Group has opened a 90-day public review and comment period for the new conceptual model and Data Package Guide. 🗓️ 17 September – 16 December 2025 🔗{% endraw %}
-<br><b>uri:</b> <a href='https://www.tdwg.org/news/2025/public-review-of-conceptual-model-and-dp-guide-for-darwin-core/' target='_blank'>https://www.tdwg.org/news/2025/public-review-of-conceptual-model-and-dp-guide-for-darwin-core/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:kypk7mw3zpzfpq7dxeulwebk/post/3lz3tm6s25q24' target='_blank'>View Original Post</a>
+  {% raw %}Rivers are heating up faster than the air − that’s a problem for aquatic life and people{% endraw %}
+<br><b>uri:</b> <a href='https://doi.org/10.64628/AAI.u6uy34gq4' target='_blank'>https://doi.org/10.64628/AAI.u6uy34gq4</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ltihy4tcdhx6gjmqrdhhfjnb/post/3lzo5k67vo22q' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Plant Ecology and Evolution <a href='https://bsky.app/profile/plecevo.bsky.social' target='_blank'>@plecevo.bsky.social</a> - 2025-09-18 -   💚 10
+##### Post by People and Nature <a href='https://bsky.app/profile/peopleandnature.bsky.social' target='_blank'>@peopleandnature.bsky.social</a> - 2025-09-25 -   💚 7
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Hedgerows play a crucial ecological role in maintaining connectivity in the fragmented Atlantic Forest. This study showed hedgerows matched forest fragments in seed rain and litter, with even greater fruit richness, highlighting their role in biodiversity conservation. ➡️{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.5091/plecevo.160271' target='_blank'>https://doi.org/10.5091/plecevo.160271</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:bfn6qz7bp4qlw6kmm43wnoeb/post/3lz3ptut3js2z' target='_blank'>View Original Post</a>
+  {% raw %}⛰️The impacts of woody encroachment on nature's contributions to people in North America and Africa: A systematic review ➡️ buff.ly/4eIWEWu While WPE might help with global issues such as carbon storage, it negatively affects other crucial local needs such as livestock production, water and tourism.{% endraw %}
+<br><b>uri:</b> <a href='https://buff.ly/4eIWEWu' target='_blank'>https://buff.ly/4eIWEWu</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ethspb7egnhwaueb6cok52ao/post/3lznshbpzbb2c' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-09-18 -   💚 26
+##### Post by Paul Savary <a href='https://bsky.app/profile/psavary.bsky.social' target='_blank'>@psavary.bsky.social</a> - 2025-09-25 -   💚 24
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Prochlorococcus — Earth’s smallest and most abundant photosynthetic organism — may see population reductions of up to 51% in tropical oceans by 2100 under moderate and high warming scenarios, according to a study in Nature Microbiology. go.nature.com/3V3mvGn 🌊 🧪{% endraw %}
-<br><b>uri:</b> <a href='https://go.nature.com/3V3mvGn' target='_blank'>https://go.nature.com/3V3mvGn</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jyctnrcv5dznuu67bkjjlf3t/post/3lz37piskst23' target='_blank'>View Original Post</a>
+  {% raw %}New preprint out! I did a literature review to check whether the use of distinct types of spatial networks in ecology has led to research silos or, instead, generated bridges among theoretical frameworks due to their methodological similarities. Find out here 👉{% endraw %}
+<br><b>uri:</b> <a href='https://ecoevorxiv.org/repository/view/10312/' target='_blank'>https://ecoevorxiv.org/repository/view/10312/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:zyg4uqukc22wvnsz447t4txw/post/3lznpncwn5c2n' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-09-17 -   💚 10
+##### Post by Timo Conradi <a href='https://bsky.app/profile/timoconradi.bsky.social' target='_blank'>@timoconradi.bsky.social</a> - 2025-09-25 -   💚 28
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Local Adaptation Drives Leaf Thermoregulation in Tropical Rainforest Trees 🔗 buff.ly/1b3WfmT @kalimiddleby.bsky.social @ecolsocaus.bsky.social @jcuofficial.bsky.social{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/1b3WfmT' target='_blank'>https://buff.ly/1b3WfmT</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3lz2y7xvqkd2c' target='_blank'>View Original Post</a>
+  {% raw %}Attribution of vegetation change to climate change: here we compared vegetation time series to simulations from a process model forced with observed and counterfactual (detrended) climate data. Trends in climate necessary for the model to emulate vegetation trends 1/3{% endraw %}
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41561-022-01114-x' target='_blank'>https://www.nature.com/articles/s41561-022-01114-x</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:w2tuffzuosbv2aq3uqaikgzb/post/3lznnttokmc23' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Chris Cornwall <a href='https://bsky.app/profile/chrisecornwall.bsky.social' target='_blank'>@chrisecornwall.bsky.social</a> - 2025-09-17 -   💚 13
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-09-25 -   💚 19
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Our paper out today in @nature.com describes a grim fate for coral reef growth under climate change in the Western Atlantic. We also estimate that reef restoration could offer pockets of local hope, but overall cannot keep up with the effects of climate change{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41586-025-09439-4' target='_blank'>https://www.nature.com/articles/s41586-025-09439-4</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:fbri7atpzkupeouy6bdpslve/post/3lz2mdw4v6k2f' target='_blank'>View Original Post</a>
+  {% raw %}60+ countries have now ratified the HighSeasTreaty, triggering the 120-day countdown to its entry into force in January 2026. 🌊 A historic step—but major players like the USA, Canada, China, India, Australia, New Zealand, and more, are still missing. 🌍🌐🧪{% endraw %}
+<br><b>uri:</b> <a href='https://highseasalliance.org/treaty-ratification/map/' target='_blank'>https://highseasalliance.org/treaty-ratification/map/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lznhwqgaes24' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nature Ecology & Evolution <a href='https://bsky.app/profile/natecoevo.nature.com' target='_blank'>@natecoevo.nature.com</a> - 2025-09-17 -   💚 37
+##### Post by Brian J. Enquist <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank'>@bjenquist.bsky.social</a> - 2025-09-24 -   💚 36
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Across 97% of forest area from eight million sampled forested locations, the density of aboveground biomass is lower near forest edges than in forest interiors. This edge effect is estimated to be responsible for 9% reduction in forest aboveground biomass.🧪🌲🌴🌳{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-025-02840-2?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol' target='_blank'>https://www.nature.com/articles/s41559-025-02840-2?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vxpbqky6dsgs2vnedakzfusk/post/3lz22gvxul22t' target='_blank'>View Original Post</a>
+  {% raw %}Biodiversity modulates the cross-community scaling relationship in changing environments allometry scaling 🌐🧪{% endraw %}
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.70208' target='_blank'>https://onlinelibrary.wiley.com/doi/abs/10.1111/ele.70208</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3lzmjsy2p3c2v' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Vinicius Bastazini <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank'>@vinibastazini.bsky.social</a> - 2025-09-17 -   💚 17
+##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-09-24 -   💚 46
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Happy to share our new study exploring how different dimensions of functional diversity scale with area and shape community assembly. 🧪🌐🌎 Ecology Biodiversity Biogeography Conservation Birds shorturl.at/WkrG5{% endraw %}
-<br><b>uri:</b> <a href='https://shorturl.at/WkrG5' target='_blank'>https://shorturl.at/WkrG5</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vb4z72agepotbk4sbdl5dfrd/post/3lyzsk5p6wc23' target='_blank'>View Original Post</a>
+  {% raw %}Changing water temperatures and human-driven introductions of fish have altered the composition of fish populations in streams and rivers across the USA over the past three decades, a study in Nature suggests. go.nature.com/47ZCcWH 🧪{% endraw %}
+<br><b>uri:</b> <a href='https://go.nature.com/47ZCcWH' target='_blank'>https://go.nature.com/47ZCcWH</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jyctnrcv5dznuu67bkjjlf3t/post/3lzmifxyd3325' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Royal Society Publishing <a href='https://bsky.app/profile/royalsocietypublishing.org' target='_blank'>@royalsocietypublishing.org</a> - 2025-09-17 -   💚 24
+##### Post by Proceedings of the National Academy of Sciences <a href='https://bsky.app/profile/pnas.org' target='_blank'>@pnas.org</a> - 2025-09-24 -   💚 19
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}New in ProcB - From policy to practice: Progress towards data- and code-sharing in ecology and evolution @asanchez-tojar.bsky.social @eivimeycook.bsky.social tell us more in our blog{% endraw %}
-<br><b>uri:</b> <a href='https://royalsociety.org/blog/2025/09/from-policy-to-practice/' target='_blank'>https://royalsociety.org/blog/2025/09/from-policy-to-practice/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:2yb5szx2psmxzy5xnwjwwp5f/post/3lyzonerrvk2e' target='_blank'>View Original Post</a>
+  {% raw %}Plants cool the land through evapotranspiration, but green foliage can absorb more heat than lighter surfaces, causing warming. A study finds that in the northern hemisphere, cooling outweighs warming until the end of the growing season. In PNAS:{% endraw %}
+<br><b>uri:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2501844122' target='_blank'>https://www.pnas.org/doi/10.1073/pnas.2501844122</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:cvhduyk4ukre2drmboh2z3mi/post/3lzmejex3sc2u' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-09-17 -   💚 24
+##### Post by Andy Gonzalez <a href='https://bsky.app/profile/bio-diverse.bsky.social' target='_blank'>@bio-diverse.bsky.social</a> - 2025-09-24 -   💚 15
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Our Editorial concludes a Research Topic with 26 insightful articles on how ecosystems respond to human pressures & ClimateChange: Explore the full collection: MarineScience Conservation Biodiversity MarineEcology 🧪🌍🌐🌊{% endraw %}
-<br><b>uri:</b> <a href='https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2025.1688993/full' target='_blank'>https://www.frontiersin.org/journals/marine-science/articles/10.3389/fmars.2025.1688993/full</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lyzaqleq522b' target='_blank'>View Original Post</a>
+  {% raw %}A must-read special issue: “Bending the curve towards nature recovery: building on Georgina Mace’s legacy” I: Determinants of diversity & resilience. II: Measuring the state of biodiversity III: Biodiversity & natural capital IV: Future scenarios for nature{% endraw %}
+<br><b>uri:</b> <a href='https://royalsocietypublishing.org/toc/rstb/2025/380/1917' target='_blank'>https://royalsocietypublishing.org/toc/rstb/2025/380/1917</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:mrunwizkiiu7jwa2uhc66wnv/post/3lzm5rn5xac2b' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nature Portfolio <a href='https://bsky.app/profile/natureportfolio.nature.com' target='_blank'>@natureportfolio.nature.com</a> - 2025-09-17 -   💚 52
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2025-09-24 -   💚 6
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Why are some species widespread while others are found only in small, isolated areas? A study in Nature Communications shows that species with narrow ranges, and thus higher extinction risk, are often island-restricted, poor dispersers, and have evolved relatively recently. evosky 🧪{% endraw %}
-<br><b>uri:</b> <a href='https://go.nature.com/4p4vSmO' target='_blank'>https://go.nature.com/4p4vSmO</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jyctnrcv5dznuu67bkjjlf3t/post/3lyypakyrom2k' target='_blank'>View Original Post</a>
+  {% raw %}We monetize & map coastal EcosystemServices in the Aegean to inform smarter MarineSpatialPlanning. Dive into where value lies, and why it matters. @inspire-biodiv.bsky.social MarineConservation MarineEcology MSP ConservationPlanning 🌍🌐🌊🧪{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3lzleikcxm22n' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-09-16 -   💚 6
+##### Post by Joaquín Hortal <a href='https://bsky.app/profile/jhortal.bsky.social' target='_blank'>@jhortal.bsky.social</a> - 2025-09-24 -   💚 3
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}OPINION Ecosystem Phenology: Integrating Traits and Processes Beyond Observable Events 🔗 buff.ly/62Ij1xB{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/62Ij1xB' target='_blank'>https://buff.ly/62Ij1xB</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3lyyhqzy7dw2h' target='_blank'>View Original Post</a>
+  {% raw %}Assessing the dynamic interactions between the multiple impacts that different global change stressors may impose on biodiversity is key to develop tansnational mitigation and adaptation strategies that are truly effective for preserving it in this changing world. Check this nice mncn-csic paper 🧪🌐{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:wmnlhixtryuerzk4wo5fzopu/post/3lzlbulg7ss2t' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Pablo Garcia-Diaz <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank'>@pablo-ecology.bsky.social</a> - 2025-09-16 -   💚 17
+##### Post by Future of UK Treescapes <a href='https://bsky.app/profile/uktreescapes.bsky.social' target='_blank'>@uktreescapes.bsky.social</a> - 2025-09-24 -   💚 5
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Limits to the accurate and generalizable use of soundscapes to monitor biodiversity 🌎🌐🧪{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-023-02148-z' target='_blank'>https://www.nature.com/articles/s41559-023-02148-z</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3lyxvit6p2c2k' target='_blank'>View Original Post</a>
+  {% raw %}The UK is launching a massive tree planting programme, with two new national forests & planting millions of new trees. But what is the best way to grow forests? Is it by planting new trees or by allowing trees to spread naturally, or a combination of both? Read the research: buff.ly/BVH4ioz 🌐{% endraw %}
+<br><b>uri:</b> <a href='https://buff.ly/BVH4ioz' target='_blank'>https://buff.ly/BVH4ioz</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:znerzgd4iditmkufcdkldow7/post/3lzl6oq2nxq27' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Pablo Garcia-Diaz <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank'>@pablo-ecology.bsky.social</a> - 2025-09-16 -   💚 12
+##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-09-23 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Harms of introduced large herbivores outweigh benefits to native biodiversity: " We therefore advise caution regarding the intentional introduction of large mammalian herbivores for conservation purposes (rewilding, assisted colonization) [...]" 🌐🌎 bioinvasions{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41467-025-63807-2' target='_blank'>https://www.nature.com/articles/s41467-025-63807-2</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3lyxshubj7k2b' target='_blank'>View Original Post</a>
+  {% raw %}Soil Erosion as a Driver of Eutrophication: An Analysis of European Lakes Using Sentinel‐2 Satellite Data 🔗{% endraw %}
+<br><b>uri:</b> <a href='https://buff.ly/quJOAwm' target='_blank'>https://buff.ly/quJOAwm</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3lzk2zivwjm2b' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nature Ecology & Evolution <a href='https://bsky.app/profile/natecoevo.nature.com' target='_blank'>@natecoevo.nature.com</a> - 2025-09-16 -   💚 30
+##### Post by Trends in Ecology & Evolution <a href='https://bsky.app/profile/cp-trendsecolevo.bsky.social' target='_blank'>@cp-trendsecolevo.bsky.social</a> - 2025-09-23 -   💚 9
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Global analysis indicates that phosphorus limitation on terrestrial primary productivity has become stronger and is increasing more rapidly than nitrogen limitation. 🧪{% endraw %}
-<br><b>uri:</b> <a href='https://www.nature.com/articles/s41559-025-02842-0?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol' target='_blank'>https://www.nature.com/articles/s41559-025-02842-0?utm_source=bluesky&utm_medium=social&utm_campaign=natecolevol</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vxpbqky6dsgs2vnedakzfusk/post/3lyxffgxvns2t' target='_blank'>View Original Post</a>
+  {% raw %}Online now: ‘Earth system engineers’ and the cumulative impact of organisms in deep time{% endraw %}
+<br><b>uri:</b> <a href='http://dlvr.it/TNFcQ2' target='_blank'>http://dlvr.it/TNFcQ2</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:ucweiriru6vm6hvatihaziuq/post/3lzjpk24ksj26' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Functional Ecology  <a href='https://bsky.app/profile/funecology.bsky.social' target='_blank'>@funecology.bsky.social</a> - 2025-09-16 -   💚 15
+##### Post by Dario Martin-Benito <a href='https://bsky.app/profile/dendroecologist.bsky.social' target='_blank'>@dendroecologist.bsky.social</a> - 2025-09-23 -   💚 28
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}📰Published📰ShareTrait: Towards interoperable and reusable individual trait‐based data in ectotherms💻 buff.ly/nhzs60F 🧪🌍{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/nhzs60F' target='_blank'>https://buff.ly/nhzs60F</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:pixg4ym2m5niw5huglzfj4yg/post/3lyx65sbmaa2f' target='_blank'>View Original Post</a>
+  {% raw %}Climate change is reshaping forest growth 🌳🌡️💧 Water and temperature control growth timing. Warmer winters make some species start growing earlier. Hot, dry summers may shorten growing seasons. New paper out @globalchangebio.bsky.social led by a former PhD student @csic.es shorturl.at/5Gn8a{% endraw %}
+<br><b>uri:</b> <a href='https://shorturl.at/5Gn8a' target='_blank'>https://shorturl.at/5Gn8a</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:xnt5bgv4yco5ptq72od24ltw/post/3lzjc3z4lu22u' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2025-09-15 -   💚 4
+##### Post by Yale Center for Natural Carbon Capture <a href='https://bsky.app/profile/yalecncc.bsky.social' target='_blank'>@yalecncc.bsky.social</a> - 2025-09-23 -   💚 10
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}INVITED REVIEW Making Restoration Effective for Dynamic Coastal Wetlands 🔗 buff.ly/G2GVo4a{% endraw %}
-<br><b>uri:</b> <a href='https://buff.ly/G2GVo4a' target='_blank'>https://buff.ly/G2GVo4a</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:md4v5ohqbghb7ncvj57i6nhz/post/3lyvxc4ltjo24' target='_blank'>View Original Post</a>
+  {% raw %}📢📢📢 New peer-reviewed Comment in @springernature.com Climate Change authored by @yalecncc.bsky.social Scientific Leadership Team member and Yale School of the Environment Professor Mark Bradford on "Upstream data need to prove soil carbon as a climate solution."{% endraw %}
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41558-025-02429-4' target='_blank'>https://www.nature.com/articles/s41558-025-02429-4</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:fqdrze44h7i5gf63sugvpucf/post/3lzj7fkluvs2c' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nature Reviews Biodiversity <a href='https://bsky.app/profile/natrevbiodiv.nature.com' target='_blank'>@natrevbiodiv.nature.com</a> - 2025-09-15 -   💚 10
+##### Post by Andrés Baselga <a href='https://bsky.app/profile/andresbaselga.bsky.social' target='_blank'>@andresbaselga.bsky.social</a> - 2025-09-23 -   💚 21
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}ICYMI: New online! Impacts of onshore wind energy production on biodiversity{% endraw %}
-<br><b>uri:</b> <a href='https://bit.ly/48kGWpZ' target='_blank'>https://bit.ly/48kGWpZ</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:y3v4l27oii2ecfrit6h6s6oy/post/3lyvtvdxsuu2i' target='_blank'>View Original Post</a>
+  {% raw %}Our paper on how to use the spatial scaling of community phylogenetic uniqueness came out during the summer but we haven't posted it yet:{% endraw %}
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/ele.70179' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/ele.70179</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:3bcd2hndi2nvssfvllshes5s/post/3lziguxjaks2l' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by American Naturaliﬆ / ASN 🐌 <a href='https://bsky.app/profile/asn-amnat.bsky.social' target='_blank'>@asn-amnat.bsky.social</a> - 2025-09-15 -   💚 13
+##### Post by Pablo Garcia-Diaz <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank'>@pablo-ecology.bsky.social</a> - 2025-09-22 -   💚 7
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}When It Gets Too Hot, Insects Move Too: New Study on Thermal Preferences Summary & Analysis by Patrick Stillson of "Thermal preference plasticity in ectotherms: Integrating temperature affinity and thermoregulation precision" by Deconninck et al.{% endraw %}
-<br><b>uri:</b> <a href='https://amnat.org/an/newpapers/Sept-2025-Deconninck2.html' target='_blank'>https://amnat.org/an/newpapers/Sept-2025-Deconninck2.html</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:uvy5raxwo6ykfuonisohi34a/post/3lyvj44rvec2q' target='_blank'>View Original Post</a>
+  {% raw %}Valuations of nature and its contributions to people in South America’s Southern Cone: taking stock and looking forward 🌎🌐🧪{% endraw %}
+<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S2530064425000501' target='_blank'>https://www.sciencedirect.com/science/article/pii/S2530064425000501</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3lzgetrutwc26' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by PNAS Nexus <a href='https://bsky.app/profile/pnasnexus.org' target='_blank'>@pnasnexus.org</a> - 2025-09-15 -   💚 10
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2025-09-22 -   💚 9
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Should farmers share space with non-food biodiversity on farms, or should they aim for maximum yields on minimum acreage to spare land for other species? A literature review recommends context-specific solutions combining sharing and sparing. In PNAS Nexus:{% endraw %}
-<br><b>uri:</b> <a href='https://academic.oup.com/pnasnexus/article/4/9/pgaf251/8245250' target='_blank'>https://academic.oup.com/pnasnexus/article/4/9/pgaf251/8245250</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:dkrcv274o4x4vebqpnttxa3x/post/3lyvhq34nbc2x' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Proceedings of the National Academy of Sciences <a href='https://bsky.app/profile/pnas.org' target='_blank'>@pnas.org</a> - 2025-09-15 -   💚 29
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}A meta-analysis of 102 studies finds that climate change is reducing the diversity of bacteria and fungi in soil by an average of 16.0% and 19.7%, respectively, which will reduce the ability of soil to store carbon—which could accelerate warming. In PNAS:{% endraw %}
-<br><b>uri:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2426200122' target='_blank'>https://www.pnas.org/doi/10.1073/pnas.2426200122</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:cvhduyk4ukre2drmboh2z3mi/post/3lyvhjpfrqs2x' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2025-09-15 -   💚 10
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌐 Global Ecology feed Digest 31, Sept 08-15, 28 posts! ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
+  {% raw %}🌐 Global Ecology feed Digest 32, Sept 15-22, 26 posts! ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
 <br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lyvfcdk3zc2c' target='_blank'>View Original Post</a>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3lzgarlic6k2k' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Society for Conservation Biology <a href='https://bsky.app/profile/society4conbio.bsky.social' target='_blank'>@society4conbio.bsky.social</a> - 2025-09-15 -   💚 38
+##### Post by Tatsuya Nobori <a href='https://bsky.app/profile/tatsuyanobori.bsky.social' target='_blank'>@tatsuyanobori.bsky.social</a> - 2025-09-22 -   💚 46
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}The 8th European Congress for Conservation Biology will take place in Leiden, NL! They will explore how biodiversity can be safeguarded effectively in the long term. First call is open now! Check out: eccb26leiden.eu/calls/ for more info, we are looking forward to your contributions!{% endraw %}
-<br><b>uri:</b> <a href='https://eccb26leiden.eu/calls/' target='_blank'>https://eccb26leiden.eu/calls/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:fgg4kvgx6cz6tkd2z6zvzexw/post/3lyv4sr7tds2h' target='_blank'>View Original Post</a>
+  {% raw %}Bryophytes hold a larger gene family space than vascular plants{% endraw %}
+<br><b>uri:</b> <a href='https://www.nature.com/articles/s41588-025-02325-9' target='_blank'>https://www.nature.com/articles/s41588-025-02325-9</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:vz2sgsrz6c3s7mk3rtcr6pf4/post/3lzg7xzdss22p' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Journal of Forestry Research <a href='https://bsky.app/profile/forestryjfr.bsky.social' target='_blank'>@forestryjfr.bsky.social</a> - 2025-09-15 -   💚 3
+##### Post by Ecography <a href='https://bsky.app/profile/ecography.bsky.social' target='_blank'>@ecography.bsky.social</a> - 2025-09-22 -   💚 5
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Thanks to @grumpyunclesean.bsky.social for sharing this! 🔥 Study reveals why big trees face divergent wildfire outcomes in open vs. closed canopy forests. A must read! Forests WildfireResearch EcosystemScience JFR 🌏🌐🍁🌺🌱🌿🦤{% endraw %}
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:pyvexmxevlikxwts5n33lsyp/post/3lyv4b66nk22j' target='_blank'>View Original Post</a>
+  {% raw %}The diel niche of brown bears: constraints on adaptive capacity in human-modified landscapes vist.ly/47myk Anthropocene Bears GPS{% endraw %}
+<br><b>uri:</b> <a href='https://vist.ly/47myk' target='_blank'>https://vist.ly/47myk</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:gzozs2g2etnvprbwjby4ujhu/post/3lzg3o3s65n2g' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Biodiversity Exploratories <a href='https://bsky.app/profile/bexplo.bsky.social' target='_blank'>@bexplo.bsky.social</a> - 2025-09-15 -   💚 3
+##### Post by Nature <a href='https://bsky.app/profile/nature.com' target='_blank'>@nature.com</a> - 2025-09-22 -   💚 30
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}📢New BE-paper out on cost-effective conservation of multiple goals in grasslands. 🔗 Permanent grasslands are key for biodiversity but face rising threats. Traditional conservation looked at species counts, but resilience, ecosystem services & interactions matter too. 🌐{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1016/j.biocon.2025.111401' target='_blank'>https://doi.org/10.1016/j.biocon.2025.111401</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:derzfgnmue5bfuc7izj53ndl/post/3lyv35kwqoc2w' target='_blank'>View Original Post</a>
+  {% raw %}Modelling suggests that most Caribbean coral reefs will erode by the year 2100 as sea-level rise outpaces reef growth and limits potential reef restoration go.nature.com/42229kK{% endraw %}
+<br><b>uri:</b> <a href='https://go.nature.com/42229kK' target='_blank'>https://go.nature.com/42229kK</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:vrsppvjc5fysqnm2zshiirey/post/3lzfxcrbll42t' target='_blank'>View Original Post</a>
 </div>
 
 ---
 
-##### Post by Nicholas Wu <a href='https://bsky.app/profile/nicholaswu.bsky.social' target='_blank'>@nicholaswu.bsky.social</a> - 2025-09-15 -   💚 52
+##### Post by Dr. Mariana García Criado <a href='https://bsky.app/profile/nanitundra.bsky.social' target='_blank'>@nanitundra.bsky.social</a> - 2025-09-22 -   💚 53
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}New paper in @funecology.bsky.social led by @felixpleiva.bsky.social. We present ShareTrait, a community-driven platform for standardising & sharing individual-level trait data in ectotherms to improve data reuse across studies. 🔗 OpenScience FAIRdata{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1111/1365-2435.70147' target='_blank'>https://doi.org/10.1111/1365-2435.70147</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:4a2adxd6njhyvuijolkwa57v/post/3lytpvuo6f22p' target='_blank'>View Original Post</a>
+  {% raw %}🌲 Boreal-tundra species drive Arctic plant borealization 🌲 Our new study in EcologyLetters quantifies tundra plant borealization, assesses its main drivers and identifies the species & traits contributing to borealization. 🧵 (1/6) 🌐🧪🌱🌍{% endraw %}
+<br><b>uri:</b> <a href='https://doi.org/10.1111/ele.70209' target='_blank'>https://doi.org/10.1111/ele.70209</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:aqbuq4s7636ofwdji3vjafqm/post/3lzfuvt2n7s2z' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by ELE-ETHWSL.bsky.social <a href='https://bsky.app/profile/ele-ethwsl.bsky.social' target='_blank'>@ele-ethwsl.bsky.social</a> - 2025-09-22 -   💚 8
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}New publication alert! Together with colleagues, we show how combining eDNA with remote sensing can improve models of fish biodiversity in tropical rivers. 🔗 Read the article here:{% endraw %}
+<br><b>uri:</b> <a href='https://www.sciencedirect.com/science/article/pii/S1574954125002602' target='_blank'>https://www.sciencedirect.com/science/article/pii/S1574954125002602</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:6i5jwcrehdkppkxb3s56xm7z/post/3lzftkxegwd2f' target='_blank'>View Original Post</a>
 </div>
 
 ---
