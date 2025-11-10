@@ -205,32 +205,55 @@ cat("nb_post=",nb_post)
 
 library(ggplot2)
 library(dplyr)
+
 visits <- data.frame(
-  date = as.Date(c("2025-10-27", "2025-11-03", "2025-11-10")),
-  cumulative = c(2897, 2954, 3016)
+  date = as.Date(c("2025-10-20","2025-10-27", "2025-11-03", "2025-11-10")),
+  cumulative = c(2817, 2897, 2954, 3016),
+  posts = c(32, 21, 27, 29)
 )
 
+# compute weekly visitors
 visits_weekly <- visits %>%
   arrange(date) %>%
   mutate(weekly = cumulative - lag(cumulative)) %>%
-  # remove first week because no previous stats
   filter(!is.na(weekly))
 
-ggplot(visits_weekly, aes(x = date, y = weekly)) +
-  geom_line(size = 1.1, col="blue") +
-  geom_point(size = 3) +
-  geom_text(aes(label = weekly), vjust = -0.7, size = 4) +
+# we want left axis (0–100) for visitors, right axis (0–50) for posts
+left_max  <- 100
+right_max <- 50
+scale_factor <- left_max / right_max   # 100 / 50 = 2
+
+ggplot(visits_weekly, aes(x = date)) +
+  # visitors (primary axis, left)
+  geom_line(aes(y = weekly), size = 1.1, color = "#336699") +
+  geom_point(aes(y = weekly), size = 3, color = "#336699") +
+  geom_text(aes(y = weekly, label = weekly),
+            vjust = -0.7, size = 4, color = "#336699") +
+  
+  # posts (secondary axis, right) → scaled to left axis
+  geom_line(aes(y = posts * scale_factor),
+            size = 1.1, color = "#3B7A57", linetype = "dashed") +
+  geom_point(aes(y = posts * scale_factor),
+             size = 3, color = "#3B7A57", shape = 17) +
+  geom_text(aes(y = posts * scale_factor, label = posts),
+            vjust = 1.5, size = 4, color = "#3B7A57") +
+  
   scale_x_date(date_labels = "%b %d", date_breaks = "1 week") +
-  ylim(0,100)+
+  scale_y_continuous(
+    name = "Visitors (weekly)",
+    limits = c(0, left_max),
+    sec.axis = sec_axis(~ . / scale_factor, name = "Posts")
+  ) +
   labs(
-    title = "Global Ecology Feed – Weekly Visitors",
-    subtitle = "Differences from previous week (starting week 2)",
-    x = "Week",
-    y = "Visitors (weekly)"
+    title = "Global Ecology Feed – Weekly Visitors & Posts",
+    x = "Week"
   ) +
   theme_minimal(base_size = 13) +
   theme(
     plot.title = element_text(face = "bold"),
     axis.title.x = element_text(margin = margin(t = 10)),
-    axis.title.y = element_text(margin = margin(r = 10))
+    axis.title.y.left  = element_text(color = "#336699"),
+    axis.text.y.left   = element_text(color = "#336699"),
+    axis.title.y.right = element_text(color = "#3B7A57"),
+    axis.text.y.right  = element_text(color = "#3B7A57")
   )
