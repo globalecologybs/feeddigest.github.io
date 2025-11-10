@@ -199,3 +199,38 @@ write.csv2(handles,handles_path,row.names = F)
 cat("Markdown file saved as:", file_path, "\n")
 cat("Handles file saved as", handles_path,"\n")
 cat("nb_post=",nb_post)
+
+
+#Plot Visitors 
+
+library(ggplot2)
+library(dplyr)
+visits <- data.frame(
+  date = as.Date(c("2025-10-27", "2025-11-03", "2025-11-10")),
+  cumulative = c(2897, 2954, 3016)
+)
+
+visits_weekly <- visits %>%
+  arrange(date) %>%
+  mutate(weekly = cumulative - lag(cumulative)) %>%
+  # remove first week because no previous stats
+  filter(!is.na(weekly))
+
+ggplot(visits_weekly, aes(x = date, y = weekly)) +
+  geom_line(size = 1.1, col="blue") +
+  geom_point(size = 3) +
+  geom_text(aes(label = weekly), vjust = -0.7, size = 4) +
+  scale_x_date(date_labels = "%b %d", date_breaks = "1 week") +
+  ylim(0,100)+
+  labs(
+    title = "Global Ecology Feed – Weekly Visitors",
+    subtitle = "Differences from previous week (starting week 2)",
+    x = "Week",
+    y = "Visitors (weekly)"
+  ) +
+  theme_minimal(base_size = 13) +
+  theme(
+    plot.title = element_text(face = "bold"),
+    axis.title.x = element_text(margin = margin(t = 10)),
+    axis.title.y = element_text(margin = margin(r = 10))
+  )
