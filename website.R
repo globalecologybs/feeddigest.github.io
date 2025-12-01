@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 39
+X <- 41
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
@@ -57,7 +57,8 @@ markdown_text <- paste0(
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nb_post, "**.\n\n",
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.\n\n",
   "- **SCIENCE ONLY (papers, data, jobs)**\n",
-  "- DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute\n\n",
+  "- Not on BlueSky ? email <a href='mailto' target='_blank'>global.ecology.bs@gmail.com</a> to receive weekly update",
+  "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute and receive weekly update\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>\n",
@@ -207,9 +208,9 @@ library(ggplot2)
 library(dplyr)
 
 visits <- data.frame(
-  date = as.Date(c("2025-10-20","2025-10-27", "2025-11-03", "2025-11-10","2025-11-17")),
-  cumulative = c(2817, 2897, 2954, 3016,3064),
-  posts = c(32, 21, 27, 29,26)
+  date = as.Date(c("2025-10-20","2025-10-27", "2025-11-03", "2025-11-10","2025-11-17","2025-11-24")),
+  cumulative = c(2817, 2897, 2954, 3016,3064,3105),
+  posts = c(32,21,27,29,26,27)
 )
 
 # compute weekly visitors
