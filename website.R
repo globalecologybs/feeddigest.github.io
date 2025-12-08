@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 41
+X <- 42
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
@@ -57,7 +57,7 @@ markdown_text <- paste0(
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nb_post, "**.\n\n",
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.\n\n",
   "- **SCIENCE ONLY (papers, data, jobs)**\n",
-  "- Not on BlueSky ? email <a href='mailto' target='_blank'>global.ecology.bs@gmail.com</a> to receive weekly update",
+  "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com' target='_blank'> to receive weekly update",
   "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute and receive weekly update\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>\n",
@@ -200,61 +200,3 @@ write.csv2(handles,handles_path,row.names = F)
 cat("Markdown file saved as:", file_path, "\n")
 cat("Handles file saved as", handles_path,"\n")
 cat("nb_post=",nb_post)
-
-
-#Plot Visitors 
-
-library(ggplot2)
-library(dplyr)
-
-visits <- data.frame(
-  date = as.Date(c("2025-10-20","2025-10-27", "2025-11-03", "2025-11-10","2025-11-17","2025-11-24","2025-12-01")),
-  cumulative = c(2817, 2897, 2954, 3016,3064,3105,3159),
-  posts = c(32,21,27,29,26,27,31)
-)
-
-# compute weekly visitors
-visits_weekly <- visits %>%
-  arrange(date) %>%
-  mutate(weekly = cumulative - lag(cumulative)) %>%
-  filter(!is.na(weekly))
-
-# we want left axis (0–100) for visitors, right axis (0–50) for posts
-left_max  <- 100
-right_max <- 50
-scale_factor <- left_max / right_max   # 100 / 50 = 2
-
-ggplot(visits_weekly, aes(x = date)) +
-  # visitors (primary axis, left)
-  geom_line(aes(y = weekly), size = 1.1, color = "#336699") +
-  geom_point(aes(y = weekly), size = 3, color = "#336699") +
-  #geom_text(aes(y = weekly, label = weekly),
-  #          vjust = -0.7, size = 4, color = "#336699") +
-  
-  # posts (secondary axis, right) → scaled to left axis
-  geom_line(aes(y = posts * scale_factor),
-            size = 1.1, color = "#3B7A57", linetype = "dashed") +
-  geom_point(aes(y = posts * scale_factor),
-             size = 3, color = "#3B7A57", shape = 17) +
-  #geom_text(aes(y = posts * scale_factor, label = posts),
-  #          vjust = 1.5, size = 4, color = "#3B7A57") +
-  
-  scale_x_date(date_labels = "%b %d", date_breaks = "1 week") +
-  scale_y_continuous(
-    name = "Visitors (weekly)",
-    limits = c(0, left_max),
-    sec.axis = sec_axis(~ . / scale_factor, name = "Posts")
-  ) +
-  labs(
-    title = "Global Ecology Feed – Weekly Visitors & Posts",
-    x = "Week"
-  ) +
-  theme_minimal(base_size = 13) +
-  theme(
-    plot.title = element_text(face = "bold"),
-    axis.title.x = element_text(margin = margin(t = 10)),
-    axis.title.y.left  = element_text(color = "#336699"),
-    axis.text.y.left   = element_text(color = "#336699"),
-    axis.title.y.right = element_text(color = "#3B7A57"),
-    axis.text.y.right  = element_text(color = "#3B7A57")
-  )
