@@ -57,7 +57,7 @@ markdown_text <- paste0(
   "Feeds are from **", format(start_date, "%B %d, %Y"), "** to **", format(end_date, "%B %d, %Y"), "**. Total posts: **", nb_post, "**.\n\n",
   "For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.\n\n",
   "- **SCIENCE ONLY (papers, data, jobs)**\n",
-  "- Not on BlueSky ? email <a href='mailto' target='_blank'>global.ecology.bs@gmail.com</a> to receive weekly update",
+  "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com' target='_blank'>global.ecology.bs@gmail.com</a> to receive weekly update",
   "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute and receive weekly update\n\n",
   "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed\n\n",
   "- <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>\n",
