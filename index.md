@@ -22,14 +22,26 @@ Feeds are from **December 08, 2025** to **December 15, 2025**. Total posts: **23
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
-- **SCIENCE ONLY (papers, data, jobs)**
-- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com' target='_blank'> to receive weekly update- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute and receive weekly update
+- **SCIENCE ONLY (publications, data, jobs)**
+- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com' target='_blank'> to receive weekly update
+
+- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> to contribute and receive weekly update
 
 - Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'>like & pin the Global Ecology</a> feed
 
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank'>Global Ecology starter pack Vol. 1</a>
 - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank'>Global Ecology starter pack Vol. 2</a>
 - <a href='https://go.bsky.app/MkLHiKU' target='_blank'>Global Ecology starter pack Vol. 3</a>
+
+---
+
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2025-12-15 -   💚 4
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}🌐 Global Ecology feed Digest 43 Dec 08-15, 23 posts! ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
+<br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3m7zt3ebtes2c' target='_blank'>View Original Post</a>
+</div>
 
 ---
 
@@ -43,7 +55,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Ivan Jaric <a href='https://bsky.app/profile/ivanjaric.bsky.social' target='_blank'>@ivanjaric.bsky.social</a> - 2025-12-14 -   💚 9
+##### Post by Ivan Jaric <a href='https://bsky.app/profile/ivanjaric.bsky.social' target='_blank'>@ivanjaric.bsky.social</a> - 2025-12-14 -   💚 12
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Socialmedia data reveal novel habitats for invasivespecies – our new paper led by @shawan-chowdhury.bsky.social now out in BiologicalConservation with @bbmwong.bsky.social biologicalinvasions alienspecies nonnative invasive pests conservation iEcology{% endraw %}
@@ -53,7 +65,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Journal of Forestry Research <a href='https://bsky.app/profile/forestryjfr.bsky.social' target='_blank'>@forestryjfr.bsky.social</a> - 2025-12-14 -   💚 4
+##### Post by Journal of Forestry Research <a href='https://bsky.app/profile/forestryjfr.bsky.social' target='_blank'>@forestryjfr.bsky.social</a> - 2025-12-14 -   💚 7
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}🌲⚡ This NationalEnergyConservationDay, New research shows selective thinning boosts carbon storage while improving tree stability. 🌳 Forest management is climate action: JFR ForestryResearch CarbonSequestration ClimateAction 🌐🍁🌺🌱🌿{% endraw %}
@@ -63,7 +75,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Daniela Nemetschek (Krebber) <a href='https://bsky.app/profile/danielanemetschek.bsky.social' target='_blank'>@danielanemetschek.bsky.social</a> - 2025-12-12 -   💚 22
+##### Post by Daniela Nemetschek (Krebber) <a href='https://bsky.app/profile/danielanemetschek.bsky.social' target='_blank'>@danielanemetschek.bsky.social</a> - 2025-12-12 -   💚 23
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %} Working with dendrometers or curious about dendrometer research? 🌱🌐🍁🌳 🚨 Join the Global Dendrometer Network 🚨 We’re building a global community using dendrometers to study plant growth, stress, phenology & more. Sign up for updates on meetings, data calls & more 👇{% endraw %}
@@ -83,7 +95,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Helmut Hillebrand <a href='https://bsky.app/profile/hillebr1.bsky.social' target='_blank'>@hillebr1.bsky.social</a> - 2025-12-12 -   💚 54
+##### Post by Helmut Hillebrand <a href='https://bsky.app/profile/hillebr1.bsky.social' target='_blank'>@hillebr1.bsky.social</a> - 2025-12-12 -   💚 61
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}More than a year ago researchers from @hifmb.de and @icbm-uol.bsky.social started to write about different perspectives on marine biodiversity change from natural and social science perspectives. This morphed into a review paper that was published online today 🧪{% endraw %}
@@ -103,7 +115,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Pavel Kratina <a href='https://bsky.app/profile/kratina.bsky.social' target='_blank'>@kratina.bsky.social</a> - 2025-12-12 -   💚 30
+##### Post by Pavel Kratina <a href='https://bsky.app/profile/kratina.bsky.social' target='_blank'>@kratina.bsky.social</a> - 2025-12-12 -   💚 31
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Flying changes how metabolism scales with body mass – NEW META-ANALYSIS of insects and spiders in Ecology Letters with @vojsavagjoni.bsky.social, H. Tan, A. Hirst and D. Atkinson{% endraw %}
@@ -143,7 +155,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Graeme Cumming <a href='https://bsky.app/profile/gscumming.bsky.social' target='_blank'>@gscumming.bsky.social</a> - 2025-12-11 -   💚 15
+##### Post by Graeme Cumming <a href='https://bsky.app/profile/gscumming.bsky.social' target='_blank'>@gscumming.bsky.social</a> - 2025-12-11 -   💚 16
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Happy to share my new publication in Nature Vegetation spillovers from Aus protected areas are common & widespread; also, management inside the area can affect vegetation outside the area. Spillovers don't factor much into conservation policy, but perhaps they should! 🧪🌍🌐{% endraw %}
@@ -213,16 +225,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Michał Filipiak <a href='https://bsky.app/profile/michalfilipiak.bsky.social' target='_blank'>@michalfilipiak.bsky.social</a> - 2025-12-09 -   💚 32
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🧵1/5 🌍🔬 Our new paper is out! We identify the global mechanisms shaping the elemental composition of organisms — and the results overturn long-standing assumptions in ecology. 👇 Thread ↓{% endraw %}
-<br><b>uri:</b> <a href='https://doi.org/10.1038/s41467-025-65960-0' target='_blank'>https://doi.org/10.1038/s41467-025-65960-0</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:rhmbok7thhjlvj2z53yvlkfk/post/3m7kr5xqv6c2y' target='_blank'>View Original Post</a>
-</div>
-
----
-
 ##### Post by Markus Eichhorn <a href='https://bsky.app/profile/markuseichhorn.bsky.social' target='_blank'>@markuseichhorn.bsky.social</a> - 2025-12-09 -   💚 44
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
@@ -253,7 +255,17 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Blas M. Benito <a href='https://bsky.app/profile/blasbenito.com' target='_blank'>@blasbenito.com</a> - 2025-12-09 -   💚 20
+##### Post by Markus Eichhorn <a href='https://bsky.app/profile/markuseichhorn.bsky.social' target='_blank'>@markuseichhorn.bsky.social</a> - 2025-12-09 -   💚 29
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}More diverse forests have greater productivity, but do they use more water? A new meta-analysis by Shovon et al. in @journalofecology.bsky.social suggests not. 🌐🌏🧪{% endraw %}
+<br><b>uri:</b> <a href='https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70211' target='_blank'>https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2745.70211</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:xwpv6cro3w4pniyn56fadtu4/post/3m7karonidk2g' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Blas M. Benito <a href='https://bsky.app/profile/blasbenito.com' target='_blank'>@blasbenito.com</a> - 2025-12-09 -   💚 21
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}{collinear} 3.0 is now on CRAN (yay! 🥳) This rstats package automates multicollinearity management to improve model robustness and interpretability. You can learn more at blasbenito.github.io/collinear/, but here's a summary of the most exciting new features: 🧵 1/5{% endraw %}
