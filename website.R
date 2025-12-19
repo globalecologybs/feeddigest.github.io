@@ -6,7 +6,7 @@ X <- 43
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
+start_date <- Sys.Date() - 5
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
