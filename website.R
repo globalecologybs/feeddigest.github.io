@@ -2,11 +2,11 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 44
+X <- 45
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
-start_date <- Sys.Date() - 7
+start_date <- Sys.Date() - 14
 
 # Install necessary package if not already installed
 if (!require("bskyr")) {
@@ -20,6 +20,8 @@ feed <- feed[!sapply(feed$uri, is.na),]
 feed <- feed[!sapply(feed$embed, is.null),]
 feed <- feed[-24,]
 #feed <- feed[1:24,]
+
+save(feed,file=here::here("data","2026",paste0("feed_",strftime(Sys.Date(), "%V"),".RData")))
 
 nb_post=0
 for (i in 1:nrow(feed)){
