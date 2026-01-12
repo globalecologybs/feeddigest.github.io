@@ -35,7 +35,27 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Ondrej Mottl 🌿💻📈🌍⏳ <a href='https://bsky.app/profile/ondrejmottl.bsky.social' target='_blank'>@ondrejmottl.bsky.social</a> - 2026-01-12 -   💚 1
+##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2026-01-12 -   💚 7
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}🌐 Global Ecology feed Digest 46, Jan 05-12, 45 posts 🤩 ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
+<br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3mc7yzuk3xs2r' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2026-01-12 -   💚 3
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}New paper from lab in Global Change Biology @global-ecology.bsky.social Soil Protist Diversity and Biotic Interactions Shape Ecosystem Functions Under Climate Change Led by H Liu with C Martins, R Jayaramaiah, @wang_juntao @manudelbaq.bsky.social et al{% endraw %}
+<br><b>uri:</b> <a href='https://onlinelibrary.wiley.com/doi/10.1111/gcb.70692' target='_blank'>https://onlinelibrary.wiley.com/doi/10.1111/gcb.70692</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:upn3dyq3h7cazfuovyayaqfh/post/3mc7xmhcvgk2k' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Ondrej Mottl 🌿💻📈🌍⏳ <a href='https://bsky.app/profile/ondrejmottl.bsky.social' target='_blank'>@ondrejmottl.bsky.social</a> - 2026-01-12 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}1/🧵 Paper out! 🎉🌿🔒 VegVault is now published in Nature Scientific Data: a global database linking palaeo + modern vegetation with traits + climate/soil drivers. 🌐website: bit.ly/VegVault 📜paper: VegVault Ecology Paleoecology Vegetation FunctionalTraits{% endraw %}
@@ -75,7 +95,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Jakub Nowosad <a href='https://bsky.app/profile/jakubnowosad.com' target='_blank'>@jakubnowosad.com</a> - 2026-01-11 -   💚 35
+##### Post by Jakub Nowosad <a href='https://bsky.app/profile/jakubnowosad.com' target='_blank'>@jakubnowosad.com</a> - 2026-01-11 -   💚 36
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}We just published a JOSIS paper on what spatial data science languages have in common and what they still need. Insights from across the R, Python & Julia ecosystems. URL: SpatialDataScience GISchat OpenSource RSpatial GeoPython JuliaGeo{% endraw %}
@@ -365,7 +385,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Nicolas Gross <a href='https://bsky.app/profile/nicolas-p-gross.bsky.social' target='_blank'>@nicolas-p-gross.bsky.social</a> - 2026-01-07 -   💚 23
+##### Post by Nicolas Gross <a href='https://bsky.app/profile/nicolas-p-gross.bsky.social' target='_blank'>@nicolas-p-gross.bsky.social</a> - 2026-01-07 -   💚 24
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Plant phenolics play a key roles in plant strategies. Here we explore the drivers of phenolic content in plants over 1800 species across global drylands 🧪🌐 ➡️https://besjournals.onlinelibrary.wiley.com/doi/full/10.1111/1365-2745.70222{% endraw %}
@@ -531,46 +551,6 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}📣 Call for Abstracts | INQUA Congress 2027 📍 Lucknow, India | 🗓 Jan 28–Feb 3, 2027 Re-evaluating Long-Term Human–Biodiversity Relationships. Case studies & syntheses highlighting positive human–nature relations from archaeology & across the palaeosciences ⏰Deadline: 15 Feb 2026 🌏🧪🌐 INQUA2027{% endraw %}
 <br>
   <br><a href='https://bsky.app/profile/did:plc:mtparg7d5dbhjyyqtr3qkq2u/post/3mboi3g5acs2m' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Global Ecology 🌐 <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank'>@global-ecology.bsky.social</a> - 2026-01-05 -   💚 11
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}🌐 Global Ecology feed Digest 45 Dec 22 Jan 05 20 posts ✨For the lazy (yes we are!) & friends who don't like social media but might benefit from this feed, here’s a DIGEST crafted with 💚 for you to share 👉 DM if you want to receive the link weekly 🌍🦤🦑🪴🍁🧪{% endraw %}
-<br><b>uri:</b> <a href='https://globalecologybs.github.io/feeddigest.github.io/' target='_blank'>https://globalecologybs.github.io/feeddigest.github.io/</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:hkd2vm267wimnpuu3wratda4/post/3mbodtn3ggc2h' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by juli g pausas <a href='https://bsky.app/profile/jgpausas.bsky.social' target='_blank'>@jgpausas.bsky.social</a> - 2026-01-05 -   💚 28
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Clues for cooling our cities: Urban trees, urban grasslands & urban crops cool cities in most environments (negative values), except in arid conditions where only trees are effective. Shrubs likely behave as trees, I guess.   🧪🌍🌐🌳🪴🍁 EnvSci botany plantscience{% endraw %}
-<br><b>uri:</b> <a href='https://www.science.org/doi/10.1126/sciadv.aea9165' target='_blank'>https://www.science.org/doi/10.1126/sciadv.aea9165</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:vuprtd6q665cf6ungjd6g74q/post/3mbo5cbjby22r' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Ecography <a href='https://bsky.app/profile/ecography.bsky.social' target='_blank'>@ecography.bsky.social</a> - 2026-01-05 -   💚 6
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}Developing a macroecology for human-altered ecosystems vist.ly/4kih5 Macroecology METE Disturbance{% endraw %}
-<br><b>uri:</b> <a href='https://vist.ly/4kih5' target='_blank'>https://vist.ly/4kih5</a><br>
-  <br><a href='https://bsky.app/profile/did:plc:gzozs2g2etnvprbwjby4ujhu/post/3mbo4kw5nkf2n' target='_blank'>View Original Post</a>
-</div>
-
----
-
-##### Post by Jens-Christian Svenning <a href='https://bsky.app/profile/jcsvenning.bsky.social' target='_blank'>@jcsvenning.bsky.social</a> - 2026-01-05 -   💚 35
-
-<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
-  {% raw %}New @econovoau.bsky.social paper in Global Ecology & Biogeography - on ungulates in North American ecosystems. Key point: alien ungulates can enhance herbivore diversity & partially restore lost ecosystem functions 🦌🌿🐂 🐎Link in comment Rewilding Megafauna Macroecology TIBS2026{% endraw %}
-<br>
-  <br><a href='https://bsky.app/profile/did:plc:vo4aavnlpxx554hsl534zi3a/post/3mbns2ci5s22e' target='_blank'>View Original Post</a>
 </div>
 
 ---

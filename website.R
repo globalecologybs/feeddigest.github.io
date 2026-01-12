@@ -18,13 +18,28 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
                            limit=150)
 feed <- feed[!sapply(feed$uri, is.na),]
 feed <- feed[!sapply(feed$embed, is.null),]
-#feed <- feed[-24,]
-#feed <- feed[1:24,]
+
+#Cutoff 
+
+  # Extract posts (tibble)
+  posts <- if (is.list(feed) && "feed" %in% names(feed)) feed$feed else feed
+  
+  # Extract fields from list-columns
+  handles <- vapply(posts$author, \(a) a$handle, character(1))
+  texts   <- vapply(posts$record, \(r) r$text,   character(1))
+  
+  # Find positions of matching digest posts
+  cut_idx <- which(
+    handles == "global-ecology.bsky.social" &
+      grepl("Global Ecology feed Digest", texts, fixed = TRUE)
+  )
+
+#Save
 
 save(feed,file=here::here("data","2026",paste0("feed_",strftime(Sys.Date(), "%V"),".RData")))
 
 nb_post=0
-for (i in 1:nrow(feed)){
+for (i in 1:(cut_idx[2]-1)){
   post_date <- tryCatch(
     as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
     error = function(e) NA
@@ -34,11 +49,9 @@ for (i in 1:nrow(feed)){
   }
 }
 
-for (i in 1:length(feed$author)){
+for (i in 1:(cut_idx[2]-1)){
   cat("i=",i," ",feed$author[[i]]$handle,"\n")
 }
-
-feed$author[[24]]
 
  
 #i=1
@@ -76,9 +89,8 @@ markdown_text <- paste0(
   "---\n\n" # Separator
 )
 
-
 # Loop through the feed and format posts
-for (i in 1:dim(feed)[1]) {
+for (i in 1:(cut_idx[2]-1)) {
   #i=24
   text <- feed$record[[i]]$text
   
@@ -194,7 +206,7 @@ file_path <- "index.md"
 writeLines(markdown_text, file_path)
 
 # Save the list of handle concerned 
-handles <- do.call(rbind,lapply (1:nrow(feed), function(i){
+handles <- do.call(rbind,lapply (1:(cut_idx[2]-1), function(i){
   post_date <- tryCatch(
     as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
     error = function(e) NA
