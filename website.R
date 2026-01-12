@@ -18,7 +18,7 @@ feed <- bskyr::bs_get_feed('at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.
                            limit=150)
 feed <- feed[!sapply(feed$uri, is.na),]
 feed <- feed[!sapply(feed$embed, is.null),]
-feed <- feed[-24,]
+#feed <- feed[-24,]
 #feed <- feed[1:24,]
 
 save(feed,file=here::here("data","2026",paste0("feed_",strftime(Sys.Date(), "%V"),".RData")))
@@ -33,6 +33,13 @@ for (i in 1:nrow(feed)){
     nb_post=nb_post+1
   }
 }
+
+for (i in 1:length(feed$author)){
+  cat("i=",i," ",feed$author[[i]]$handle,"\n")
+}
+
+feed$author[[24]]
+
  
 #i=1
 # Initialize Markdown content with metadata and header
@@ -70,7 +77,6 @@ markdown_text <- paste0(
 )
 
 
-
 # Loop through the feed and format posts
 for (i in 1:dim(feed)[1]) {
   #i=24
@@ -90,6 +96,7 @@ for (i in 1:dim(feed)[1]) {
 
   # Skip posts with less than 40 characters
   if (nchar(text) < 50) {
+    cat("i=",i," ",feed$author[[i]]$handle, "has been REMOVED \n")
     next
   }
   
@@ -116,6 +123,7 @@ for (i in 1:dim(feed)[1]) {
   
   # Skip posts outside the date range
   if (is.na(post_date) || post_date < start_date || post_date > end_date) {
+    cat("i=",i," ",feed$author[[i]]$handle, "has been REMOVED \n")
     next
   }
   
@@ -164,7 +172,11 @@ for (i in 1:dim(feed)[1]) {
     "</div>\n\n",
     "---\n\n"
   )
+  
+  cat("i=",i," ",feed$author[[i]]$handle, "ok \n")
 }
+
+save(feed,file=here::here("data","2026","feed.Rdata"))
 
 # Add the visitor counter at the end of the site
 markdown_text <- paste0(

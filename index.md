@@ -18,7 +18,7 @@
 
 # <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg' alt='Global Ecology' style='height: 1em; vertical-align: middle;'> <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank'> bluesky Global Ecology Feed</a> Digest #46
 
-Feeds are from **January 05, 2026** to **January 12, 2026**. Total posts: **44**.
+Feeds are from **January 05, 2026** to **January 12, 2026**. Total posts: **45**.
 
 For the lazy (yes we are) and friends who do not like social media (yes they can) but could benefit from the news on the Global Ecology feed ... here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales. Terrestrial, freswater & marine realms.
 
@@ -35,7 +35,17 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Marie Sünnemann <a href='https://bsky.app/profile/msoil.bsky.social' target='_blank'>@msoil.bsky.social</a> - 2026-01-12 -   💚 5
+##### Post by Ondrej Mottl 🌿💻📈🌍⏳ <a href='https://bsky.app/profile/ondrejmottl.bsky.social' target='_blank'>@ondrejmottl.bsky.social</a> - 2026-01-12 -   💚 1
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}1/🧵 Paper out! 🎉🌿🔒 VegVault is now published in Nature Scientific Data: a global database linking palaeo + modern vegetation with traits + climate/soil drivers. 🌐website: bit.ly/VegVault 📜paper: VegVault Ecology Paleoecology Vegetation FunctionalTraits{% endraw %}
+<br><b>uri:</b> <a href='https://bit.ly/VegVault' target='_blank'>https://bit.ly/VegVault</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:n3imka5lhde6bsrecpf3jbyi/post/3mc7rv3e3ic2n' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Marie Sünnemann <a href='https://bsky.app/profile/msoil.bsky.social' target='_blank'>@msoil.bsky.social</a> - 2026-01-12 -   💚 9
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}New paper out! We review the effects of soil biodiversity on ecosystem functioning:{% endraw %}
@@ -45,7 +55,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Benjamin Wildermuth <a href='https://bsky.app/profile/bmwildermuth.bsky.social' target='_blank'>@bmwildermuth.bsky.social</a> - 2026-01-12 -   💚 2
+##### Post by Benjamin Wildermuth <a href='https://bsky.app/profile/bmwildermuth.bsky.social' target='_blank'>@bmwildermuth.bsky.social</a> - 2026-01-12 -   💚 4
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}In the current issue of NEE, you can find our research on the community assembly mechanisms behind arthropod 🪲🕷️ biomass declines ⚖️📉 both as the original paper: and (new🌟) as research briefing by @ebelingae.bsky.social and myself:{% endraw %}
@@ -55,7 +65,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by UWA Oceans Institute <a href='https://bsky.app/profile/uwaoceans.bsky.social' target='_blank'>@uwaoceans.bsky.social</a> - 2026-01-12 -   💚 4
+##### Post by UWA Oceans Institute <a href='https://bsky.app/profile/uwaoceans.bsky.social' target='_blank'>@uwaoceans.bsky.social</a> - 2026-01-12 -   💚 8
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}New OI research from shows 𝗽𝗿𝗼𝘁𝗲𝗰𝘁𝗲𝗱 𝗮𝗿𝗲𝗮𝘀 deliver benefits well beyond their boundaries — for ecosystems, communities and economies. A timely framework as Australia works towards 30×30 and a nature-positive future. 🔗 @gscumming.bsky.social{% endraw %}
@@ -65,7 +75,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Jakub Nowosad <a href='https://bsky.app/profile/jakubnowosad.com' target='_blank'>@jakubnowosad.com</a> - 2026-01-11 -   💚 32
+##### Post by Jakub Nowosad <a href='https://bsky.app/profile/jakubnowosad.com' target='_blank'>@jakubnowosad.com</a> - 2026-01-11 -   💚 35
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}We just published a JOSIS paper on what spatial data science languages have in common and what they still need. Insights from across the R, Python & Julia ecosystems. URL: SpatialDataScience GISchat OpenSource RSpatial GeoPython JuliaGeo{% endraw %}
@@ -145,7 +155,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> - 2026-01-09 -   💚 43
+##### Post by Jonathan Lenoir 🌳🌲🌴 <a href='https://bsky.app/profile/jonlen.bsky.social' target='_blank'>@jonlen.bsky.social</a> - 2026-01-09 -   💚 44
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Climate change has already reshaped the bioclimatic space of extreme events in the Arctic 🌐❄️ Arctic biodiversity has entered a new era of bioclimatic extremes w/ more droughts, greater winter-warming 📈 & more rain-on-snow events 💧❄️ shorturl.at/pQsVP Just published in Science Advances ⬇️{% endraw %}
@@ -241,6 +251,16 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
   {% raw %}It was great to meet so many other Early Career Researchers at our TIBS2026 mixer last night - both catching up with old friends and meeting new ones. To celebrate all the ECR Biogeographers, we have created a starter pack so you can follow all the exciting work being done: go.bsky.app/KvnmdnK{% endraw %}
 <br><b>uri:</b> <a href='https://go.bsky.app/KvnmdnK' target='_blank'>https://go.bsky.app/KvnmdnK</a><br>
   <br><a href='https://bsky.app/profile/did:plc:pvjeceaa2bmrybeay7haaodr/post/3mbw25kqe2k2l' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Joseph Tobias <a href='https://bsky.app/profile/josephtobias.bsky.social' target='_blank'>@josephtobias.bsky.social</a> - 2026-01-08 -   💚 33
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}A data collection mission that began in 2012 is finally released as AVONICHE. Designed as a companion to AVONET bird trait database and updated to Avilist taxonomy, it’s an Open Access dataset providing updated diets and a detailed breakdown of foraging behaviours used by all bird species. 🪶🌐{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:a4xdr42cg3quvnormjg74et2/post/3mbvuj7lmrs2c' target='_blank'>View Original Post</a>
 </div>
 
 ---
