@@ -2,7 +2,7 @@ source(here::here('pass.R'))
 bskyr::set_bluesky_user('nmouquet.bsky.social')
 bskyr::set_bluesky_pass(BLUESKY_PASS)
 
-X <- 46
+X <- 47
  
 # Get the current date and 7 days ago included
 end_date <- Sys.Date()
@@ -33,13 +33,16 @@ feed <- feed[!sapply(feed$embed, is.null),]
     handles == "global-ecology.bsky.social" &
       grepl("Global Ecology feed Digest", texts, fixed = TRUE)
   )
+  
+  if (length(cut_idx)==1) cut_idx <- cut_idx
+  if (length(cut_idx)==2) cut_idx <- cut_idx[2]
 
 #Save
 
 save(feed,file=here::here("data","2026",paste0("feed_",strftime(Sys.Date(), "%V"),".RData")))
 
 nb_post=0
-for (i in 1:(cut_idx[2]-1)){
+for (i in 1:(cut_idx-1)){
   post_date <- tryCatch(
     as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
     error = function(e) NA
@@ -49,7 +52,7 @@ for (i in 1:(cut_idx[2]-1)){
   }
 }
 
-for (i in 1:(cut_idx[2]-1)){
+for (i in 1:(cut_idx-1)){
   cat("i=",i," ",feed$author[[i]]$handle,"\n")
 }
 
@@ -90,7 +93,7 @@ markdown_text <- paste0(
 )
 
 # Loop through the feed and format posts
-for (i in 1:(cut_idx[2]-1)) {
+for (i in 1:(cut_idx-1)) {
   #i=24
   text <- feed$record[[i]]$text
   
@@ -206,7 +209,7 @@ file_path <- "index.md"
 writeLines(markdown_text, file_path)
 
 # Save the list of handle concerned 
-handles <- do.call(rbind,lapply (1:(cut_idx[2]-1), function(i){
+handles <- do.call(rbind,lapply (1:(cut_idx-1), function(i){
   post_date <- tryCatch(
     as.Date(feed$record[[i]]$createdAt, format = "%Y-%m-%dT%H:%M:%OSZ"),
     error = function(e) NA
