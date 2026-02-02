@@ -35,7 +35,27 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Olivier Gimenez 🦦 <a href='https://bsky.app/profile/oaggimenez.bsky.social' target='_blank'>@oaggimenez.bsky.social</a> - 2026-02-01 -   💚 34
+##### Post by Dr Jamie Gordon <a href='https://bsky.app/profile/jamiegordon.bsky.social' target='_blank'>@jamiegordon.bsky.social</a> - 2026-02-02 -   💚 1
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}If your biodiversity related research requires interaction with Indigenous People and Local Communities, you will be interested in these insights. They are lessons from the GCBC research programme from across Africa, Asia and Latin America 🌐{% endraw %}
+<br>
+  <br><a href='https://bsky.app/profile/did:plc:nedor5jxeefjpleq7mufuhpw/post/3mduitadzgk2u' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2026-02-02 -   💚 5
+
+<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
+  {% raw %}Change the narrative about the ocean! 🌍 Dive into our oceanoptimism Massive Open Online Course (MOOC) with GES4SEAS — 4 weeks of inspiring learning. Let’s build hope together! 🌟 🧪🌐 MarineEcology Conservation check our ocean optimism video:{% endraw %}
+<br><b>uri:</b> <a href='https://www.youtube.com/watch?v=OzxeC3u1b2k' target='_blank'>https://www.youtube.com/watch?v=OzxeC3u1b2k</a><br>
+  <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3mduilta5vs2v' target='_blank'>View Original Post</a>
+</div>
+
+---
+
+##### Post by Olivier Gimenez 🦦 <a href='https://bsky.app/profile/oaggimenez.bsky.social' target='_blank'>@oaggimenez.bsky.social</a> - 2026-02-01 -   💚 47
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}📘 New book out soon ! I’m excited to share that 𝐁𝐚𝐲𝐞𝐬𝐢𝐚𝐧 𝐀𝐧𝐚𝐥𝐲𝐬𝐢𝐬 𝐨𝐟 𝐂𝐚𝐩𝐭𝐮𝐫𝐞-𝐑𝐞𝐜𝐚𝐩𝐭𝐮𝐫𝐞 𝐃𝐚𝐭𝐚 𝐰𝐢𝐭𝐡 𝐇𝐢𝐝𝐝𝐞𝐧 𝐌𝐚𝐫𝐤𝐨𝐯 𝐌𝐨𝐝𝐞𝐥𝐬: 𝐓𝐡𝐞𝐨𝐫𝐲 𝐚𝐧𝐝 𝐂𝐚𝐬𝐞 𝐒𝐭𝐮𝐝𝐢𝐞𝐬 𝐢𝐧 𝐑 𝐚𝐧𝐝 𝐍𝐈𝐌𝐁𝐋𝐄 is being published by Chapman & Hall / CRC Press Hope it’s useful to students, researchers, and practitioners StatisticalEcology NIMBLE{% endraw %}
@@ -45,7 +65,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Tominaga K. (tomiken) <a href='https://bsky.app/profile/pacyc184.bsky.social' target='_blank'>@pacyc184.bsky.social</a> - 2026-02-01 -   💚 6
+##### Post by Tominaga K. (tomiken) <a href='https://bsky.app/profile/pacyc184.bsky.social' target='_blank'>@pacyc184.bsky.social</a> - 2026-02-01 -   💚 8
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Macroecology of microbial performance across Earth's biomes | bioRxiv https://www.biorxiv.org/content/10.64898/2026.01.30.702831v1?rss=1{% endraw %}
@@ -65,7 +85,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2026-01-31 -   💚 10
+##### Post by Global Change Biology <a href='https://bsky.app/profile/globalchangebio.bsky.social' target='_blank'>@globalchangebio.bsky.social</a> - 2026-01-31 -   💚 11
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Multiple Global Change Stressors Boost Soil Greenhouse Gas Emissions Worldwide 🔗 buff.ly/mY1pq7r{% endraw %}
@@ -75,7 +95,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Journal of Ecology <a href='https://bsky.app/profile/journalofecology.bsky.social' target='_blank'>@journalofecology.bsky.social</a> - 2026-01-31 -   💚 10
+##### Post by Journal of Ecology <a href='https://bsky.app/profile/journalofecology.bsky.social' target='_blank'>@journalofecology.bsky.social</a> - 2026-01-31 -   💚 11
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}📖Published! Different drivers shape multiple dimensions of forest ecosystem stability Protecting old-growth forests and enhancing alpha and beta diversity are crucial for maintaining forest functions and buffering climate and human disturbances🌳 🌍 🔎 buff.ly/Qj98aBM{% endraw %}
@@ -85,7 +105,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Damian Carrington <a href='https://bsky.app/profile/dpcarrington.bsky.social' target='_blank'>@dpcarrington.bsky.social</a> - 2026-01-30 -   💚 53
+##### Post by Damian Carrington <a href='https://bsky.app/profile/dpcarrington.bsky.social' target='_blank'>@dpcarrington.bsky.social</a> - 2026-01-30 -   💚 56
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}gulp New study: global-scale coral bleaching-level heat stress has persisted for almost the entirety of the last decade, bringing many reef areas into an era of near-annual bleaching coralreefs climatecrisis{% endraw %}
@@ -145,7 +165,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2026-01-29 -   💚 19
+##### Post by Stelios Katsanevakis <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank'>@skatsanevakis.bsky.social</a> - 2026-01-29 -   💚 20
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Mediterranean seafloors are heating fast 🌊🔥. Our new study shows bottom marine heatwaves will intensify, last longer, and threaten benthic species—often year-round by 2100. A growing ClimateRisk for benthic biodiversity. ClimateChange 🌍🌐🧪{% endraw %}
@@ -185,7 +205,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2026-01-28 -   💚 30
+##### Post by Prof Braj Singh <a href='https://bsky.app/profile/prof-braj-singh.bsky.social' target='_blank'>@prof-braj-singh.bsky.social</a> - 2026-01-28 -   💚 29
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Pleased to share our article in @nature.com 'Pesticide mixtures harm soil biodiversity'. Along with Alex Pedrinho, we highlight policy implications& future research of new pub from @mvanderheijden.bsky.social group to support pesticide regulations & soil biodiversity protection rdcu.be/e1aHs{% endraw %}
@@ -205,7 +225,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Will Shoemaker <a href='https://bsky.app/profile/shoestrapped.bsky.social' target='_blank'>@shoestrapped.bsky.social</a> - 2026-01-28 -   💚 53
+##### Post by Will Shoemaker <a href='https://bsky.app/profile/shoestrapped.bsky.social' target='_blank'>@shoestrapped.bsky.social</a> - 2026-01-28 -   💚 52
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}Happy to share my solo-authored Perspective "An Interpretation, Survey, and Outlook of Microbial Macroecology"! Making time these last few months to take stock of the patterns us microbial ecologists examine + models we invoke has been invaluable. Feedback welcome!{% endraw %}
@@ -335,7 +355,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Carlos Cano-Barbacil <a href='https://bsky.app/profile/canobarbacil.bsky.social' target='_blank'>@canobarbacil.bsky.social</a> - 2026-01-27 -   💚 15
+##### Post by Carlos Cano-Barbacil <a href='https://bsky.app/profile/canobarbacil.bsky.social' target='_blank'>@canobarbacil.bsky.social</a> - 2026-01-27 -   💚 17
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}📢 New article alert! Freshwater salinization is an emerging global threat affecting ~1/3 of freshwater ecosystems. Yet, the salinity tolerance of most inland fishes remains poorly understood. @mncn-csic.bsky.social @iea-udg.bsky.social @oldenfish.bsky.social{% endraw %}
@@ -415,7 +435,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 ---
 
-##### Post by Birds of the World | The Cornell Lab <a href='https://bsky.app/profile/birdsoftheworld.bsky.social' target='_blank'>@birdsoftheworld.bsky.social</a> - 2026-01-27 -   💚 407
+##### Post by Birds of the World | The Cornell Lab <a href='https://bsky.app/profile/birdsoftheworld.bsky.social' target='_blank'>@birdsoftheworld.bsky.social</a> - 2026-01-27 -   💚 408
 
 <div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>
   {% raw %}MAJOR NEWS! We just launched an awesome new tool! The illustrated Birds of the World Phylogeny Explorer lets users trace any bird’s lineage, compare species relationships, and explore major evolutionary milestones with a click of a button. SHARE and EXPLORE!{% endraw %}
