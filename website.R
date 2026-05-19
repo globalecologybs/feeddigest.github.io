@@ -42,14 +42,21 @@ CONFIG <- list(
   feed_limit       = 150,
   feed_uri         = 'at://did:plc:ppsghcl5bbpgjcljnhra353s/app.bsky.feed.generator/global.ecology',
   archives_dir     = "archives",
+  data_dir         = "_data",         # Jekyll convention
+  data_filename    = "digests.yml",   # used by the sidebar layout
 
-  # Feature flags -- all default off for a no-surprise rollout.
+  # Feature flags.
+  # `enable_titles` is ON: paper titles are pulled from the
+  # linked DOI / article page and used as the H5 heading so
+  # readers can scan by science rather than by author.
+  # Results are cached in archives/title_cache.rds, so only
+  # the first run after a new digest is slow.
   enable_tags      = FALSE,
-  enable_titles    = FALSE,
+  enable_titles    = TRUE,
   enable_summaries = FALSE,
 
   # Network safety for paper-title fetcher.
-  fetch_timeout_s  = 8
+  fetch_timeout_s  = 10
 )
 
 # ---- Tiny helpers ------------------------------------------
@@ -102,19 +109,47 @@ classify_post <- function(text) {
   unique(tags)
 }
 
-# ---- Stub: paper title fetcher (cached, timed out) ---------
-get_paper_title <- function(url, cache = list(), timeout_s = 8) {
+# ---- Paper title fetcher (cached, timed out, follows redirects) ----
+# Tries, in order: citation_title (publishers' standard), dc.title,
+# og:title, then <title>. Follows HTTP redirects so URL shorteners
+# like buff.ly / scim.ag / lnkd.in resolve to the real article page.
+# Returns NULL on failure or junk titles (Cloudflare challenges etc).
+get_paper_title <- function(url, cache = list(), timeout_s = 10) {
   if (is.null(url) || !nzchar(url)) return(NULL)
   if (!is.null(cache[[url]])) return(cache[[url]])
+
+  junk_re <- "^(just a moment|access denied|page not found|404|loading|redirecting|please verify|attention required|cloudflare)"
+
   safe({
-    req  <- curl::new_handle(timeout = timeout_s, useragent = "Mozilla/5.0 (digest-bot)")
+    req <- curl::new_handle(
+      timeout        = timeout_s,
+      followlocation = TRUE,
+      maxredirs      = 10,
+      useragent      = "Mozilla/5.0 (compatible; GlobalEcologyDigestBot/1.0; +https://globalecologybs.github.io/feeddigest.github.io/)"
+    )
     resp <- curl::curl_fetch_memory(url, handle = req)
     if (resp$status_code >= 400) return(NULL)
-    html  <- xml2::read_html(rawToChar(resp$content))
-    node  <- xml2::xml_find_first(html, "//meta[@name='citation_title']")
-    title <- xml2::xml_attr(node, "content")
-    if (is.na(title)) title <- xml2::xml_text(xml2::xml_find_first(html, "//title"))
-    if (!is.na(title) && nzchar(title)) trimws(title) else NULL
+
+    body <- rawToChar(resp$content)
+    Encoding(body) <- "UTF-8"
+    html <- xml2::read_html(body)
+
+    candidates <- c(
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='citation_title']"),                "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='dc.title' or @name='DC.title']"),  "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@property='og:title']"),                  "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='twitter:title']"),                 "content"),
+      xml2::xml_text(xml2::xml_find_first(html, "//title"))
+    )
+    candidates <- candidates[!is.na(candidates) & nzchar(trimws(candidates))]
+    if (length(candidates) == 0) return(NULL)
+
+    title <- trimws(candidates[1])
+    title <- gsub("\\s+", " ", title)
+
+    if (grepl(junk_re, title, ignore.case = TRUE)) return(NULL)
+    if (nchar(title) < 8 || nchar(title) > 300)   return(NULL)
+    title
   })
 }
 
@@ -146,6 +181,45 @@ extract_uri <- function(post_record, post_embed) {
   safe(post_embed$external$uri)
 }
 
+# ---- Registry: _data/digests.yml ---------------------------
+# Single source of truth for the sidebar layout. Each digest
+# gets one entry. We upsert by `num` and persist as YAML so
+# Jekyll's site.data.digests just works.
+update_digests_registry <- function(data_path, entry) {
+  if (!requireNamespace("yaml", quietly = TRUE)) install.packages("yaml")
+
+  reg <- if (file.exists(data_path)) {
+    safe(yaml::read_yaml(data_path), default = list())
+  } else list()
+  if (is.null(reg) || !is.list(reg)) reg <- list()
+
+  # Drop any existing entry with the same num
+  if (length(reg) > 0) {
+    nums <- vapply(reg, function(x) safe(as.integer(x$num), NA_integer_), integer(1))
+    reg <- reg[is.na(nums) | nums != entry$num]
+  }
+  reg <- c(reg, list(entry))
+
+  # Sort newest first
+  nums <- vapply(reg, function(x) safe(as.integer(x$num), NA_integer_), integer(1))
+  reg  <- reg[order(nums, decreasing = TRUE, na.last = TRUE)]
+
+  dir.create(dirname(data_path), showWarnings = FALSE, recursive = TRUE)
+  yaml::write_yaml(reg, data_path)
+}
+
+build_registry_entry <- function(X, start_date, end_date, nb_post) {
+  list(
+    num        = X,
+    year       = format(end_date, "%Y"),
+    start_date = format(start_date, "%Y-%m-%d"),
+    end_date   = format(end_date,   "%Y-%m-%d"),
+    nb_post    = nb_post,
+    url        = paste0(CONFIG$base_url, "/archives/digest-", X, "/"),
+    date_label = paste0(format(start_date, "%b %d"), " - ", format(end_date, "%b %d"))
+  )
+}
+
 # Build a 160-char meta description suitable for SEO.
 build_description <- function(start_date, end_date, nb_post) {
   d <- paste0(
@@ -156,19 +230,52 @@ build_description <- function(start_date, end_date, nb_post) {
   if (nchar(d) > 300) paste0(substr(d, 1, 297), "...") else d
 }
 
+# ---- Engagement label --------------------------------------
+# Avoid the false-negative "💚 0" signal on freshly posted items.
+format_engagement <- function(likes) {
+  n <- safe(as.integer(likes), 0L)
+  if (is.na(n) || n <= 0L) {
+    "\U0001F195 just posted on Bluesky"
+  } else {
+    paste0("\U0001F49A ", n, " like", if (n == 1L) "" else "s", " on Bluesky")
+  }
+}
+
 # ---- Render a single post ----------------------------------
+# Heading priority:
+#   1. Paper / link title (if fetched) -- science-first, scannable.
+#   2. "Post by <Author>" fallback when no title is available.
 format_post <- function(p) {
   author_link <- if (!is.null(p$handle)) {
     paste0("<a href='https://bsky.app/profile/", p$handle, "' target='_blank' rel='noopener'>@", p$handle, "</a>")
   } else "Unknown author"
 
-  uri_block <- if (!is.null(p$uri)) {
-    paste0("<br><b>uri:</b> <a href='", p$uri, "' target='_blank' rel='noopener'>", p$uri, "</a><br>")
-  } else "<br>"
+  has_title <- isTRUE(CONFIG$enable_titles) &&
+               !is.null(p$paper_title) && nzchar(p$paper_title)
 
-  title_block <- if (isTRUE(CONFIG$enable_titles) && !is.null(p$paper_title)) {
-    paste0("  <b>\U0001F4C4 ", p$paper_title, "</b><br>\n")
+  # Heading
+  heading <- if (has_title) {
+    paste0("##### \U0001F4C4 ", p$paper_title, "\n\n")
+  } else {
+    paste0("##### Post by ", p$author_name, " ", author_link, "\n\n")
+  }
+
+  # Metadata line below the heading.
+  meta_author <- if (has_title) {
+    paste0("Shared by **", p$author_name, "** ", author_link, " &middot; ")
   } else ""
+
+  meta_line <- paste0(
+    "<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>",
+    meta_author,
+    "<time datetime='", p$post_date, "'>", p$post_date, "</time>",
+    " &middot; ", format_engagement(p$likes),
+    "</p>\n\n"
+  )
+
+  uri_block <- if (!is.null(p$uri)) {
+    paste0("<br><b>link:</b> <a href='", p$uri, "' target='_blank' rel='noopener'>", p$uri, "</a><br>")
+  } else "<br>"
 
   tag_block <- if (isTRUE(CONFIG$enable_tags) && length(p$tags) > 0) {
     paste0(
@@ -187,15 +294,14 @@ format_post <- function(p) {
   } else ""
 
   paste0(
-    "##### Post by ", p$author_name, " ", author_link,
-    " - ", p$post_date, " -   \U0001F49A ", p$likes, "\n\n",
+    heading,
+    meta_line,
     "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n",
-    title_block,
     tag_block,
     "  {% raw %}", p$text, "{% endraw %}\n",
     summary_block,
     uri_block, "\n",
-    "  <br><a href='", p$bluesky_link, "' target='_blank' rel='noopener'>View Original Post</a>\n",
+    "  <br><a href='", p$bluesky_link, "' target='_blank' rel='noopener'>View Original Post on Bluesky</a>\n",
     "</div>\n\n",
     "---\n\n"
   )
@@ -220,6 +326,8 @@ digest_front_matter <- function(X, start_date, end_date, nb_post) {
     "title: ",       yaml_quote(title),       "\n",
     "description: ", yaml_quote(description), "\n",
     "date: ",        format(end_date, "%Y-%m-%d"), "\n",
+    "year: ",        yaml_quote(format(end_date, "%Y")), "\n",
+    "digest_num: ",  X,                       "\n",
     "image: ",       CONFIG$social_image,     "\n",
     "permalink: ",   permalink,               "\n",
     "sitemap:\n",
@@ -305,30 +413,16 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
 
 # ---- Homepage (landing) body -------------------------------
 build_landing_body <- function(X, start_date, end_date, nb_post, all_digests) {
-  recent <- head(all_digests, 5)
-  recent_list <- if (nrow(recent) == 0) "" else {
-    paste0(
-      "## Recent digests\n\n",
-      paste0(
-        "- [Digest #", recent$num, "](/feeddigest.github.io/archives/digest-", recent$num, "/)",
-        collapse = "\n"
-      ),
-      "\n\n",
-      "[Browse the full archive →](/feeddigest.github.io/archives/)\n\n"
-    )
-  }
-
   paste0(
     shared_intro_block(),
     "# ", CONFIG$site_title, "\n\n",
-    "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks.\n\n",
+    "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks. Browse all past digests in the sidebar.\n\n",
     "---\n\n",
     "## Latest issue: Digest #", X, "\n\n",
     "**", format(start_date, "%B %d, %Y"), " - ", format(end_date, "%B %d, %Y"),
     "** &middot; ", nb_post, " posts curated\n\n",
-    "<p><a href='/feeddigest.github.io/archives/digest-", X, "/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #", X, " →</a></p>\n\n",
+    "<p><a href='", CONFIG$base_url, "/archives/digest-", X, "/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #", X, " →</a></p>\n\n",
     "---\n\n",
-    recent_list,
     "<div style='text-align:left; font-size:small; color:gray;'>\n",
     "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
     "</div>\n"
@@ -484,6 +578,13 @@ digest_markdown <- paste0(
 )
 write_atomic(digest_markdown, archive_path)
 
+# ---- Update _data/digests.yml (drives sidebar) -------------
+data_path <- here::here(CONFIG$data_dir, CONFIG$data_filename)
+update_digests_registry(
+  data_path,
+  build_registry_entry(X, start_date, end_date, nb_post)
+)
+
 # ---- Update navigation of immediately previous digest ------
 # So /archives/digest-(X-1)/ now links forward to /archives/digest-X/.
 # (We rewrite only the body's next-link by regenerating with the new
@@ -534,10 +635,11 @@ write.csv2(handles_df, handles_path, row.names = FALSE)
 save(feed, file = file.path(year_dir, "feed.RData"))
 
 cat("\n--- done ---\n")
-cat("Digest #",    X,            "\n")
+cat("Digest #",    X,             "\n")
 cat("Homepage :   index.md\n")
-cat("Digest   :  ", archive_path, "\n")
+cat("Digest   :  ", archive_path,  "\n")
 cat("Archive  :   archives/index.md\n")
+cat("Registry :  ", data_path,     "\n")
 cat("robots.txt:  robots.txt\n")
-cat("Handles  :  ", handles_path, "\n")
-cat("nb_post  =", nb_post,        "\n")
+cat("Handles  :  ", handles_path,  "\n")
+cat("nb_post  =", nb_post,         "\n")

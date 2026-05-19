@@ -26,7 +26,7 @@ For the lazy (yes we are) and friends who do not like social media (yes they can
 
 # Global Ecology Digest
 
-Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks.
+Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks. Browse all past digests in the sidebar.
 
 ---
 
@@ -37,12 +37,6 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 <p><a href='/feeddigest.github.io/archives/digest-1/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #1 →</a></p>
 
 ---
-
-## Recent digests
-
-- [Digest #1](/feeddigest.github.io/archives/digest-1/)
-
-[Browse the full archive →](/feeddigest.github.io/archives/)
 
 <div style='text-align:left; font-size:small; color:gray;'>
   This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>
