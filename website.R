@@ -59,6 +59,7 @@ CONFIG <- list(
   #                       text with an LLM. Both caches live under
   #                       archives/ so only first-seen posts cost time/money.
   enable_tags        = TRUE,
+  enable_llm_tags    = TRUE,    # LLM classifier (beats regex on names like "Forest Isbell")
   enable_titles      = TRUE,
   enable_llm_titles  = TRUE,
   enable_summaries   = FALSE,
@@ -71,10 +72,9 @@ CONFIG <- list(
 
   # LLM config. Requires ANTHROPIC_API_KEY in the environment
   # (add `Sys.setenv(ANTHROPIC_API_KEY = "sk-ant-...")` to pass.R,
-  # or export it in your shell). Haiku is the right tool here:
-  # fast, cheap (~$0.02 per fresh digest), title-quality is fine.
+  # or export it in your shell). 
   llm_provider  = "anthropic",
-  llm_model     = "claude-haiku-4-5-20251001"
+  llm_model     = "claude-sonnet-4-6"
 )
 
 # ---- Tiny helpers ------------------------------------------
@@ -383,6 +383,125 @@ generate_title_llm <- function(text, cache = list()) {
     return(list(title = result$title, key = key, reason = "ok"))
   }
   list(title = NULL, key = key, reason = result$reason)
+}
+
+# ---- LLM-generated tags (semantic classifier) --------------
+# The regex classifier in classify_post() trips on incidental mentions
+# (e.g. an author named "Forest"). The LLM understands context and
+# produces clean tags from a fixed vocabulary.
+TAGS_LLM_VOCAB <- c(
+  "marine", "freshwater", "forest", "soil", "climate", "invasives",
+  "conservation", "policy", "jobs", "events", "methods",
+  "pollinator", "plants", "animals", "microbiome"
+)
+
+TAGS_LLM_SYSTEM_PROMPT <- paste0(
+  "You assign topic tags to social-media posts about ecology research.\n",
+  "Choose ONLY from this exact vocabulary (no other words):\n",
+  "  marine, freshwater, forest, soil, climate, invasives,\n",
+  "  conservation, policy, jobs, events, methods,\n",
+  "  pollinator, plants, animals, microbiome.\n",
+  "\n",
+  "Tag definitions:\n",
+  "- marine: oceans, seas, reefs, fish/fisheries, marine ecology\n",
+  "- freshwater: rivers, lakes, streams, wetlands\n",
+  "- forest: forests, woodlands, trees AS ECOSYSTEMS (not as names!)\n",
+  "- soil: soil ecology, soil microbiome, fungi, mycorrhiza\n",
+  "- climate: climate change, warming, carbon cycle, drought, heat\n",
+  "- invasives: invasive species, biological invasions, biosecurity\n",
+  "- conservation: protected areas, biodiversity conservation, extinction\n",
+  "- policy: governance, indigenous rights, environmental policy\n",
+  "- jobs: PhD, postdoc, faculty position announcements\n",
+  "- events: webinars, conferences, workshops, seminars\n",
+  "- methods: ML/AI, eDNA, remote sensing, R packages, models, simulations\n",
+  "- pollinator: bees, pollinators, pollination\n",
+  "- plants: plant ecology broadly, flora, vegetation, grasslands\n",
+  "- animals: animal ecology broadly, mammals/birds/insects/herps\n",
+  "- microbiome: microbes, bacteria, viruses (excluding soil-specific)\n",
+  "\n",
+  "Rules:\n",
+  "- Return 1-4 tags as a comma-separated list. No other text.\n",
+  "- Tags must reflect the SCIENTIFIC TOPIC of the paper or content,\n",
+  "  NOT incidental mentions (a person named 'Forest' is NOT forest).\n",
+  "- Prefer specific over generic: 'pollinator' over 'animals' when both fit.\n",
+  "- If truly nothing in the vocabulary applies, return the single word: NONE\n",
+  "\n",
+  "Examples:\n",
+  "\n",
+  "Input title: 'Predicting temporal stability and resilience from resistance and recovery'\n",
+  "Input post: 'Paper published, led by Forest Isbell. We developed a new theoretical\n",
+  "framework to predict how temporal stability and resilience emerge from the combined\n",
+  "effects of resistance and recovery.'\n",
+  "Output: methods, conservation\n",
+  "\n",
+  "Input title: 'Microbial diversity creates a global firewall against pathogens in soil'\n",
+  "Input post: 'Thank you Samuel Bickel & Berg Gabriele for highlighting our findings.'\n",
+  "Output: soil, microbiome, conservation\n",
+  "\n",
+  "Input title: 'Webinar: GuardIAS and OneStop on safeguarding Europe from invasive species'\n",
+  "Input post: 'Don't miss our webinar tomorrow!'\n",
+  "Output: events, invasives, policy\n",
+  "\n",
+  "Input title: 'Pollinators support the nutrition and income of vulnerable communities'\n",
+  "Input post: 'Research in Nature: 40% of household income tied to insect pollinators.'\n",
+  "Output: pollinator, policy, conservation"
+)
+
+generate_tags_llm <- function(text, paper_title = NULL,
+                              cache = list(),
+                              max_tags = CONFIG$max_tags_per_post %||% 4) {
+  if (is.null(text) || !nzchar(text)) {
+    return(list(tags = NULL, key = NULL, reason = "empty"))
+  }
+  if (!requireNamespace("digest", quietly = TRUE)) install.packages("digest")
+  if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
+
+  # Cache key includes BOTH text and title (title affects answer)
+  key <- digest::digest(paste(text, paper_title %||% ""), algo = "sha1")
+  if (!is.null(cache[[key]])) {
+    cached <- cache[[key]]
+    if (length(cached) == 0 || identical(cached, "")) {
+      return(list(tags = NULL, key = key, reason = "cached_none"))
+    }
+    return(list(tags = cached, key = key, reason = "cached_hit"))
+  }
+
+  do_call <- function() {
+    user_msg <- if (!is.null(paper_title) && nzchar(paper_title)) {
+      paste0("Input title: ", paper_title, "\nInput post: ", text)
+    } else {
+      paste0("Input post: ", text)
+    }
+
+    chat <- ellmer::chat_anthropic(
+      model         = CONFIG$llm_model,
+      system_prompt = TAGS_LLM_SYSTEM_PROMPT,
+      echo          = "none"
+    )
+    raw <- trimws(as.character(chat$chat(user_msg)))
+
+    if (identical(toupper(raw), "NONE")) {
+      return(list(ok = FALSE, reason = "none"))
+    }
+    # Parse: lowercase, split on commas, intersect with vocab
+    parts <- tolower(unlist(strsplit(raw, "[,;\\n]+")))
+    parts <- trimws(parts)
+    parts <- parts[nzchar(parts)]
+    tags  <- intersect(parts, TAGS_LLM_VOCAB)
+
+    if (length(tags) == 0) return(list(ok = FALSE, reason = "no_vocab_match"))
+    list(ok = TRUE, tags = head(unique(tags), max_tags))
+  }
+
+  result <- tryCatch(
+    do_call(),
+    error = function(e) list(ok = FALSE, reason = paste0("error: ", conditionMessage(e)))
+  )
+
+  if (isTRUE(result$ok)) {
+    return(list(tags = result$tags, key = key, reason = "ok"))
+  }
+  list(tags = NULL, key = key, reason = result$reason)
 }
 
 # ---- Text cleaning -----------------------------------------
@@ -816,11 +935,13 @@ cut_idx <- if (length(cut_hits) == 0) {
 
 save(feed, file = file.path(year_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
 
-# ---- Title caches (fetch + LLM, keyed differently) ---------
+# ---- Caches (fetch + LLM titles + LLM tags) ----------------
 title_cache_path     <- file.path(archives_dir, "title_cache.rds")
 llm_title_cache_path <- file.path(archives_dir, "llm_title_cache.rds")
+llm_tags_cache_path  <- file.path(archives_dir, "llm_tags_cache.rds")
 title_cache     <- if (file.exists(title_cache_path))     readRDS(title_cache_path)     else list()
 llm_title_cache <- if (file.exists(llm_title_cache_path)) readRDS(llm_title_cache_path) else list()
+llm_tags_cache  <- if (file.exists(llm_tags_cache_path))  readRDS(llm_tags_cache_path)  else list()
 
 # ---- Sanity-check LLM availability before the loop ---------
 if (isTRUE(CONFIG$enable_llm_titles)) {
@@ -921,15 +1042,37 @@ for (i in seq_len(cut_idx - 1L)) {
         title_diag <- paste0("llm-failed (", gen$reason, ")")
       }
     }
-    # Classify tags using both post text and resolved title
+    # Classify tags: LLM first (handles context like "Forest Isbell"),
+    # regex fallback if the LLM fails (auth/network error).
+    tag_source <- "none"
     if (isTRUE(CONFIG$enable_tags)) {
-      tags <- classify_post(text, paper_title)
+      if (isTRUE(CONFIG$enable_llm_tags)) {
+        tag_res <- generate_tags_llm(text, paper_title, llm_tags_cache)
+        if (!is.null(tag_res$tags) && length(tag_res$tags) > 0) {
+          if (!identical(tag_res$reason, "cached_hit")) {
+            llm_tags_cache[[tag_res$key]] <- tag_res$tags
+          }
+          tags <- tag_res$tags
+          tag_source <- paste0("llm (", tag_res$reason, ")")
+        } else {
+          # Negative-cache "none" / "no_vocab_match" only (not errors)
+          if (!is.null(tag_res$key) && tag_res$reason %in% c("none", "no_vocab_match")) {
+            llm_tags_cache[[tag_res$key]] <- character(0)
+          }
+          # Regex fallback so we don't lose tags on transient LLM failures
+          tags <- classify_post(text, paper_title)
+          tag_source <- paste0("regex-fallback (llm: ", tag_res$reason, ")")
+        }
+      } else {
+        tags <- classify_post(text, paper_title)
+        tag_source <- "regex"
+      }
     }
 
     cat("  title: ", title_diag,
         if (!is.null(paper_title)) paste0(" -> ", substr(paper_title, 1, 70)) else "",
         if (!is.null(post_image))  " [img]" else "",
-        if (length(tags) > 0)      paste0(" [", paste(tags, collapse = ","), "]") else "",
+        if (length(tags) > 0)      paste0(" [", paste(tags, collapse = ","), " via ", tag_source, "]") else "",
         "\n", sep = "")
 
     # Stable per-post ID for the lightbox anchor.
@@ -983,6 +1126,7 @@ cat("  none (Post by ...): ", title_counts$none,   "\n", sep = "")
 
 if (isTRUE(CONFIG$enable_titles))     saveRDS(title_cache,     title_cache_path)
 if (isTRUE(CONFIG$enable_llm_titles)) saveRDS(llm_title_cache, llm_title_cache_path)
+if (isTRUE(CONFIG$enable_llm_tags))   saveRDS(llm_tags_cache,  llm_tags_cache_path)
 
 # ---- Write digest archive page -----------------------------
 archive_path <- file.path(archives_dir, paste0("digest-", X, ".md"))
