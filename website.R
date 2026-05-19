@@ -22,9 +22,16 @@
 # ============================================================
 
 # ---- Auth --------------------------------------------------
-source(here::here('pass.R'))
+# Both keys come from the environment (Sys.setenv or .Renviron).
+# Required: BLUESKY_PASS, ANTHROPIC_API_KEY (only if LLM titles
+# are enabled in CONFIG below).
+.bluesky_pass <- Sys.getenv("BLUESKY_PASS", unset = "")
+if (!nzchar(.bluesky_pass)) {
+  stop("BLUESKY_PASS env var is not set. Add it via Sys.setenv() or ~/.Renviron.")
+}
 bskyr::set_bluesky_user('nmouquet.bsky.social')
-bskyr::set_bluesky_pass(BLUESKY_PASS)
+bskyr::set_bluesky_pass(.bluesky_pass)
+rm(.bluesky_pass)
 
 # ---- Config ------------------------------------------------
 CONFIG <- list(
@@ -61,10 +68,9 @@ CONFIG <- list(
 
   # LLM config. Requires ANTHROPIC_API_KEY in the environment
   # (add `Sys.setenv(ANTHROPIC_API_KEY = "sk-ant-...")` to pass.R,
-  # or export it in your shell). Haiku is the right tool here:
-  # fast, cheap (~$0.02 per fresh digest), title-quality is fine.
+  # or export it in your shell). Sonnet is the right tool here:
   llm_provider  = "anthropic",
-  llm_model     = "claude-haiku-4-5"
+  llm_model     = "claude-sonnet-4-6"
 )
 
 # ---- Tiny helpers ------------------------------------------
@@ -126,9 +132,29 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
   if (is.null(url) || !nzchar(url)) return(NULL)
   if (!is.null(cache[[url]])) return(cache[[url]])
 
-  junk_re <- "^(just a moment|access denied|page not found|404|loading|redirecting|please verify|attention required|cloudflare)"
+  # Domains whose page titles are never the paper title.
+  blocked_domains <- c("lnkd.in", "linkedin.com", "x.com", "twitter.com",
+                       "facebook.com", "fb.com", "instagram.com",
+                       # our own site -- a post linking back to us would
+                       # otherwise inherit the homepage title:
+                       "globalecologybs.github.io")
+  if (any(vapply(blocked_domains, function(d) grepl(d, url, fixed = TRUE), logical(1)))) {
+    return(NULL)
+  }
 
-  safe({
+  # Junk title patterns -- the entire title is junk, not just a prefix.
+  junk_re <- paste0(
+    "^\\s*(just a moment|access denied|page not found|404 not found|404|",
+    "loading|redirecting|please verify|attention required|cloudflare|",
+    "linkedin|facebook|twitter|x|bluesky|instagram|youtube|vimeo|",
+    "researchgate|google|sign in|sign up|welcome|home page?|home|",
+    "untitled|untitled document|global ecology digest.*)\\s*$"
+  )
+
+  # Inner function so `return()` exits THIS helper cleanly --
+  # the previous `return()` inside `safe({...})` could jump to
+  # the top level in some R versions.
+  do_fetch <- function() {
     req <- curl::new_handle(
       timeout        = timeout_s,
       followlocation = TRUE,
@@ -156,9 +182,13 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
     title <- gsub("\\s+", " ", title)
 
     if (grepl(junk_re, title, ignore.case = TRUE)) return(NULL)
-    if (nchar(title) < 8 || nchar(title) > 300)   return(NULL)
+    if (nchar(title) < 12 || nchar(title) > 300)  return(NULL)
+    if (length(strsplit(title, "\\s+")[[1]]) <= 2) return(NULL)
+
     title
-  })
+  }
+
+  tryCatch(do_fetch(), error = function(e) NULL)
 }
 
 # ---- LLM-generated title (fallback when no paper title) ----
@@ -170,22 +200,42 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
 TITLE_LLM_SYSTEM_PROMPT <- paste0(
   "You write concise, scientific titles for social-media posts about ecology research.\n",
   "\n",
-  "Given a post, return ONE title (5-15 words) capturing the SCIENCE.\n",
+  "ALWAYS return a title. Look hard -- almost every post has a topic, even if it\n",
+  "is just announcing a paper or webinar. Return the single word NONE (uppercase)\n",
+  "ONLY if the post truly has zero discernible topic (e.g. just emoji, just hashtags,\n",
+  "or 'thanks!').\n",
   "\n",
   "Rules:\n",
-  "- Return ONLY the title text. No quotes. No period at the end. No preamble.\n",
-  "- Focus on the science, not the author or the act of sharing.\n",
-  "- Use sentence case (capitalize only the first word + proper nouns).\n",
-  "- Be specific: include the topic, method, or finding when stated.\n",
-  "- If the post announces a job/webinar/call (not a paper), title it accordingly,\n",
-  "  e.g. 'Postdoc position in X', 'Webinar: X', 'Call for proposals: X'.\n",
-  "- If the post is mostly hashtags or you cannot infer a topic, return the single\n",
-  "  word NONE (uppercase) and nothing else.\n",
+  "- 5-15 words. Sentence case (capitalize first word + proper nouns only).\n",
+  "- Return ONLY the title text. No quotes, no period, no preamble.\n",
+  "- Strip emoji, hashtags, and at-mentions from the post before extracting.\n",
+  "- Focus on the SCIENCE, not the author or the act of sharing.\n",
+  "- If the post text IS already a paper title (e.g. journal accounts often\n",
+  "  just post the title), clean it up and return it in sentence case.\n",
+  "- Jobs/webinars/calls: title them as 'Webinar: X', 'PhD position in X',\n",
+  "  'Call for proposals: X', 'New R package: X', etc.\n",
   "\n",
   "Examples:\n",
+  "\n",
   "Post: 'So happy to lead this paper where we used metacommunity simulations to\n",
   "       assess how biological index performance declines across drying and pollution.'\n",
   "Title: Metacommunity simulations reveal how drying and pollution degrade biological indices\n",
+  "\n",
+  "Post: 'Atmospheric Boundary Layer Control on Forest Thermal Properties \U0001F517'\n",
+  "Title: Atmospheric boundary layer control on forest thermal properties\n",
+  "\n",
+  "Post: 'Thank you Samuel Bickel & Berg Gabriele for highlighting our findings of\n",
+  "       @cellhostmicrobe article -Microbial diversity creates a global firewall\n",
+  "       against pathogens in soil. lnkd.in/eQiZd5ST'\n",
+  "Title: Microbial diversity creates a global firewall against pathogens in soil\n",
+  "\n",
+  "Post: 'Don't miss our webinar tomorrow! Learn how GuardIAS and OneStop are\n",
+  "       helping safeguard Europe against invasive species.'\n",
+  "Title: Webinar: GuardIAS and OneStop on safeguarding Europe from invasive species\n",
+  "\n",
+  "Post: 'My rstats package mfclim is available on CRAN. It provides access to\n",
+  "       archived meteorological data from Meteo-France.'\n",
+  "Title: New R package mfclim: archived Meteo-France meteorological data on CRAN\n",
   "\n",
   "Post: 'How can globally networked, interdisciplinary research address climate change,\n",
   "       biodiversity loss and resource scarcity?'\n",
@@ -196,34 +246,47 @@ TITLE_LLM_SYSTEM_PROMPT <- paste0(
 )
 
 generate_title_llm <- function(text, cache = list()) {
-  if (is.null(text) || !nzchar(text)) return(NULL)
+  if (is.null(text) || !nzchar(text)) {
+    return(list(title = NULL, key = NULL, reason = "empty"))
+  }
   if (!requireNamespace("digest", quietly = TRUE)) install.packages("digest")
+  if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
 
   key <- digest::digest(text, algo = "sha1")
   if (!is.null(cache[[key]])) {
-    if (identical(cache[[key]], "")) return(NULL)  # negative cache
-    return(list(title = cache[[key]], key = key))
+    if (identical(cache[[key]], "")) {
+      return(list(title = NULL, key = key, reason = "cached_none"))
+    }
+    return(list(title = cache[[key]], key = key, reason = "cached_hit"))
   }
 
-  if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
-
-  result <- safe({
+  # Inner function isolates return() inside its own closure.
+  do_call <- function() {
     chat <- ellmer::chat_anthropic(
       model         = CONFIG$llm_model,
       system_prompt = TITLE_LLM_SYSTEM_PROMPT,
       echo          = "none"
     )
-    raw <- chat$chat(text)
-    title <- trimws(raw)
+    raw   <- chat$chat(text)
+    title <- trimws(as.character(raw))
     title <- gsub('^["“”\']+|["“”\']+$', "", title)
     title <- gsub('\\.$', "", title)
     title <- gsub("\\s+", " ", title)
-    if (identical(toupper(title), "NONE")) return(NULL)
-    if (nchar(title) < 8 || nchar(title) > 250) return(NULL)
-    title
-  })
-  if (is.null(result)) return(NULL)
-  list(title = result, key = key)
+
+    if (identical(toupper(title), "NONE"))      return(list(ok = FALSE, reason = "none"))
+    if (nchar(title) < 8 || nchar(title) > 250) return(list(ok = FALSE, reason = "bad_length"))
+    list(ok = TRUE, title = title)
+  }
+
+  result <- tryCatch(
+    do_call(),
+    error = function(e) list(ok = FALSE, reason = paste0("error: ", conditionMessage(e)))
+  )
+
+  if (isTRUE(result$ok)) {
+    return(list(title = result$title, key = key, reason = "ok"))
+  }
+  list(title = NULL, key = key, reason = result$reason)
 }
 
 # ---- Text cleaning -----------------------------------------
@@ -566,6 +629,17 @@ llm_title_cache_path <- file.path(archives_dir, "llm_title_cache.rds")
 title_cache     <- if (file.exists(title_cache_path))     readRDS(title_cache_path)     else list()
 llm_title_cache <- if (file.exists(llm_title_cache_path)) readRDS(llm_title_cache_path) else list()
 
+# ---- Sanity-check LLM availability before the loop ---------
+if (isTRUE(CONFIG$enable_llm_titles)) {
+  if (!nzchar(Sys.getenv("ANTHROPIC_API_KEY"))) {
+    warning("CONFIG$enable_llm_titles=TRUE but ANTHROPIC_API_KEY is not set. ",
+            "Add Sys.setenv(ANTHROPIC_API_KEY=\"sk-ant-...\") to pass.R. ",
+            "LLM titles will be skipped this run.")
+  } else {
+    cat("LLM titles: enabled (model =", CONFIG$llm_model, ")\n")
+  }
+}
+
 # ---- Loop with per-post error isolation --------------------
 all_post_md  <- character()
 nb_post      <- 0L
@@ -600,6 +674,7 @@ for (i in seq_len(cut_idx - 1L)) {
     # Title resolution: fetched -> LLM-generated -> NULL
     paper_title  <- NULL
     title_source <- NULL
+    title_diag   <- "no-title"
 
     if (isTRUE(CONFIG$enable_titles) && !is.null(uri)) {
       t <- get_paper_title(uri, title_cache, CONFIG$fetch_timeout_s)
@@ -607,16 +682,30 @@ for (i in seq_len(cut_idx - 1L)) {
         title_cache[[uri]] <- t
         paper_title  <- t
         title_source <- "fetched"
+        title_diag   <- "fetched"
       }
     }
     if (is.null(paper_title) && isTRUE(CONFIG$enable_llm_titles)) {
       gen <- generate_title_llm(text, llm_title_cache)
-      if (!is.null(gen)) {
-        llm_title_cache[[gen$key]] <- gen$title
+      if (!is.null(gen$title)) {
+        if (!identical(gen$reason, "cached_hit")) {
+          llm_title_cache[[gen$key]] <- gen$title
+        }
         paper_title  <- gen$title
         title_source <- "llm"
+        title_diag   <- paste0("llm (", gen$reason, ")")
+      } else {
+        # Negative-cache "none" / "bad_length" so we don't pay for retries.
+        # Errors (network/auth) are NOT cached -- retry next run.
+        if (!is.null(gen$key) && gen$reason %in% c("none", "bad_length")) {
+          llm_title_cache[[gen$key]] <- ""
+        }
+        title_diag <- paste0("llm-failed (", gen$reason, ")")
       }
     }
+    cat("  title: ", title_diag,
+        if (!is.null(paper_title)) paste0(" -> ", substr(paper_title, 1, 70)) else "",
+        "\n", sep = "")
 
     summary_text <- NULL  # reserved for future use
 
@@ -631,7 +720,8 @@ for (i in seq_len(cut_idx - 1L)) {
       summary      = summary_text
     ))
     list(status = "ok", handle = handle, md = md)
-  }, error = function(e) list(status = "error", handle = NA, msg = conditionMessage(e)))
+  }, error = function(e) list(status = "error", handle = safe(feed$author[[i]]$handle, NA),
+                              msg = conditionMessage(e)))
 
   switch(res$status,
     ok = {
@@ -642,9 +732,23 @@ for (i in seq_len(cut_idx - 1L)) {
     },
     skip_range = cat("i=", i, " ", res$handle, "skip (out of range)\n"),
     skip_short = cat("i=", i, " ", res$handle, "skip (too short)\n"),
-    error      = cat("i=", i, " ERROR:", res$msg, "\n")
+    error      = cat("i=", i, " ", res$handle, "ERROR:", res$msg, "\n")
   )
 }
+
+# ---- Title-source summary ----------------------------------
+# Tally how each kept post was titled so you can see at a glance
+# whether the LLM is doing its job.
+title_counts <- list(fetched = 0L, llm = 0L, none = 0L)
+for (md in all_post_md) {
+  if (grepl("✨ AI title", md, fixed = TRUE))      title_counts$llm     <- title_counts$llm + 1L
+  else if (grepl("^#####\\s*\U0001F4C4", md))           title_counts$fetched <- title_counts$fetched + 1L
+  else                                                  title_counts$none    <- title_counts$none + 1L
+}
+cat("\nTitle resolution:\n")
+cat("  fetched from URL : ", title_counts$fetched, "\n", sep = "")
+cat("  LLM-generated    : ", title_counts$llm,     "\n", sep = "")
+cat("  none (Post by ...): ", title_counts$none,   "\n", sep = "")
 
 if (isTRUE(CONFIG$enable_titles))     saveRDS(title_cache,     title_cache_path)
 if (isTRUE(CONFIG$enable_llm_titles)) saveRDS(llm_title_cache, llm_title_cache_path)
