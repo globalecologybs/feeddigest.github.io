@@ -46,17 +46,25 @@ CONFIG <- list(
   data_filename    = "digests.yml",   # used by the sidebar layout
 
   # Feature flags.
-  # `enable_titles` is ON: paper titles are pulled from the
-  # linked DOI / article page and used as the H5 heading so
-  # readers can scan by science rather than by author.
-  # Results are cached in archives/title_cache.rds, so only
-  # the first run after a new digest is slow.
-  enable_tags      = FALSE,
-  enable_titles    = TRUE,
-  enable_summaries = FALSE,
+  # `enable_titles`     : pull paper title from the linked DOI/article page.
+  # `enable_llm_titles` : if fetch fails or there is no link,
+  #                       generate a scientific title from the post
+  #                       text with an LLM. Both caches live under
+  #                       archives/ so only first-seen posts cost time/money.
+  enable_tags        = FALSE,
+  enable_titles      = TRUE,
+  enable_llm_titles  = TRUE,
+  enable_summaries   = FALSE,
 
   # Network safety for paper-title fetcher.
-  fetch_timeout_s  = 10
+  fetch_timeout_s  = 10,
+
+  # LLM config. Requires ANTHROPIC_API_KEY in the environment
+  # (add `Sys.setenv(ANTHROPIC_API_KEY = "sk-ant-...")` to pass.R,
+  # or export it in your shell). Haiku is the right tool here:
+  # fast, cheap (~$0.02 per fresh digest), title-quality is fine.
+  llm_provider  = "anthropic",
+  llm_model     = "claude-haiku-4-5"
 )
 
 # ---- Tiny helpers ------------------------------------------
@@ -153,10 +161,69 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
   })
 }
 
-# ---- Stub: LLM one-line summary ----------------------------
-get_summary <- function(text, paper_title = NULL) {
-  # TODO: ellmer::chat_anthropic(...)$chat(prompt) -> single sentence
-  NULL
+# ---- LLM-generated title (fallback when no paper title) ----
+# Returns list(title = ..., key = ...) where `key` is the
+# cache key (sha1 of the post text). NULL on failure.
+#
+# Caching strategy: cache by post text hash, so the same post
+# never costs more than once even across digest runs.
+TITLE_LLM_SYSTEM_PROMPT <- paste0(
+  "You write concise, scientific titles for social-media posts about ecology research.\n",
+  "\n",
+  "Given a post, return ONE title (5-15 words) capturing the SCIENCE.\n",
+  "\n",
+  "Rules:\n",
+  "- Return ONLY the title text. No quotes. No period at the end. No preamble.\n",
+  "- Focus on the science, not the author or the act of sharing.\n",
+  "- Use sentence case (capitalize only the first word + proper nouns).\n",
+  "- Be specific: include the topic, method, or finding when stated.\n",
+  "- If the post announces a job/webinar/call (not a paper), title it accordingly,\n",
+  "  e.g. 'Postdoc position in X', 'Webinar: X', 'Call for proposals: X'.\n",
+  "- If the post is mostly hashtags or you cannot infer a topic, return the single\n",
+  "  word NONE (uppercase) and nothing else.\n",
+  "\n",
+  "Examples:\n",
+  "Post: 'So happy to lead this paper where we used metacommunity simulations to\n",
+  "       assess how biological index performance declines across drying and pollution.'\n",
+  "Title: Metacommunity simulations reveal how drying and pollution degrade biological indices\n",
+  "\n",
+  "Post: 'How can globally networked, interdisciplinary research address climate change,\n",
+  "       biodiversity loss and resource scarcity?'\n",
+  "Title: Networked interdisciplinary research for climate, biodiversity, and resource crises\n",
+  "\n",
+  "Post: 'PhD position in marine ecology at University X, apply by June 1.'\n",
+  "Title: PhD position in marine ecology (deadline 1 June)"
+)
+
+generate_title_llm <- function(text, cache = list()) {
+  if (is.null(text) || !nzchar(text)) return(NULL)
+  if (!requireNamespace("digest", quietly = TRUE)) install.packages("digest")
+
+  key <- digest::digest(text, algo = "sha1")
+  if (!is.null(cache[[key]])) {
+    if (identical(cache[[key]], "")) return(NULL)  # negative cache
+    return(list(title = cache[[key]], key = key))
+  }
+
+  if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
+
+  result <- safe({
+    chat <- ellmer::chat_anthropic(
+      model         = CONFIG$llm_model,
+      system_prompt = TITLE_LLM_SYSTEM_PROMPT,
+      echo          = "none"
+    )
+    raw <- chat$chat(text)
+    title <- trimws(raw)
+    title <- gsub('^["“”\']+|["“”\']+$', "", title)
+    title <- gsub('\\.$', "", title)
+    title <- gsub("\\s+", " ", title)
+    if (identical(toupper(title), "NONE")) return(NULL)
+    if (nchar(title) < 8 || nchar(title) > 250) return(NULL)
+    title
+  })
+  if (is.null(result)) return(NULL)
+  list(title = result, key = key)
 }
 
 # ---- Text cleaning -----------------------------------------
@@ -250,12 +317,14 @@ format_post <- function(p) {
     paste0("<a href='https://bsky.app/profile/", p$handle, "' target='_blank' rel='noopener'>@", p$handle, "</a>")
   } else "Unknown author"
 
-  has_title <- isTRUE(CONFIG$enable_titles) &&
-               !is.null(p$paper_title) && nzchar(p$paper_title)
+  has_title <- !is.null(p$paper_title) && nzchar(p$paper_title)
 
-  # Heading
+  # Heading. Mark LLM-generated titles for transparency.
   heading <- if (has_title) {
-    paste0("##### \U0001F4C4 ", p$paper_title, "\n\n")
+    marker <- if (identical(p$title_source, "llm")) {
+      " <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>"
+    } else ""
+    paste0("##### \U0001F4C4 ", p$paper_title, marker, "\n\n")
   } else {
     paste0("##### Post by ", p$author_name, " ", author_link, "\n\n")
   }
@@ -491,9 +560,11 @@ cut_idx <- if (length(cut_hits) == 0) {
 
 save(feed, file = file.path(year_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
 
-# ---- Title cache -------------------------------------------
-title_cache_path <- file.path(archives_dir, "title_cache.rds")
-title_cache <- if (file.exists(title_cache_path)) readRDS(title_cache_path) else list()
+# ---- Title caches (fetch + LLM, keyed differently) ---------
+title_cache_path     <- file.path(archives_dir, "title_cache.rds")
+llm_title_cache_path <- file.path(archives_dir, "llm_title_cache.rds")
+title_cache     <- if (file.exists(title_cache_path))     readRDS(title_cache_path)     else list()
+llm_title_cache <- if (file.exists(llm_title_cache_path)) readRDS(llm_title_cache_path) else list()
 
 # ---- Loop with per-post error isolation --------------------
 all_post_md  <- character()
@@ -526,20 +597,37 @@ for (i in seq_len(cut_idx - 1L)) {
 
     tags <- if (isTRUE(CONFIG$enable_tags)) classify_post(text) else character()
 
-    paper_title <- if (isTRUE(CONFIG$enable_titles) && !is.null(uri)) {
-      t <- get_paper_title(uri, title_cache, CONFIG$fetch_timeout_s)
-      if (!is.null(t)) title_cache[[uri]] <- t
-      t
-    } else NULL
+    # Title resolution: fetched -> LLM-generated -> NULL
+    paper_title  <- NULL
+    title_source <- NULL
 
-    summary_text <- if (isTRUE(CONFIG$enable_summaries)) get_summary(text, paper_title) else NULL
+    if (isTRUE(CONFIG$enable_titles) && !is.null(uri)) {
+      t <- get_paper_title(uri, title_cache, CONFIG$fetch_timeout_s)
+      if (!is.null(t)) {
+        title_cache[[uri]] <- t
+        paper_title  <- t
+        title_source <- "fetched"
+      }
+    }
+    if (is.null(paper_title) && isTRUE(CONFIG$enable_llm_titles)) {
+      gen <- generate_title_llm(text, llm_title_cache)
+      if (!is.null(gen)) {
+        llm_title_cache[[gen$key]] <- gen$title
+        paper_title  <- gen$title
+        title_source <- "llm"
+      }
+    }
+
+    summary_text <- NULL  # reserved for future use
 
     md <- format_post(list(
       text         = text,    handle       = handle,
       author_name  = name,    likes        = likes,
       uri          = uri,     bluesky_link = bluesky_link,
       post_date    = post_date,
-      tags         = tags,    paper_title  = paper_title,
+      tags         = tags,
+      paper_title  = paper_title,
+      title_source = title_source,
       summary      = summary_text
     ))
     list(status = "ok", handle = handle, md = md)
@@ -558,7 +646,8 @@ for (i in seq_len(cut_idx - 1L)) {
   )
 }
 
-if (isTRUE(CONFIG$enable_titles)) saveRDS(title_cache, title_cache_path)
+if (isTRUE(CONFIG$enable_titles))     saveRDS(title_cache,     title_cache_path)
+if (isTRUE(CONFIG$enable_llm_titles)) saveRDS(llm_title_cache, llm_title_cache_path)
 
 # ---- Write digest archive page -----------------------------
 archive_path <- file.path(archives_dir, paste0("digest-", X, ".md"))
