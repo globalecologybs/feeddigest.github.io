@@ -525,16 +525,20 @@ format_post <- function(p) {
     thumb_u  <- html_escape(p$image$thumb)
     full_u   <- html_escape(p$image$full)
     lb_id    <- paste0("lb-", p$id)
+    # Inline styles below duplicate the <style> block at the top
+    # of the page so the layout works even if the <style> tag is
+    # stripped by a strict markdown processor or theme.
     image_html <- paste0(
-      "  <div class='post-image'>\n",
+      "  <div class='post-image' style='flex:0 0 140px;'>\n",
       "    <a href='#", lb_id, "' aria-label='Enlarge image'>\n",
-      "      <img src='", thumb_u, "' alt='", alt_text, "' loading='lazy'>\n",
+      "      <img src='", thumb_u, "' alt='", alt_text, "' loading='lazy' ",
+              "width='140' height='140' ",
+              "style='width:140px;height:140px;object-fit:cover;border-radius:6px;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>\n",
       "    </a>\n",
       "  </div>\n"
     )
-    # Lightbox lives at the end of the post so it stacks z-index above
     lightbox_html <- paste0(
-      "<a href='#close-", p$id, "' class='lightbox' id='", lb_id, "' aria-label='Close enlarged image'>\n",
+      "<a href='#_' class='lightbox' id='", lb_id, "' aria-label='Close enlarged image'>\n",
       "  <img src='", full_u, "' alt='", alt_text, "'>\n",
       "</a>\n"
     )
@@ -543,8 +547,8 @@ format_post <- function(p) {
   paste0(
     heading,
     meta_line,
-    "<div class='post-row'>\n",
-    "  <div class='post-text'>\n",
+    "<div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>\n",
+    "  <div class='post-text' style='flex:1 1 auto;min-width:0;'>\n",
     tag_block,
     "    {% raw %}", p$text, "{% endraw %}\n",
     summary_block,
@@ -636,6 +640,75 @@ shared_intro_block <- function() {
   )
 }
 
+# ---- CSS injected at the top of every digest page ----------
+# Self-contained: doesn't depend on _layouts/default.html. This is
+# what makes the image column, lightbox and tag chips render correctly
+# regardless of which Jekyll theme is active.
+digest_inline_css <- function() {
+  paste0(
+    "<style>\n",
+    ".post-row { display: flex; gap: 1rem; align-items: flex-start; margin: 0.5rem 0 1rem 0; }\n",
+    ".post-text { flex: 1 1 auto; min-width: 0; }\n",
+    ".post-image { flex: 0 0 140px; }\n",
+    ".post-image a { display: block; }\n",
+    ".post-image img {\n",
+    "  width: 140px; height: 140px;\n",
+    "  object-fit: cover;\n",
+    "  border-radius: 6px;\n",
+    "  display: block;\n",
+    "  cursor: zoom-in;\n",
+    "  background: #f3f3f3;\n",
+    "  border: 1px solid #eee;\n",
+    "  transition: opacity 0.15s, transform 0.15s;\n",
+    "}\n",
+    ".post-image a:hover img { opacity: 0.9; transform: scale(1.02); }\n",
+    "@media (max-width: 600px) {\n",
+    "  .post-row { flex-direction: column; }\n",
+    "  .post-image img { width: 120px; height: 120px; }\n",
+    "}\n",
+    ".lightbox {\n",
+    "  display: none;\n",
+    "  position: fixed; top: 0; left: 0; right: 0; bottom: 0;\n",
+    "  background: rgba(0,0,0,0.92);\n",
+    "  z-index: 9999;\n",
+    "  padding: 2rem;\n",
+    "  cursor: zoom-out;\n",
+    "  text-align: center;\n",
+    "  text-decoration: none;\n",
+    "}\n",
+    ".lightbox:target { display: flex; align-items: center; justify-content: center; }\n",
+    ".lightbox img {\n",
+    "  max-width: 100%; max-height: 100%;\n",
+    "  width: auto !important; height: auto !important;\n",
+    "  object-fit: contain;\n",
+    "  box-shadow: 0 8px 40px rgba(0,0,0,0.5);\n",
+    "  border-radius: 4px;\n",
+    "  cursor: zoom-out;\n",
+    "}\n",
+    ".tag-row { margin: 0.3rem 0 0.5rem 0; line-height: 1.9; }\n",
+    ".tag {\n",
+    "  display: inline-block;\n",
+    "  font-size: 0.74rem;\n",
+    "  font-weight: 600;\n",
+    "  text-transform: lowercase;\n",
+    "  padding: 2px 8px;\n",
+    "  border-radius: 10px;\n",
+    "  margin-right: 5px;\n",
+    "  background: #eef;\n",
+    "  color: #334;\n",
+    "}\n",
+    ".tag-marine{background:#e0f0fa;color:#0e4d6b}.tag-freshwater{background:#e3f6fa;color:#0a5667}\n",
+    ".tag-forest{background:#e4f3e0;color:#2a5a1f}.tag-soil{background:#efe4d4;color:#5b3d18}\n",
+    ".tag-climate{background:#fde8d8;color:#8a3a0d}.tag-invasives{background:#fbe0e0;color:#8c1f1f}\n",
+    ".tag-conservation{background:#d8efe2;color:#1f5e3c}.tag-policy{background:#ece1f4;color:#4c2773}\n",
+    ".tag-jobs{background:#fff3c4;color:#6e5400}.tag-events{background:#fcdef0;color:#7a1c5a}\n",
+    ".tag-methods{background:#e5e7eb;color:#374151}.tag-pollinator{background:#fff0c4;color:#7a5300}\n",
+    ".tag-plants{background:#e4f0d8;color:#2e5612}.tag-animals{background:#f0e4d8;color:#5a3812}\n",
+    ".tag-microbiome{background:#e4daf2;color:#46248a}\n",
+    "</style>\n\n"
+  )
+}
+
 # ---- Digest page body --------------------------------------
 build_digest_body <- function(X, start_date, end_date, nb_post,
                               all_post_md, prev_num = NULL, next_num = NULL) {
@@ -647,6 +720,7 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
   } else ""
 
   paste0(
+    digest_inline_css(),
     shared_intro_block(),
     "# Digest #", X, "\n\n",
     "Feeds are from **", format(start_date, "%B %d, %Y"),
@@ -812,9 +886,22 @@ for (i in seq_len(cut_idx - 1L)) {
         title_source <- "fetched"
         title_diag   <- "fetched"
       }
-      # Image fallback: only use og:image if Bluesky didn't give us one
+      # Image fallback (tier 2): og:image from the linked article
       if (is.null(post_image) && !is.null(meta$image)) {
         post_image <- list(thumb = meta$image, full = meta$image)
+      }
+    }
+
+    # Image fallback (tier 3): og:image from the Bluesky post URL
+    # itself. Bluesky's card service renders a per-post image showing
+    # the post text -- guarantees something visual for every entry.
+    if (is.null(post_image) && !is.null(bluesky_link) && nzchar(bluesky_link)) {
+      bsky_meta <- get_url_meta(bluesky_link, title_cache, CONFIG$fetch_timeout_s)
+      if (!is.null(bsky_meta$image) || !is.null(bsky_meta$title)) {
+        title_cache[[bluesky_link]] <- bsky_meta
+      }
+      if (!is.null(bsky_meta$image)) {
+        post_image <- list(thumb = bsky_meta$image, full = bsky_meta$image)
       }
     }
     if (is.null(paper_title) && isTRUE(CONFIG$enable_llm_titles)) {
