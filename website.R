@@ -58,19 +58,23 @@ CONFIG <- list(
   #                       generate a scientific title from the post
   #                       text with an LLM. Both caches live under
   #                       archives/ so only first-seen posts cost time/money.
-  enable_tags        = FALSE,
+  enable_tags        = TRUE,
   enable_titles      = TRUE,
   enable_llm_titles  = TRUE,
   enable_summaries   = FALSE,
+
+  # Maximum number of tags rendered per post (most-specific kept).
+  max_tags_per_post  = 4,
 
   # Network safety for paper-title fetcher.
   fetch_timeout_s  = 10,
 
   # LLM config. Requires ANTHROPIC_API_KEY in the environment
   # (add `Sys.setenv(ANTHROPIC_API_KEY = "sk-ant-...")` to pass.R,
-  # or export it in your shell). Sonnet is the right tool here:
+  # or export it in your shell). Haiku is the right tool here:
+  # fast, cheap (~$0.02 per fresh digest), title-quality is fine.
   llm_provider  = "anthropic",
-  llm_model     = "claude-sonnet-4-6"
+  llm_model     = "claude-haiku-4-5-20251001"
 )
 
 # ---- Tiny helpers ------------------------------------------
@@ -104,45 +108,114 @@ list_digests <- function(archives_dir) {
   out[order(out$num, decreasing = TRUE), ]
 }
 
-# ---- Stub: topic tags --------------------------------------
-classify_post <- function(text) {
-  t <- tolower(text)
-  tags <- character()
-  if (grepl("marine|ocean|sea\\b|reef|coral|fish|kelp|seagrass", t)) tags <- c(tags, "marine")
-  if (grepl("soil|microbi|fung", t))                                 tags <- c(tags, "soil")
-  if (grepl("forest|tree\\b|wood|canopy", t))                        tags <- c(tags, "forest")
-  if (grepl("climate|warming|carbon|temperature|drought", t))        tags <- c(tags, "climate")
-  if (grepl("freshwater|river|lake|stream|wetland", t))              tags <- c(tags, "freshwater")
-  if (grepl("invasive|alien|non[- ]indigenous|biofouling", t))       tags <- c(tags, "invasives")
-  if (grepl("conservation|protected area|biodiversit", t))           tags <- c(tags, "conservation")
-  if (grepl("policy|governance|indigenous", t))                      tags <- c(tags, "policy")
-  if (grepl("\\bjob\\b|phd|postdoc|position|hiring|fellowship", t))  tags <- c(tags, "jobs")
-  if (grepl("webinar|seminar|conference|workshop|symposium", t))     tags <- c(tags, "events")
-  if (grepl("\\bml\\b|machine learning|deep learning|model|simulation|edna|remote sensing|ai\\b",
-            t))                                                       tags <- c(tags, "methods")
-  unique(tags)
+# ---- Topic tags --------------------------------------------
+# Lightweight keyword classifier. Looks at the post text AND
+# (when available) the resolved paper title, since titles are
+# usually the cleanest topic signal. Ranking matters: each rule's
+# match advances its score; the top `max_tags_per_post` tags are
+# returned in priority order (specific subjects before broad ones).
+classify_post <- function(text, paper_title = NULL,
+                          max_tags = CONFIG$max_tags_per_post %||% 4) {
+  combined <- paste(text, paper_title %||% "")
+  t <- tolower(combined)
+  # Title contributes extra weight if present.
+  pt <- tolower(paper_title %||% "")
+  pt_boost <- function(re) if (nzchar(pt) && grepl(re, pt)) 1L else 0L
+
+  # Each rule -> (tag, score). Order = tiebreak priority.
+  rules <- list(
+    list("jobs",         "\\bjob\\b|\\bphd\\b|postdoc|fellowship|hiring|position open"),
+    list("events",       "webinar|seminar|conference|workshop|symposium|deadline"),
+    list("invasives",    "invasive|alien species|non[- ]indigenous|biofouling|bioinvasion"),
+    list("marine",       "marine|ocean|\\bsea\\b|reef|coral|fish\\b|fisheries|kelp|seagrass|cetacean|plankton"),
+    list("freshwater",   "freshwater|\\briver|\\blake|stream|wetland|estuar|riparian"),
+    list("forest",       "forest|woodland|\\btree\\b|canopy|deforest|reforest|silvicult"),
+    list("soil",         "\\bsoil|microbi|\\bfung|mycorrh|nematode"),
+    list("climate",      "climate|warming|drought|heatwave|carbon sink|\\bco2\\b|greenhouse"),
+    list("methods",      "\\bml\\b|machine learning|deep learning|\\bai\\b|simulation|\\bedna\\b|remote sensing|metabarcoding|\\br package|cran\\b|workflow"),
+    list("policy",       "policy|governance|indigenous|equity|stewardship|protected area target"),
+    list("conservation", "conservation|biodiversit|extinction|threatened|red list|protected area"),
+    list("pollinator",   "pollinator|\\bbee\\b|bumblebee|hoverfly|pollination"),
+    list("plants",       "\\bplant|flora|vegetation|grassland|savanna|herbacious"),
+    list("animals",      "\\banimal|mammal|bird\\b|amphibian|reptile|insect"),
+    list("microbiome",   "microbiome|bacteri|archaea|virus|virom")
+  )
+
+  scored <- lapply(rules, function(r) {
+    tag <- r[[1]]; re <- r[[2]]
+    if (grepl(re, t)) {
+      list(tag = tag, score = 1L + pt_boost(re))
+    } else NULL
+  })
+  scored <- Filter(Negate(is.null), scored)
+  if (length(scored) == 0) return(character())
+
+  # Sort by score desc, preserve rule order on ties
+  scores <- vapply(scored, function(x) x$score, integer(1))
+  ord    <- order(-scores, seq_along(scored))
+  tags   <- vapply(scored[ord], function(x) x$tag, character(1))
+  head(unique(tags), max_tags)
 }
 
-# ---- Paper title fetcher (cached, timed out, follows redirects) ----
-# Tries, in order: citation_title (publishers' standard), dc.title,
-# og:title, then <title>. Follows HTTP redirects so URL shorteners
-# like buff.ly / scim.ag / lnkd.in resolve to the real article page.
-# Returns NULL on failure or junk titles (Cloudflare challenges etc).
-get_paper_title <- function(url, cache = list(), timeout_s = 10) {
-  if (is.null(url) || !nzchar(url)) return(NULL)
-  if (!is.null(cache[[url]])) return(cache[[url]])
+# ---- HTML escape helper (for alt text, URLs in attributes) -
+html_escape <- function(s) {
+  if (is.null(s)) return("")
+  s <- as.character(s)
+  s <- gsub("&", "&amp;",  s, fixed = TRUE)
+  s <- gsub("<", "&lt;",   s, fixed = TRUE)
+  s <- gsub(">", "&gt;",   s, fixed = TRUE)
+  s <- gsub("'", "&#39;",  s, fixed = TRUE)
+  gsub("\"", "&quot;", s, fixed = TRUE)
+}
 
-  # Domains whose page titles are never the paper title.
-  blocked_domains <- c("lnkd.in", "linkedin.com", "x.com", "twitter.com",
-                       "facebook.com", "fb.com", "instagram.com",
-                       # our own site -- a post linking back to us would
-                       # otherwise inherit the homepage title:
-                       "globalecologybs.github.io")
-  if (any(vapply(blocked_domains, function(d) grepl(d, url, fixed = TRUE), logical(1)))) {
-    return(NULL)
+# ---- Bluesky-embed image extractor (no network) ------------
+# Returns list(thumb, full) or NULL. Priority:
+#   1. user-uploaded photo (app.bsky.embed.images view)
+#   2. external link card thumbnail (app.bsky.embed.external view)
+extract_post_image <- function(feed_embed) {
+  imgs <- safe(feed_embed$images)
+  if (!is.null(imgs) && length(imgs) > 0) {
+    thumb <- safe(imgs[[1]]$thumb)
+    full  <- safe(imgs[[1]]$fullsize)
+    if (!is.null(thumb) && is.character(thumb) && nzchar(thumb)) {
+      if (is.null(full) || !is.character(full) || !nzchar(full)) full <- thumb
+      return(list(thumb = thumb, full = full))
+    }
+  }
+  ext_thumb <- safe(feed_embed$external$thumb)
+  if (!is.null(ext_thumb) && is.character(ext_thumb) && nzchar(ext_thumb)) {
+    return(list(thumb = ext_thumb, full = ext_thumb))
+  }
+  NULL
+}
+
+# ---- URL meta fetcher (cached, timed out, follows redirects) ----
+# Single network call returns BOTH a paper title and an og:image.
+# Old caches stored plain strings; we transparently upgrade those
+# to list(title=, image=) on read.
+#
+# Title sources (in order): citation_title, dc.title, og:title,
+# twitter:title, <title>. Image sources: og:image, og:image:url,
+# twitter:image, twitter:image:src. Junk title patterns and
+# blocked domains return list(title=NULL, image=NULL).
+get_url_meta <- function(url, cache = list(), timeout_s = 10) {
+  empty <- list(title = NULL, image = NULL)
+  if (is.null(url) || !nzchar(url)) return(empty)
+
+  if (!is.null(cache[[url]])) {
+    cached <- cache[[url]]
+    # Backward-compat: legacy entries are character strings (title only).
+    if (is.character(cached)) return(list(title = cached, image = NULL))
+    return(cached)
   }
 
-  # Junk title patterns -- the entire title is junk, not just a prefix.
+  blocked_domains <- c("lnkd.in", "linkedin.com", "x.com", "twitter.com",
+                       "facebook.com", "fb.com", "instagram.com",
+                       "globalecologybs.github.io")
+  if (any(vapply(blocked_domains, function(d) grepl(d, url, fixed = TRUE), logical(1)))) {
+    return(empty)
+  }
+
   junk_re <- paste0(
     "^\\s*(just a moment|access denied|page not found|404 not found|404|",
     "loading|redirecting|please verify|attention required|cloudflare|",
@@ -151,9 +224,16 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
     "untitled|untitled document|global ecology digest.*)\\s*$"
   )
 
-  # Inner function so `return()` exits THIS helper cleanly --
-  # the previous `return()` inside `safe({...})` could jump to
-  # the top level in some R versions.
+  resolve_url <- function(base_url, rel) {
+    if (is.null(rel) || !nzchar(rel)) return(NULL)
+    if (grepl("^https?://", rel))     return(rel)
+    if (startsWith(rel, "//"))        return(paste0("https:", rel))
+    base <- regmatches(base_url, regexpr("^https?://[^/]+", base_url))
+    if (length(base) == 0)            return(NULL)
+    if (startsWith(rel, "/"))         return(paste0(base, rel))
+    NULL  # don't bother with relative-relative paths
+  }
+
   do_fetch <- function() {
     req <- curl::new_handle(
       timeout        = timeout_s,
@@ -162,33 +242,49 @@ get_paper_title <- function(url, cache = list(), timeout_s = 10) {
       useragent      = "Mozilla/5.0 (compatible; GlobalEcologyDigestBot/1.0; +https://globalecologybs.github.io/feeddigest.github.io/)"
     )
     resp <- curl::curl_fetch_memory(url, handle = req)
-    if (resp$status_code >= 400) return(NULL)
+    if (resp$status_code >= 400) return(empty)
 
     body <- rawToChar(resp$content)
     Encoding(body) <- "UTF-8"
     html <- xml2::read_html(body)
 
-    candidates <- c(
+    # --- Title ---
+    title_candidates <- c(
       xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='citation_title']"),                "content"),
       xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='dc.title' or @name='DC.title']"),  "content"),
       xml2::xml_attr(xml2::xml_find_first(html, "//meta[@property='og:title']"),                  "content"),
       xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='twitter:title']"),                 "content"),
       xml2::xml_text(xml2::xml_find_first(html, "//title"))
     )
-    candidates <- candidates[!is.na(candidates) & nzchar(trimws(candidates))]
-    if (length(candidates) == 0) return(NULL)
+    title_candidates <- title_candidates[!is.na(title_candidates) & nzchar(trimws(title_candidates))]
 
-    title <- trimws(candidates[1])
-    title <- gsub("\\s+", " ", title)
+    title <- NULL
+    if (length(title_candidates) > 0) {
+      t <- gsub("\\s+", " ", trimws(title_candidates[1]))
+      ok <- !grepl(junk_re, t, ignore.case = TRUE) &&
+            nchar(t) >= 12 && nchar(t) <= 300 &&
+            length(strsplit(t, "\\s+")[[1]]) > 2
+      if (ok) title <- t
+    }
 
-    if (grepl(junk_re, title, ignore.case = TRUE)) return(NULL)
-    if (nchar(title) < 12 || nchar(title) > 300)  return(NULL)
-    if (length(strsplit(title, "\\s+")[[1]]) <= 2) return(NULL)
+    # --- Image (og:image / twitter:image) ---
+    img_candidates <- c(
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@property='og:image']"),       "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@property='og:image:url']"),   "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='twitter:image']"),      "content"),
+      xml2::xml_attr(xml2::xml_find_first(html, "//meta[@name='twitter:image:src']"),  "content")
+    )
+    img_candidates <- img_candidates[!is.na(img_candidates) & nzchar(trimws(img_candidates))]
 
-    title
+    image <- NULL
+    if (length(img_candidates) > 0) {
+      image <- resolve_url(url, trimws(img_candidates[1]))
+    }
+
+    list(title = title, image = image)
   }
 
-  tryCatch(do_fetch(), error = function(e) NULL)
+  tryCatch(do_fetch(), error = function(e) empty)
 }
 
 # ---- LLM-generated title (fallback when no paper title) ----
@@ -410,32 +506,55 @@ format_post <- function(p) {
   } else "<br>"
 
   tag_block <- if (isTRUE(CONFIG$enable_tags) && length(p$tags) > 0) {
-    paste0(
-      "  ",
-      paste0(
-        "<span style='background:#eef;padding:2px 6px;border-radius:4px;",
-        "font-size:0.85em;margin-right:4px;'>", p$tags, "</span>",
-        collapse = ""
-      ),
-      "<br>\n"
+    chips <- paste0(
+      "<span class='tag tag-", p$tags, "'>", p$tags, "</span>",
+      collapse = ""
     )
+    paste0("    <div class='tag-row'>", chips, "</div>\n")
   } else ""
 
   summary_block <- if (isTRUE(CONFIG$enable_summaries) && !is.null(p$summary)) {
     paste0("  <i>", p$summary, "</i><br>\n")
   } else ""
 
+  # Image column (right side) + lightbox overlay
+  image_html <- ""
+  lightbox_html <- ""
+  if (!is.null(p$image) && !is.null(p$image$thumb)) {
+    alt_text <- html_escape(substr(p$text, 1, 80))
+    thumb_u  <- html_escape(p$image$thumb)
+    full_u   <- html_escape(p$image$full)
+    lb_id    <- paste0("lb-", p$id)
+    image_html <- paste0(
+      "  <div class='post-image'>\n",
+      "    <a href='#", lb_id, "' aria-label='Enlarge image'>\n",
+      "      <img src='", thumb_u, "' alt='", alt_text, "' loading='lazy'>\n",
+      "    </a>\n",
+      "  </div>\n"
+    )
+    # Lightbox lives at the end of the post so it stacks z-index above
+    lightbox_html <- paste0(
+      "<a href='#close-", p$id, "' class='lightbox' id='", lb_id, "' aria-label='Close enlarged image'>\n",
+      "  <img src='", full_u, "' alt='", alt_text, "'>\n",
+      "</a>\n"
+    )
+  }
+
   paste0(
     heading,
     meta_line,
-    "<div style='width:100%; padding:10px; border:none; box-sizing:border-box;'>\n",
+    "<div class='post-row'>\n",
+    "  <div class='post-text'>\n",
     tag_block,
-    "  {% raw %}", p$text, "{% endraw %}\n",
+    "    {% raw %}", p$text, "{% endraw %}\n",
     summary_block,
     uri_block, "\n",
-    "  <br><a href='", p$bluesky_link, "' target='_blank' rel='noopener'>View Original Post on Bluesky</a>\n",
-    "</div>\n\n",
-    "---\n\n"
+    "    <br><a href='", p$bluesky_link, "' target='_blank' rel='noopener'>View Original Post on Bluesky</a>\n",
+    "  </div>\n",
+    image_html,
+    "</div>\n",
+    lightbox_html,
+    "\n---\n\n"
   )
 }
 
@@ -669,7 +788,14 @@ for (i in seq_len(cut_idx - 1L)) {
     bluesky_link <- gsub("at://",               "https://bsky.app/profile/", feed$uri[[i]])
     bluesky_link <- gsub("app.bsky.feed.post/", "post/",                     bluesky_link)
 
-    tags <- if (isTRUE(CONFIG$enable_tags)) classify_post(text) else character()
+    # Tag classification runs AFTER title resolution (see below)
+    # so the paper title can boost relevant categories.
+    tags <- character()
+
+    # Image resolution (no LLM, no extra cost):
+    #   1. Bluesky-embedded image (user photo or external card thumb)
+    #   2. og:image fetched from URL (filled in below if URL is fetched)
+    post_image <- extract_post_image(feed$embed[[i]])
 
     # Title resolution: fetched -> LLM-generated -> NULL
     paper_title  <- NULL
@@ -677,12 +803,18 @@ for (i in seq_len(cut_idx - 1L)) {
     title_diag   <- "no-title"
 
     if (isTRUE(CONFIG$enable_titles) && !is.null(uri)) {
-      t <- get_paper_title(uri, title_cache, CONFIG$fetch_timeout_s)
-      if (!is.null(t)) {
-        title_cache[[uri]] <- t
-        paper_title  <- t
+      meta <- get_url_meta(uri, title_cache, CONFIG$fetch_timeout_s)
+      if (!is.null(meta$title) || !is.null(meta$image)) {
+        title_cache[[uri]] <- meta
+      }
+      if (!is.null(meta$title)) {
+        paper_title  <- meta$title
         title_source <- "fetched"
         title_diag   <- "fetched"
+      }
+      # Image fallback: only use og:image if Bluesky didn't give us one
+      if (is.null(post_image) && !is.null(meta$image)) {
+        post_image <- list(thumb = meta$image, full = meta$image)
       }
     }
     if (is.null(paper_title) && isTRUE(CONFIG$enable_llm_titles)) {
@@ -696,16 +828,26 @@ for (i in seq_len(cut_idx - 1L)) {
         title_diag   <- paste0("llm (", gen$reason, ")")
       } else {
         # Negative-cache "none" / "bad_length" so we don't pay for retries.
-        # Errors (network/auth) are NOT cached -- retry next run.
         if (!is.null(gen$key) && gen$reason %in% c("none", "bad_length")) {
           llm_title_cache[[gen$key]] <- ""
         }
         title_diag <- paste0("llm-failed (", gen$reason, ")")
       }
     }
+    # Classify tags using both post text and resolved title
+    if (isTRUE(CONFIG$enable_tags)) {
+      tags <- classify_post(text, paper_title)
+    }
+
     cat("  title: ", title_diag,
         if (!is.null(paper_title)) paste0(" -> ", substr(paper_title, 1, 70)) else "",
+        if (!is.null(post_image))  " [img]" else "",
+        if (length(tags) > 0)      paste0(" [", paste(tags, collapse = ","), "]") else "",
         "\n", sep = "")
+
+    # Stable per-post ID for the lightbox anchor.
+    if (!requireNamespace("digest", quietly = TRUE)) install.packages("digest")
+    post_id <- substr(digest::digest(feed$uri[[i]], algo = "sha1"), 1, 10)
 
     summary_text <- NULL  # reserved for future use
 
@@ -717,7 +859,9 @@ for (i in seq_len(cut_idx - 1L)) {
       tags         = tags,
       paper_title  = paper_title,
       title_source = title_source,
-      summary      = summary_text
+      summary      = summary_text,
+      image        = post_image,
+      id           = post_id
     ))
     list(status = "ok", handle = handle, md = md)
   }, error = function(e) list(status = "error", handle = safe(feed$author[[i]]$handle, NA),
