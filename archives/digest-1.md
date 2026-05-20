@@ -77,6 +77,12 @@ sitemap:
   <img src='https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png' alt='Global Ecology Banner' style='width:100%; height:auto;'>
 </div>
 
+<p style='text-align:center;font-size:0.95rem;margin:0 0 1.3rem;padding-bottom:0.7rem;border-bottom:1px solid #eee;'>
+  <a href='/feeddigest.github.io/' style='text-decoration:none;margin:0 0.6rem;'>Home</a>
+  &middot;
+  <a href='/feeddigest.github.io/archives/' style='text-decoration:none;margin:0 0.6rem;'>Archive</a>
+</p>
+
 Here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales, covering all realms.
 
 - **SCIENCE ONLY (publications, data, jobs)**
@@ -117,7 +123,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-##### 📄 Scaling laws for functional diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Scaling laws for functional diversity and specialization in complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 18 likes on Bluesky</p>
 
@@ -212,7 +218,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ##### 📄 May 2026 Funk Biogeography Seminar — Michael Landis
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **The International Biogeography Society** <a href='https://bsky.app/profile/biogeography.bsky.social' target='_blank' rel='noopener'>@biogeography.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 17 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **The International Biogeography Society** <a href='https://bsky.app/profile/biogeography.bsky.social' target='_blank' rel='noopener'>@biogeography.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 18 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -233,7 +239,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-##### 📄 Alpine shrubification documented across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Alpine shrubification detected across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Dr. Mariana García Criado** <a href='https://bsky.app/profile/nanitundra.bsky.social' target='_blank' rel='noopener'>@nanitundra.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 5 likes on Bluesky</p>
 
@@ -302,7 +308,9 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-<p style='font-size:small;'><a href='/feeddigest.github.io/archives/'>📚 Browse all digests</a></p>
+---
+
+<p style='font-size:0.95rem;'><a href='/feeddigest.github.io/'>🏠 Back to home</a> &nbsp;&middot;&nbsp; <a href='/feeddigest.github.io/archives/'>📚 All digests</a></p>
 
 <div style='text-align:center; margin:1.5rem 0;'>
   <a href='https://hits.sh/globalecologybs.github.io/feeddigest.github.io/' target='_blank' rel='noopener'>
@@ -310,7 +318,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
   </a>
 </div>
 
-<div style='text-align:left; font-size:small; color:gray;'>
+<div style='text-align:center; font-size:small; color:gray;'>
   This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>
 </div>
 

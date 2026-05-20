@@ -825,10 +825,6 @@ ecosystem_block_digest <- function() {
   )
 }
 
-# Banner + ecosystem (digest version), used at the top of digest pages.
-shared_intro_block <- function() {
-  paste0(banner_block(), ecosystem_block_digest())
-}
 
 # ---- CSS injected at the top of every digest page ----------
 # Self-contained: doesn't depend on _layouts/default.html. This is
@@ -916,31 +912,69 @@ visitor_counter_block <- function() {
   )
 }
 
+# ---- Shared top navigation ---------------------------------
+# Sits on every page directly under the banner -- gives the site
+# a consistent header and one-click access to Home and Archive.
+top_nav_block <- function() {
+  paste0(
+    "<p style='text-align:center;font-size:0.95rem;margin:0 0 1.3rem;",
+    "padding-bottom:0.7rem;border-bottom:1px solid #eee;'>\n",
+    "  <a href='", CONFIG$base_url, "/' style='text-decoration:none;margin:0 0.6rem;'>Home</a>\n",
+    "  &middot;\n",
+    "  <a href='", CONFIG$base_url, "/archives/' style='text-decoration:none;margin:0 0.6rem;'>Archive</a>\n",
+    "</p>\n\n"
+  )
+}
+
+# ---- Shared page footer ------------------------------------
+# Identical bottom block on every page: a separator, optional
+# extra navigation (e.g. prev/next digest links), Home/Archive
+# links, the visitor counter, and the maintainer credit.
+page_footer_block <- function(home = TRUE, archive = TRUE, extra_nav = "") {
+  links <- character()
+  if (home) {
+    links <- c(links, paste0("<a href='", CONFIG$base_url, "/'>\U0001F3E0 Back to home</a>"))
+  }
+  if (archive) {
+    links <- c(links, paste0("<a href='", CONFIG$base_url, "/archives/'>\U0001F4DA All digests</a>"))
+  }
+  nav_html <- if (length(links) > 0) {
+    paste0("<p style='font-size:0.95rem;'>", paste(links, collapse = " &nbsp;&middot;&nbsp; "), "</p>\n\n")
+  } else ""
+  paste0(
+    "---\n\n",
+    extra_nav,
+    nav_html,
+    visitor_counter_block(),
+    "<div style='text-align:center; font-size:small; color:gray;'>\n",
+    "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
+    "</div>\n"
+  )
+}
+
 # ---- Digest page body --------------------------------------
 build_digest_body <- function(X, start_date, end_date, nb_post,
                               all_post_md, prev_num = NULL, next_num = NULL) {
+  # Prev/next digest links -- digest-specific, passed to the footer.
   nav <- character()
-  if (!is.null(prev_num)) nav <- c(nav, paste0("<a href='/feeddigest.github.io/archives/digest-", prev_num, "/'>← Digest #", prev_num, "</a>"))
-  if (!is.null(next_num)) nav <- c(nav, paste0("<a href='/feeddigest.github.io/archives/digest-", next_num, "/'>Digest #", next_num, " →</a>"))
-  nav_block <- if (length(nav) > 0) {
-    paste0("<p style='font-size:small;'>", paste(nav, collapse = " &nbsp;|&nbsp; "), "</p>\n\n")
+  if (!is.null(prev_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", prev_num, "/'>← Digest #", prev_num, "</a>"))
+  if (!is.null(next_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", next_num, "/'>Digest #", next_num, " →</a>"))
+  extra_nav <- if (length(nav) > 0) {
+    paste0("<p style='font-size:0.95rem;'>", paste(nav, collapse = " &nbsp;|&nbsp; "), "</p>\n\n")
   } else ""
 
   paste0(
     digest_inline_css(),
-    shared_intro_block(),
+    banner_block(),
+    top_nav_block(),
+    ecosystem_block_digest(),
     "# Digest #", X, "\n\n",
     "Feeds are from **", format(start_date, "%B %d, %Y"),
     "** to **", format(end_date, "%B %d, %Y"),
     "**. Total posts: **", nb_post, "**.\n\n",
     "---\n\n",
     paste0(all_post_md, collapse = ""),
-    nav_block,
-    "<p style='font-size:small;'><a href='/feeddigest.github.io/archives/'>\U0001F4DA Browse all digests</a></p>\n\n",
-    visitor_counter_block(),
-    "<div style='text-align:left; font-size:small; color:gray;'>\n",
-    "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
-    "</div>\n"
+    page_footer_block(home = TRUE, archive = TRUE, extra_nav = extra_nav)
   )
 }
 
@@ -991,7 +1025,9 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
   )
 
   paste0(
+    digest_inline_css(),
     banner_block(),
+    top_nav_block(),
     "# ", CONFIG$site_title, "\n\n",
     "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks.\n\n",
     "---\n\n",
@@ -1002,11 +1038,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
     "---\n\n",
     "## Global Ecology ecosystem\n\n",
     ecosystem_block_home(),
-    "---\n\n",
-    visitor_counter_block(),
-    "<div style='text-align:left; font-size:small; color:gray;'>\n",
-    "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
-    "</div>\n"
+    page_footer_block(home = FALSE, archive = TRUE)
   )
 }
 
@@ -1016,9 +1048,12 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
 build_archive_body <- function(registry) {
   if (length(registry) == 0) {
     return(paste0(
-      "# ", CONFIG$site_title, " - Archive\n\n",
+      digest_inline_css(),
+      banner_block(),
+      top_nav_block(),
+      "# Archive\n\n",
       "_No digests yet._\n\n",
-      "[← Back to home](/feeddigest.github.io/)\n"
+      page_footer_block(home = TRUE, archive = FALSE)
     ))
   }
 
@@ -1037,10 +1072,13 @@ build_archive_body <- function(registry) {
   }, character(1))
 
   paste0(
-    "# ", CONFIG$site_title, " - Archive\n\n",
+    digest_inline_css(),
+    banner_block(),
+    top_nav_block(),
+    "# Archive\n\n",
     "All past digests, organized by year (newest first).\n\n",
     paste(sections, collapse = "\n"),
-    "\n[← Back to home](/feeddigest.github.io/)\n"
+    page_footer_block(home = TRUE, archive = FALSE)
   )
 }
 
