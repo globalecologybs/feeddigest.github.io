@@ -30,11 +30,20 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 
 ---
 
-## Latest issue: Digest #2
+## Latest issue: Digest #1
 
 **May 06, 2026 - May 20, 2026** &middot; 9 posts curated
 
-<p><a href='/feeddigest.github.io/archives/digest-2/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #2 →</a></p>
+<p><a href='/feeddigest.github.io/archives/digest-1/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #1 →</a></p>
+
+---
+
+## Browse the latest issues
+
+- [Digest #2](/feeddigest.github.io/archives/digest-2/) — May 06 – May 20, 2026
+- [Digest #1](/feeddigest.github.io/archives/digest-1/) — May 06 – May 20, 2026
+
+<p><a href='/feeddigest.github.io/archives/' style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;color:#2d6cdf;border-radius:6px;text-decoration:none;'>Browse the full archive →</a></p>
 
 ---
 

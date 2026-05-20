@@ -565,6 +565,30 @@ build_registry_entry <- function(X, start_date, end_date, nb_post) {
   )
 }
 
+# Read the registry back as a list of entries, newest first.
+# Carries the full metadata (dates, post counts) that the
+# filename-only list_digests() cannot provide.
+read_digests_registry <- function(data_path) {
+  if (!requireNamespace("yaml", quietly = TRUE)) install.packages("yaml")
+  if (!file.exists(data_path)) return(list())
+  reg <- safe(yaml::read_yaml(data_path), default = list())
+  if (is.null(reg) || !is.list(reg) || length(reg) == 0) return(list())
+  nums <- vapply(reg, function(x) safe(as.integer(x$num), NA_integer_), integer(1))
+  reg[order(nums, decreasing = TRUE, na.last = TRUE)]
+}
+
+# Human-readable date range for one registry entry.
+format_digest_dates <- function(entry, with_year = TRUE) {
+  sd <- safe(as.Date(as.character(entry$start_date)), NA)
+  ed <- safe(as.Date(as.character(entry$end_date)),   NA)
+  if (is.na(sd) || is.na(ed)) return(as.character(entry$date_label %||% ""))
+  if (with_year) {
+    paste0(format(sd, "%b %d"), " – ", format(ed, "%b %d, %Y"))
+  } else {
+    paste0(format(sd, "%b %d"), " – ", format(ed, "%b %d"))
+  }
+}
+
 # Build a 160-char meta description suitable for SEO.
 build_description <- function(start_date, end_date, nb_post) {
   d <- paste0(
@@ -874,7 +898,26 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
 }
 
 # ---- Homepage (landing) body -------------------------------
-build_landing_body <- function(X, start_date, end_date, nb_post, all_digests) {
+build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
+  # "Browse the latest issues" -- a compact list of recent digests
+  # (with dates) plus a prominent link to the full archive page.
+  recent <- head(registry, 6)
+  browse_block <- if (length(recent) == 0) "" else {
+    lines <- vapply(recent, function(e) {
+      paste0("- [Digest #", e$num, "](", e$url, ") — ",
+             format_digest_dates(e, with_year = TRUE))
+    }, character(1))
+    paste0(
+      "## Browse the latest issues\n\n",
+      paste(lines, collapse = "\n"), "\n\n",
+      "<p><a href='", CONFIG$base_url, "/archives/' ",
+      "style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;",
+      "color:#2d6cdf;border-radius:6px;text-decoration:none;'>",
+      "Browse the full archive →</a></p>\n\n",
+      "---\n\n"
+    )
+  }
+
   paste0(
     shared_intro_block(),
     "# ", CONFIG$site_title, "\n\n",
@@ -885,6 +928,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, all_digests) {
     "** &middot; ", nb_post, " posts curated\n\n",
     "<p><a href='", CONFIG$base_url, "/archives/digest-", X, "/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #", X, " →</a></p>\n\n",
     "---\n\n",
+    browse_block,
     visitor_counter_block(),
     "<div style='text-align:left; font-size:small; color:gray;'>\n",
     "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
@@ -893,23 +937,36 @@ build_landing_body <- function(X, start_date, end_date, nb_post, all_digests) {
 }
 
 # ---- Archive listing body ----------------------------------
-build_archive_body <- function(all_digests) {
-  body <- if (nrow(all_digests) == 0) {
-    "_No digests yet._\n"
-  } else {
-    paste0(
-      paste0(
-        "- [Digest #", all_digests$num, "](/feeddigest.github.io/archives/digest-", all_digests$num, "/)",
-        collapse = "\n"
-      ),
-      "\n"
-    )
+# Digests grouped by year (newest year first), each line showing
+# the issue number, its date range and post count.
+build_archive_body <- function(registry) {
+  if (length(registry) == 0) {
+    return(paste0(
+      "# ", CONFIG$site_title, " - Archive\n\n",
+      "_No digests yet._\n\n",
+      "[← Back to home](/feeddigest.github.io/)\n"
+    ))
   }
+
+  years      <- vapply(registry, function(x) as.character(x$year %||% "?"), character(1))
+  uniq_years <- sort(unique(years), decreasing = TRUE)
+
+  sections <- vapply(uniq_years, function(yr) {
+    entries <- registry[years == yr]
+    lines <- vapply(entries, function(e) {
+      dates <- format_digest_dates(e, with_year = FALSE)
+      np    <- as.character(e$nb_post %||% "")
+      paste0("- [**Digest #", e$num, "**](", e$url, ") — ", dates,
+             if (nzchar(np)) paste0(" &middot; ", np, " posts") else "")
+    }, character(1))
+    paste0("## ", yr, "\n\n", paste(lines, collapse = "\n"), "\n")
+  }, character(1))
+
   paste0(
     "# ", CONFIG$site_title, " - Archive\n\n",
-    "All past digests, newest first.\n\n",
-    body, "\n",
-    "[← Back to home](/feeddigest.github.io/)\n"
+    "All past digests, organized by year (newest first).\n\n",
+    paste(sections, collapse = "\n"),
+    "\n[← Back to home](/feeddigest.github.io/)\n"
   )
 }
 
@@ -1188,17 +1245,19 @@ if (!is.null(prev_num)) {
 }
 
 # ---- Refresh homepage and archive index --------------------
-all_digests <- list_digests(archives_dir)
+# Read the registry we just updated -- it carries full metadata
+# (dates, post counts, year) that list_digests() does not.
+digests_registry <- read_digests_registry(data_path)
 
 landing_markdown <- paste0(
   landing_front_matter(),
-  build_landing_body(X, start_date, end_date, nb_post, all_digests)
+  build_landing_body(X, start_date, end_date, nb_post, digests_registry)
 )
 write_atomic(landing_markdown, here::here("index.md"))
 
 archive_markdown <- paste0(
   archive_index_front_matter(),
-  build_archive_body(all_digests)
+  build_archive_body(digests_registry)
 )
 write_atomic(archive_markdown, file.path(archives_dir, "index.md"))
 

@@ -11,10 +11,12 @@ sitemap:
 
 # Global Ecology Digest - Archive
 
-All past digests, newest first.
+All past digests, organized by year (newest first).
 
-- [Digest #2](/feeddigest.github.io/archives/digest-2/)
-- [Digest #1](/feeddigest.github.io/archives/digest-1/)
+## 2026
+
+- [**Digest #2**](/feeddigest.github.io/archives/digest-2/) — May 06 – May 20 &middot; 9 posts
+- [**Digest #1**](/feeddigest.github.io/archives/digest-1/) — May 06 – May 20 &middot; 9 posts
 
 [← Back to home](/feeddigest.github.io/)
 
