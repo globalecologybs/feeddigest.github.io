@@ -30,13 +30,19 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 
 ---
 
-## Latest issue: Digest #1
+## Latest issue: Digest #2
 
-**May 05, 2026 - May 19, 2026** &middot; 54 posts curated
+**May 06, 2026 - May 20, 2026** &middot; 9 posts curated
 
-<p><a href='/feeddigest.github.io/archives/digest-1/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #1 →</a></p>
+<p><a href='/feeddigest.github.io/archives/digest-2/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #2 →</a></p>
 
 ---
+
+<div style='text-align:center; margin:1.5rem 0;'>
+  <a href='https://hits.sh/globalecologybs.github.io/feeddigest.github.io/' target='_blank' rel='noopener'>
+    <img alt='Visitor count' src='https://hits.sh/globalecologybs.github.io/feeddigest.github.io.svg?style=flat-square&label=visitors&color=2d6cdf&labelColor=555'>
+  </a>
+</div>
 
 <div style='text-align:left; font-size:small; color:gray;'>
   This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>

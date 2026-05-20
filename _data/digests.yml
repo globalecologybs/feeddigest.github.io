@@ -1,3 +1,10 @@
+- num: 2
+  year: '2026'
+  start_date: '2026-05-06'
+  end_date: '2026-05-20'
+  nb_post: 9
+  url: /feeddigest.github.io/archives/digest-2/
+  date_label: May 06 - May 20
 - num: 1
   year: '2026'
   start_date: '2026-05-05'

@@ -828,6 +828,23 @@ digest_inline_css <- function() {
   )
 }
 
+# ---- Visitor counter (hits.sh) -----------------------------
+# IMPORTANT: the identifier below is intentionally IDENTICAL on
+# every page (homepage + every digest). hits.sh counts hits per
+# identifier, so a single shared identifier makes the badge show
+# the SUM of hits across the whole site rather than per-page.
+visitor_counter_block <- function() {
+  id <- "globalecologybs.github.io/feeddigest.github.io"
+  paste0(
+    "<div style='text-align:center; margin:1.5rem 0;'>\n",
+    "  <a href='https://hits.sh/", id, "/' target='_blank' rel='noopener'>\n",
+    "    <img alt='Visitor count' src='https://hits.sh/", id,
+            ".svg?style=flat-square&label=visitors&color=2d6cdf&labelColor=555'>\n",
+    "  </a>\n",
+    "</div>\n\n"
+  )
+}
+
 # ---- Digest page body --------------------------------------
 build_digest_body <- function(X, start_date, end_date, nb_post,
                               all_post_md, prev_num = NULL, next_num = NULL) {
@@ -849,6 +866,7 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
     paste0(all_post_md, collapse = ""),
     nav_block,
     "<p style='font-size:small;'><a href='/feeddigest.github.io/archives/'>\U0001F4DA Browse all digests</a></p>\n\n",
+    visitor_counter_block(),
     "<div style='text-align:left; font-size:small; color:gray;'>\n",
     "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
     "</div>\n"
@@ -867,6 +885,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, all_digests) {
     "** &middot; ", nb_post, " posts curated\n\n",
     "<p><a href='", CONFIG$base_url, "/archives/digest-", X, "/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #", X, " →</a></p>\n\n",
     "---\n\n",
+    visitor_counter_block(),
     "<div style='text-align:left; font-size:small; color:gray;'>\n",
     "  This page is maintained by <a href='http://nicolasmouquet.free.fr/' target='_blank' rel='noopener' style='color:gray;'>Nicolas Mouquet</a>\n",
     "</div>\n"

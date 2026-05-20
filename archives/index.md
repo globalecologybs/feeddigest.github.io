@@ -13,6 +13,7 @@ sitemap:
 
 All past digests, newest first.
 
+- [Digest #2](/feeddigest.github.io/archives/digest-2/)
 - [Digest #1](/feeddigest.github.io/archives/digest-1/)
 
 [← Back to home](/feeddigest.github.io/)
