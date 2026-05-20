@@ -97,7 +97,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ##### 📄 The Origin of Life in the Light of Evolution
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ricard Solé** <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank' rel='noopener'>@ricardsole.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 26 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ricard Solé** <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank' rel='noopener'>@ricardsole.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 27 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -128,7 +128,16 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 <br><b>link:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2509729123' target='_blank' rel='noopener'>https://www.pnas.org/doi/10.1073/pnas.2509729123</a><br>
     <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7cvqeauc26' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
   </div>
+  <div class='post-image' style='flex:0 0 140px;'>
+    <a href='#lb-79df91b8a3' aria-label='Enlarge image'>
+      <img src='https://cdn.bsky.app/img/avatar/plain/did:plc:rca6ykp24ubm3alkgmcblslc/bafkreicvixey3tlyzlbtyktwcukq4bakyzj3zmxeu2anfdzc76u63x2y5y' alt='Scaling laws for function diversity and specialization across socioeconomic and ' loading='lazy' width='140' height='140' style='width:140px;height:140px;object-fit:cover;border-radius:50%;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>
+    </a>
+    <div style='text-align:center;font-size:0.68rem;color:#999;margin-top:3px;'>author</div>
+  </div>
 </div>
+<a href='#_' class='lightbox' id='lb-79df91b8a3' aria-label='Close enlarged image'>
+  <img src='https://cdn.bsky.app/img/avatar/plain/did:plc:rca6ykp24ubm3alkgmcblslc/bafkreicvixey3tlyzlbtyktwcukq4bakyzj3zmxeu2anfdzc76u63x2y5y' alt='Scaling laws for function diversity and specialization across socioeconomic and '>
+</a>
 
 ---
 
@@ -224,7 +233,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-##### 📄 Alpine shrubification detected across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Alpine shrubification documented across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Dr. Mariana García Criado** <a href='https://bsky.app/profile/nanitundra.bsky.social' target='_blank' rel='noopener'>@nanitundra.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 5 likes on Bluesky</p>
 

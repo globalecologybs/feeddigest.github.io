@@ -19,23 +19,21 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 
 ---
 
-## Latest issue: Digest #1
+## Digests
 
-**May 06, 2026 - May 20, 2026** &middot; 9 posts curated
-
-<p><a href='/feeddigest.github.io/archives/digest-1/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #1 →</a></p>
-
----
-
-## Browse the latest issues
-
-- [Digest #1](/feeddigest.github.io/archives/digest-1/) — May 06 – May 20, 2026
+<div style='border:1px solid #e5e5e5;border-radius:10px;padding:1.1rem 1.3rem;margin:0.6rem 0 1.1rem;background:#fafbfc;'>
+  <div style='font-size:1.15rem;font-weight:700;'>Digest #1</div>
+  <div style='color:#666;font-size:0.92rem;margin:0.25rem 0 0.9rem;'>May 06, 2026 &ndash; May 20, 2026 &middot; 9 posts curated</div>
+  <a href='/feeddigest.github.io/archives/digest-1/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;font-weight:600;'>Read Digest #1 →</a>
+</div>
 
 <p><a href='/feeddigest.github.io/archives/' style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;color:#2d6cdf;border-radius:6px;text-decoration:none;'>Browse the full archive →</a></p>
 
 ---
 
 ## Global Ecology ecosystem
+
+Here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales, covering all realms.
 
 - **SCIENCE ONLY (publications, data, jobs)**
 - Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>

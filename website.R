@@ -664,10 +664,17 @@ format_post <- function(p) {
   image_html <- ""
   lightbox_html <- ""
   if (!is.null(p$image) && !is.null(p$image$thumb)) {
-    alt_text <- html_escape(substr(p$text, 1, 80))
-    thumb_u  <- html_escape(p$image$thumb)
-    full_u   <- html_escape(p$image$full)
-    lb_id    <- paste0("lb-", p$id)
+    alt_text  <- html_escape(substr(p$text, 1, 80))
+    thumb_u   <- html_escape(p$image$thumb)
+    full_u    <- html_escape(p$image$full)
+    lb_id     <- paste0("lb-", p$id)
+    is_avatar <- isTRUE(p$image$is_avatar)
+    # Avatars render as a circle (clearly "the author"), real
+    # illustrations as a rounded square.
+    radius    <- if (is_avatar) "50%" else "6px"
+    caption   <- if (is_avatar) {
+      "    <div style='text-align:center;font-size:0.68rem;color:#999;margin-top:3px;'>author</div>\n"
+    } else ""
     # Inline styles below duplicate the <style> block at the top
     # of the page so the layout works even if the <style> tag is
     # stripped by a strict markdown processor or theme.
@@ -676,8 +683,10 @@ format_post <- function(p) {
       "    <a href='#", lb_id, "' aria-label='Enlarge image'>\n",
       "      <img src='", thumb_u, "' alt='", alt_text, "' loading='lazy' ",
               "width='140' height='140' ",
-              "style='width:140px;height:140px;object-fit:cover;border-radius:6px;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>\n",
+              "style='width:140px;height:140px;object-fit:cover;border-radius:", radius,
+              ";display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>\n",
       "    </a>\n",
+      caption,
       "  </div>\n"
     )
     lightbox_html <- paste0(
@@ -787,6 +796,7 @@ banner_block <- function() {
 # --- HOMEPAGE version -- edit this for the front page -------
 ecosystem_block_home <- function() {
   paste0(
+    "Here is a curated digest of the \U0001F98B bluesky Global Ecology feed \U0001F310 on biodiversity, ecosystems & conservation at large scales, covering all realms.\n\n",
     "- **SCIENCE ONLY (publications, data, jobs)**\n",
     "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>\n",
     "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update\n",
@@ -936,36 +946,60 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
 
 # ---- Homepage (landing) body -------------------------------
 build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
-  # "Browse the latest issues" -- a compact list of recent digests
-  # (with dates) plus a prominent link to the full archive page.
-  recent <- head(registry, 6)
-  browse_block <- if (length(recent) == 0) "" else {
-    lines <- vapply(recent, function(e) {
+  # ONE "Digests" section: a featured card for the latest issue,
+  # then -- only if older issues exist -- a compact list of them,
+  # then the link to the full archive. No duplication.
+
+  # Older issues = registry minus the current digest (#X).
+  older <- Filter(
+    function(e) !identical(safe(as.integer(e$num), NA_integer_), as.integer(X)),
+    registry
+  )
+  older <- head(older, 6)
+
+  older_block <- if (length(older) == 0) "" else {
+    lines <- vapply(older, function(e) {
       paste0("- [Digest #", e$num, "](", e$url, ") — ",
              format_digest_dates(e, with_year = TRUE))
     }, character(1))
     paste0(
-      "## Browse the latest issues\n\n",
-      paste(lines, collapse = "\n"), "\n\n",
-      "<p><a href='", CONFIG$base_url, "/archives/' ",
-      "style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;",
-      "color:#2d6cdf;border-radius:6px;text-decoration:none;'>",
-      "Browse the full archive →</a></p>\n\n",
-      "---\n\n"
+      "<p style='font-weight:600;margin:1.4rem 0 0.4rem;'>Earlier issues</p>\n\n",
+      paste(lines, collapse = "\n"), "\n\n"
     )
   }
+
+  # Featured card for the latest digest.
+  featured_card <- paste0(
+    "<div style='border:1px solid #e5e5e5;border-radius:10px;",
+    "padding:1.1rem 1.3rem;margin:0.6rem 0 1.1rem;background:#fafbfc;'>\n",
+    "  <div style='font-size:1.15rem;font-weight:700;'>Digest #", X, "</div>\n",
+    "  <div style='color:#666;font-size:0.92rem;margin:0.25rem 0 0.9rem;'>",
+    format(start_date, "%B %d, %Y"), " &ndash; ", format(end_date, "%B %d, %Y"),
+    " &middot; ", nb_post, " posts curated</div>\n",
+    "  <a href='", CONFIG$base_url, "/archives/digest-", X, "/' ",
+    "style='display:inline-block;padding:10px 18px;background:#2d6cdf;",
+    "color:white;border-radius:6px;text-decoration:none;font-weight:600;'>",
+    "Read Digest #", X, " →</a>\n",
+    "</div>\n\n"
+  )
+
+  archive_link <- paste0(
+    "<p><a href='", CONFIG$base_url, "/archives/' ",
+    "style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;",
+    "color:#2d6cdf;border-radius:6px;text-decoration:none;'>",
+    "Browse the full archive →</a></p>\n\n"
+  )
 
   paste0(
     banner_block(),
     "# ", CONFIG$site_title, "\n\n",
     "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks.\n\n",
     "---\n\n",
-    "## Latest issue: Digest #", X, "\n\n",
-    "**", format(start_date, "%B %d, %Y"), " - ", format(end_date, "%B %d, %Y"),
-    "** &middot; ", nb_post, " posts curated\n\n",
-    "<p><a href='", CONFIG$base_url, "/archives/digest-", X, "/' style='display:inline-block;padding:10px 18px;background:#2d6cdf;color:white;border-radius:6px;text-decoration:none;'>Read Digest #", X, " →</a></p>\n\n",
+    "## Digests\n\n",
+    featured_card,
+    older_block,
+    archive_link,
     "---\n\n",
-    browse_block,
     "## Global Ecology ecosystem\n\n",
     ecosystem_block_home(),
     "---\n\n",
@@ -1141,6 +1175,16 @@ for (i in seq_len(cut_idx - 1L)) {
         post_image <- list(thumb = bsky_meta$image, full = bsky_meta$image)
       }
     }
+
+    # Image fallback (tier 4): the poster's Bluesky profile picture.
+    # Last resort -- ensures every post has a visual. Flagged as an
+    # avatar so format_post() renders it as a circle, not a figure.
+    if (is.null(post_image)) {
+      avatar <- safe(feed$author[[i]]$avatar)
+      if (!is.null(avatar) && is.character(avatar) && nzchar(avatar)) {
+        post_image <- list(thumb = avatar, full = avatar, is_avatar = TRUE)
+      }
+    }
     if (is.null(paper_title) && isTRUE(CONFIG$enable_llm_titles)) {
       gen <- generate_title_llm(text, llm_title_cache)
       if (!is.null(gen$title)) {
@@ -1187,7 +1231,9 @@ for (i in seq_len(cut_idx - 1L)) {
 
     cat("  title: ", title_diag,
         if (!is.null(paper_title)) paste0(" -> ", substr(paper_title, 1, 70)) else "",
-        if (!is.null(post_image))  " [img]" else "",
+        if (!is.null(post_image)) {
+          if (isTRUE(post_image$is_avatar)) " [img:avatar]" else " [img]"
+        } else "",
         if (length(tags) > 0)      paste0(" [", paste(tags, collapse = ","), " via ", tag_source, "]") else "",
         "\n", sep = "")
 
