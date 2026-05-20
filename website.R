@@ -775,10 +775,32 @@ banner_block <- function() {
   )
 }
 
-# "Global Ecology ecosystem" content: intro paragraph + the
-# how-to-follow / starter-pack bullets. Rendered as its own
-# homepage section, and near the top of every digest page.
-ecosystem_block <- function() {
+# ============================================================
+# "Global Ecology ecosystem" content.
+# TWO independent versions so the homepage and the digest pages
+# can carry DIFFERENT text. Edit whichever one you need:
+#   * ecosystem_block_home()   -> homepage "Global Ecology ecosystem" section
+#   * ecosystem_block_digest() -> top of every digest page
+# They start identical; change them freely and independently.
+# ============================================================
+
+# --- HOMEPAGE version -- edit this for the front page -------
+ecosystem_block_home <- function() {
+  paste0(
+    "- **SCIENCE ONLY (publications, data, jobs)**\n",
+    "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>\n",
+    "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update\n",
+    "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>like & pin the Global Ecology</a> feed\n",
+    "- Here are the Global Ecology starter packs on BlueSky:\n",
+    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 1</a>\n",
+    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 2</a>\n",
+    "    - <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 3</a>\n",
+    "    - <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 4</a>\n\n"
+  )
+}
+
+# --- DIGEST-PAGE version -- edit this for the digest pages --
+ecosystem_block_digest <- function() {
   paste0(
     "Here is a curated digest of the \U0001F98B bluesky Global Ecology feed \U0001F310 on biodiversity, ecosystems & conservation at large scales, covering all realms.\n\n",
     "- **SCIENCE ONLY (publications, data, jobs)**\n",
@@ -793,9 +815,9 @@ ecosystem_block <- function() {
   )
 }
 
-# Banner + ecosystem, used at the top of digest pages.
+# Banner + ecosystem (digest version), used at the top of digest pages.
 shared_intro_block <- function() {
-  paste0(banner_block(), ecosystem_block())
+  paste0(banner_block(), ecosystem_block_digest())
 }
 
 # ---- CSS injected at the top of every digest page ----------
@@ -936,7 +958,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
   paste0(
     banner_block(),
     "# ", CONFIG$site_title, "\n\n",
-    "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks. Browse all past digests in the sidebar.\n\n",
+    "Curated digest of the \U0001F98B <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> on biodiversity, ecosystems & conservation at large scales. New issue roughly every two weeks.\n\n",
     "---\n\n",
     "## Latest issue: Digest #", X, "\n\n",
     "**", format(start_date, "%B %d, %Y"), " - ", format(end_date, "%B %d, %Y"),
@@ -945,7 +967,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
     "---\n\n",
     browse_block,
     "## Global Ecology ecosystem\n\n",
-    ecosystem_block(),
+    ecosystem_block_home(),
     "---\n\n",
     visitor_counter_block(),
     "<div style='text-align:left; font-size:small; color:gray;'>\n",

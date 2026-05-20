@@ -97,7 +97,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ##### 📄 The Origin of Life in the Light of Evolution
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ricard Solé** <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank' rel='noopener'>@ricardsole.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 23 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ricard Solé** <a href='https://bsky.app/profile/ricardsole.bsky.social' target='_blank' rel='noopener'>@ricardsole.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 26 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -117,7 +117,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-##### 📄 Scaling laws for functional diversity and specialization across biological and socioeconomic systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Scaling laws for functional diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 18 likes on Bluesky</p>
 
