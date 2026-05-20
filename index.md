@@ -40,7 +40,6 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 
 ## Browse the latest issues
 
-- [Digest #2](/feeddigest.github.io/archives/digest-2/) — May 06 – May 20, 2026
 - [Digest #1](/feeddigest.github.io/archives/digest-1/) — May 06 – May 20, 2026
 
 <p><a href='/feeddigest.github.io/archives/' style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;color:#2d6cdf;border-radius:6px;text-decoration:none;'>Browse the full archive →</a></p>

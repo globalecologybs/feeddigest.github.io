@@ -131,7 +131,7 @@ Feeds are from **May 06, 2026** to **May 20, 2026**. Total posts: **9**.
 
 ---
 
-##### 📄 Higher and more stable biological control in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Higher and more stable biological control of multiple herbivore species in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 13 likes on Bluesky</p>
 
