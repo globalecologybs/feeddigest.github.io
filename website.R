@@ -38,7 +38,7 @@ CONFIG <- list(
   site_url         = "https://globalecologybs.github.io",
   base_url         = "/feeddigest.github.io",
   site_title       = "Global Ecology Digest",
-  site_tagline     = "Weekly curated digest of the Bluesky Global Ecology feed",
+  site_tagline     = "Fortnightly curated digest of the Bluesky Global Ecology feed",
   social_image     = "https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg",
   banner_image     = "https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology_banner.png",
 
@@ -656,7 +656,8 @@ WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
   "- Reference each post with a markdown link using its anchor: [short description](#post-N)\n",
   "- Every post number must appear at least once as a link.\n",
   "- Keep the total under 200 words.\n",
-  "- Do not start with 'This digest' or 'This fortnight' or 'This issue'.\n",
+  "- Do not start with 'This digest', 'This fortnight', 'This issue', 'This week', or any similar opener.\n",
+  "- Never use 'this week' anywhere: the digest covers two weeks, not one.\n",
   "- End with a period.\n"
 )
 

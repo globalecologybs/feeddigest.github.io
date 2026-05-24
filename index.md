@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Global Ecology Digest - Bluesky biodiversity & conservation science"
-description: "Weekly curated digest of the Bluesky Global Ecology feed: biodiversity, ecosystems, conservation. Terrestrial, freshwater & marine realms."
+description: "Fortnightly curated digest of the Bluesky Global Ecology feed: biodiversity, ecosystems, conservation. Terrestrial, freshwater & marine realms."
 image: https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg
 permalink: /
 sitemap:
