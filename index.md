@@ -87,8 +87,6 @@ sitemap:
 .tag-ecosystem-services{background:#d8f0e8;color:#1a5a3a}.tag-genetics{background:#f0d8f5;color:#5a1a6a}
 .tag-movement{background:#d8e8f5;color:#1a3a5a}.tag-disease{background:#f5d8d8;color:#6a1a1a}
 .tag-biogeochemistry{background:#f0e8d0;color:#4a3a10}
-/* -- Spatial scale -- */
-.tag-global-scale{background:#e8e0f5;color:#3a2a6a}.tag-regional-scale{background:#f0e8f5;color:#4a3a6a}
 /* -- Approach / discipline -- */
 .tag-methods{background:#e5e7eb;color:#374151}.tag-modelling{background:#e8e8f2;color:#2a2a5a}
 .tag-remote-sensing{background:#d8eef5;color:#1a3a4a}.tag-citizen-science{background:#f5ecd8;color:#4a3a10}

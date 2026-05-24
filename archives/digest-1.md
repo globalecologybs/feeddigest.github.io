@@ -90,8 +90,6 @@ sitemap:
 .tag-ecosystem-services{background:#d8f0e8;color:#1a5a3a}.tag-genetics{background:#f0d8f5;color:#5a1a6a}
 .tag-movement{background:#d8e8f5;color:#1a3a5a}.tag-disease{background:#f5d8d8;color:#6a1a1a}
 .tag-biogeochemistry{background:#f0e8d0;color:#4a3a10}
-/* -- Spatial scale -- */
-.tag-global-scale{background:#e8e0f5;color:#3a2a6a}.tag-regional-scale{background:#f0e8f5;color:#4a3a6a}
 /* -- Approach / discipline -- */
 .tag-methods{background:#e5e7eb;color:#374151}.tag-modelling{background:#e8e8f2;color:#2a2a5a}
 .tag-remote-sensing{background:#d8eef5;color:#1a3a4a}.tag-citizen-science{background:#f5ecd8;color:#4a3a10}
@@ -118,7 +116,7 @@ sitemap:
 
 Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
-Climate themes run through several posts this week, from [plant strategy shifts in European grasslands](#post-1) and [alpine shrubification across mountain networks](#post-22) to [tree diversity buffering soil carbon sensitivity](#post-5) and [symbiotic bacteria in toadfish carbonate cycling](#post-19). Macroecological frameworks get real attention, with [metawebs in biogeography](#post-3), [scaling laws for functional diversity](#post-16), [home range scaling with population density](#post-20), and a [global ecology volume](#post-13) alongside an [evolution and origins text](#post-14). Methods are well represented, covering [Frescalo for trend detection](#post-4), [chemical timber tracing](#post-10), a [taxon-stratified GBIF bias dataset for SDMs](#post-15), and a [reproducible biodiversity infrastructure overview](#post-12). Policy threads include [Antarctic disaster governance](#post-2), [AI and human roles in conservation](#post-7), and [cultural legacies shaping wildlife values](#post-8). On the ecological functioning side, [strip cropping and biological control](#post-18), [soil microbiome health indicators](#post-23), and [chemodiversity emergent properties](#post-24) round out the applied ecology. Marine coverage sits in [this year's reviews compilation](#post-6). Community items include a [biogeography seminar](#post-21), a [tropical forest training event](#post-11), an [atlas of botany discussion](#post-17), and a [postdoctoral position in Greenland](#post-9).
+Climate threads run through several posts this week, from [plant strategy shifts in European grasslands](#post-1) and [alpine shrubification documented via GLORIA](#post-22) to [tree diversity buffering soil carbon sensitivity through microbial pathways](#post-5). Macroecology and methods feature heavily, with [metawebs as a biogeographic modeling framework](#post-3), [Frescalo for species trend detection](#post-4), [a reproducible biodiversity science infrastructure paper](#post-12), and a [taxon-stratified GBIF sampling-effort dataset for bias-aware SDMs](#post-15). Trait and scaling work appears in [functional diversity scaling laws](#post-16), [chemodiversity emergent properties](#post-24), and a [CESAB tropical forest traits workshop](#post-11). Marine readers have the [2026 Frontiers marine ecology review collection](#post-6), while soil and microbiome work spans [bacterial and fungal ecosystem health indicators](#post-23) and [toadfish carbonate precipitation via gut symbionts](#post-19). Methods in forestry get attention through [chemical timber tracing](#post-10). Policy posts cover [Antarctic disaster management](#post-2), [AI and human roles in conservation](#post-7), and [cultural legacies shaping wildlife values](#post-8). Rounding things out are [home range scaling with population density](#post-20), [population-level biogeography from the Landis seminar](#post-21), [Global Ecology Vol. 3](#post-13), [an origin of life microbiome book](#post-14), a [botany atlas event](#post-17), [strip cropping biological control](#post-18), and a [Greenland postdoc in vegetation and herbivory](#post-9).
 
 ---
 
@@ -180,7 +178,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Our new study synthesizes the role of metawebs as an ecological modeling framework in macroecology and biogeography, outlining their applications, limitations, and future directions. 🧪🦤🌎🌐 biodiversity ecology NetSci conservation ecologicalnetworks{% endraw %}
 <br><b>link:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0304380026002024?via%3Dihub' target='_blank' rel='noopener'>https://www.sciencedirect.com/science/article/pii/S0304380026002024?via%3Dihub</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:vb4z72agepotbk4sbdl5dfrd/post/3mmju72ymus2p' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -305,7 +303,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-policy'>policy</span><span class='tag tag-macroecology'>macroecology</span></div>
+    <div class='tag-row'><span class='tag tag-policy'>policy</span></div>
     {% raw %}Enduring cultural legacies affect Euro-American wildlife values 🌎🌐🧪{% endraw %}
 <br><b>link:</b> <a href='https://www.nature.com/articles/s41893-026-01825-8' target='_blank' rel='noopener'>https://www.nature.com/articles/s41893-026-01825-8</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmf422rrkc27' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -355,7 +353,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span><span class='tag tag-temperate-forest'>temperate-forest</span><span class='tag tag-policy'>policy</span></div>
+    <div class='tag-row'><span class='tag tag-methods'>methods</span><span class='tag tag-temperate-forest'>temperate-forest</span></div>
     {% raw %}Where does our timber come from? In new study led by Jakub Truszkowski, we show timber tracing gets more accurate if wood chemical data from different tree species are combined. Data gaps of 1 species are filled by the others. 🍁🌐🌍 Timtrace forest woodtrade{% endraw %}
 <br><b>link:</b> <a href='https://link.springer.com/article/10.1186/s13595-026-01341-x' target='_blank' rel='noopener'>https://link.springer.com/article/10.1186/s13595-026-01341-x</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:dkwchij2aqfq2mngtbzbes2n/post/3mmbz7pe5dk22' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -405,7 +403,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-traits'>traits</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-methods'>methods</span></div>
     {% raw %}BIEN 4.2: A Reproducible Standard for Global Plant Biodiversity Data 🧪🌐 Traits ObservationRecords PlotData CitizenScience @methodsinecoevol.bsky.social{% endraw %}
 <br><b>link:</b> <a href='https://methodsblog.com/2026/03/30/building-the-infrastructure-for-reproducible-biodiversity-science/' target='_blank' rel='noopener'>https://methodsblog.com/2026/03/30/building-the-infrastructure-for-reproducible-biodiversity-science/</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mmbtmax2rk2o' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -430,7 +428,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-global-scale'>global-scale</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Global Ecology 🌐 starter pack Vol. 3 is full and curated !! ✨💚 Vol. 3 👉 go.bsky.app/MkLHiKU Let’s start a Vol. 4 🕺🏼 👉 go.bsky.app/Dsk4TQ3 simply reply or DM if you want to be in ! Please share so they will fly into the bluesky 🦋🌈 🌐🧪🌍🦤🍁🦑🪴🦉🐍🌾{% endraw %}
 <br><b>link:</b> <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>https://go.bsky.app/MkLHiKU</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3mmbt6f2ju22i' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -455,7 +453,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-evolution'>evolution</span></div>
+    <div class='tag-row'><span class='tag tag-microbiome'>microbiome</span></div>
     {% raw %}How can evolutionary theory guide our understanding of life origins? Here, Betül Kaçar @kacarlab.bsky.social and co. propose that, since LUCA was already a complex, adapted population, life must have deep evolutionary roots preceding it. arxiv.org/abs/2605.05464{% endraw %}
 <br><b>link:</b> <a href='https://arxiv.org/abs/2605.05464' target='_blank' rel='noopener'>https://arxiv.org/abs/2605.05464</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:pghayd3bor4lqoum3o6sgcxf/post/3mmaighjdcs2g' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -480,7 +478,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-methods'>methods</span></div>
     {% raw %}1/ 🚨 New open resource for biodiversity & SDMs 🚨 My paper is now published in Diversity and Distributions: "A global, taxon-stratified, high-resolution sampling-effort dataset from GBIF for bias-aware ecological modelling"{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1111/ddi.70205' target='_blank' rel='noopener'>https://doi.org/10.1111/ddi.70205</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:m4ilafth4dpjqoni6unlrkb4/post/3mm7kwbnnbc2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -505,7 +503,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-traits'>traits</span><span class='tag tag-global-scale'>global-scale</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-traits'>traits</span></div>
     {% raw %}Scaling laws for function diversity and specialization across socioeconomic and biological complex system "Once functions are introduced, their growth follows a remarkably universal pattern across all systems" @sfiscience.bsky.social 🧪🌐{% endraw %}
 <br><b>link:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2509729123' target='_blank' rel='noopener'>https://www.pnas.org/doi/10.1073/pnas.2509729123</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7cvqeauc26' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -581,7 +579,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-fish'>fish</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-biogeochemistry'>biogeochemistry</span><span class='tag tag-climate'>climate</span></div>
+    <div class='tag-row'><span class='tag tag-fish'>fish</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-biogeochemistry'>biogeochemistry</span></div>
     {% raw %}What role do fish play in the oceanic CarbonCycle via calcium carbonate precipitation? Study of the toadfish gut by @delcampolab.bsky.social reveals Vibrio bacteria that could aid CaCO3 precipitation, expanding the role of symbiosis in marine biomineralization @plosbiology.org 🧪 plos.io/49aY5SH{% endraw %}
 <br><b>link:</b> <a href='https://plos.io/49aY5SH' target='_blank' rel='noopener'>https://plos.io/49aY5SH</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:5522ztebtekoor5efelihqhb/post/3mm6vzmoefs2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
@@ -706,7 +704,7 @@ Climate themes run through several posts this week, from [plant strategy shifts 
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-traits'>traits</span><span class='tag tag-ecosystem-services'>ecosystem-services</span></div>
+    <div class='tag-row'><span class='tag tag-traits'>traits</span><span class='tag tag-ecosystem-services'>ecosystem-services</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}An exciting day today. Our work, co-led by @mhanusch.bsky.social and @thomasdussarrat.bsky.social was published in Nature Ecology & Evolution. In this review, we explore the concept of chemodiversity and what role it could play for ecological functions at landscape-level.{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1038/s41559-026-03057-7' target='_blank' rel='noopener'>https://doi.org/10.1038/s41559-026-03057-7</a><br>
     <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jggts57ydp66iwg2pbddu4n5/post/3mm4z7w7lnc2f' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>

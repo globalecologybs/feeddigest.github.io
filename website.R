@@ -172,9 +172,6 @@ classify_post <- function(text, paper_title = NULL,
     list("movement",         "dispersal|migration\\b|connectivity|movement ecol|home range|\\bcorridor"),
     list("disease",          "\\bdisease|parasite|pathogen|epidemiol|zoonos|wildlife health"),
     list("biogeochemistry",  "nutrient cycling|carbon cycle|nitrogen cycle|phosphorus|stoichiom|decomposit"),
-    # Spatial scale
-    list("global-scale",     "global scale|global analysis|worldwide|global dataset|global pattern"),
-    list("regional-scale",   "continental scale|regional scale|europe.wide|pan.european|national scale"),
     # Approach
     list("methods",          "\\br package|\\bpython package|cran\\b|new method|new protocol|statistical framework|metabarcoding"),
     list("modelling",        "\\bmodel\\b|simulation|theoretical framework|mathematical model|\\bsdm\\b|species distribution model"),
@@ -444,8 +441,6 @@ TAGS_LLM_VOCAB <- c(
   "climate", "invasives", "conservation", "evolution",
   "macroecology", "networks", "traits", "policy",
   "ecosystem-services", "genetics", "movement", "disease", "biogeochemistry",
-  # Spatial scale (2)
-  "global-scale", "regional-scale",
   # Approach / discipline (5)
   "methods", "modelling", "remote-sensing", "citizen-science", "synthesis",
   # Post types (6)
@@ -506,10 +501,6 @@ TAGS_LLM_SYSTEM_PROMPT <- paste0(
   "  biogeochemistry: nutrient cycling, carbon/nitrogen/phosphorus cycles,\n",
   "                   elemental stoichiometry, decomposition\n",
   "\n",
-  "--- SPATIAL SCALE (only tag when scale is a central feature of the paper) ---\n",
-  "  global-scale   : explicitly global analyses, worldwide datasets or patterns\n",
-  "  regional-scale : continental or large regional analyses\n",
-  "\n",
   "--- APPROACH / DISCIPLINE (tag only when the approach is a core contribution) ---\n",
   "  methods        : new statistical, lab or field methods, R/Python packages, protocols\n",
   "  modelling      : theoretical models, mathematical frameworks, simulations, SDMs\n",
@@ -544,7 +535,7 @@ TAGS_LLM_SYSTEM_PROMPT <- paste0(
   "Input title: 'Metawebs as an ecological modeling framework in macroecology and biogeography'\n",
   "Input post: 'Our new study synthesizes the role of metawebs as an ecological modeling\n",
   "framework in macroecology and biogeography, outlining applications and future directions.'\n",
-  "Output: networks, macroecology, modelling, global-scale, synthesis\n",
+  "Output: networks, macroecology, modelling, synthesis\n",
   "\n",
   "Input title: 'Plant strategies across European grasslands under ongoing climate change'\n",
   "Input post: 'New study maps the distribution of plant strategies across European\n",
@@ -581,7 +572,7 @@ TAGS_LLM_SYSTEM_PROMPT <- paste0(
   "Input title: 'A global taxon-stratified GBIF sampling-effort dataset for SDMs'\n",
   "Input post: 'New paper in Diversity and Distributions: a global, taxon-stratified,\n",
   "high-resolution sampling-effort dataset from GBIF for bias-aware ecological modelling.'\n",
-  "Output: data, macroecology, global-scale, modelling\n",
+  "Output: data, macroecology, modelling\n",
   "\n",
   "Input title: 'Pollinators support the nutrition and income of vulnerable communities'\n",
   "Input post: 'Research in Nature: 40% of household income tied to insect pollinators.'\n",
@@ -597,8 +588,8 @@ generate_tags_llm <- function(text, paper_title = NULL,
   if (!requireNamespace("digest", quietly = TRUE)) install.packages("digest")
   if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
 
-  # Cache key includes BOTH text and title (title affects answer)
-  key <- digest::digest(paste(text, paper_title %||% ""), algo = "sha1")
+  # Cache key includes text, title, AND vocabulary so any vocab change forces fresh LLM calls
+  key <- digest::digest(paste(text, paper_title %||% "", paste(sort(TAGS_LLM_VOCAB), collapse = ",")), algo = "sha1")
   if (!is.null(cache[[key]])) {
     cached <- cache[[key]]
     if (length(cached) == 0 || identical(cached, "")) {
@@ -1122,8 +1113,6 @@ digest_inline_css <- function() {
     ".tag-ecosystem-services{background:#d8f0e8;color:#1a5a3a}.tag-genetics{background:#f0d8f5;color:#5a1a6a}\n",
     ".tag-movement{background:#d8e8f5;color:#1a3a5a}.tag-disease{background:#f5d8d8;color:#6a1a1a}\n",
     ".tag-biogeochemistry{background:#f0e8d0;color:#4a3a10}\n",
-    "/* -- Spatial scale -- */\n",
-    ".tag-global-scale{background:#e8e0f5;color:#3a2a6a}.tag-regional-scale{background:#f0e8f5;color:#4a3a6a}\n",
     "/* -- Approach / discipline -- */\n",
     ".tag-methods{background:#e5e7eb;color:#374151}.tag-modelling{background:#e8e8f2;color:#2a2a5a}\n",
     ".tag-remote-sensing{background:#d8eef5;color:#1a3a4a}.tag-citizen-science{background:#f5ecd8;color:#4a3a10}\n",
