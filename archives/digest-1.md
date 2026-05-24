@@ -63,14 +63,43 @@ sitemap:
   background: #eef;
   color: #334;
 }
-.tag-marine{background:#e0f0fa;color:#0e4d6b}.tag-freshwater{background:#e3f6fa;color:#0a5667}
-.tag-forest{background:#e4f3e0;color:#2a5a1f}.tag-soil{background:#efe4d4;color:#5b3d18}
-.tag-climate{background:#fde8d8;color:#8a3a0d}.tag-invasives{background:#fbe0e0;color:#8c1f1f}
-.tag-conservation{background:#d8efe2;color:#1f5e3c}.tag-policy{background:#ece1f4;color:#4c2773}
-.tag-jobs{background:#fff3c4;color:#6e5400}.tag-events{background:#fcdef0;color:#7a1c5a}
-.tag-methods{background:#e5e7eb;color:#374151}.tag-pollinator{background:#fff0c4;color:#7a5300}
+/* -- Ecosystems: marine blues -- */
+.tag-marine{background:#ddeef8;color:#0e4d6b}.tag-coral-reef{background:#fde8d8;color:#7a2a0a}
+.tag-open-ocean{background:#d0e4f5;color:#0a3358}.tag-coastal{background:#d8f0ea;color:#0a4a38}
+/* -- Ecosystems: freshwater teals -- */
+.tag-freshwater{background:#e3f6fa;color:#0a5667}.tag-rivers-streams{background:#d8eeec;color:#0a4450}
+.tag-lakes{background:#dce8f5;color:#1a3a5a}.tag-wetlands{background:#d8eedd;color:#1a4a2a}
+/* -- Ecosystems: terrestrial forests -- */
+.tag-tropical-forest{background:#d4edcc;color:#1a4a12}.tag-temperate-forest{background:#dceedd;color:#2a4a1a}
+.tag-boreal{background:#dde8df;color:#2a4a2a}
+/* -- Ecosystems: other terrestrial -- */
+.tag-grassland-savanna{background:#f0e8d0;color:#5a3a10}.tag-shrubland{background:#e8e0d0;color:#4a3820}
+.tag-desert-dryland{background:#f5ead8;color:#6a4820}.tag-alpine-mountain{background:#e8e8f2;color:#2a2a5a}
+.tag-tundra-arctic{background:#deeef5;color:#1a3a4a}.tag-soil{background:#efe4d4;color:#5b3d18}
+.tag-urban{background:#e5e5e8;color:#3a3a4a}
+/* -- Organisms -- */
 .tag-plants{background:#e4f0d8;color:#2e5612}.tag-animals{background:#f0e4d8;color:#5a3812}
-.tag-microbiome{background:#e4daf2;color:#46248a}
+.tag-birds{background:#f5ead8;color:#5a3200}.tag-fish{background:#d8e8f5;color:#1a3a58}
+.tag-fungi{background:#ead8f0;color:#4a1a5a}.tag-microbiome{background:#e4daf2;color:#46248a}
+.tag-pollinator{background:#fff0c4;color:#7a5300}
+/* -- Science topics -- */
+.tag-climate{background:#fde8d8;color:#8a3a0d}.tag-invasives{background:#fbe0e0;color:#8c1f1f}
+.tag-conservation{background:#d8efe2;color:#1f5e3c}.tag-evolution{background:#f5ecd5;color:#5c3a00}
+.tag-macroecology{background:#f0e8d8;color:#5c3a10}.tag-networks{background:#dce8f5;color:#1a3a5e}
+.tag-traits{background:#e6efd8;color:#2e4a12}.tag-policy{background:#ece1f4;color:#4c2773}
+.tag-ecosystem-services{background:#d8f0e8;color:#1a5a3a}.tag-genetics{background:#f0d8f5;color:#5a1a6a}
+.tag-movement{background:#d8e8f5;color:#1a3a5a}.tag-disease{background:#f5d8d8;color:#6a1a1a}
+.tag-biogeochemistry{background:#f0e8d0;color:#4a3a10}
+/* -- Spatial scale -- */
+.tag-global-scale{background:#e8e0f5;color:#3a2a6a}.tag-regional-scale{background:#f0e8f5;color:#4a3a6a}
+/* -- Approach / discipline -- */
+.tag-methods{background:#e5e7eb;color:#374151}.tag-modelling{background:#e8e8f2;color:#2a2a5a}
+.tag-remote-sensing{background:#d8eef5;color:#1a3a4a}.tag-citizen-science{background:#f5ecd8;color:#4a3a10}
+.tag-synthesis{background:#ece8f0;color:#3a2a5a}
+/* -- Post types -- */
+.tag-jobs{background:#fff3c4;color:#6e5400}.tag-events{background:#fcdef0;color:#7a1c5a}
+.tag-data{background:#d8f0ef;color:#1a4a4a}.tag-book{background:#f0ead8;color:#4a3a10}
+.tag-opinion{background:#f5e8d8;color:#5a3a10}.tag-preprint{background:#e8f0f5;color:#1a3a5a}
 </style>
 
 <div style='width:100%; text-align:center; margin-bottom:20px;'>
@@ -89,7 +118,7 @@ sitemap:
 
 Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
-Plenty of methodological meat in this issue, so let's dig in. On the climate front, [plant strategies in European grasslands](#post-1) and [alpine shrubification via GLORIA data](#post-22) both show vegetation reshaping under warming, while [tree diversity dampening soil carbon temperature sensitivity](#post-5) adds a nice forest-soil-microbiome angle. Policy gets attention too, with [Antarctica's governance gaps](#post-2), [AI's role in conservation science](#post-7), and [cultural legacies shaping wildlife values](#post-8) all worth a read. For the methods crowd, there's a lot here: [metawebs in macroecology](#post-3), [Frescalo for trend detection](#post-4), [GBIF bias-aware sampling datasets](#post-15), [reproducible biodiversity infrastructure](#post-12), [home range scaling with density](#post-20), [functional diversity scaling laws](#post-16), [chemodiversity emergent properties](#post-24), and [chemical timber tracing](#post-10). Marine folks should check [Reviews in Marine Ecosystem Ecology](#post-6) and [toadfish symbiotic bacteria](#post-19). Soil and microbiome themes continue in [the underground census post](#post-23). Events include a [botany book signing](#post-17), a [Landis biogeography seminar](#post-21), and [CESAB forest workshops](#post-11). Jobs wise, [Greenland's veg mapping postdoc](#post-9) looks interesting, and broader reads like [Global Ecology Vol. 3](#post-13), [Origin of Life](#post-14), [strip cropping biocontrol](#post-18) round things out nicely.
+Climate themes run through several posts this week, from [plant strategy shifts in European grasslands](#post-1) and [alpine shrubification across mountain networks](#post-22) to [tree diversity buffering soil carbon sensitivity](#post-5) and [symbiotic bacteria in toadfish carbonate cycling](#post-19). Macroecological frameworks get real attention, with [metawebs in biogeography](#post-3), [scaling laws for functional diversity](#post-16), [home range scaling with population density](#post-20), and a [global ecology volume](#post-13) alongside an [evolution and origins text](#post-14). Methods are well represented, covering [Frescalo for trend detection](#post-4), [chemical timber tracing](#post-10), a [taxon-stratified GBIF bias dataset for SDMs](#post-15), and a [reproducible biodiversity infrastructure overview](#post-12). Policy threads include [Antarctic disaster governance](#post-2), [AI and human roles in conservation](#post-7), and [cultural legacies shaping wildlife values](#post-8). On the ecological functioning side, [strip cropping and biological control](#post-18), [soil microbiome health indicators](#post-23), and [chemodiversity emergent properties](#post-24) round out the applied ecology. Marine coverage sits in [this year's reviews compilation](#post-6). Community items include a [biogeography seminar](#post-21), a [tropical forest training event](#post-11), an [atlas of botany discussion](#post-17), and a [postdoctoral position in Greenland](#post-9).
 
 ---
 
@@ -97,14 +126,14 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 ##### 📄 Plant strategy distributions in European grasslands under climate change <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Milan Chytrý** <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank' rel='noopener'>@milanchytry.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 8 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Milan Chytrý** <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank' rel='noopener'>@milanchytry.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 9 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-climate'>climate</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-traits'>traits</span><span class='tag tag-climate'>climate</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Our new study, led by Xiao-Peng Tan, maps the distribution of plant strategies across European grasslands and projects how current patterns will be affected by ongoing climate change. Open-access article: @ecography.bsky.social{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1002/ecog.08334' target='_blank' rel='noopener'>https://doi.org/10.1002/ecog.08334</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:hm2e3dgvcx4jjk5iqcriel3v/post/3mmlvbojdoc2c' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:hm2e3dgvcx4jjk5iqcriel3v/post/3mmlvbojdoc2c' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-32258b9f9f' aria-label='Enlarge image'>
@@ -120,7 +149,7 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-2'></div>
 
-##### 📄 Antarctica lacks disaster management authority for biological and physical threats <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Antarctic Treaty System needs a disaster management authority for the continent <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Proceedings of the National Academy of Sciences** <a href='https://bsky.app/profile/pnas.org' target='_blank' rel='noopener'>@pnas.org</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 5 likes on Bluesky</p>
 
@@ -129,7 +158,7 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
     <div class='tag-row'><span class='tag tag-policy'>policy</span><span class='tag tag-climate'>climate</span></div>
     {% raw %}Opinion: Antarctica and the scientists working there aren’t prepared for disasters on the remote continent. The AntarcticTreatySystem needs a disaster management authority to address biological & physical threats. https://ow.ly/NySP50Z3fZE biosecurity ClimateChange{% endraw %}
 <br><b>link:</b> <a href='https://ow.ly/NySP50Z3fZE' target='_blank' rel='noopener'>https://ow.ly/NySP50Z3fZE</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:cvhduyk4ukre2drmboh2z3mi/post/3mmjweuzmbi2t' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:cvhduyk4ukre2drmboh2z3mi/post/3mmjweuzmbi2t' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-a9bbe59360' aria-label='Enlarge image'>
@@ -147,14 +176,14 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 ##### 📄 Metawebs as an ecological modeling framework in macroecology and biogeography <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 9 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 10 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span></div>
     {% raw %}Our new study synthesizes the role of metawebs as an ecological modeling framework in macroecology and biogeography, outlining their applications, limitations, and future directions. 🧪🦤🌎🌐 biodiversity ecology NetSci conservation ecologicalnetworks{% endraw %}
 <br><b>link:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0304380026002024?via%3Dihub' target='_blank' rel='noopener'>https://www.sciencedirect.com/science/article/pii/S0304380026002024?via%3Dihub</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:vb4z72agepotbk4sbdl5dfrd/post/3mmju72ymus2p' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:vb4z72agepotbk4sbdl5dfrd/post/3mmju72ymus2p' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-7384398aeb' aria-label='Enlarge image'>
@@ -170,16 +199,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-4'></div>
 
-##### 📄 A practical guide to species trend detection using local frequency scaling (Frescalo) <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 A practical guide to species trend detection using Frescalo local frequency scaling <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Pablo Garcia-Diaz** <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank' rel='noopener'>@pablo-ecology.bsky.social</a> &middot; <time datetime='2026-05-22'>2026-05-22</time> &middot; 💚 6 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-methods'>methods</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}A practical guide to species trend detection with unstructured data using local frequency scaling (Frescalo) 🌐🌎🧪{% endraw %}
 <br><b>link:</b> <a href='https://nsojournals.onlinelibrary.wiley.com/doi/10.1002/ecog.08270' target='_blank' rel='noopener'>https://nsojournals.onlinelibrary.wiley.com/doi/10.1002/ecog.08270</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmh7mqexq222' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmh7mqexq222' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-a0fc5b7e82' aria-label='Enlarge image'>
@@ -195,16 +224,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-5'></div>
 
-##### 📄 Greater tree diversity lowers soil carbon temperature sensitivity via microbial stabilization <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Greater tree diversity lowers soil carbon temperature sensitivity via microbial stabilization mechanisms <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Journal of Ecology** <a href='https://bsky.app/profile/journalofecology.bsky.social' target='_blank' rel='noopener'>@journalofecology.bsky.social</a> &middot; <time datetime='2026-05-22'>2026-05-22</time> &middot; 💚 15 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-forest'>forest</span><span class='tag tag-soil'>soil</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-climate'>climate</span></div>
+    <div class='tag-row'><span class='tag tag-temperate-forest'>temperate-forest</span><span class='tag tag-soil'>soil</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-climate'>climate</span><span class='tag tag-biogeochemistry'>biogeochemistry</span><span class='tag tag-traits'>traits</span></div>
     {% raw %}🌳 Greater tree diversity lowers soil carbon Q₁₀ by enhancing carbon stabilization and shifting microbial strategies. Diverse forests help lock away carbon and reduce climate feedbacks 👉️ buff.ly/DcNVNNW{% endraw %}
 <br><b>link:</b> <a href='https://buff.ly/DcNVNNW' target='_blank' rel='noopener'>https://buff.ly/DcNVNNW</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:wkytvpjriqhr7q54cr4wqk7t/post/3mmh3w4sd2223' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:wkytvpjriqhr7q54cr4wqk7t/post/3mmh3w4sd2223' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-971e9b25d0' aria-label='Enlarge image'>
@@ -226,10 +255,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-marine'>marine</span><span class='tag tag-synthesis'>synthesis</span></div>
     {% raw %}Excited to co-edit the Research Topic “Reviews in Marine Ecosystem Ecology: 2026” in Frontiers in Marine Science! We invite high-quality review papers on MarineBiodiversity, ecosystem functioning, advances in monitoring, CumulativeImpacts & more. 👉 🌊🐟🪸🌐🌍{% endraw %}
 <br><b>link:</b> <a href='https://www.frontiersin.org/research-topics/80087/reviews-in-marine-ecosystem-ecology-2026' target='_blank' rel='noopener'>https://www.frontiersin.org/research-topics/80087/reviews-in-marine-ecosystem-ecology-2026</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3mmf5g5bo6k25' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:7fpeunfp74zwh6keq63zmdgt/post/3mmf5g5bo6k25' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-e11810fe6b' aria-label='Enlarge image'>
@@ -245,16 +274,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-7'></div>
 
-##### 📄 Safeguarding the role of humans in conservation science in the age of AI <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Safeguarding human roles in conservation science in the age of AI <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Pablo Garcia-Diaz** <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank' rel='noopener'>@pablo-ecology.bsky.social</a> &middot; <time datetime='2026-05-21'>2026-05-21</time> &middot; 💚 6 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-policy'>policy</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-policy'>policy</span></div>
     {% raw %}Safeguarding the role of humans in conservation science in the age of AI 🌎🌐🧪{% endraw %}
 <br><b>link:</b> <a href='https://www.sciencedirect.com/science/article/pii/S0006320726002041' target='_blank' rel='noopener'>https://www.sciencedirect.com/science/article/pii/S0006320726002041</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmf4ddrknc2q' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmf4ddrknc2q' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-0a8244754e' aria-label='Enlarge image'>
@@ -276,10 +305,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-policy'>policy</span></div>
+    <div class='tag-row'><span class='tag tag-policy'>policy</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Enduring cultural legacies affect Euro-American wildlife values 🌎🌐🧪{% endraw %}
 <br><b>link:</b> <a href='https://www.nature.com/articles/s41893-026-01825-8' target='_blank' rel='noopener'>https://www.nature.com/articles/s41893-026-01825-8</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmf422rrkc27' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jvl2oy4s2hpizxkbd7ngq7ty/post/3mmf422rrkc27' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-463d8416eb' aria-label='Enlarge image'>
@@ -301,10 +330,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-jobs'>jobs</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-jobs'>jobs</span><span class='tag tag-traits'>traits</span></div>
     {% raw %}Looks like a fantastic postdoc...deadline soon 'Greenland Institute of Natural Resources seeks a Postdoctoral Researcher with experience in vegetation mapping and herbivory' Drones, traits and Greenland PostDocJobs 🧪🌐🌾{% endraw %}
 <br><b>link:</b> <a href='https://naalakkersuisut.emply.net/recruitment/vacancyAd.aspx?publishingId=52944607-ef05-471b-b36c-5cd4ba2071d3&languageKey=en-GB' target='_blank' rel='noopener'>https://naalakkersuisut.emply.net/recruitment/vacancyAd.aspx?publishingId=52944607-ef05-471b-b36c-5cd4ba2071d3&languageKey=en-GB</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mmcg3sstds2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mmcg3sstds2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-19f6c1c5dd' aria-label='Enlarge image'>
@@ -326,10 +355,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span><span class='tag tag-forest'>forest</span></div>
+    <div class='tag-row'><span class='tag tag-methods'>methods</span><span class='tag tag-temperate-forest'>temperate-forest</span><span class='tag tag-policy'>policy</span></div>
     {% raw %}Where does our timber come from? In new study led by Jakub Truszkowski, we show timber tracing gets more accurate if wood chemical data from different tree species are combined. Data gaps of 1 species are filled by the others. 🍁🌐🌍 Timtrace forest woodtrade{% endraw %}
 <br><b>link:</b> <a href='https://link.springer.com/article/10.1186/s13595-026-01341-x' target='_blank' rel='noopener'>https://link.springer.com/article/10.1186/s13595-026-01341-x</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:dkwchij2aqfq2mngtbzbes2n/post/3mmbz7pe5dk22' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:dkwchij2aqfq2mngtbzbes2n/post/3mmbz7pe5dk22' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-4f012f0888' aria-label='Enlarge image'>
@@ -351,10 +380,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-forest'>forest</span></div>
+    <div class='tag-row'><span class='tag tag-tropical-forest'>tropical-forest</span><span class='tag tag-traits'>traits</span></div>
     {% raw %}[🌐 Webinar] The next CESABINAR will be on the 28th of May 2026 on the results of the INTRACO group 🗣️ Unravelling the role of intraspecific variability in tree species coexistence in tropical forest 🔎All info: bit.ly/40zrT7v 🧪🌐 @idiv-research.bsky.social{% endraw %}
 <br><b>link:</b> <a href='https://bit.ly/40zrT7v' target='_blank' rel='noopener'>https://bit.ly/40zrT7v</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:niursuowepii6gcvzzwhupfn/post/3mmbvx7vcck2j' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:niursuowepii6gcvzzwhupfn/post/3mmbvx7vcck2j' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-a3078a6f71' aria-label='Enlarge image'>
@@ -376,10 +405,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span><span class='tag tag-methods'>methods</span></div>
     {% raw %}BIEN 4.2: A Reproducible Standard for Global Plant Biodiversity Data 🧪🌐 Traits ObservationRecords PlotData CitizenScience @methodsinecoevol.bsky.social{% endraw %}
 <br><b>link:</b> <a href='https://methodsblog.com/2026/03/30/building-the-infrastructure-for-reproducible-biodiversity-science/' target='_blank' rel='noopener'>https://methodsblog.com/2026/03/30/building-the-infrastructure-for-reproducible-biodiversity-science/</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mmbtmax2rk2o' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mmbtmax2rk2o' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-0ee418903c' aria-label='Enlarge image'>
@@ -401,9 +430,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
+    <div class='tag-row'><span class='tag tag-global-scale'>global-scale</span></div>
     {% raw %}Global Ecology 🌐 starter pack Vol. 3 is full and curated !! ✨💚 Vol. 3 👉 go.bsky.app/MkLHiKU Let’s start a Vol. 4 🕺🏼 👉 go.bsky.app/Dsk4TQ3 simply reply or DM if you want to be in ! Please share so they will fly into the bluesky 🦋🌈 🌐🧪🌍🦤🍁🦑🪴🦉🐍🌾{% endraw %}
 <br><b>link:</b> <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>https://go.bsky.app/MkLHiKU</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3mmbt6f2ju22i' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/post/3mmbt6f2ju22i' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-2df69ad56c' aria-label='Enlarge image'>
@@ -425,9 +455,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
+    <div class='tag-row'><span class='tag tag-evolution'>evolution</span></div>
     {% raw %}How can evolutionary theory guide our understanding of life origins? Here, Betül Kaçar @kacarlab.bsky.social and co. propose that, since LUCA was already a complex, adapted population, life must have deep evolutionary roots preceding it. arxiv.org/abs/2605.05464{% endraw %}
 <br><b>link:</b> <a href='https://arxiv.org/abs/2605.05464' target='_blank' rel='noopener'>https://arxiv.org/abs/2605.05464</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:pghayd3bor4lqoum3o6sgcxf/post/3mmaighjdcs2g' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:pghayd3bor4lqoum3o6sgcxf/post/3mmaighjdcs2g' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-675b68ed2d' aria-label='Enlarge image'>
@@ -443,16 +474,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-15'></div>
 
-##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware species distribution modelling <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware SDMs <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ahmed El-Gabbas** <a href='https://bsky.app/profile/ahmed-elgabbas.bsky.social' target='_blank' rel='noopener'>@ahmed-elgabbas.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 2 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-data'>data</span><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-global-scale'>global-scale</span><span class='tag tag-methods'>methods</span></div>
     {% raw %}1/ 🚨 New open resource for biodiversity & SDMs 🚨 My paper is now published in Diversity and Distributions: "A global, taxon-stratified, high-resolution sampling-effort dataset from GBIF for bias-aware ecological modelling"{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1111/ddi.70205' target='_blank' rel='noopener'>https://doi.org/10.1111/ddi.70205</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:m4ilafth4dpjqoni6unlrkb4/post/3mm7kwbnnbc2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:m4ilafth4dpjqoni6unlrkb4/post/3mm7kwbnnbc2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-625650f50f' aria-label='Enlarge image'>
@@ -468,16 +499,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-16'></div>
 
-##### 📄 Scaling laws for functional diversity and specialization in complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Scaling laws for functional diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 18 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-traits'>traits</span><span class='tag tag-global-scale'>global-scale</span></div>
     {% raw %}Scaling laws for function diversity and specialization across socioeconomic and biological complex system "Once functions are introduced, their growth follows a remarkably universal pattern across all systems" @sfiscience.bsky.social 🧪🌐{% endraw %}
 <br><b>link:</b> <a href='https://www.pnas.org/doi/10.1073/pnas.2509729123' target='_blank' rel='noopener'>https://www.pnas.org/doi/10.1073/pnas.2509729123</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7cvqeauc26' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7cvqeauc26' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-79df91b8a3' aria-label='Enlarge image'>
@@ -500,10 +531,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-plants'>plants</span></div>
+    <div class='tag-row'><span class='tag tag-book'>book</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Join me and the other authors of the Atlas of Botany at the Royal Botanic Garden Edinburgh on June 11th for some fascinating stories of ancient evolution, innovative adaptation, and how plants shape the world around us today. Plus a signing! 🌎🌐 botany biogeography{% endraw %}
 <br><b>link:</b> <a href='https://rbgeshop.org/products/atlas-of-botany-book-signing?pr_prod_strat=e5_desc&pr_rec_id=5c4328909&pr_rec_pid=15862224388469&pr_ref_pid=15710013325685&pr_seq=uniform' target='_blank' rel='noopener'>https://rbgeshop.org/products/atlas-of-botany-book-signing?pr_prod_strat=e5_desc&pr_rec_id=5c4328909&pr_rec_pid=15862224388469&pr_ref_pid=15710013325685&pr_seq=uniform</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:siieb5m57znytybo22elbkjh/post/3mm7bpamxsc2h' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:siieb5m57znytybo22elbkjh/post/3mm7bpamxsc2h' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-d604d8729b' aria-label='Enlarge image'>
@@ -519,16 +550,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-18'></div>
 
-##### 📄 Higher and more stable biological control in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Higher and more stable biological control of herbivores in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 13 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-ecosystem-services'>ecosystem-services</span></div>
     {% raw %}Higher and more stable biological control of multiple herbivore species in diversified strip cropping systems 🌐🧪https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.70381{% endraw %}
 <br><b>link:</b> <a href='https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.70381' target='_blank' rel='noopener'>https://besjournals.onlinelibrary.wiley.com/doi/10.1111/1365-2664.70381</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7235zn7c2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:rca6ykp24ubm3alkgmcblslc/post/3mm7235zn7c2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-b2ba7cf656' aria-label='Enlarge image'>
@@ -550,10 +581,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-climate'>climate</span></div>
+    <div class='tag-row'><span class='tag tag-fish'>fish</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-biogeochemistry'>biogeochemistry</span><span class='tag tag-climate'>climate</span></div>
     {% raw %}What role do fish play in the oceanic CarbonCycle via calcium carbonate precipitation? Study of the toadfish gut by @delcampolab.bsky.social reveals Vibrio bacteria that could aid CaCO3 precipitation, expanding the role of symbiosis in marine biomineralization @plosbiology.org 🧪 plos.io/49aY5SH{% endraw %}
 <br><b>link:</b> <a href='https://plos.io/49aY5SH' target='_blank' rel='noopener'>https://plos.io/49aY5SH</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:5522ztebtekoor5efelihqhb/post/3mm6vzmoefs2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:5522ztebtekoor5efelihqhb/post/3mm6vzmoefs2s' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-e5685198a0' aria-label='Enlarge image'>
@@ -569,16 +600,16 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div id='post-20'></div>
 
-##### 📄 Population density shapes home range size and overlap in animals <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+##### 📄 Population density shapes home range size and overlap in animal movement <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Luca Santini** <a href='https://bsky.app/profile/lsantinieco.bsky.social' target='_blank' rel='noopener'>@lsantinieco.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 11 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}What is the relationship between population density and home range? and what are the implications in terms of home range overlap? Our latest paper tackling these questions is finally out! @giannijacca.bsky.social @marleetucker.bsky.social{% endraw %}
 <br><b>link:</b> <a href='https://nsojournals.onlinelibrary.wiley.com/doi/10.1002/ecog.07936' target='_blank' rel='noopener'>https://nsojournals.onlinelibrary.wiley.com/doi/10.1002/ecog.07936</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:uklfqjiv2ymojvoa4x3fnqnt/post/3mm6r4dznps2q' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:uklfqjiv2ymojvoa4x3fnqnt/post/3mm6r4dznps2q' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-9389c514fc' aria-label='Enlarge image'>
@@ -600,10 +631,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}Join us on May 27th for the next Funk Biogeography Seminar! Dr. Michael Landis from Washington University in St. Louis will be speaking about the use of phylogenetic models to explore the biogeography of the past. Learn more and register here:{% endraw %}
 <br><b>link:</b> <a href='https://www.biogeography.org/news/news/may-2026-funk-biogeography-seminar-michael-landis/' target='_blank' rel='noopener'>https://www.biogeography.org/news/news/may-2026-funk-biogeography-seminar-michael-landis/</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:3ggu2dvau7qi4ptkdynzho3x/post/3mm5jbni4ac2p' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:3ggu2dvau7qi4ptkdynzho3x/post/3mm5jbni4ac2p' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-4a22823316' aria-label='Enlarge image'>
@@ -625,10 +656,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-climate'>climate</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-climate'>climate</span><span class='tag tag-macroecology'>macroecology</span></div>
     {% raw %}🏔️ European mountains get shrubbier 🏔️ In this Research Highlight @globalchangebio.bsky.social, Sarah Elmendorf and myself discuss Vanneste et al. (2026)'s wonderful paper, who found extensive alpine shrubification based on data from the GLORIA network. 🌐🧪🌱🌍{% endraw %}
 <br><b>link:</b> <a href='http://dx.doi.org/10.1111/gcb.70922' target='_blank' rel='noopener'>http://dx.doi.org/10.1111/gcb.70922</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:aqbuq4s7636ofwdji3vjafqm/post/3mm57j53un226' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:aqbuq4s7636ofwdji3vjafqm/post/3mm57j53un226' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-a4fb8124bf' aria-label='Enlarge image'>
@@ -650,10 +681,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-soil'>soil</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-soil'>soil</span><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-ecosystem-services'>ecosystem-services</span></div>
     {% raw %}I've written a short blog post on the bacterial-to-fungal richness ratio and the implications of the research for ecosystem health assessments. 🌏🌐🧪🔬 SoilHealth SoilScience Microbiome @slsl-curtinuni.bsky.social 📝 Blog:{% endraw %}
 <br><b>link:</b> <a href='https://ravr19.github.io/slsl_blog/posts/2026-05-18-bactfung/' target='_blank' rel='noopener'>https://ravr19.github.io/slsl_blog/posts/2026-05-18-bactfung/</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:v66fqvnkwos7gwuivu4wzgs5/post/3mm56qymdak2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:v66fqvnkwos7gwuivu4wzgs5/post/3mm56qymdak2b' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-32e34236cb' aria-label='Enlarge image'>
@@ -675,10 +706,10 @@ Plenty of methodological meat in this issue, so let's dig in. On the climate fro
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-traits'>traits</span><span class='tag tag-ecosystem-services'>ecosystem-services</span></div>
     {% raw %}An exciting day today. Our work, co-led by @mhanusch.bsky.social and @thomasdussarrat.bsky.social was published in Nature Ecology & Evolution. In this review, we explore the concept of chemodiversity and what role it could play for ecological functions at landscape-level.{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1038/s41559-026-03057-7' target='_blank' rel='noopener'>https://doi.org/10.1038/s41559-026-03057-7</a><br>
-    <br><a href='https://bsky.app/profile/did:plc:jggts57ydp66iwg2pbddu4n5/post/3mm4z7w7lnc2f' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:jggts57ydp66iwg2pbddu4n5/post/3mm4z7w7lnc2f' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
   </div>
   <div class='post-image' style='flex:0 0 140px;'>
     <a href='#lb-80bcfae87c' aria-label='Enlarge image'>

@@ -60,14 +60,43 @@ sitemap:
   background: #eef;
   color: #334;
 }
-.tag-marine{background:#e0f0fa;color:#0e4d6b}.tag-freshwater{background:#e3f6fa;color:#0a5667}
-.tag-forest{background:#e4f3e0;color:#2a5a1f}.tag-soil{background:#efe4d4;color:#5b3d18}
-.tag-climate{background:#fde8d8;color:#8a3a0d}.tag-invasives{background:#fbe0e0;color:#8c1f1f}
-.tag-conservation{background:#d8efe2;color:#1f5e3c}.tag-policy{background:#ece1f4;color:#4c2773}
-.tag-jobs{background:#fff3c4;color:#6e5400}.tag-events{background:#fcdef0;color:#7a1c5a}
-.tag-methods{background:#e5e7eb;color:#374151}.tag-pollinator{background:#fff0c4;color:#7a5300}
+/* -- Ecosystems: marine blues -- */
+.tag-marine{background:#ddeef8;color:#0e4d6b}.tag-coral-reef{background:#fde8d8;color:#7a2a0a}
+.tag-open-ocean{background:#d0e4f5;color:#0a3358}.tag-coastal{background:#d8f0ea;color:#0a4a38}
+/* -- Ecosystems: freshwater teals -- */
+.tag-freshwater{background:#e3f6fa;color:#0a5667}.tag-rivers-streams{background:#d8eeec;color:#0a4450}
+.tag-lakes{background:#dce8f5;color:#1a3a5a}.tag-wetlands{background:#d8eedd;color:#1a4a2a}
+/* -- Ecosystems: terrestrial forests -- */
+.tag-tropical-forest{background:#d4edcc;color:#1a4a12}.tag-temperate-forest{background:#dceedd;color:#2a4a1a}
+.tag-boreal{background:#dde8df;color:#2a4a2a}
+/* -- Ecosystems: other terrestrial -- */
+.tag-grassland-savanna{background:#f0e8d0;color:#5a3a10}.tag-shrubland{background:#e8e0d0;color:#4a3820}
+.tag-desert-dryland{background:#f5ead8;color:#6a4820}.tag-alpine-mountain{background:#e8e8f2;color:#2a2a5a}
+.tag-tundra-arctic{background:#deeef5;color:#1a3a4a}.tag-soil{background:#efe4d4;color:#5b3d18}
+.tag-urban{background:#e5e5e8;color:#3a3a4a}
+/* -- Organisms -- */
 .tag-plants{background:#e4f0d8;color:#2e5612}.tag-animals{background:#f0e4d8;color:#5a3812}
-.tag-microbiome{background:#e4daf2;color:#46248a}
+.tag-birds{background:#f5ead8;color:#5a3200}.tag-fish{background:#d8e8f5;color:#1a3a58}
+.tag-fungi{background:#ead8f0;color:#4a1a5a}.tag-microbiome{background:#e4daf2;color:#46248a}
+.tag-pollinator{background:#fff0c4;color:#7a5300}
+/* -- Science topics -- */
+.tag-climate{background:#fde8d8;color:#8a3a0d}.tag-invasives{background:#fbe0e0;color:#8c1f1f}
+.tag-conservation{background:#d8efe2;color:#1f5e3c}.tag-evolution{background:#f5ecd5;color:#5c3a00}
+.tag-macroecology{background:#f0e8d8;color:#5c3a10}.tag-networks{background:#dce8f5;color:#1a3a5e}
+.tag-traits{background:#e6efd8;color:#2e4a12}.tag-policy{background:#ece1f4;color:#4c2773}
+.tag-ecosystem-services{background:#d8f0e8;color:#1a5a3a}.tag-genetics{background:#f0d8f5;color:#5a1a6a}
+.tag-movement{background:#d8e8f5;color:#1a3a5a}.tag-disease{background:#f5d8d8;color:#6a1a1a}
+.tag-biogeochemistry{background:#f0e8d0;color:#4a3a10}
+/* -- Spatial scale -- */
+.tag-global-scale{background:#e8e0f5;color:#3a2a6a}.tag-regional-scale{background:#f0e8f5;color:#4a3a6a}
+/* -- Approach / discipline -- */
+.tag-methods{background:#e5e7eb;color:#374151}.tag-modelling{background:#e8e8f2;color:#2a2a5a}
+.tag-remote-sensing{background:#d8eef5;color:#1a3a4a}.tag-citizen-science{background:#f5ecd8;color:#4a3a10}
+.tag-synthesis{background:#ece8f0;color:#3a2a5a}
+/* -- Post types -- */
+.tag-jobs{background:#fff3c4;color:#6e5400}.tag-events{background:#fcdef0;color:#7a1c5a}
+.tag-data{background:#d8f0ef;color:#1a4a4a}.tag-book{background:#f0ead8;color:#4a3a10}
+.tag-opinion{background:#f5e8d8;color:#5a3a10}.tag-preprint{background:#e8f0f5;color:#1a3a5a}
 </style>
 
 <div style='width:100%; text-align:center; margin-bottom:20px;'>
