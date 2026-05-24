@@ -100,17 +100,7 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 
 ## Global Ecology ecosystem
 
-Here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales, covering all realms.
-
-- **SCIENCE ONLY (publications, data, jobs)**
-- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>
-- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update
-- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>like & pin the Global Ecology</a> feed
-- Here are the Global Ecology starter packs on BlueSky:
-    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 1</a>
-    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 2</a>
-    - <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 3</a>
-    - <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 4</a>
+<p style='font-size:0.95rem;color:#444;'>Science-only curated digest (publications, data, jobs) from the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> 🌐. Not on BlueSky? <a href='mailto:global.ecology.bs@gmail.com'>Email us</a> to receive updates. On BlueSky? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute. <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Like &amp; pin the feed</a>. Starter packs: <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Vol. 1</a>, <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Vol. 2</a>, <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Vol. 3</a>, <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Vol. 4</a>.</p>
 
 ---
 

@@ -504,6 +504,60 @@ generate_tags_llm <- function(text, paper_title = NULL,
   list(tags = NULL, key = key, reason = result$reason)
 }
 
+# ---- LLM-generated digest wrap-up --------------------------
+# Generates a short thematic paragraph summarising all posts,
+# with markdown links anchored to each post (#post-N).
+WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
+  "You write a short, informal but accurate wrap-up paragraph for a curated ecology research digest.\n",
+  "\n",
+  "Rules:\n",
+  "- NEVER use the em dash character (the long dash). Use commas or short sentences instead.\n",
+  "- NEVER use -- either.\n",
+  "- Informal but accurate tone, like a knowledgeable friend scanning the issue for you.\n",
+  "- One single flowing paragraph. No bullet points, no headers, no line breaks within.\n",
+  "- Group posts by theme naturally (e.g. climate, methods, marine, jobs, events).\n",
+  "- Reference each post with a markdown link using its anchor: [short description](#post-N)\n",
+  "- Every post number must appear at least once as a link.\n",
+  "- Keep the total under 200 words.\n",
+  "- Do not start with 'This digest' or 'This fortnight'.\n",
+  "- End with a period.\n"
+)
+
+generate_wrapup_llm <- function(post_meta) {
+  if (length(post_meta) == 0) return(NULL)
+  if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
+
+  lines <- vapply(post_meta, function(p) {
+    tag_str   <- if (length(p$tags) > 0) paste0("tags: ", paste(p$tags, collapse = ", ")) else "no tags"
+    title_str <- if (!is.null(p$title) && nzchar(p$title)) p$title else "(no title)"
+    paste0("Post ", p$num, " (", tag_str, "): ", title_str)
+  }, character(1))
+
+  user_msg <- paste0(
+    "Here are the ", length(post_meta), " posts in this digest:\n\n",
+    paste(lines, collapse = "\n"),
+    "\n\nWrite the wrap-up paragraph."
+  )
+
+  tryCatch({
+    chat <- ellmer::chat_anthropic(
+      model         = CONFIG$llm_model,
+      system_prompt = WRAPUP_LLM_SYSTEM_PROMPT,
+      echo          = "none"
+    )
+    raw <- trimws(as.character(chat$chat(user_msg)))
+    # Safety: strip any em dashes that sneak through
+    raw <- gsub("—", ",", raw, fixed = TRUE)
+    raw <- gsub("–", ",", raw, fixed = TRUE)
+    raw <- gsub("--", ",",    raw, fixed = TRUE)
+    if (nchar(raw) < 20) return(NULL)
+    raw
+  }, error = function(e) {
+    warning("Wrap-up generation failed: ", conditionMessage(e))
+    NULL
+  })
+}
+
 # ---- Text cleaning -----------------------------------------
 clean_text <- function(text) {
   if (is.null(text) || is.na(text)) return("")
@@ -583,9 +637,9 @@ format_digest_dates <- function(entry, with_year = TRUE) {
   ed <- safe(as.Date(as.character(entry$end_date)),   NA)
   if (is.na(sd) || is.na(ed)) return(as.character(entry$date_label %||% ""))
   if (with_year) {
-    paste0(format(sd, "%b %d"), " – ", format(ed, "%b %d, %Y"))
+    paste0(format(sd, "%b %d"), " to ", format(ed, "%b %d, %Y"))
   } else {
-    paste0(format(sd, "%b %d"), " – ", format(ed, "%b %d"))
+    paste0(format(sd, "%b %d"), " to ", format(ed, "%b %d"))
   }
 }
 
@@ -621,14 +675,19 @@ format_post <- function(p) {
 
   has_title <- !is.null(p$paper_title) && nzchar(p$paper_title)
 
+  # Per-post anchor for in-page navigation from the wrap-up paragraph.
+  anchor_block <- if (!is.null(p$post_num)) {
+    paste0("<div id='post-", p$post_num, "'></div>\n\n")
+  } else ""
+
   # Heading. Mark LLM-generated titles for transparency.
   heading <- if (has_title) {
     marker <- if (identical(p$title_source, "llm")) {
       " <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>"
     } else ""
-    paste0("##### \U0001F4C4 ", p$paper_title, marker, "\n\n")
+    paste0(anchor_block, "##### \U0001F4C4 ", p$paper_title, marker, "\n\n")
   } else {
-    paste0("##### Post by ", p$author_name, " ", author_link, "\n\n")
+    paste0(anchor_block, "##### Post by ", p$author_name, " ", author_link, "\n\n")
   }
 
   # Metadata line below the heading.
@@ -796,32 +855,36 @@ banner_block <- function() {
 # --- HOMEPAGE version -- edit this for the front page -------
 ecosystem_block_home <- function() {
   paste0(
-    "Here is a curated digest of the \U0001F98B bluesky Global Ecology feed \U0001F310 on biodiversity, ecosystems & conservation at large scales, covering all realms.\n\n",
-    "- **SCIENCE ONLY (publications, data, jobs)**\n",
-    "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>\n",
-    "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update\n",
-    "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>like & pin the Global Ecology</a> feed\n",
-    "- Here are the Global Ecology starter packs on BlueSky:\n",
-    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 1</a>\n",
-    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 2</a>\n",
-    "    - <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 3</a>\n",
-    "    - <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 4</a>\n\n"
+    "<p style='font-size:0.95rem;color:#444;'>",
+    "Science-only curated digest (publications, data, jobs) from the \U0001F98B ",
+    "<a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> \U0001F310. ",
+    "Not on BlueSky? <a href='mailto:global.ecology.bs@gmail.com'>Email us</a> to receive updates. ",
+    "On BlueSky? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute. ",
+    "<a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Like &amp; pin the feed</a>. ",
+    "Starter packs: ",
+    "<a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Vol. 1</a>, ",
+    "<a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Vol. 2</a>, ",
+    "<a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Vol. 3</a>, ",
+    "<a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Vol. 4</a>.",
+    "</p>\n\n"
   )
 }
 
 # --- DIGEST-PAGE version -- edit this for the digest pages --
 ecosystem_block_digest <- function() {
   paste0(
-    "Here is a curated digest of the \U0001F98B bluesky Global Ecology feed \U0001F310 on biodiversity, ecosystems & conservation at large scales, covering all realms.\n\n",
-    "- **SCIENCE ONLY (publications, data, jobs)**\n",
-    "- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>\n",
-    "- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update\n",
-    "- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>like & pin the Global Ecology</a> feed\n",
-    "- Here are the Global Ecology starter packs on BlueSky:\n",
-    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 1</a>\n",
-    "    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 2</a>\n",
-    "    - <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 3</a>\n",
-    "    - <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 4</a>\n\n"
+    "<p style='font-size:0.95rem;color:#444;'>",
+    "Science-only curated digest (publications, data, jobs) from the \U0001F98B ",
+    "<a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> \U0001F310. ",
+    "Not on BlueSky? <a href='mailto:global.ecology.bs@gmail.com'>Email us</a> to receive updates. ",
+    "On BlueSky? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute. ",
+    "<a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Like &amp; pin the feed</a>. ",
+    "Starter packs: ",
+    "<a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Vol. 1</a>, ",
+    "<a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Vol. 2</a>, ",
+    "<a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Vol. 3</a>, ",
+    "<a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Vol. 4</a>.",
+    "</p>\n\n"
   )
 }
 
@@ -954,14 +1017,20 @@ page_footer_block <- function(home = TRUE, archive = TRUE, extra_nav = "") {
 
 # ---- Digest page body --------------------------------------
 build_digest_body <- function(X, start_date, end_date, nb_post,
-                              all_post_md, prev_num = NULL, next_num = NULL) {
-  # Prev/next digest links -- digest-specific, passed to the footer.
+                              all_post_md, prev_num = NULL, next_num = NULL,
+                              wrapup = NULL) {
+  # Prev/next digest links, passed to the footer.
   nav <- character()
-  if (!is.null(prev_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", prev_num, "/'>← Digest #", prev_num, "</a>"))
-  if (!is.null(next_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", next_num, "/'>Digest #", next_num, " →</a>"))
+  if (!is.null(prev_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", prev_num, "/'>&larr; Digest #", prev_num, "</a>"))
+  if (!is.null(next_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", next_num, "/'>Digest #", next_num, " &rarr;</a>"))
   extra_nav <- if (length(nav) > 0) {
     paste0("<p style='font-size:0.95rem;'>", paste(nav, collapse = " &nbsp;|&nbsp; "), "</p>\n\n")
   } else ""
+
+  # Wrap-up paragraph (inserted between the header line and the first post).
+  wrapup_block <- if (!is.null(wrapup) && nzchar(wrapup)) {
+    paste0("\n\n", wrapup, "\n\n")
+  } else "\n\n"
 
   paste0(
     digest_inline_css(),
@@ -971,7 +1040,8 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
     "# Digest #", X, "\n\n",
     "Feeds are from **", format(start_date, "%B %d, %Y"),
     "** to **", format(end_date, "%B %d, %Y"),
-    "**. Total posts: **", nb_post, "**.\n\n",
+    "**. Total posts: **", nb_post, "**.",
+    wrapup_block,
     "---\n\n",
     paste0(all_post_md, collapse = ""),
     page_footer_block(home = TRUE, archive = TRUE, extra_nav = extra_nav)
@@ -993,7 +1063,7 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
 
   older_block <- if (length(older) == 0) "" else {
     lines <- vapply(older, function(e) {
-      paste0("- [Digest #", e$num, "](", e$url, ") — ",
+      paste0("- [Digest #", e$num, "](", e$url, ") ",
              format_digest_dates(e, with_year = TRUE))
     }, character(1))
     paste0(
@@ -1065,7 +1135,7 @@ build_archive_body <- function(registry) {
     lines <- vapply(entries, function(e) {
       dates <- format_digest_dates(e, with_year = FALSE)
       np    <- as.character(e$nb_post %||% "")
-      paste0("- [**Digest #", e$num, "**](", e$url, ") — ", dates,
+      paste0("- [**Digest #", e$num, "**](", e$url, ") ", dates,
              if (nzchar(np)) paste0(" &middot; ", np, " posts") else "")
     }, character(1))
     paste0("## ", yr, "\n\n", paste(lines, collapse = "\n"), "\n")
@@ -1146,6 +1216,7 @@ if (isTRUE(CONFIG$enable_llm_titles)) {
 all_post_md  <- character()
 nb_post      <- 0L
 kept_handles <- character()
+post_meta    <- list()   # collects (num, title, tags) for wrap-up generation
 
 for (i in seq_len(cut_idx - 1L)) {
   res <- tryCatch({
@@ -1291,9 +1362,11 @@ for (i in seq_len(cut_idx - 1L)) {
       title_source = title_source,
       summary      = summary_text,
       image        = post_image,
-      id           = post_id
+      id           = post_id,
+      post_num     = nb_post + 1L
     ))
-    list(status = "ok", handle = handle, md = md)
+    list(status = "ok", handle = handle, md = md,
+         paper_title = paper_title, tags = tags)
   }, error = function(e) list(status = "error", handle = safe(feed$author[[i]]$handle, NA),
                               msg = conditionMessage(e)))
 
@@ -1301,6 +1374,11 @@ for (i in seq_len(cut_idx - 1L)) {
     ok = {
       all_post_md  <- c(all_post_md, res$md)
       nb_post      <- nb_post + 1L
+      post_meta    <- c(post_meta, list(list(
+        num   = nb_post,
+        title = res$paper_title %||% "",
+        tags  = res$tags %||% character()
+      )))
       if (!is.null(res$handle)) kept_handles <- c(kept_handles, paste0("@", res$handle))
       cat("i=", i, " ", res$handle, "ok\n")
     },
@@ -1328,6 +1406,20 @@ if (isTRUE(CONFIG$enable_titles))     saveRDS(title_cache,     title_cache_path)
 if (isTRUE(CONFIG$enable_llm_titles)) saveRDS(llm_title_cache, llm_title_cache_path)
 if (isTRUE(CONFIG$enable_llm_tags))   saveRDS(llm_tags_cache,  llm_tags_cache_path)
 
+# ---- Generate digest wrap-up paragraph ---------------------
+wrapup <- NULL
+if (isTRUE(CONFIG$enable_llm_titles) &&
+    nzchar(Sys.getenv("ANTHROPIC_API_KEY")) &&
+    length(post_meta) > 0) {
+  cat("\nGenerating digest wrap-up...\n")
+  wrapup <- generate_wrapup_llm(post_meta)
+  if (!is.null(wrapup)) {
+    cat("Wrap-up ok (", nchar(wrapup), " chars)\n", sep = "")
+  } else {
+    cat("Wrap-up skipped or failed\n")
+  }
+}
+
 # ---- Write digest archive page -----------------------------
 archive_path <- file.path(archives_dir, paste0("digest-", X, ".md"))
 
@@ -1342,7 +1434,8 @@ next_num <- if (is.finite(next_num)) next_num else NULL
 digest_markdown <- paste0(
   digest_front_matter(X, start_date, end_date, nb_post),
   build_digest_body(X, start_date, end_date, nb_post, all_post_md,
-                    prev_num = prev_num, next_num = next_num)
+                    prev_num = prev_num, next_num = next_num,
+                    wrapup = wrapup)
 )
 write_atomic(digest_markdown, archive_path)
 

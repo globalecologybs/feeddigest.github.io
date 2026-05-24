@@ -83,25 +83,19 @@ sitemap:
   <a href='/feeddigest.github.io/archives/' style='text-decoration:none;margin:0 0.6rem;'>Archive</a>
 </p>
 
-Here is a curated digest of the 🦋 bluesky Global Ecology feed 🌐 on biodiversity, ecosystems & conservation at large scales, covering all realms.
-
-- **SCIENCE ONLY (publications, data, jobs)**
-- Not on BlueSky ? email <a href='mailto:global.ecology.bs@gmail.com'> to receive weekly update</a>
-- On BlueSky ? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute and receive every two weeks update
-- Here to <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>like & pin the Global Ecology</a> feed
-- Here are the Global Ecology starter packs on BlueSky:
-    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 1</a>
-    - <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 2</a>
-    - <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 3</a>
-    - <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Global Ecology starter pack Vol. 4</a>
+<p style='font-size:0.95rem;color:#444;'>Science-only curated digest (publications, data, jobs) from the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Bluesky Global Ecology feed</a> 🌐. Not on BlueSky? <a href='mailto:global.ecology.bs@gmail.com'>Email us</a> to receive updates. On BlueSky? DM <a href='https://bsky.app/profile/global-ecology.bsky.social' target='_blank' rel='noopener'>@global-ecology.bsky.social</a> to contribute. <a href='https://bsky.app/profile/did:plc:ppsghcl5bbpgjcljnhra353s/feed/global.ecology' target='_blank' rel='noopener'>Like &amp; pin the feed</a>. Starter packs: <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3lfum2bjpab24' target='_blank' rel='noopener'>Vol. 1</a>, <a href='https://bsky.app/starter-pack/nmouquet.bsky.social/3ld2m2csaai2x' target='_blank' rel='noopener'>Vol. 2</a>, <a href='https://go.bsky.app/MkLHiKU' target='_blank' rel='noopener'>Vol. 3</a>, <a href='https://go.bsky.app/Dsk4TQ3' target='_blank' rel='noopener'>Vol. 4</a>.</p>
 
 # Digest #1
 
 Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
+Plenty of methodological meat in this issue, so let's dig in. On the climate front, [plant strategies in European grasslands](#post-1) and [alpine shrubification via GLORIA data](#post-22) both show vegetation reshaping under warming, while [tree diversity dampening soil carbon temperature sensitivity](#post-5) adds a nice forest-soil-microbiome angle. Policy gets attention too, with [Antarctica's governance gaps](#post-2), [AI's role in conservation science](#post-7), and [cultural legacies shaping wildlife values](#post-8) all worth a read. For the methods crowd, there's a lot here: [metawebs in macroecology](#post-3), [Frescalo for trend detection](#post-4), [GBIF bias-aware sampling datasets](#post-15), [reproducible biodiversity infrastructure](#post-12), [home range scaling with density](#post-20), [functional diversity scaling laws](#post-16), [chemodiversity emergent properties](#post-24), and [chemical timber tracing](#post-10). Marine folks should check [Reviews in Marine Ecosystem Ecology](#post-6) and [toadfish symbiotic bacteria](#post-19). Soil and microbiome themes continue in [the underground census post](#post-23). Events include a [botany book signing](#post-17), a [Landis biogeography seminar](#post-21), and [CESAB forest workshops](#post-11). Jobs wise, [Greenland's veg mapping postdoc](#post-9) looks interesting, and broader reads like [Global Ecology Vol. 3](#post-13), [Origin of Life](#post-14), [strip cropping biocontrol](#post-18) round things out nicely.
+
 ---
 
-##### 📄 Plant strategies across European grasslands under ongoing climate change <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-1'></div>
+
+##### 📄 Plant strategy distributions in European grasslands under climate change <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Milan Chytrý** <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank' rel='noopener'>@milanchytry.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 8 likes on Bluesky</p>
 
@@ -124,7 +118,9 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
-##### 📄 Antarctica lacks a disaster management authority for biological and physical threats <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-2'></div>
+
+##### 📄 Antarctica lacks disaster management authority for biological and physical threats <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Proceedings of the National Academy of Sciences** <a href='https://bsky.app/profile/pnas.org' target='_blank' rel='noopener'>@pnas.org</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 5 likes on Bluesky</p>
 
@@ -147,9 +143,11 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-3'></div>
+
 ##### 📄 Metawebs as an ecological modeling framework in macroecology and biogeography <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 8 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 9 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -170,7 +168,9 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
-##### 📄 A practical guide to species trend detection using local frequency scaling with Frescalo <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-4'></div>
+
+##### 📄 A practical guide to species trend detection using local frequency scaling (Frescalo) <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Pablo Garcia-Diaz** <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank' rel='noopener'>@pablo-ecology.bsky.social</a> &middot; <time datetime='2026-05-22'>2026-05-22</time> &middot; 💚 6 likes on Bluesky</p>
 
@@ -192,6 +192,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-5'></div>
 
 ##### 📄 Greater tree diversity lowers soil carbon temperature sensitivity via microbial stabilization <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -216,6 +218,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-6'></div>
+
 ##### 📄 Frontiers | Reviews in Marine Ecosystem Ecology: 2026
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Stelios Katsanevakis** <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank' rel='noopener'>@skatsanevakis.bsky.social</a> &middot; <time datetime='2026-05-21'>2026-05-21</time> &middot; 💚 7 likes on Bluesky</p>
@@ -238,6 +242,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-7'></div>
 
 ##### 📄 Safeguarding the role of humans in conservation science in the age of AI <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -262,6 +268,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-8'></div>
+
 ##### 📄 Enduring cultural legacies affect Euro-American wildlife values
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Pablo Garcia-Diaz** <a href='https://bsky.app/profile/pablo-ecology.bsky.social' target='_blank' rel='noopener'>@pablo-ecology.bsky.social</a> &middot; <time datetime='2026-05-21'>2026-05-21</time> &middot; 💚 7 likes on Bluesky</p>
@@ -284,6 +292,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-9'></div>
 
 ##### 📄 Greenland Institute of Natural Resources seeks a Postdoctoral Researcher with experience in vegetation mapping and herbivory.
 
@@ -308,6 +318,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-10'></div>
+
 ##### 📄 Chemical timber tracing: combining tree-genera information lowers reference data needs and makes harvest location identification more accurate
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Pieter Zuidema** <a href='https://bsky.app/profile/pieterzuidema.bsky.social' target='_blank' rel='noopener'>@pieterzuidema.bsky.social</a> &middot; <time datetime='2026-05-20'>2026-05-20</time> &middot; 💚 8 likes on Bluesky</p>
@@ -330,6 +342,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-11'></div>
 
 ##### 📄 [FRB-CESAB] CESABINARs - Fondation pour la recherche sur la biodiversité
 
@@ -354,6 +368,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-12'></div>
+
 ##### 📄 Building the Infrastructure for Reproducible Biodiversity Science
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-20'>2026-05-20</time> &middot; 💚 15 likes on Bluesky</p>
@@ -377,6 +393,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-13'></div>
+
 ##### 📄 Global Ecology Vol. 3
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Nicolas Mouquet** <a href='https://bsky.app/profile/nmouquet.bsky.social' target='_blank' rel='noopener'>@nmouquet.bsky.social</a> &middot; <time datetime='2026-05-20'>2026-05-20</time> &middot; 💚 13 likes on Bluesky</p>
@@ -398,6 +416,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-14'></div>
 
 ##### 📄 The Origin of Life in the Light of Evolution
 
@@ -421,7 +441,9 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
-##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware SDMs <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-15'></div>
+
+##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware species distribution modelling <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Ahmed El-Gabbas** <a href='https://bsky.app/profile/ahmed-elgabbas.bsky.social' target='_blank' rel='noopener'>@ahmed-elgabbas.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 2 likes on Bluesky</p>
 
@@ -444,7 +466,9 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
-##### 📄 Scaling laws govern function diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-16'></div>
+
+##### 📄 Scaling laws for functional diversity and specialization in complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 18 likes on Bluesky</p>
 
@@ -467,6 +491,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-17'></div>
 
 ##### 📄 Atlas of Botany Discussion & Book Signing
 
@@ -491,7 +517,9 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
-##### 📄 Higher and more stable biological control of herbivores in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+<div id='post-18'></div>
+
+##### 📄 Higher and more stable biological control in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Brian J. Enquist** <a href='https://bsky.app/profile/bjenquist.bsky.social' target='_blank' rel='noopener'>@bjenquist.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 13 likes on Bluesky</p>
 
@@ -513,6 +541,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-19'></div>
 
 ##### 📄 Symbiotic bacteria may support calcium carbonate precipitation in the Gulf toadfish
 
@@ -537,6 +567,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-20'></div>
+
 ##### 📄 Population density shapes home range size and overlap in animals <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Luca Santini** <a href='https://bsky.app/profile/lsantinieco.bsky.social' target='_blank' rel='noopener'>@lsantinieco.bsky.social</a> &middot; <time datetime='2026-05-19'>2026-05-19</time> &middot; 💚 11 likes on Bluesky</p>
@@ -559,6 +591,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-21'></div>
 
 ##### 📄 May 2026 Funk Biogeography Seminar — Michael Landis
 
@@ -583,6 +617,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-22'></div>
+
 ##### 📄 Alpine shrubification documented across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Dr. Mariana García Criado** <a href='https://bsky.app/profile/nanitundra.bsky.social' target='_blank' rel='noopener'>@nanitundra.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 5 likes on Bluesky</p>
@@ -605,6 +641,8 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 </a>
 
 ---
+
+<div id='post-23'></div>
 
 ##### 📄 An underground census: what bacteria and fungi tell us about ecosystem health – Soil & Landscape Science Lab
 
@@ -629,13 +667,15 @@ Feeds are from **May 10, 2026** to **May 24, 2026**. Total posts: **24**.
 
 ---
 
+<div id='post-24'></div>
+
 ##### 📄 Ecological role of emergent properties in the chemodiversity landscape
 
 <p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Robin Heinen** <a href='https://bsky.app/profile/robinheinennl.bsky.social' target='_blank' rel='noopener'>@robinheinennl.bsky.social</a> &middot; <time datetime='2026-05-18'>2026-05-18</time> &middot; 💚 52 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
-    <div class='tag-row'><span class='tag tag-microbiome'>microbiome</span><span class='tag tag-methods'>methods</span></div>
+    <div class='tag-row'><span class='tag tag-methods'>methods</span></div>
     {% raw %}An exciting day today. Our work, co-led by @mhanusch.bsky.social and @thomasdussarrat.bsky.social was published in Nature Ecology & Evolution. In this review, we explore the concept of chemodiversity and what role it could play for ecological functions at landscape-level.{% endraw %}
 <br><b>link:</b> <a href='https://doi.org/10.1038/s41559-026-03057-7' target='_blank' rel='noopener'>https://doi.org/10.1038/s41559-026-03057-7</a><br>
     <br><a href='https://bsky.app/profile/did:plc:jggts57ydp66iwg2pbddu4n5/post/3mm4z7w7lnc2f' target='_blank' rel='noopener'>View Original Post on Bluesky</a>
