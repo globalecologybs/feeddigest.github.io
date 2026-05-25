@@ -1363,10 +1363,10 @@ build_archive_body <- function(registry) {
 end_date     <- Sys.Date()
 start_date   <- end_date - CONFIG$days_back
 
-year_dir     <- here::here("data", format(end_date, "%Y"))
 archives_dir <- here::here(CONFIG$archives_dir)
-dir.create(year_dir,     showWarnings = FALSE, recursive = TRUE)
+feeds_dir    <- file.path(archives_dir, "feeds", format(end_date, "%Y"))
 dir.create(archives_dir, showWarnings = FALSE, recursive = TRUE)
+dir.create(feeds_dir,    showWarnings = FALSE, recursive = TRUE)
 
 X <- CONFIG$digest_number %||% next_digest_number(archives_dir)
 
@@ -1394,7 +1394,7 @@ cut_idx <- if (length(cut_hits) == 0) {
   max(cut_hits)
 }
 
-save(feed, file = file.path(year_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
+# Raw feed snapshot saved later, after all processing
 
 # ---- Caches (fetch + LLM titles + LLM tags) ----------------
 title_cache_path     <- file.path(archives_dir, "title_cache.rds")
@@ -1698,7 +1698,8 @@ handles_df   <- data.frame(handles = kept_handles)
 handles_path <- file.path(dirname(here::here()), "postdm", "global_digest.csv")
 write.csv2(handles_df, handles_path, row.names = FALSE)
 
-save(feed, file = file.path(year_dir, "feed.RData"))
+# Save raw feed snapshot (backup only, never read back by the pipeline)
+save(feed, file = file.path(feeds_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
 
 cat("\n--- done ---\n")
 cat("Digest #",    X,             "\n")
