@@ -640,30 +640,65 @@ generate_tags_llm <- function(text, paper_title = NULL,
 # Generates a short thematic paragraph summarising all posts,
 # with markdown links anchored to each post (#post-N).
 WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
-  "You write a short wrap-up paragraph for a curated ecology research digest.\n",
+  "You write the opening wrap-up paragraph for a curated ecology research digest published on a science blog.\n",
   "\n",
-  "Tone: informal but academically grounded. Write as a scientist who has read everything\n",
-  "and is giving a colleague a quick honest overview. No hype, no cheerleading, no catchy\n",
-  "hooks. Avoid colloquial filler phrases like 'plenty of meat', 'let us dig in',\n",
-  "'something for everyone', 'a packed issue', or any similar journalism-style opener.\n",
-  "Just describe what is there, accurately and concisely.\n",
+  "Tone: natural, warm, and intellectually engaged, in the manner of a French science writer:\n",
+  "precise but not dry, personal without being casual, curious without being breathless.\n",
+  "Write as a scientist who has read everything and is giving a thoughtful colleague a sincere\n",
+  "overview. No hype, no cheerleading, no journalism hooks. No filler phrases like 'plenty of meat',\n",
+  "'let us dig in', 'something for everyone', 'a packed issue', or similar. Just describe what is\n",
+  "there, honestly and with a light touch.\n",
+  "\n",
+  "Structure the paragraph by grouping posts thematically, using their tags as a guide.\n",
+  "For example, posts tagged 'marine' or 'coral' may flow together; posts tagged 'methods'\n",
+  "or 'modelling' may form another cluster; 'jobs' and 'events' can come at the end.\n",
+  "The grouping should feel natural and prose-driven, not mechanical.\n",
   "\n",
   "Rules:\n",
+  "- ALWAYS start with exactly: 'In this digest,'\n",
   "- NEVER use the em dash character (the long dash). Use commas or short sentences instead.\n",
   "- NEVER use -- either.\n",
   "- One single flowing paragraph. No bullet points, no headers, no line breaks within.\n",
-  "- Group posts by theme naturally (e.g. climate, methods, marine, jobs, events).\n",
   "- Reference each post with a markdown link using its anchor: [short description](#post-N)\n",
   "- Every post number must appear at least once as a link.\n",
-  "- Keep the total under 200 words.\n",
-  "- Do not start with 'This digest', 'This fortnight', 'This issue', 'This week', or any similar opener.\n",
   "- Never use 'this week' anywhere: the digest covers two weeks, not one.\n",
+  "- {WORD_LIMIT_RULE}\n",
+  "- {PARAGRAPH_RULE}\n",
+  "- End the last paragraph with a sentence thanking contributors, for example:\n",
+  "  'Many thanks to all who contribute to the Global Ecology feed by sharing their science on Bluesky.'\n",
+  "  Vary the wording naturally but keep the spirit: gratitude, the feed name, Bluesky, sharing science.\n",
   "- End with a period.\n"
 )
 
 generate_wrapup_llm <- function(post_meta) {
   if (length(post_meta) == 0) return(NULL)
   if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
+
+  n_posts <- length(post_meta)
+
+  # Word limit scales with post count: ~5 words per post, capped at 300
+  # Word limit scales with post count in four steps
+  word_limit <- if (n_posts < 20L) 120L else if (n_posts < 35L) 175L else if (n_posts < 50L) 250L else 350L
+  # Number of paragraphs scales with content
+  n_para <- if (n_posts < 20L) 1L else if (n_posts < 35L) 2L else 3L
+
+  word_limit_rule <- paste0(
+    "Keep the total body text (excluding the closing thank-you) under ", word_limit, " words."
+  )
+  paragraph_rule <- if (n_para == 1L) {
+    "Write as one single flowing paragraph."
+  } else {
+    paste0(
+      "Write as ", n_para, " paragraphs. Each paragraph covers a distinct thematic cluster ",
+      "(e.g. one for climate/biodiversity, one for methods/modelling, one for marine/freshwater, ",
+      "jobs and events last). Separate paragraphs with a blank line."
+    )
+  }
+
+  # Inject computed rules into the system prompt template
+  system_prompt <- WRAPUP_LLM_SYSTEM_PROMPT
+  system_prompt <- gsub("{WORD_LIMIT_RULE}", word_limit_rule, system_prompt, fixed = TRUE)
+  system_prompt <- gsub("{PARAGRAPH_RULE}",  paragraph_rule,  system_prompt, fixed = TRUE)
 
   lines <- vapply(post_meta, function(p) {
     tag_str   <- if (length(p$tags) > 0) paste0("tags: ", paste(p$tags, collapse = ", ")) else "no tags"
@@ -672,15 +707,15 @@ generate_wrapup_llm <- function(post_meta) {
   }, character(1))
 
   user_msg <- paste0(
-    "Here are the ", length(post_meta), " posts in this digest:\n\n",
+    "Here are the ", n_posts, " posts in this digest:\n\n",
     paste(lines, collapse = "\n"),
-    "\n\nWrite the wrap-up paragraph."
+    "\n\nWrite the wrap-up."
   )
 
   tryCatch({
     chat <- ellmer::chat_anthropic(
       model         = CONFIG$llm_model,
-      system_prompt = WRAPUP_LLM_SYSTEM_PROMPT,
+      system_prompt = system_prompt,
       echo          = "none"
     )
     raw <- trimws(as.character(chat$chat(user_msg)))
