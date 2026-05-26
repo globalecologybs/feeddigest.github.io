@@ -115,7 +115,7 @@ All past digests, organized by year (newest first).
 
 ## 2026
 
-- [**Digest #1**](/feeddigest.github.io/archives/digest-1/) May 12 to May 26 &middot; 31 posts
+- [**Digest #1**](/feeddigest.github.io/archives/digest-1/) May 12 to May 26 &middot; 32 posts
 ---
 
 <p style='font-size:0.95rem;'><a href='/feeddigest.github.io/'>🏠 Back to home</a></p>

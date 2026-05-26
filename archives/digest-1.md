@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Global Ecology Digest #1 - May 12 to May 26, 2026"
-description: "31 curated posts from the Bluesky Global Ecology feed (May 12 - May 26, 2026): biodiversity, ecosystems, conservation -- terrestrial, freshwater & marine."
+description: "32 curated posts from the Bluesky Global Ecology feed (May 12 - May 26, 2026): biodiversity, ecosystems, conservation -- terrestrial, freshwater & marine."
 date: 2026-05-26
 year: "2026"
 digest_num: 1
@@ -116,19 +116,44 @@ html, body { overflow-x: hidden; max-width: 100%; }
 
 # Digest #1
 
-Feeds are from **May 12, 2026** to **May 26, 2026**. Total posts: **31**.
+Feeds are from **May 12, 2026** to **May 26, 2026**. Total posts: **32**.
 
-In this digest, climate-driven change features prominently across ecosystems. [Seagrass mass flowering](#post-2) in the Mediterranean followed 2022 marine heatwaves, while [invasive seaweeds](#post-7) may functionally compensate for endemic macroalgal losses under warming. [Alpine shrubification](#post-29) is documented using GLORIA network data, and [plant functional strategies](#post-6) in European grasslands shift under climate projections. [Tree diversity lowers soil carbon temperature sensitivity](#post-11) through microbial stabilization, and [soil microbiome indicators](#post-30) inform ecosystem health assessments. [Bumblebee phylogenomics](#post-12) advances understanding of pollinator macroecology, and [metawebs](#post-9) are proposed as a macroecological modelling framework. [Home range scaling](#post-27) with population density and [functional diversity scaling laws](#post-23) extend macroecological theory. [Toadfish symbiotic bacteria](#post-26) are implicated in carbonate precipitation, [chemodiversity emergent properties](#post-31) are examined for ecological significance, and [marine ecosystem ecology reviews](#post-13) synthesise recent advances. [Biological control stability](#post-25) is enhanced in strip cropping systems, [cultural legacies shape wildlife values](#post-15), and [aquatic eDNA](#post-1) is positioned within global biodiversity policy alongside [Antarctic governance](#post-8) and [AI in conservation science](#post-14). [Origin-of-life perspectives](#post-21) inform microbial evolutionary ecology, and a [mountain research network anniversary](#post-4) marks longstanding alpine collaboration.
+In this digest, macroecological and trait-based research dominates. [Species age and niche specialization](#post-1) in Neotropical vertebrates and [scaling laws for functional diversity](#post-24) address broad patterns of ecological organisation. Climate-driven changes feature prominently: [Mediterranean seagrass mass flowering](#post-3) following record heatwaves, [invasive seaweed functional compensation](#post-8) in warming coastal systems, and [alpine shrubification](#post-30) documented via the GLORIA network. [Plant functional strategies](#post-7) in European grasslands respond to projected climate shifts, while [tree diversity stabilises soil carbon](#post-12) through microbial mechanisms. [Metawebs](#post-10) advance biogeographic modelling, [bumblebee phylogenomics](#post-13) integrates nuclear and mitochondrial data, and [population density shapes home range size](#post-28) in animal movement studies. [Biological control in strip-cropping](#post-26) and [chemodiversity emergent properties](#post-32) extend to ecosystem services. Policy threads include [Antarctic disaster governance](#post-9), [biological invasion management](#post-6), [AI roles in conservation](#post-15), [wildlife value legacies](#post-16), and [aquatic eDNA for biodiversity targets](#post-2). Microbiome contributions span [toadfish carbonate precipitation](#post-27), [soil bacterial and fungal indicators](#post-31), and [early life evolution](#post-22).
 
-Methodological contributions include an [R package for spatial data subdivision](#post-3), a [practical guide to Frescalo trend detection](#post-10), [chemical timber tracing](#post-17) combining tree-genera data, a [taxon-stratified GBIF sampling-effort dataset](#post-22) for bias-aware species distribution models, and a framework for [reproducible biodiversity science infrastructure](#post-19).
+Methodological contributions include the [hespdiv R package](#post-4) for spatial subdivision, [Frescalo trend detection](#post-11), [chemical timber tracing](#post-18), and a [taxon-stratified GBIF bias dataset](#post-23) for species distribution models. [Reproducible biodiversity infrastructure](#post-20) addresses data standards at scale. Synthesis outputs include [marine ecosystem ecology reviews](#post-14) and [Global Ecology Vol. 3](#post-21).
 
-A [postdoctoral position in vegetation mapping](#post-16) is advertised at the Greenland Institute of Natural Resources, a [biological invasions webinar](#post-5) connects OneSTOP and GuardIAS initiatives, a [biogeography seminar](#post-28) features Michael Landis, a [botany atlas book event](#post-24) is announced, [tropical forest trait workshops](#post-18) are offered through FRB-CESAB, and [Global Ecology Vol. 3](#post-20) is available as a macroecological reference volume.
+A [postdoctoral position in vegetation mapping](#post-17) is advertised at the Greenland Institute of Natural Resources, a [biogeography seminar](#post-29) features Michael Landis, an [Atlas of Botany signing](#post-25) is scheduled, a [CESAB training series](#post-19) on tropical forest traits is forthcoming, and an [alpine network anniversary](#post-5) marks a milestone for long-term mountain research.
 
 Many thanks to all who contribute to the Global Ecology feed by sharing their science on Bluesky.
 
 ---
 
 <div id='post-1'></div>
+
+##### 📄 Species age shapes niche position and specialization in Neotropical vertebrates <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
+
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Carlos Calderón del Cid** <a href='https://bsky.app/profile/caldecid.bsky.social' target='_blank' rel='noopener'>@caldecid.bsky.social</a> &middot; <time datetime='2026-05-25'>2026-05-25</time> &middot; 💚 8 likes on Bluesky</p>
+
+<div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
+  <div class='post-text' style='flex:1 1 auto;min-width:0;'>
+    <div class='tag-row'><span class='tag tag-macroecology'>macroecology</span><span class='tag tag-traits'>traits</span></div>
+    {% raw %}How does species age influence niche position and specialization across the Neotropics? In a new study published in @ecography.bsky.social with @bruvilela.bsky.social, @fabrovillalobos.bsky.social , and R Dobrovolski:{% endraw %}
+<br><b>link:</b> <a href='https://doi.org/10.1002/ecog.08192' target='_blank' rel='noopener'>https://doi.org/10.1002/ecog.08192</a><br>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:unmx7nfnjbowe7zxqwsdmpu2/post/3mmosf37lqk2y' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
+  </div>
+  <div class='post-image' style='flex:0 0 140px;'>
+    <a href='#lb-5a606147d4' aria-label='Enlarge image'>
+      <img src='https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:unmx7nfnjbowe7zxqwsdmpu2/bafkreieeazuqj6j5v6l4rulqtihroqbdcvphltxvkutmivkiqdw6eigg5e' alt='How does species age influence niche position and specialization across the Neot' loading='lazy' width='140' height='140' style='width:140px;height:140px;object-fit:cover;border-radius:6px;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>
+    </a>
+  </div>
+</div>
+<a href='#_' class='lightbox' id='lb-5a606147d4' aria-label='Close enlarged image'>
+  <img src='https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:unmx7nfnjbowe7zxqwsdmpu2/bafkreieeazuqj6j5v6l4rulqtihroqbdcvphltxvkutmivkiqdw6eigg5e' alt='How does species age influence niche position and specialization across the Neot'>
+</a>
+
+---
+
+<div id='post-2'></div>
 
 ##### 📄 Utilizing aquatic environmental DNA to address global biodiversity targets
 
@@ -153,11 +178,11 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-2'></div>
+<div id='post-3'></div>
 
 ##### 📄 Mass flowering of the seagrass Posidonia oceanica after 2022 record-breaking marine heatwaves, a Pan-Mediterranean study
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Jérémy Carlot** <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank' rel='noopener'>@jerem-carlot.bsky.social</a> &middot; <time datetime='2026-05-25'>2026-05-25</time> &middot; 💚 10 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Jérémy Carlot** <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank' rel='noopener'>@jerem-carlot.bsky.social</a> &middot; <time datetime='2026-05-25'>2026-05-25</time> &middot; 💚 12 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -178,7 +203,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-3'></div>
+<div id='post-4'></div>
 
 ##### 📄 Hierarchical Spatial Data Subdivision into Topologically Contiguous Units [R package hespdiv version 1.2.10]
 
@@ -203,7 +228,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-4'></div>
+<div id='post-5'></div>
 
 ##### 📄 A beautiful birthday
 
@@ -228,7 +253,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-5'></div>
+<div id='post-6'></div>
 
 ##### 📄 WEBINAR: Leading the global response to biological invasions: A dialogue between OneSTOP & GuardIAS
 
@@ -253,7 +278,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-6'></div>
+<div id='post-7'></div>
 
 ##### 📄 Plant strategy distributions in European grasslands under climate change <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -278,7 +303,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-7'></div>
+<div id='post-8'></div>
 
 ##### 📄 Invasive seaweeds may functionally compensate for endemic species loss in the warming Mediterranean Sea <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -303,7 +328,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-8'></div>
+<div id='post-9'></div>
 
 ##### 📄 Antarctic Treaty System needs a disaster management authority for the continent <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -328,7 +353,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-9'></div>
+<div id='post-10'></div>
 
 ##### 📄 Metawebs as an ecological modeling framework in macroecology and biogeography <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -353,7 +378,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-10'></div>
+<div id='post-11'></div>
 
 ##### 📄 A practical guide to species trend detection using Frescalo local frequency scaling <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -378,7 +403,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-11'></div>
+<div id='post-12'></div>
 
 ##### 📄 Greater tree diversity lowers soil carbon temperature sensitivity via microbial stabilization mechanisms <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -403,7 +428,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-12'></div>
+<div id='post-13'></div>
 
 ##### 📄 Comprehensive evolutionary phylogeny of global bumblebee species integrating nuclear, mitochondrial, and genomic data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -428,7 +453,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-13'></div>
+<div id='post-14'></div>
 
 ##### 📄 Frontiers | Reviews in Marine Ecosystem Ecology: 2026
 
@@ -453,7 +478,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-14'></div>
+<div id='post-15'></div>
 
 ##### 📄 Safeguarding human roles in conservation science in the age of AI <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -478,7 +503,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-15'></div>
+<div id='post-16'></div>
 
 ##### 📄 Enduring cultural legacies affect Euro-American wildlife values
 
@@ -503,7 +528,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-16'></div>
+<div id='post-17'></div>
 
 ##### 📄 Greenland Institute of Natural Resources seeks a Postdoctoral Researcher with experience in vegetation mapping and herbivory.
 
@@ -528,7 +553,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-17'></div>
+<div id='post-18'></div>
 
 ##### 📄 Chemical timber tracing: combining tree-genera information lowers reference data needs and makes harvest location identification more accurate
 
@@ -553,7 +578,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-18'></div>
+<div id='post-19'></div>
 
 ##### 📄 [FRB-CESAB] CESABINARs - Fondation pour la recherche sur la biodiversité
 
@@ -578,7 +603,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-19'></div>
+<div id='post-20'></div>
 
 ##### 📄 Building the Infrastructure for Reproducible Biodiversity Science
 
@@ -603,7 +628,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-20'></div>
+<div id='post-21'></div>
 
 ##### 📄 Global Ecology Vol. 3
 
@@ -628,7 +653,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-21'></div>
+<div id='post-22'></div>
 
 ##### 📄 The Origin of Life in the Light of Evolution
 
@@ -653,7 +678,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-22'></div>
+<div id='post-23'></div>
 
 ##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware SDMs <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -678,7 +703,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-23'></div>
+<div id='post-24'></div>
 
 ##### 📄 Scaling laws for functional diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -704,7 +729,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-24'></div>
+<div id='post-25'></div>
 
 ##### 📄 Atlas of Botany Discussion & Book Signing
 
@@ -729,7 +754,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-25'></div>
+<div id='post-26'></div>
 
 ##### 📄 Higher and more stable biological control of herbivores in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -754,7 +779,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-26'></div>
+<div id='post-27'></div>
 
 ##### 📄 Symbiotic bacteria may support calcium carbonate precipitation in the Gulf toadfish
 
@@ -779,7 +804,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-27'></div>
+<div id='post-28'></div>
 
 ##### 📄 Population density shapes home range size and overlap in animal movement <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -804,7 +829,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-28'></div>
+<div id='post-29'></div>
 
 ##### 📄 May 2026 Funk Biogeography Seminar — Michael Landis
 
@@ -829,7 +854,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-29'></div>
+<div id='post-30'></div>
 
 ##### 📄 Alpine shrubification documented across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -854,7 +879,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-30'></div>
+<div id='post-31'></div>
 
 ##### 📄 An underground census: what bacteria and fungi tell us about ecosystem health – Soil & Landscape Science Lab
 
@@ -879,7 +904,7 @@ Many thanks to all who contribute to the Global Ecology feed by sharing their sc
 
 ---
 
-<div id='post-31'></div>
+<div id='post-32'></div>
 
 ##### 📄 Ecological role of emergent properties in the chemodiversity landscape
 
