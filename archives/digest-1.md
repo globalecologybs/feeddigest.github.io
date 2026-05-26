@@ -1,8 +1,8 @@
 ---
 layout: default
-title: "Global Ecology Digest #1 - May 11 to May 25, 2026"
-description: "29 curated posts from the Bluesky Global Ecology feed (May 11 - May 25, 2026): biodiversity, ecosystems, conservation -- terrestrial, freshwater & marine."
-date: 2026-05-25
+title: "Global Ecology Digest #1 - May 12 to May 26, 2026"
+description: "31 curated posts from the Bluesky Global Ecology feed (May 12 - May 26, 2026): biodiversity, ecosystems, conservation -- terrestrial, freshwater & marine."
+date: 2026-05-26
 year: "2026"
 digest_num: 1
 image: https://github.com/globalecologybs/feeddigest.github.io/raw/main/global_ecology.jpg
@@ -13,9 +13,10 @@ sitemap:
 ---
 
 <style>
-.post-row { display: flex; gap: 1rem; align-items: flex-start; margin: 0.5rem 0 1rem 0; }
-.post-text { flex: 1 1 auto; min-width: 0; }
-.post-image { flex: 0 0 140px; }
+html, body { overflow-x: hidden; max-width: 100%; }
+.post-row { display: flex; gap: 1rem; align-items: flex-start; margin: 0.5rem 0 1rem 0; max-width: 100%; }
+.post-text { flex: 1 1 auto; min-width: 0; word-break: break-word; overflow-wrap: break-word; }
+.post-image { flex: 0 0 140px; max-width: 140px; }
 .post-image a { display: block; }
 .post-image img {
   width: 140px; height: 140px;
@@ -28,9 +29,10 @@ sitemap:
   transition: opacity 0.15s, transform 0.15s;
 }
 .post-image a:hover img { opacity: 0.9; transform: scale(1.02); }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .post-row { flex-direction: column; }
-  .post-image img { width: 120px; height: 120px; }
+  .post-image { max-width: 100%; }
+  .post-image img { width: 120px; height: 120px; max-width: 100%; }
 }
 .lightbox {
   display: none;
@@ -114,19 +116,69 @@ sitemap:
 
 # Digest #1
 
-Feeds are from **May 11, 2026** to **May 25, 2026**. Total posts: **29**.
+Feeds are from **May 12, 2026** to **May 26, 2026**. Total posts: **31**.
 
-In this digest, several posts converge on how organisms and communities respond to changing conditions. Alpine shrubification traced through the GLORIA network ([alpine shifts](#post-27)) connects naturally to trait-based work on [European grassland strategies under climate change](#post-4) and the finding that [invasive seaweeds may compensate for endemic losses](#post-5) in a warming Mediterranean. Below ground, [tree diversity stabilises soil carbon](#post-9) through microbial mechanisms, while [soil bacteria and fungi](#post-28) emerge as indicators of broader ecosystem health. The macroecological backbone of the digest is substantial: [metawebs as a modelling framework](#post-7), [scaling laws for functional diversity](#post-21), [home range and population density](#post-25), a [comprehensive bumblebee phylogeny](#post-10), and [chemodiversity as emergent ecology](#post-29) all extend the theoretical conversation opened by [Global Ecology Vol. 3](#post-18).
+In this digest, the Mediterranean coastline draws attention through two complementary studies: a pan-Mediterranean account of [Posidonia oceanica mass flowering](#post-2) triggered by the 2022 heatwaves, and a look at how [invasive seaweeds may functionally replace endemic species](#post-7) in a warming sea. From coastal waters we move inland, where [alpine shrubification across European mountains](#post-29) and [plant strategy shifts in European grasslands](#post-6) both trace the reorganisation of vegetation under climate pressure, while [greater tree diversity in temperate forests](#post-11) is shown to buffer soil carbon cycling through microbial pathways, a thread picked up further by [soil bacterial and fungal indicators of ecosystem health](#post-30). Biodiversity targets find a policy anchor in [aquatic eDNA for global monitoring](#post-1), [Antarctic disaster governance](#post-8), [biological invasion management](#post-5), [AI and human roles in conservation](#post-14), and [cultural legacies shaping wildlife values](#post-15).
 
-On the methods and infrastructure side, tools for [spatial subdivision](#post-1), [species trend detection via Frescalo](#post-8), [chemical timber tracing](#post-15), a [taxon-stratified GBIF dataset](#post-20), and a framework for [reproducible biodiversity science](#post-17) offer practical resources. Policy threads run through [biological invasion governance](#post-3), [Antarctic disaster management](#post-6), [AI in conservation](#post-12), and [cultural legacies in wildlife values](#post-13). A [marine synthesis collection](#post-11), [toadfish microbiome work](#post-24), a [postdoctoral position in Greenland](#post-14), the [CESAB seminar series](#post-16), a [biogeography seminar](#post-26), an [Atlas of Botany event](#post-22), a [mountain pollinator network study](#post-2), the [origin of life essay](#post-19), and [biological control in strip cropping](#post-23) round out a richly varied fortnight. Warm thanks to all who contribute to the Global Ecology feed by sharing their science on Bluesky.
+On the methodological side, tools for [spatial data subdivision](#post-3), [species trend detection with Frescalo](#post-10), [chemical timber tracing](#post-17), a [taxon-stratified GBIF effort dataset](#post-22), and a framework for [reproducible biodiversity science](#post-19) collectively strengthen the analytical scaffolding of the field. Broader synthesis arrives through [metawebs in macroecology](#post-9), [bumblebee phylogenomics](#post-12), [home range scaling with population density](#post-27), [functional diversity scaling laws](#post-31), and [chemodiversity emergent properties](#post-31), alongside a [marine ecosystem ecology review](#post-13), a [biogeography seminar](#post-28), and the [Global Ecology journal](#post-20). A [CESAB training event](#post-18), an [Atlas of Botany book signing](#post-24), a [Greenland postdoctoral position](#post-16), and a [mountain network anniversary](#post-4) round things out. Many thanks to all who contribute to the Global Ecology feed by sharing their science on Bluesky.
 
 ---
 
 <div id='post-1'></div>
 
+##### 📄 Utilizing aquatic environmental DNA to address global biodiversity targets
+
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Florian Altermatt** <a href='https://bsky.app/profile/florianaltermatt.bsky.social' target='_blank' rel='noopener'>@florianaltermatt.bsky.social</a> &middot; <time datetime='2026-05-25'>2026-05-25</time> &middot; 💚 6 likes on Bluesky</p>
+
+<div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
+  <div class='post-text' style='flex:1 1 auto;min-width:0;'>
+    <div class='tag-row'><span class='tag tag-freshwater'>freshwater</span><span class='tag tag-policy'>policy</span></div>
+    {% raw %}A year ago we published our perspective "Utilizing aquatic environmental DNA 🧬 to address global 🌍 🌐 biodiversity 🦐 🐟 🦠 targets 🎯 " in Nature Reviews Biodiversity: 1/10🧵{% endraw %}
+<br><b>link:</b> <a href='https://www.nature.com/articles/s44358-025-00044-x' target='_blank' rel='noopener'>https://www.nature.com/articles/s44358-025-00044-x</a><br>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:ydzmya3tppgd3h2udjzu4iph/post/3mmoilvc2jk2y' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
+  </div>
+  <div class='post-image' style='flex:0 0 140px;'>
+    <a href='#lb-949a5629f6' aria-label='Enlarge image'>
+      <img src='https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:ydzmya3tppgd3h2udjzu4iph/bafkreibo3n5yv7t7ttatmu7xiuugtdddd5tviyecypo57lrclzkjgjp4f4' alt='A year ago we published our perspective &quot;Utilizing aquatic environmental DNA 🧬 t' loading='lazy' width='140' height='140' style='width:140px;height:140px;object-fit:cover;border-radius:6px;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>
+    </a>
+  </div>
+</div>
+<a href='#_' class='lightbox' id='lb-949a5629f6' aria-label='Close enlarged image'>
+  <img src='https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:ydzmya3tppgd3h2udjzu4iph/bafkreibo3n5yv7t7ttatmu7xiuugtdddd5tviyecypo57lrclzkjgjp4f4' alt='A year ago we published our perspective &quot;Utilizing aquatic environmental DNA 🧬 t'>
+</a>
+
+---
+
+<div id='post-2'></div>
+
+##### 📄 Mass flowering of the seagrass Posidonia oceanica after 2022 record-breaking marine heatwaves, a Pan-Mediterranean study
+
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Jérémy Carlot** <a href='https://bsky.app/profile/jerem-carlot.bsky.social' target='_blank' rel='noopener'>@jerem-carlot.bsky.social</a> &middot; <time datetime='2026-05-25'>2026-05-25</time> &middot; 💚 9 likes on Bluesky</p>
+
+<div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
+  <div class='post-text' style='flex:1 1 auto;min-width:0;'>
+    <div class='tag-row'><span class='tag tag-coastal'>coastal</span><span class='tag tag-climate'>climate</span><span class='tag tag-macroecology'>macroecology</span></div>
+    {% raw %}Our study is now out in @commsearth.nature.com. 2022 heatwaves triggered a record mass flowering of Mediterranean Posidonia oceanica. 🌊 A sign of resilience or a red flag for ocean health? The answer here: Study led by Patrick Austruch 🌱 🌐{% endraw %}
+<br><b>link:</b> <a href='https://doi.org/10.1038/s43247-026-03631-8' target='_blank' rel='noopener'>https://doi.org/10.1038/s43247-026-03631-8</a><br>
+    <br><span style='display:flex;justify-content:space-between;align-items:baseline;'><a href='https://bsky.app/profile/did:plc:geytktsrkn74y3b6lpwszt66/post/3mmogrfiwjc2d' target='_blank' rel='noopener'>View Original Post on Bluesky</a><a href='#' style='font-size:0.8rem;color:#aaa;text-decoration:none;' title='Back to top'>&#8593; Up</a></span>
+  </div>
+  <div class='post-image' style='flex:0 0 140px;'>
+    <a href='#lb-bedc98f80e' aria-label='Enlarge image'>
+      <img src='https://cdn.bsky.app/img/feed_thumbnail/plain/did:plc:geytktsrkn74y3b6lpwszt66/bafkreignsvqothuu54whi7yktavnhurn3q2mnnnqwnj3gyqk434kkgm7uy' alt='Our study is now out in @commsearth.nature.com. 2022 heatwaves triggered a recor' loading='lazy' width='140' height='140' style='width:140px;height:140px;object-fit:cover;border-radius:6px;display:block;cursor:zoom-in;background:#f3f3f3;border:1px solid #eee;'>
+    </a>
+  </div>
+</div>
+<a href='#_' class='lightbox' id='lb-bedc98f80e' aria-label='Close enlarged image'>
+  <img src='https://cdn.bsky.app/img/feed_fullsize/plain/did:plc:geytktsrkn74y3b6lpwszt66/bafkreignsvqothuu54whi7yktavnhurn3q2mnnnqwnj3gyqk434kkgm7uy' alt='Our study is now out in @commsearth.nature.com. 2022 heatwaves triggered a recor'>
+</a>
+
+---
+
+<div id='post-3'></div>
+
 ##### 📄 Hierarchical Spatial Data Subdivision into Topologically Contiguous Units [R package hespdiv version 1.2.10]
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Andrej Spiridonov** <a href='https://bsky.app/profile/andrejpaleo.bsky.social' target='_blank' rel='noopener'>@andrejpaleo.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 8 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Andrej Spiridonov** <a href='https://bsky.app/profile/andrejpaleo.bsky.social' target='_blank' rel='noopener'>@andrejpaleo.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 13 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -147,11 +199,11 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-2'></div>
+<div id='post-4'></div>
 
 ##### 📄 A beautiful birthday
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Jonas Lembrechts** <a href='https://bsky.app/profile/jlembrechts.bsky.social' target='_blank' rel='noopener'>@jlembrechts.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 7 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Jonas Lembrechts** <a href='https://bsky.app/profile/jlembrechts.bsky.social' target='_blank' rel='noopener'>@jlembrechts.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 13 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -172,7 +224,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-3'></div>
+<div id='post-5'></div>
 
 ##### 📄 WEBINAR: Leading the global response to biological invasions: A dialogue between OneSTOP & GuardIAS
 
@@ -197,11 +249,11 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-4'></div>
+<div id='post-6'></div>
 
 ##### 📄 Plant strategy distributions in European grasslands under climate change <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Milan Chytrý** <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank' rel='noopener'>@milanchytry.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 14 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Milan Chytrý** <a href='https://bsky.app/profile/milanchytry.bsky.social' target='_blank' rel='noopener'>@milanchytry.bsky.social</a> &middot; <time datetime='2026-05-24'>2026-05-24</time> &middot; 💚 16 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -222,7 +274,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-5'></div>
+<div id='post-7'></div>
 
 ##### 📄 Invasive seaweeds may functionally compensate for endemic species loss in the warming Mediterranean Sea <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -247,7 +299,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-6'></div>
+<div id='post-8'></div>
 
 ##### 📄 Antarctic Treaty System needs a disaster management authority for the continent <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -272,11 +324,11 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-7'></div>
+<div id='post-9'></div>
 
 ##### 📄 Metawebs as an ecological modeling framework in macroecology and biogeography <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 14 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Vinicius Bastazini** <a href='https://bsky.app/profile/vinibastazini.bsky.social' target='_blank' rel='noopener'>@vinibastazini.bsky.social</a> &middot; <time datetime='2026-05-23'>2026-05-23</time> &middot; 💚 18 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -297,7 +349,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-8'></div>
+<div id='post-10'></div>
 
 ##### 📄 A practical guide to species trend detection using Frescalo local frequency scaling <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -322,7 +374,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-9'></div>
+<div id='post-11'></div>
 
 ##### 📄 Greater tree diversity lowers soil carbon temperature sensitivity via microbial stabilization mechanisms <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -347,11 +399,11 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-10'></div>
+<div id='post-12'></div>
 
 ##### 📄 Comprehensive evolutionary phylogeny of global bumblebee species integrating nuclear, mitochondrial, and genomic data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Paul Williams** <a href='https://bsky.app/profile/paulwilliamsnhm.bsky.social' target='_blank' rel='noopener'>@paulwilliamsnhm.bsky.social</a> &middot; <time datetime='2026-05-22'>2026-05-22</time> &middot; 💚 33 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Paul Williams** <a href='https://bsky.app/profile/paulwilliamsnhm.bsky.social' target='_blank' rel='noopener'>@paulwilliamsnhm.bsky.social</a> &middot; <time datetime='2026-05-22'>2026-05-22</time> &middot; 💚 38 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -372,11 +424,11 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-11'></div>
+<div id='post-13'></div>
 
 ##### 📄 Frontiers | Reviews in Marine Ecosystem Ecology: 2026
 
-<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Stelios Katsanevakis** <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank' rel='noopener'>@skatsanevakis.bsky.social</a> &middot; <time datetime='2026-05-21'>2026-05-21</time> &middot; 💚 7 likes on Bluesky</p>
+<p style='font-size:0.88em;color:#666;margin:-0.3em 0 0.8em 0;'>Shared by **Stelios Katsanevakis** <a href='https://bsky.app/profile/skatsanevakis.bsky.social' target='_blank' rel='noopener'>@skatsanevakis.bsky.social</a> &middot; <time datetime='2026-05-21'>2026-05-21</time> &middot; 💚 8 likes on Bluesky</p>
 
 <div class='post-row' style='display:flex;gap:1rem;align-items:flex-start;margin:0.5rem 0 1rem 0;'>
   <div class='post-text' style='flex:1 1 auto;min-width:0;'>
@@ -397,7 +449,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-12'></div>
+<div id='post-14'></div>
 
 ##### 📄 Safeguarding human roles in conservation science in the age of AI <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -422,7 +474,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-13'></div>
+<div id='post-15'></div>
 
 ##### 📄 Enduring cultural legacies affect Euro-American wildlife values
 
@@ -447,7 +499,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-14'></div>
+<div id='post-16'></div>
 
 ##### 📄 Greenland Institute of Natural Resources seeks a Postdoctoral Researcher with experience in vegetation mapping and herbivory.
 
@@ -472,7 +524,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-15'></div>
+<div id='post-17'></div>
 
 ##### 📄 Chemical timber tracing: combining tree-genera information lowers reference data needs and makes harvest location identification more accurate
 
@@ -497,7 +549,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-16'></div>
+<div id='post-18'></div>
 
 ##### 📄 [FRB-CESAB] CESABINARs - Fondation pour la recherche sur la biodiversité
 
@@ -522,7 +574,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-17'></div>
+<div id='post-19'></div>
 
 ##### 📄 Building the Infrastructure for Reproducible Biodiversity Science
 
@@ -547,7 +599,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-18'></div>
+<div id='post-20'></div>
 
 ##### 📄 Global Ecology Vol. 3
 
@@ -572,7 +624,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-19'></div>
+<div id='post-21'></div>
 
 ##### 📄 The Origin of Life in the Light of Evolution
 
@@ -597,7 +649,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-20'></div>
+<div id='post-22'></div>
 
 ##### 📄 Global taxon-stratified high-resolution GBIF sampling-effort dataset for bias-aware SDMs <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -622,7 +674,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-21'></div>
+<div id='post-23'></div>
 
 ##### 📄 Scaling laws for functional diversity and specialization across complex systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -648,7 +700,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-22'></div>
+<div id='post-24'></div>
 
 ##### 📄 Atlas of Botany Discussion & Book Signing
 
@@ -673,7 +725,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-23'></div>
+<div id='post-25'></div>
 
 ##### 📄 Higher and more stable biological control of herbivores in diversified strip cropping systems <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -698,7 +750,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-24'></div>
+<div id='post-26'></div>
 
 ##### 📄 Symbiotic bacteria may support calcium carbonate precipitation in the Gulf toadfish
 
@@ -723,7 +775,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-25'></div>
+<div id='post-27'></div>
 
 ##### 📄 Population density shapes home range size and overlap in animal movement <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -748,7 +800,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-26'></div>
+<div id='post-28'></div>
 
 ##### 📄 May 2026 Funk Biogeography Seminar — Michael Landis
 
@@ -773,7 +825,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-27'></div>
+<div id='post-29'></div>
 
 ##### 📄 Alpine shrubification documented across European mountains using GLORIA network data <small style='color:#888;font-weight:normal;font-size:0.7em;vertical-align:middle;'>✨ AI title</small>
 
@@ -798,7 +850,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-28'></div>
+<div id='post-30'></div>
 
 ##### 📄 An underground census: what bacteria and fungi tell us about ecosystem health – Soil & Landscape Science Lab
 
@@ -823,7 +875,7 @@ On the methods and infrastructure side, tools for [spatial subdivision](#post-1)
 
 ---
 
-<div id='post-29'></div>
+<div id='post-31'></div>
 
 ##### 📄 Ecological role of emergent properties in the chemodiversity landscape
 

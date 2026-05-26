@@ -10,9 +10,10 @@ sitemap:
 ---
 
 <style>
-.post-row { display: flex; gap: 1rem; align-items: flex-start; margin: 0.5rem 0 1rem 0; }
-.post-text { flex: 1 1 auto; min-width: 0; }
-.post-image { flex: 0 0 140px; }
+html, body { overflow-x: hidden; max-width: 100%; }
+.post-row { display: flex; gap: 1rem; align-items: flex-start; margin: 0.5rem 0 1rem 0; max-width: 100%; }
+.post-text { flex: 1 1 auto; min-width: 0; word-break: break-word; overflow-wrap: break-word; }
+.post-image { flex: 0 0 140px; max-width: 140px; }
 .post-image a { display: block; }
 .post-image img {
   width: 140px; height: 140px;
@@ -25,9 +26,10 @@ sitemap:
   transition: opacity 0.15s, transform 0.15s;
 }
 .post-image a:hover img { opacity: 0.9; transform: scale(1.02); }
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   .post-row { flex-direction: column; }
-  .post-image img { width: 120px; height: 120px; }
+  .post-image { max-width: 100%; }
+  .post-image img { width: 120px; height: 120px; max-width: 100%; }
 }
 .lightbox {
   display: none;
@@ -113,7 +115,7 @@ All past digests, organized by year (newest first).
 
 ## 2026
 
-- [**Digest #1**](/feeddigest.github.io/archives/digest-1/) May 11 to May 25 &middot; 29 posts
+- [**Digest #1**](/feeddigest.github.io/archives/digest-1/) May 12 to May 26 &middot; 31 posts
 ---
 
 <p style='font-size:0.95rem;'><a href='/feeddigest.github.io/'>🏠 Back to home</a></p>
