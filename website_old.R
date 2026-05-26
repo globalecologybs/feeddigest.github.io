@@ -637,77 +637,68 @@ generate_tags_llm <- function(text, paper_title = NULL,
 }
 
 # ---- LLM-generated digest wrap-up --------------------------
-# Generates a structured three-paragraph academic summary of all posts,
+# Generates a short thematic paragraph summarising all posts,
 # with markdown links anchored to each post (#post-N).
-# A fixed fourth paragraph (thank-you) is appended by R, not the LLM.
-#
-# Structure:
-#   Para 1 — dominant science themes (ecosystems, fields, taxa, etc.)
-#   Para 2 — methodological, data and modelling contributions
-#   Para 3 — jobs, events, news and other non-research posts
-#   Para 4 — fixed closing sentence (appended in R, not by LLM)
-#
-# Before calling the LLM the function prints a numbered table and
-# asks which posts to exclude from the summary text (they still
-# appear in the digest itself).
-
 WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
-  "You write a structured academic summary for a fortnightly curated ecology research digest.\n",
+  "You write the opening wrap-up paragraph for a curated ecology research digest published on a science blog.\n",
   "\n",
-  "Tone: precise, measured and academically grounded. Write as a scientist giving a rigorous\n",
-  "overview to colleagues. No hype, no journalistic hooks, no filler phrases such as\n",
-  "'packed issue', 'something for everyone', 'let us dig in', or similar. Every sentence\n",
-  "should carry information. Avoid colloquialisms.\n",
+  "Tone: natural, warm, and intellectually engaged, in the manner of a French science writer:\n",
+  "precise but not dry, personal without being casual, curious without being breathless.\n",
+  "Write as a scientist who has read everything and is giving a thoughtful colleague a sincere\n",
+  "overview. No hype, no cheerleading, no journalism hooks. No filler phrases like 'plenty of meat',\n",
+  "'let us dig in', 'something for everyone', 'a packed issue', or similar. Just describe what is\n",
+  "there, honestly and with a light touch.\n",
   "\n",
-  "You must write EXACTLY THREE paragraphs, separated by a blank line, in this fixed order:\n",
+  "Structure the paragraph by grouping posts thematically, using their tags as a guide.\n",
+  "For example, posts tagged 'marine' or 'coral' may flow together; posts tagged 'methods'\n",
+  "or 'modelling' may form another cluster; 'jobs' and 'events' can come at the end.\n",
+  "The grouping should feel natural and prose-driven, not mechanical.\n",
   "\n",
-  "PARAGRAPH 1 — Scientific themes.\n",
-  "Cover the dominant research topics: ecosystem types (marine, freshwater, terrestrial),\n",
-  "taxonomic groups, ecological processes, conservation issues, climate-related findings.\n",
-  "Group posts by affinity. Use their tags as a guide but write in flowing prose, not lists.\n",
-  "Start this paragraph with exactly: 'In this digest,'\n",
-  "\n",
-  "PARAGRAPH 2 — Methods, data and modelling.\n",
-  "Describe contributions focused on analytical approaches, statistical or computational\n",
-  "methods, remote sensing, citizen science, new datasets, or synthesis work.\n",
-  "If no such posts exist, write a single sentence saying so.\n",
-  "\n",
-  "PARAGRAPH 3 — Jobs, events and community news.\n",
-  "Briefly mention positions, fieldwork opportunities, conferences, workshops, preprints\n",
-  "of broad interest, or any other non-primary-research content.\n",
-  "If no such posts exist, write a single sentence saying so.\n",
-  "\n",
-  "Rules applying to all three paragraphs:\n",
-  "- Reference each post with a markdown link using its anchor: [short description](#post-N)\n",
-  "- Every post number you were given must appear at least once as a link.\n",
-  "- NEVER use the em dash (the long dash). Use commas or short sentences instead.\n",
+  "Rules:\n",
+  "- ALWAYS start with exactly: 'In this digest,'\n",
+  "- NEVER use the em dash character (the long dash). Use commas or short sentences instead.\n",
   "- NEVER use -- either.\n",
-  "- Never use 'this week': the digest covers two weeks.\n",
-  "- No bullet points, no sub-headers, no line breaks within a paragraph.\n",
+  "- One single flowing paragraph. No bullet points, no headers, no line breaks within.\n",
+  "- Reference each post with a markdown link using its anchor: [short description](#post-N)\n",
+  "- Every post number must appear at least once as a link.\n",
+  "- Never use 'this week' anywhere: the digest covers two weeks, not one.\n",
   "- {WORD_LIMIT_RULE}\n",
-  "- Do NOT write a fourth paragraph. Do NOT add any closing thank-you sentence.\n",
-  "- End the third paragraph with a period.\n"
+  "- {PARAGRAPH_RULE}\n",
+  "- End the last paragraph with a sentence thanking contributors, for example:\n",
+  "  'Many thanks to all who contribute to the Global Ecology feed by sharing their science on Bluesky.'\n",
+  "  Vary the wording naturally but keep the spirit: gratitude, the feed name, Bluesky, sharing science.\n",
+  "- End with a period.\n"
 )
 
-# Fixed fourth paragraph appended by R (never written by the LLM)
-WRAPUP_CLOSING <- paste0(
-  "Many thanks to all who contribute to the Global Ecology feed ",
-  "by sharing their science on Bluesky."
-)
-
-# ---- LLM wrap-up generator ---------------------------------
 generate_wrapup_llm <- function(post_meta) {
   if (length(post_meta) == 0) return(NULL)
   if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
 
   n_posts <- length(post_meta)
-  cat("Generating wrap-up for", n_posts, "posts...\n")
 
-  word_limit <- if (n_posts < 20L) 150L else if (n_posts < 35L) 200L else if (n_posts < 50L) 300L else 350L
+  # Word limit scales with post count: ~5 words per post, capped at 300
+  # Word limit scales with post count in four steps
+  word_limit <- if (n_posts < 20L) 120L else if (n_posts < 35L) 175L else if (n_posts < 50L) 250L else 350L
+  # Number of paragraphs scales with content
+  n_para <- if (n_posts < 20L) 1L else if (n_posts < 35L) 2L else 3L
+
   word_limit_rule <- paste0(
-    "The three paragraphs combined must not exceed ", word_limit, " words in total."
+    "Keep the total body text (excluding the closing thank-you) under ", word_limit, " words."
   )
-  system_prompt <- gsub("{WORD_LIMIT_RULE}", word_limit_rule, WRAPUP_LLM_SYSTEM_PROMPT, fixed = TRUE)
+  paragraph_rule <- if (n_para == 1L) {
+    "Write as one single flowing paragraph."
+  } else {
+    paste0(
+      "Write as ", n_para, " paragraphs. Each paragraph covers a distinct thematic cluster ",
+      "(e.g. one for climate/biodiversity, one for methods/modelling, one for marine/freshwater, ",
+      "jobs and events last). Separate paragraphs with a blank line."
+    )
+  }
+
+  # Inject computed rules into the system prompt template
+  system_prompt <- WRAPUP_LLM_SYSTEM_PROMPT
+  system_prompt <- gsub("{WORD_LIMIT_RULE}", word_limit_rule, system_prompt, fixed = TRUE)
+  system_prompt <- gsub("{PARAGRAPH_RULE}",  paragraph_rule,  system_prompt, fixed = TRUE)
 
   lines <- vapply(post_meta, function(p) {
     tag_str   <- if (length(p$tags) > 0) paste0("tags: ", paste(p$tags, collapse = ", ")) else "no tags"
@@ -716,9 +707,9 @@ generate_wrapup_llm <- function(post_meta) {
   }, character(1))
 
   user_msg <- paste0(
-    "Here are the ", n_posts, " posts to summarise:\n\n",
+    "Here are the ", n_posts, " posts in this digest:\n\n",
     paste(lines, collapse = "\n"),
-    "\n\nWrite the three-paragraph academic summary."
+    "\n\nWrite the wrap-up."
   )
 
   tryCatch({
@@ -728,11 +719,12 @@ generate_wrapup_llm <- function(post_meta) {
       echo          = "none"
     )
     raw <- trimws(as.character(chat$chat(user_msg)))
+    # Safety: strip any em dashes that sneak through
     raw <- gsub("—", ",", raw, fixed = TRUE)
     raw <- gsub("–", ",", raw, fixed = TRUE)
-    raw <- gsub("--",     ",", raw, fixed = TRUE)
+    raw <- gsub("--", ",",    raw, fixed = TRUE)
     if (nchar(raw) < 20) return(NULL)
-    paste0(raw, "\n\n", WRAPUP_CLOSING)
+    raw
   }, error = function(e) {
     warning("Wrap-up generation failed: ", conditionMessage(e))
     NULL
@@ -1416,43 +1408,13 @@ llm_tags_cache  <- if (file.exists(llm_tags_cache_path))  readRDS(llm_tags_cache
 
 # ---- Sanity-check LLM availability before the loop ---------
 if (isTRUE(CONFIG$enable_llm_titles)) {
-  api_key <- Sys.getenv("ANTHROPIC_API_KEY")
-  if (!nzchar(api_key)) {
-    stop("ANTHROPIC_API_KEY is not set. ",
-         "Add Sys.setenv(ANTHROPIC_API_KEY = \"sk-ant-...\") to pass.R and re-run.")
+  if (!nzchar(Sys.getenv("ANTHROPIC_API_KEY"))) {
+    warning("CONFIG$enable_llm_titles=TRUE but ANTHROPIC_API_KEY is not set. ",
+            "Add Sys.setenv(ANTHROPIC_API_KEY=\"sk-ant-...\") to pass.R. ",
+            "LLM titles will be skipped this run.")
+  } else {
+    cat("LLM titles: enabled (model =", CONFIG$llm_model, ")\n")
   }
-
-  # Probe the API with a minimal call to catch billing errors before the loop.
-  cat("Checking Anthropic API access...\n")
-  probe_resp <- tryCatch({
-    h <- curl::new_handle()
-    curl::handle_setheaders(h,
-      "anthropic-version" = "2023-06-01",
-      "x-api-key"         = api_key,
-      "content-type"      = "application/json"
-    )
-    curl::handle_setopt(h, post = TRUE, postfields = jsonlite::toJSON(list(
-      model      = CONFIG$llm_model,
-      max_tokens = 1L,
-      messages   = list(list(role = "user", content = "hi"))
-    ), auto_unbox = TRUE))
-    r <- curl::curl_fetch_memory("https://api.anthropic.com/v1/messages", handle = h)
-    jsonlite::fromJSON(rawToChar(r$content))
-  }, error = function(e) list(error = list(message = conditionMessage(e))))
-
-  if (!is.null(probe_resp$error)) {
-    msg <- probe_resp$error$message %||% "unknown error"
-    if (grepl("credit|billing|balance|payment|quota", msg, ignore.case = TRUE)) {
-      stop("Anthropic API: no credits remaining.\n",
-           "  Please top up your account at https://platform.claude.com/settings/billing\n",
-           "  then re-run the script.\n",
-           "  (API message: ", msg, ")")
-    } else {
-      stop("Anthropic API returned an error: ", msg,
-           "\n  Check your API key and account at https://platform.claude.com")
-    }
-  }
-  cat("Anthropic API: OK (model =", CONFIG$llm_model, ")\n")
 }
 
 # ---- Loop with per-post error isolation --------------------
@@ -1618,10 +1580,9 @@ for (i in seq_len(cut_idx - 1L)) {
       all_post_md  <- c(all_post_md, res$md)
       nb_post      <- nb_post + 1L
       post_meta    <- c(post_meta, list(list(
-        num    = nb_post,
-        title  = res$paper_title %||% "",
-        tags   = res$tags %||% character(),
-        handle = res$handle %||% ""
+        num   = nb_post,
+        title = res$paper_title %||% "",
+        tags  = res$tags %||% character()
       )))
       if (!is.null(res$handle)) kept_handles <- c(kept_handles, paste0("@", res$handle))
       cat("i=", i, " ", res$handle, "ok\n")
@@ -1655,6 +1616,7 @@ wrapup <- NULL
 if (isTRUE(CONFIG$enable_llm_titles) &&
     nzchar(Sys.getenv("ANTHROPIC_API_KEY")) &&
     length(post_meta) > 0) {
+  cat("\nGenerating digest wrap-up...\n")
   wrapup <- generate_wrapup_llm(post_meta)
   if (!is.null(wrapup)) {
     cat("Wrap-up ok (", nchar(wrapup), " chars)\n", sep = "")
