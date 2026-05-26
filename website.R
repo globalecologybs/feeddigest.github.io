@@ -726,17 +726,64 @@ generate_wrapup_llm <- function(post_meta) {
     "\n\nWrite the three-paragraph academic summary."
   )
 
+  clean_raw <- function(x) {
+    x <- gsub("—", ",", x, fixed = TRUE)
+    x <- gsub("–", ",", x, fixed = TRUE)
+    x <- gsub("--",     ",", x, fixed = TRUE)
+    trimws(x)
+  }
+
+  find_missing <- function(text, all_nums) {
+    found <- suppressWarnings(
+      as.integer(unique(regmatches(text, gregexpr("(?<=#post-)\\d+", text, perl = TRUE))[[1]]))
+    )
+    sort(setdiff(all_nums, found[!is.na(found)]))
+  }
+
+  all_nums <- vapply(post_meta, `[[`, integer(1), "num")
+
   tryCatch({
     chat <- ellmer::chat_anthropic(
       model         = CONFIG$llm_model,
       system_prompt = system_prompt,
       echo          = "none"
     )
-    raw <- trimws(as.character(chat$chat(user_msg)))
-    raw <- gsub("—", ",", raw, fixed = TRUE)
-    raw <- gsub("–", ",", raw, fixed = TRUE)
-    raw <- gsub("--",     ",", raw, fixed = TRUE)
+
+    # ---- First pass -------------------------------------------
+    raw <- clean_raw(as.character(chat$chat(user_msg)))
     if (nchar(raw) < 20) return(NULL)
+
+    # ---- Verification + correction loop (max 2 attempts) ------
+    for (attempt in 1:2) {
+      missing <- find_missing(raw, all_nums)
+      if (length(missing) == 0) break
+
+      cat("Wrap-up missing", length(missing), "post(s):",
+          paste(missing, collapse = ", "), "— asking LLM to fix...\n")
+
+      missing_lines <- lines[vapply(post_meta,
+                                    function(p) p$num %in% missing, logical(1))]
+      fix_msg <- paste0(
+        "Your summary is missing a link to the following post(s):\n\n",
+        paste(missing_lines, collapse = "\n"),
+        "\n\n",
+        "Revise your summary to include a meaningful markdown hyperlink to each of these posts ",
+        "(link text = a key concept from the post, anchor = #post-N). ",
+        "Keep the three-paragraph structure. Do not add a fourth paragraph. ",
+        "Return the complete revised summary."
+      )
+      raw <- clean_raw(as.character(chat$chat(fix_msg)))
+    }
+
+    # Final report
+    still_missing <- find_missing(raw, all_nums)
+    if (length(still_missing) > 0) {
+      warning("Wrap-up still missing post(s) after correction: ",
+              paste(still_missing, collapse = ", "))
+    } else {
+      cat("Wrap-up ok — all", n_posts, "posts referenced.\n")
+    }
+
     paste0(raw, "\n\n", WRAPUP_CLOSING)
   }, error = function(e) {
     warning("Wrap-up generation failed: ", conditionMessage(e))
