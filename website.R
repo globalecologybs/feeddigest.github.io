@@ -652,45 +652,61 @@ generate_tags_llm <- function(text, paper_title = NULL,
 # appear in the digest itself).
 
 WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
-  "You write a structured academic summary for a fortnightly curated ecology research digest.\n",
+  "You write the opening summary for a fortnightly digest of the Bluesky Global Ecology feed,\n",
+  "read by an academic audience with strong expertise in ecology, biodiversity and environmental\n",
+  "science. Readers are researchers, practitioners and advanced students who follow primary\n",
+  "literature closely. Write accordingly: be specific, substantive and precise. Do not explain\n",
+  "basic concepts. Name taxa, methods, ecosystems and geographic contexts where they add meaning.\n",
+  "Highlight what is genuinely novel or significant in each contribution.\n",
   "\n",
-  "Tone: precise, measured and academically grounded. Write as a scientist giving a rigorous\n",
-  "overview to colleagues. No hype, no journalistic hooks, no filler phrases such as\n",
-  "'packed issue', 'something for everyone', 'let us dig in', or similar. Every sentence\n",
-  "should carry information. Avoid colloquialisms.\n",
+  "Tone: authoritative and collegial, like a Research Highlights note in a leading ecology\n",
+  "journal. No hype, no journalistic hooks, no filler. Every clause must carry information.\n",
+  "Avoid vague qualifiers ('interesting', 'important', 'fascinating', 'novel approach').\n",
+  "Prefer concrete claims: taxa, biomes, methods, findings, geographic scope.\n",
   "\n",
   "You must write EXACTLY THREE paragraphs, separated by a blank line, in this fixed order:\n",
   "\n",
   "PARAGRAPH 1 — Scientific themes.\n",
-  "Cover the dominant research topics: ecosystem types (marine, freshwater, terrestrial),\n",
-  "taxonomic groups, ecological processes, conservation issues, climate-related findings.\n",
-  "Group posts by affinity. Use their tags as a guide but write in flowing prose, not lists.\n",
-  "Start this paragraph with exactly: 'In this digest,'\n",
+  "Start this paragraph with exactly the words 'In this digest,' followed by ONE general\n",
+  "sentence that captures what is distinctive or prominent about this particular fortnight's\n",
+  "content — something specific to these posts, not a generic statement about the field.\n",
+  "Do NOT list posts or use hyperlinks in this opening sentence.\n",
+  "Do NOT state the obvious (readers know this is a global ecology digest).\n",
+  "Do NOT use hollow phrases like 'a wide range of topics', 'macroecological patterns',\n",
+  "'contributions span multiple ecosystems', or similar. Instead, name what is genuinely\n",
+  "prominent or striking in this issue: a recurring question, a convergence of themes,\n",
+  "an unusual breadth or depth, a timely topic. One concrete, specific sentence.\n",
+  "Then continue: identify genuine thematic clusters from the post content (not just tags),\n",
+  "grouping posts by scientific affinity — shared ecosystem, taxon, process, or question.\n",
+  "Within each cluster, synthesise the contributions in flowing prose: question, system or\n",
+  "taxon, key finding or advance. Move fluidly from cluster to cluster.\n",
   "\n",
   "PARAGRAPH 2 — Methods, data and modelling.\n",
-  "Describe contributions focused on analytical approaches, statistical or computational\n",
-  "methods, remote sensing, citizen science, new datasets, or synthesis work.\n",
+  "Cover posts whose primary contribution is analytical: new R packages, statistical frameworks,\n",
+  "remote-sensing workflows, open datasets, citizen-science tools, synthesis platforms.\n",
+  "Be specific about what each tool does and for whom it is useful.\n",
   "If no such posts exist, write a single sentence saying so.\n",
   "\n",
-  "PARAGRAPH 3 — Jobs, events and community news.\n",
-  "Briefly mention positions, fieldwork opportunities, conferences, workshops, preprints\n",
-  "of broad interest, or any other non-primary-research content.\n",
+  "PARAGRAPH 3 — Community, jobs and events.\n",
+  "Briefly cover positions, seminars, workshops, webinars, book events, or other\n",
+  "non-primary-research content. One sentence per item is sufficient.\n",
   "If no such posts exist, write a single sentence saying so.\n",
   "\n",
   "Rules applying to all three paragraphs:\n",
   "- Every post must be referenced at least once as a markdown hyperlink.\n",
   "- The link anchor is always #post-N (e.g. #post-3, #post-12).\n",
-  "- The link TEXT must be a meaningful word or short expression taken from or inspired by\n",
-  "  the post content: a key concept, taxon, method, or finding. For example:\n",
-  "  [coral bleaching](#post-3), [species distribution models](#post-7), [PhD position](#post-12).\n",
-  "- NEVER use 'Post N', '#post-N', or any number as the link text.\n",
+  "- The link TEXT must be a meaningful expression drawn from the post content:\n",
+  "  a taxon, process, method, finding, or concept. Examples:\n",
+  "  [Posidonia oceanica mass flowering](#post-2), [hespdiv R package](#post-3),\n",
+  "  [CESABINAR on tropical tree coexistence](#post-18).\n",
+  "- NEVER use 'Post N', '#post-N', a bare number, or 'post' as the link text.\n",
   "- NEVER write bare anchors like (#post-N) outside of a markdown link.\n",
-  "- NEVER use the em dash (the long dash). Use commas or short sentences instead.\n",
-  "- NEVER use -- either.\n",
+  "- NEVER use the em dash. Use commas or short sentences instead.\n",
+  "- NEVER use --.\n",
   "- Never use 'this week': the digest covers two weeks.\n",
   "- No bullet points, no sub-headers, no line breaks within a paragraph.\n",
   "- {WORD_LIMIT_RULE}\n",
-  "- Do NOT write a fourth paragraph. Do NOT add any closing thank-you sentence.\n",
+  "- Do NOT write a fourth paragraph. Do NOT add any closing sentence.\n",
   "- End the third paragraph with a period.\n"
 )
 
@@ -714,16 +730,32 @@ generate_wrapup_llm <- function(post_meta) {
   )
   system_prompt <- gsub("{WORD_LIMIT_RULE}", word_limit_rule, WRAPUP_LLM_SYSTEM_PROMPT, fixed = TRUE)
 
+  # Build a structured brief for each post: title, tags, author, and a
+  # short excerpt of the actual post text to give the LLM real content.
   lines <- vapply(post_meta, function(p) {
-    tag_str   <- if (length(p$tags) > 0) paste0("tags: ", paste(p$tags, collapse = ", ")) else "no tags"
-    title_str <- if (!is.null(p$title) && nzchar(p$title)) p$title else "(no title)"
-    paste0("Post ", p$num, " (", tag_str, "): ", title_str)
+    title_str  <- if (!is.null(p$title)  && nzchar(p$title))       p$title       else "(no title)"
+    author_str <- if (!is.null(p$author_name) && nzchar(p$author_name)) p$author_name else
+                  if (!is.null(p$handle) && nzchar(p$handle))       paste0("@", p$handle) else ""
+    tag_str    <- if (length(p$tags) > 0) paste(p$tags, collapse = ", ") else "untagged"
+    # Trim post text to ~220 chars to give context without bloating the prompt
+    txt <- if (!is.null(p$text) && nzchar(p$text)) {
+      t <- gsub("\\s+", " ", trimws(p$text))
+      if (nchar(t) > 220) paste0(substr(t, 1, 217), "...") else t
+    } else ""
+    paste0(
+      "POST ", p$num, "\n",
+      "  Title  : ", title_str, "\n",
+      "  Author : ", author_str, "\n",
+      "  Tags   : ", tag_str, "\n",
+      if (nzchar(txt)) paste0("  Text   : ", txt, "\n") else ""
+    )
   }, character(1))
 
   user_msg <- paste0(
-    "Here are the ", n_posts, " posts to summarise:\n\n",
+    "Below are the ", n_posts, " posts in this digest. Each entry gives the paper title,\n",
+    "author, thematic tags, and an excerpt of the Bluesky post text.\n\n",
     paste(lines, collapse = "\n"),
-    "\n\nWrite the three-paragraph academic summary."
+    "\nWrite the three-paragraph academic summary now."
   )
 
   clean_raw <- function(x) {
@@ -766,10 +798,9 @@ generate_wrapup_llm <- function(post_meta) {
       fix_msg <- paste0(
         "Your summary is missing a link to the following post(s):\n\n",
         paste(missing_lines, collapse = "\n"),
-        "\n\n",
-        "Revise your summary to include a meaningful markdown hyperlink to each of these posts ",
-        "(link text = a key concept from the post, anchor = #post-N). ",
-        "Keep the three-paragraph structure. Do not add a fourth paragraph. ",
+        "\nFor each missing post, insert a markdown hyperlink whose text is a meaningful\n",
+        "expression from the post content (taxon, method, finding) and whose anchor is #post-N.\n",
+        "Keep the three-paragraph structure. Do not add a fourth paragraph.\n",
         "Return the complete revised summary."
       )
       raw <- clean_raw(as.character(chat$chat(fix_msg)))
@@ -1661,7 +1692,8 @@ for (i in seq_len(cut_idx - 1L)) {
       post_num     = nb_post + 1L
     ))
     list(status = "ok", handle = handle, md = md,
-         paper_title = paper_title, tags = tags)
+         paper_title = paper_title, tags = tags,
+         text = text, author_name = name)
   }, error = function(e) list(status = "error", handle = safe(feed$author[[i]]$handle, NA),
                               msg = conditionMessage(e)))
 
@@ -1670,10 +1702,12 @@ for (i in seq_len(cut_idx - 1L)) {
       all_post_md  <- c(all_post_md, res$md)
       nb_post      <- nb_post + 1L
       post_meta    <- c(post_meta, list(list(
-        num    = nb_post,
-        title  = res$paper_title %||% "",
-        tags   = res$tags %||% character(),
-        handle = res$handle %||% ""
+        num         = nb_post,
+        title       = res$paper_title %||% "",
+        tags        = res$tags %||% character(),
+        handle      = res$handle %||% "",
+        author_name = res$author_name %||% "",
+        text        = res$text %||% ""
       )))
       if (!is.null(res$handle)) kept_handles <- c(kept_handles, paste0("@", res$handle))
       cat("i=", i, " ", res$handle, "ok\n")
