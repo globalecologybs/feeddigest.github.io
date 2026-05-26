@@ -701,6 +701,8 @@ WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
   "  [CESABINAR on tropical tree coexistence](#post-18).\n",
   "- NEVER use 'Post N', '#post-N', a bare number, or 'post' as the link text.\n",
   "- NEVER write bare anchors like (#post-N) outside of a markdown link.\n",
+  "- NEVER mention journal names, publisher names, or venue names (e.g. do not write\n",
+  "  'published in Nature', 'in Ecography', 'Frontiers in Marine Science', etc.).\n",
   "- NEVER use the em dash. Use commas or short sentences instead.\n",
   "- NEVER use --.\n",
   "- Never use 'this week': the digest covers two weeks.\n",
