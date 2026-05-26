@@ -251,7 +251,7 @@
                 {% for d in year_group.items %}
                   <li>
                     <a href="{{ d.url }}"{% if d.num == page.digest_num %} class="active" aria-current="page"{% endif %}>
-                      #{{ d.num }} · {{ d.date_label }}
+                      {{ d.date_label }}
                     </a>
                   </li>
                 {% endfor %}

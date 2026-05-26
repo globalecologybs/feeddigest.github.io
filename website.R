@@ -94,18 +94,37 @@ write_atomic <- function(text, path) {
 
 next_digest_number <- function(archives_dir) {
   if (!dir.exists(archives_dir)) return(1L)
-  files <- list.files(archives_dir, pattern = "^digest-\\d+\\.md$")
+  # Match legacy (digest-N.md) and new (digest-YYYY-WW.md) files.
+  files <- list.files(archives_dir, pattern = "^digest-[0-9].*\\.md$")
   if (length(files) == 0) return(1L)
   nums <- suppressWarnings(as.integer(gsub("^digest-(\\d+)\\.md$", "\\1", files)))
-  max(nums, na.rm = TRUE) + 1L
+  valid <- nums[!is.na(nums)]
+  if (length(valid) > 0) max(valid) + 1L else length(files) + 1L
 }
 
+# Returns: num (sequential), file, slug (YYYY-WW or legacy N), sorted newest first.
 list_digests <- function(archives_dir) {
-  files <- list.files(archives_dir, pattern = "^digest-\\d+\\.md$")
-  if (length(files) == 0) return(data.frame(num = integer(), file = character(), stringsAsFactors = FALSE))
-  nums <- suppressWarnings(as.integer(gsub("^digest-(\\d+)\\.md$", "\\1", files)))
-  out  <- data.frame(num = nums, file = files, stringsAsFactors = FALSE)
+  empty <- data.frame(num = integer(), file = character(),
+                      slug = character(), stringsAsFactors = FALSE)
+  files <- list.files(archives_dir, pattern = "^digest-[0-9].*\\.md$")
+  if (length(files) == 0) return(empty)
+  slugs <- gsub("^digest-(.+)\\.md$", "\\1", files)
+  nums  <- suppressWarnings(as.integer(gsub("^digest-(\\d+)\\.md$", "\\1", files)))
+  # Sort alphabetically so YYYY-WW sorts chronologically; legacy nums also sort OK.
+  ord   <- order(files)
+  files <- files[ord]; slugs <- slugs[ord]; nums <- nums[ord]
+  # Assign sequential numbers where missing (new-style files).
+  base <- if (any(!is.na(nums))) max(nums, na.rm = TRUE) + 1L else 1L
+  for (i in seq_along(nums)) {
+    if (is.na(nums[i])) { nums[i] <- base; base <- base + 1L }
+  }
+  out <- data.frame(num = nums, file = files, slug = slugs, stringsAsFactors = FALSE)
   out[order(out$num, decreasing = TRUE), ]
+}
+
+# Compute the YYYY-WW slug for a given end date (ISO week).
+digest_slug <- function(end_date) {
+  paste0(format(end_date, "%Y"), "-", strftime(end_date, "%V"))
 }
 
 # ---- Topic tags --------------------------------------------
@@ -873,14 +892,15 @@ update_digests_registry <- function(data_path, entry) {
   yaml::write_yaml(reg, data_path)
 }
 
-build_registry_entry <- function(X, start_date, end_date, nb_post) {
+build_registry_entry <- function(X, slug, start_date, end_date, nb_post) {
   list(
     num        = X,
+    slug       = slug,
     year       = format(end_date, "%Y"),
     start_date = format(start_date, "%Y-%m-%d"),
     end_date   = format(end_date,   "%Y-%m-%d"),
     nb_post    = nb_post,
-    url        = paste0(CONFIG$base_url, "/archives/digest-", X, "/"),
+    url        = paste0(CONFIG$base_url, "/archives/digest-", slug, "/"),
     date_label = paste0(format(start_date, "%b %d"), " - ", format(end_date, "%b %d"))
   )
 }
@@ -1048,11 +1068,11 @@ yaml_quote <- function(s) {
   paste0('"', s, '"')
 }
 
-digest_front_matter <- function(X, start_date, end_date, nb_post) {
-  permalink   <- paste0("/archives/digest-", X, "/")
-  title       <- paste0("Global Ecology Digest #", X,
-                        " - ", format(start_date, "%b %d"),
-                        " to ", format(end_date,   "%b %d, %Y"))
+digest_front_matter <- function(X, slug, start_date, end_date, nb_post) {
+  permalink   <- paste0("/archives/digest-", slug, "/")
+  title       <- paste0("Global Ecology Digest from ",
+                        format(start_date, "%B %d, %Y"),
+                        " to ", format(end_date, "%B %d, %Y"))
   description <- build_description(start_date, end_date, nb_post)
 
   paste0(
@@ -1315,12 +1335,19 @@ page_footer_block <- function(home = TRUE, archive = TRUE, extra_nav = "") {
 
 # ---- Digest page body --------------------------------------
 build_digest_body <- function(X, start_date, end_date, nb_post,
-                              all_post_md, prev_num = NULL, next_num = NULL,
+                              all_post_md,
+                              prev_entry = NULL, next_entry = NULL,
                               wrapup = NULL) {
-  # Prev/next digest links, passed to the footer.
+  # Prev/next digest links using registry entries (have url + dates).
   nav <- character()
-  if (!is.null(prev_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", prev_num, "/'>&larr; Digest #", prev_num, "</a>"))
-  if (!is.null(next_num)) nav <- c(nav, paste0("<a href='", CONFIG$base_url, "/archives/digest-", next_num, "/'>Digest #", next_num, " &rarr;</a>"))
+  if (!is.null(prev_entry)) {
+    label <- format_digest_dates(prev_entry, with_year = TRUE)
+    nav <- c(nav, paste0("<a href='", prev_entry$url, "'>&larr; ", label, "</a>"))
+  }
+  if (!is.null(next_entry)) {
+    label <- format_digest_dates(next_entry, with_year = TRUE)
+    nav <- c(nav, paste0("<a href='", next_entry$url, "'>", label, " &rarr;</a>"))
+  }
   extra_nav <- if (length(nav) > 0) {
     paste0("<p style='font-size:0.95rem;'>", paste(nav, collapse = " &nbsp;|&nbsp; "), "</p>\n\n")
   } else ""
@@ -1335,10 +1362,9 @@ build_digest_body <- function(X, start_date, end_date, nb_post,
     banner_block(),
     top_nav_block(),
     ecosystem_block_digest(),
-    "# Digest #", X, "\n\n",
-    "Feeds are from **", format(start_date, "%B %d, %Y"),
-    "** to **", format(end_date, "%B %d, %Y"),
-    "**. Total posts: **", nb_post, "**.",
+    "# Digest from ", format(start_date, "%B %d, %Y"),
+    " to ", format(end_date, "%B %d, %Y"), "\n\n",
+    "**", nb_post, " posts curated.**",
     wrapup_block,
     "---\n\n",
     paste0(all_post_md, collapse = ""),
@@ -1361,8 +1387,8 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
 
   older_block <- if (length(older) == 0) "" else {
     lines <- vapply(older, function(e) {
-      paste0("- [Digest #", e$num, "](", e$url, ") ",
-             format_digest_dates(e, with_year = TRUE))
+      paste0("- [", format_digest_dates(e, with_year = TRUE), "](", e$url, ") ",
+             "&middot; ", as.character(e$nb_post %||% ""), " posts")
     }, character(1))
     paste0(
       "<p style='font-weight:600;margin:1.4rem 0 0.4rem;'>Earlier issues</p>\n\n",
@@ -1371,24 +1397,25 @@ build_landing_body <- function(X, start_date, end_date, nb_post, registry) {
   }
 
   # Featured card for the latest digest.
+  date_range <- paste0(format(start_date, "%B %d, %Y"), " to ", format(end_date, "%B %d, %Y"))
+  digest_url <- paste0(CONFIG$base_url, "/archives/digest-", digest_slug(end_date), "/")
   featured_card <- paste0(
     "<div style='border:1px solid #e5e5e5;border-radius:10px;",
     "padding:1.1rem 1.3rem;margin:0.6rem 0 1.1rem;background:#fafbfc;'>\n",
-    "  <div style='font-size:1.15rem;font-weight:700;'>Digest #", X, "</div>\n",
+    "  <div style='font-size:1.15rem;font-weight:700;'>Digest from ", date_range, "</div>\n",
     "  <div style='color:#666;font-size:0.92rem;margin:0.25rem 0 0.9rem;'>",
-    format(start_date, "%B %d, %Y"), " &ndash; ", format(end_date, "%B %d, %Y"),
-    " &middot; ", nb_post, " posts curated</div>\n",
-    "  <a href='", CONFIG$base_url, "/archives/digest-", X, "/' ",
-    "style='display:inline-block;padding:10px 18px;background:#2d6cdf;",
+    nb_post, " posts curated</div>\n",
+    "  <a href='", digest_url, "' ",
+    "style='display:inline-block;padding:10px 18px;background:#83b27e;",
     "color:white;border-radius:6px;text-decoration:none;font-weight:600;'>",
-    "Read Digest #", X, " →</a>\n",
+    "Read this digest →</a>\n",
     "</div>\n\n"
   )
 
   archive_link <- paste0(
     "<p><a href='", CONFIG$base_url, "/archives/' ",
-    "style='display:inline-block;padding:8px 16px;border:1px solid #2d6cdf;",
-    "color:#2d6cdf;border-radius:6px;text-decoration:none;'>",
+    "style='display:inline-block;padding:8px 16px;border:1px solid #83b27e;",
+    "color:#83b27e;border-radius:6px;text-decoration:none;'>",
     "Browse the full archive →</a></p>\n\n"
   )
 
@@ -1433,7 +1460,7 @@ build_archive_body <- function(registry) {
     lines <- vapply(entries, function(e) {
       dates <- format_digest_dates(e, with_year = FALSE)
       np    <- as.character(e$nb_post %||% "")
-      paste0("- [**Digest #", e$num, "**](", e$url, ") ", dates,
+      paste0("- [**Digest from ", dates, "**](", e$url, ")",
              if (nzchar(np)) paste0(" &middot; ", np, " posts") else "")
     }, character(1))
     paste0("## ", yr, "\n\n", paste(lines, collapse = "\n"), "\n")
@@ -1463,7 +1490,8 @@ feeds_dir    <- file.path(archives_dir, "feeds", format(end_date, "%Y"))
 dir.create(archives_dir, showWarnings = FALSE, recursive = TRUE)
 dir.create(feeds_dir,    showWarnings = FALSE, recursive = TRUE)
 
-X <- CONFIG$digest_number %||% next_digest_number(archives_dir)
+X    <- CONFIG$digest_number %||% next_digest_number(archives_dir)
+slug <- digest_slug(end_date)
 
 # ---- Fetch feed --------------------------------------------
 if (!requireNamespace("bskyr",    quietly = TRUE)) install.packages("bskyr")
@@ -1752,49 +1780,37 @@ if (isTRUE(CONFIG$enable_llm_titles) &&
 }
 
 # ---- Write digest archive page -----------------------------
-archive_path <- file.path(archives_dir, paste0("digest-", X, ".md"))
+archive_path <- file.path(archives_dir, paste0("digest-", slug, ".md"))
 
-# Determine prev/next digest numbers for in-page navigation.
-existing_before <- list_digests(archives_dir)
-existing_before <- existing_before[existing_before$num != X, ]
-prev_num <- if (nrow(existing_before) > 0) max(existing_before$num[existing_before$num < X], na.rm = TRUE) else NA_integer_
-next_num <- if (nrow(existing_before) > 0) min(existing_before$num[existing_before$num > X], na.rm = TRUE) else NA_integer_
-prev_num <- if (is.finite(prev_num)) prev_num else NULL
-next_num <- if (is.finite(next_num)) next_num else NULL
+# ---- Update _data/digests.yml (drives sidebar) -------------
+# Update first so we can read it back for prev/next navigation.
+data_path <- here::here(CONFIG$data_dir, CONFIG$data_filename)
+update_digests_registry(
+  data_path,
+  build_registry_entry(X, slug, start_date, end_date, nb_post)
+)
+
+# Determine prev/next entries from registry for in-page navigation.
+digests_registry_nav <- read_digests_registry(data_path)
+this_idx <- which(vapply(digests_registry_nav, function(e) {
+  identical(as.integer(e$num), as.integer(X))
+}, logical(1)))
+# Registry is sorted newest first: higher index = older digest.
+prev_entry <- if (length(this_idx) > 0 && this_idx[1] < length(digests_registry_nav))
+  digests_registry_nav[[this_idx[1] + 1]] else NULL
+next_entry <- if (length(this_idx) > 0 && this_idx[1] > 1)
+  digests_registry_nav[[this_idx[1] - 1]] else NULL
 
 digest_markdown <- paste0(
-  digest_front_matter(X, start_date, end_date, nb_post),
+  digest_front_matter(X, slug, start_date, end_date, nb_post),
   build_digest_body(X, start_date, end_date, nb_post, all_post_md,
-                    prev_num = prev_num, next_num = next_num,
+                    prev_entry = prev_entry, next_entry = next_entry,
                     wrapup = wrapup)
 )
 write_atomic(digest_markdown, archive_path)
 
-# ---- Update _data/digests.yml (drives sidebar) -------------
-data_path <- here::here(CONFIG$data_dir, CONFIG$data_filename)
-update_digests_registry(
-  data_path,
-  build_registry_entry(X, start_date, end_date, nb_post)
-)
-
-# ---- Update navigation of immediately previous digest ------
-# So /archives/digest-(X-1)/ now links forward to /archives/digest-X/.
-# (We rewrite only the body's next-link by regenerating with the new
-# next_num. Cheap and consistent.)
-if (!is.null(prev_num)) {
-  prev_file <- file.path(archives_dir, paste0("digest-", prev_num, ".md"))
-  if (file.exists(prev_file)) {
-    raw <- readLines(prev_file, warn = FALSE)
-    # Replace any existing "Digest #X+1 ->" link or append nav.
-    # Simplest: leave the file alone (jekyll-seo-tag still works);
-    # users can navigate via the archive index. This avoids fragile
-    # regex edits on stale files.
-  }
-}
-
 # ---- Refresh homepage and archive index --------------------
-# Read the registry we just updated -- it carries full metadata
-# (dates, post counts, year) that list_digests() does not.
+# Registry was already updated above; read it back for the landing page.
 digests_registry <- read_digests_registry(data_path)
 
 landing_markdown <- paste0(
@@ -1830,7 +1846,8 @@ write.csv2(handles_df, handles_path, row.names = FALSE)
 save(feed, file = file.path(feeds_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
 
 cat("\n--- done ---\n")
-cat("Digest #",    X,             "\n")
+cat("Digest   :   digest-", slug, " (#", X, ")\n", sep = "")
+cat("Dates    :   ", format(start_date, "%B %d, %Y"), " to ", format(end_date, "%B %d, %Y"), "\n", sep = "")
 cat("Homepage :   index.md\n")
 cat("Digest   :  ", archive_path,  "\n")
 cat("Archive  :   archives/index.md\n")
