@@ -677,73 +677,197 @@ WRAPUP_PARA3_TAGS <- c("jobs", "events", "book", "opinion")
 WRAPUP_PARA2_TAGS <- c("methods", "modelling", "remote-sensing",
                        "citizen-science", "synthesis", "data")
 
-# Assign a post to its paragraph (1, 2, or 3) based on tags.
-wrapup_assign_para <- function(tags) {
-  if (length(tags) == 0) return(1L)
-  if (any(tags %in% WRAPUP_PARA3_TAGS))   return(3L)
-  if (tags[1]  %in% WRAPUP_PARA2_TAGS)    return(2L)
+# Text/title keyword fallback for paragraph 3. The LLM tagger sometimes misses
+# the events/jobs/book/opinion tag (e.g. CESABINAR webinar posts tagged only as
+# 'tropical-forest, traits', Funk Biogeography Seminar tagged only as
+# 'macroecology', starter-pack announcement tagged only as 'macroecology'). When
+# any of these phrases appears in the post text or title, the post is routed to
+# paragraph 3 regardless of its tags. Generic across future digests.
+WRAPUP_PARA3_PATTERNS <- paste(c(
+  # --- Events ---
+  "\\bwebinars?\\b", "\\bseminars?\\b", "\\bworkshops?\\b",
+  "\\bsymposium\\b", "\\bsymposia\\b",
+  "\\bcolloquium\\b", "\\bcolloquia\\b",
+  "\\bconferences?\\b",
+  "\\bfield course\\b", "\\b(summer|winter|spring|autumn) school\\b",
+  "\\b(short|training) course\\b",
+  "\\bsave the date\\b",
+  "\\bregister (now|here|today|via|at|by|for|online)\\b",
+  "\\bregistration (is )?open\\b",
+  "\\bcall for (applications|abstracts|papers|proposals|talks|posters|sessions|contributions)\\b",
+  "\\bjoin us .*(for|on)\\b",
+  # --- Jobs ---
+  "\\bphd (position|opportunit|vacancy|advert|fellowship|opening)",
+  "\\bpostdoc(toral)? (position|opportunit|vacancy|advert|fellowship|opening|research)",
+  "\\b(faculty|research|assistant professor|associate professor|lecturer|professor) (position|vacancy|opening|opportunity)",
+  "\\bjob (advert|opening|opportunit|posting|vacancy)",
+  "\\b(we are|we're) (hiring|recruiting)\\b",
+  "\\bapply by\\b", "\\bapplication deadline\\b",
+  "\\b(open|new) position\\b",
+  # --- Community / announcements ---
+  "\\bstarter pack\\b",
+  "\\bbook signing\\b", "\\bbook launch\\b"
+), collapse = "|")
+
+# Assign a post to its paragraph (1, 2, or 3).
+# Order: tag-based section 3 -> text-keyword section 3 -> section-2 primary tag -> section 1.
+wrapup_assign_para <- function(tags, text = "", title = "") {
+  if (length(tags) > 0 && any(tags %in% WRAPUP_PARA3_TAGS)) return(3L)
+  combined <- tolower(paste(title %||% "", text %||% ""))
+  if (nzchar(trimws(combined)) &&
+      grepl(WRAPUP_PARA3_PATTERNS, combined, perl = TRUE)) return(3L)
+  if (length(tags) > 0 && tags[1] %in% WRAPUP_PARA2_TAGS) return(2L)
   1L
+}
+
+# ---- Section-1 thematic clustering -------------------------
+# Affinity groups used to cluster paragraph-1 posts before the LLM
+# call. Each named entry maps a human-readable cluster label to the
+# set of tags that belong to that theme. Posts whose tags match the
+# same group are grouped together in the prose; orphans (size-1
+# clusters and untagged posts) are listed by R in a separator-
+# delimited "Complementing these:" tail at the end of paragraph 1.
+WRAPUP_AFFINITY_GROUPS <- list(
+  # Ecosystem-anchored clusters (most specific first)
+  "marine systems"          = c("coral-reef", "open-ocean", "coastal", "marine", "fish"),
+  "freshwater systems"      = c("rivers-streams", "lakes", "wetlands", "freshwater"),
+  "forest ecosystems"       = c("tropical-forest", "temperate-forest", "boreal"),
+  "open terrestrial"        = c("grassland-savanna", "shrubland", "desert-dryland"),
+  "mountains and polar"     = c("alpine-mountain", "tundra-arctic"),
+  "urban and soil"          = c("urban", "soil"),
+  # Topic-anchored clusters (used when no specific ecosystem dominates)
+  "climate change"          = c("climate"),
+  "conservation and policy" = c("conservation", "policy", "ecosystem-services"),
+  "evolution and genetics"  = c("evolution", "genetics"),
+  "interactions and movement" = c("networks", "movement", "disease"),
+  "traits and macroecology" = c("traits", "macroecology"),
+  "biogeochemistry"         = c("biogeochemistry"),
+  "invasive species"        = c("invasives"),
+  "microbes and fungi"      = c("microbiome", "fungi"),
+  "pollinators"             = c("pollinator"),
+  "birds"                   = c("birds"),
+  "plants"                  = c("plants"),
+  "animals"                 = c("animals")
+)
+
+# Score-based cluster assignment: a post is placed in the affinity
+# group with the strongest signal in its tag vector. Earlier tags
+# (more specific, ranked higher by the classifier) count more, and a
+# group with multiple matching tags wins over a group with one.
+wrapup_cluster_post <- function(tags) {
+  if (length(tags) == 0) return("other")
+  best <- "other"; best_score <- 0
+  for (gname in names(WRAPUP_AFFINITY_GROUPS)) {
+    gtags <- WRAPUP_AFFINITY_GROUPS[[gname]]
+    matches <- which(tags %in% gtags)
+    if (length(matches) > 0) {
+      score <- sum(1 / matches) + 0.5 * length(matches)
+      if (score > best_score) {
+        best_score <- score; best <- gname
+      }
+    }
+  }
+  best
+}
+
+# Short, meaningful link label for the "Complementing these:" tail.
+# Built from the paper title (preferred) or the post text. Drops
+# emoji, URLs, leading [bracketed] prefixes, generic openers, and
+# trailing stop-words. Capped at 3 words so the tail reads as a row
+# of concise chips rather than a wall of long phrases.
+wrapup_link_label <- function(p) {
+  src <- if (!is.null(p$title) && nzchar(p$title)) p$title else (p$text %||% "")
+  if (!nzchar(src)) return(paste0("post ", p$num))
+  s <- src
+  # Strip leading bracketed prefixes like "[FRB-CESAB]" or "[Webinar]".
+  s <- gsub("^\\s*(\\[[^\\]]*\\]\\s*)+", "", s)
+  s <- gsub("https?://\\S+", "", s)
+  s <- gsub("[@#][[:alnum:]_.-]+", "", s)
+  # Strip emoji and most pictographic symbols (best-effort, PCRE).
+  s <- gsub("[\\p{So}\\p{Sk}\\p{Cs}\\p{Cn}]", "", s, perl = TRUE)
+  s <- gsub("\\s+", " ", trimws(s))
+  s <- sub(paste0("^(Webinar|Seminar|Workshop|Conference|Symposium|Colloquium|",
+                  "PhD position|Postdoctoral position|Postdoc|New R package|",
+                  "Call for proposals|Call for applications|New paper|New study|Paper)",
+                  "\\s*:?\\s*"),
+           "", s, ignore.case = TRUE)
+  s <- sub("^in\\s+", "", s, ignore.case = TRUE)
+  s <- sub("^(A|An|The|Our|My|New|Just|Now|Global)\\s+", "", s, ignore.case = TRUE)
+  words <- strsplit(s, "\\s+")[[1]]
+  words <- words[nzchar(words)]
+  if (length(words) == 0) return(paste0("post ", p$num))
+  # Cap at 3 words (link text must be terse).
+  words <- head(words, 3)
+  stop_tail <- c("of","the","and","for","in","on","to","with","a","an",
+                 "by","as","at","from","via","or","that","this","its",
+                 "is","are","was","were","be","been")
+  while (length(words) > 1 &&
+         tolower(gsub("[[:punct:]]", "", words[length(words)])) %in% stop_tail) {
+    words <- words[-length(words)]
+  }
+  label <- paste(words, collapse = " ")
+  label <- gsub("[[:punct:]]+$", "", label)
+  if (nchar(label) > 40) label <- paste0(substr(label, 1, 37), "...")
+  label
 }
 
 WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
   "You write the opening summary for a fortnightly digest of the Bluesky Global Ecology feed,\n",
-  "read by an academic audience with strong expertise in ecology, biodiversity and environmental\n",
-  "science. Readers are researchers, practitioners and advanced students who follow primary\n",
-  "literature closely. Write accordingly: be specific, substantive and precise. Do not explain\n",
-  "basic concepts. Name taxa, methods, ecosystems and geographic contexts where they add meaning.\n",
-  "Highlight what is genuinely novel or significant in each contribution.\n",
+  "read by an academic audience expert in ecology, biodiversity and environmental science.\n",
+  "Be specific and precise: name taxa, ecosystems, methods, regions. Avoid hype and vague\n",
+  "qualifiers ('interesting', 'novel approach', 'wide range of topics').\n",
   "\n",
-  "Tone: authoritative and collegial, like a Research Highlights note in a leading ecology\n",
-  "journal. No hype, no journalistic hooks, no filler. Every clause must carry information.\n",
-  "Avoid vague qualifiers ('interesting', 'important', 'fascinating', 'novel approach').\n",
-  "Prefer concrete claims: taxa, biomes, methods, findings, geographic scope.\n",
+  "Tone: collegial Research Highlights style. Use SHORT, CLEAR sentences with frequent\n",
+  "breaks. The result must read airy and scannable, never dense.\n",
   "\n",
-  "The user message presents posts in THREE pre-labelled sections.\n",
-  "You must write EXACTLY THREE paragraphs in the same order, one paragraph per section.\n",
-  "Every post in a section must appear as a hyperlink in the corresponding paragraph.\n",
-  "Do NOT move a post from its assigned section to a different paragraph.\n",
+  "Structure: write EXACTLY THREE paragraphs in order. Every paragraph MUST begin with one\n",
+  "short, simple, general sentence (about 6 to 14 words) that frames the section's theme.\n",
+  "The opener is a plain topic sentence: no flourishes, no listing, no hyperlinks. Avoid\n",
+  "hollow phrasing ('a striking convergence', 'contributions span'). Just state the theme.\n",
   "\n",
-  "PARAGRAPH 1 — Scientific themes (covers SECTION 1 posts only).\n",
-  "Start with exactly the words 'In this digest,' followed by ONE general sentence capturing\n",
-  "what is distinctive or prominent about this fortnight's content — something specific to\n",
-  "these posts, not a generic statement about the field.\n",
-  "Do NOT list posts or use hyperlinks in this opening sentence.\n",
-  "Do NOT state the obvious (readers know this is a global ecology digest).\n",
-  "Do NOT use hollow phrases like 'a wide range of topics', 'macroecological patterns',\n",
-  "'contributions span multiple ecosystems', or similar. Instead, name what is genuinely\n",
-  "prominent or striking in this issue: a recurring question, a convergence of themes,\n",
-  "an unusual breadth or depth, a timely topic. One concrete, specific sentence.\n",
-  "Then synthesise the Section 1 posts into flowing prose, grouping them by scientific\n",
-  "affinity — shared ecosystem, taxon, process, or question. Within each cluster, cover\n",
-  "the question, system or taxon, and key finding or advance. Move fluidly between clusters.\n",
+  "PARAGRAPH 1 -- Scientific themes (covers SECTION 1 posts).\n",
+  "SECTION 1 has been pre-clustered by thematic affinity (shared ecosystem, taxon, or\n",
+  "process). After the opener, devote one or at most two short sentences to each cluster,\n",
+  "weaving in the hyperlinks for the posts in that cluster. Move from one cluster to the\n",
+  "next with a brief transition. Do NOT mention or hyperlink any post that is not listed\n",
+  "in a cluster you have been given: R will append a separator-delimited list (starting\n",
+  "with the exact words 'Complementing these:') for the remaining posts. NEVER write the\n",
+  "phrase 'Complementing these' yourself.\n",
   "\n",
-  "PARAGRAPH 2 — Methods, data and modelling (covers SECTION 2 posts only).\n",
-  "Cover the Section 2 posts: new R packages, statistical frameworks, remote-sensing\n",
-  "workflows, open datasets, citizen-science tools, synthesis platforms.\n",
-  "Be specific about what each tool does and for whom it is useful.\n",
-  "If Section 2 is empty, write a single sentence saying so.\n",
+  "PARAGRAPH 2 -- Methods, data and modelling (covers SECTION 2 posts).\n",
+  "After the opener, give one short, specific sentence per Section 2 post, each containing\n",
+  "exactly one hyperlink. Name what the tool, dataset or framework does. If SECTION 2 is\n",
+  "empty, write only the opener (one short sentence noting the absence).\n",
   "\n",
-  "PARAGRAPH 3 — Community, jobs and events (covers SECTION 3 posts only).\n",
-  "Briefly cover the Section 3 posts: positions, seminars, workshops, webinars, book\n",
-  "releases, or other non-primary-research content. One sentence per item is sufficient.\n",
-  "If Section 3 is empty, write a single sentence saying so.\n",
+  "PARAGRAPH 3 -- Community, jobs and events (covers SECTION 3 posts).\n",
+  "After the opener, one short sentence per Section 3 item, each with exactly one\n",
+  "hyperlink. If SECTION 3 is empty, write only the opener.\n",
   "\n",
   "Rules applying to all three paragraphs:\n",
-  "- Every post must appear as a markdown hyperlink exactly once, in its assigned paragraph.\n",
-  "- The link anchor is always #post-N (e.g. #post-3, #post-12).\n",
-  "- The link TEXT must be a short meaningful expression drawn from the post content:\n",
-  "  a taxon, process, method, finding, or concept. Examples:\n",
-  "  [Posidonia oceanica](#post-2), [hespdiv R package](#post-3), [CESABINAR](#post-18).\n",
+  "- Every post in a featured cluster (SECTION 1), SECTION 2 or SECTION 3 MUST appear as a\n",
+  "  markdown hyperlink exactly once, in its assigned paragraph.\n",
+  "- Link anchor format: #post-N (e.g. #post-3, #post-12).\n",
+  "- Link TEXT must be 1 to 3 words ONLY. Pick the most distinctive content words\n",
+  "  from the post: the focal taxon, system, method, dataset name, finding, or\n",
+  "  concept. Drop generic words ('global', 'novel', 'new'), filler ('the role\n",
+  "  of', 'a study on'), articles, and verbs. Prefer nouns and proper names.\n",
+  "  Good: [Posidonia oceanica](#post-2), [hespdiv package](#post-3),\n",
+  "  [CESABINAR](#post-18), [shrubification](#post-41), [metaweb framework](#post-20),\n",
+  "  [eDNA](#post-11), [urban boldness](#post-24), [climate corridors](#post-7).\n",
+  "  Bad (too long): [Posidonia oceanica mass flowering](#post-2),\n",
+  "  [phylogenetic models of past biogeography](#post-40),\n",
+  "  [Global Ecology starter pack Vol. 3](#post-32).\n",
+  "- NEVER more than 3 words in a link. NEVER use a full paper title or full phrase.\n",
   "- NEVER use 'Post N', '#post-N', a bare number, or 'post' as the link text.\n",
-  "- NEVER write bare anchors like (#post-N) outside of a markdown link.\n",
+  "- NEVER write bare anchors like (#post-N) outside a markdown link.\n",
   "- NEVER mention journal names, publisher names, or venue names.\n",
-  "- NEVER use the em dash. Use commas or short sentences instead.\n",
-  "- NEVER use --.\n",
-  "- Never use 'this week': the digest covers two weeks.\n",
+  "- NEVER use the em dash, the en dash, or double hyphens. Use commas or short sentences.\n",
+  "- NEVER use 'this week': the digest covers two weeks.\n",
   "- No bullet points, no sub-headers, no line breaks within a paragraph.\n",
+  "- Use plain prose. Each paragraph is one block.\n",
   "- {WORD_LIMIT_RULE}\n",
-  "- Do NOT write a fourth paragraph. Do NOT add any closing sentence.\n",
-  "- End the third paragraph with a period.\n"
+  "- Do NOT write a fourth paragraph. Do NOT add any closing sentence (R appends one).\n",
+  "- End paragraph 3 with a period.\n"
 )
 
 # Fixed closing sentence appended by R (never written by the LLM).
@@ -753,6 +877,17 @@ WRAPUP_CLOSING <- paste0(
 )
 
 # ---- LLM wrap-up generator ---------------------------------
+# Three-paragraph academic summary of the digest.
+#
+# Section 1 posts are pre-clustered by thematic affinity on the R
+# side: clusters of >=2 posts become "featured" (the LLM writes
+# narrative prose about them), size-1 clusters and tag-less posts
+# become "tail orphans" (R appends them as a separator-delimited
+# "Complementing these: ..." list at the end of paragraph 1). This
+# keeps the prose airy while still listing every post.
+#
+# Section 2 and Section 3 are handled by the LLM with one short
+# sentence per post after a brief opener.
 generate_wrapup_llm <- function(post_meta) {
   if (length(post_meta) == 0) return(NULL)
   if (!requireNamespace("ellmer", quietly = TRUE)) install.packages("ellmer")
@@ -760,14 +895,64 @@ generate_wrapup_llm <- function(post_meta) {
   n_posts <- length(post_meta)
   cat("Generating wrap-up for", n_posts, "posts...\n")
 
-  word_limit <- if (n_posts < 20L) 150L else if (n_posts < 35L) 200L else 350L
+  # ---- Bucket posts into paragraphs 1 / 2 / 3 -----------------
+  para_assignments <- vapply(post_meta, function(p) {
+    wrapup_assign_para(p$tags, p$text %||% "", p$title %||% "")
+  }, integer(1))
+  para1_idx <- which(para_assignments == 1L)
+  para2_idx <- which(para_assignments == 2L)
+  para3_idx <- which(para_assignments == 3L)
+
+  # ---- Cluster paragraph-1 posts by thematic affinity ---------
+  para1_clusters <- list()
+  if (length(para1_idx) > 0) {
+    cluster_names <- vapply(para1_idx,
+      function(i) wrapup_cluster_post(post_meta[[i]]$tags), character(1))
+    para1_clusters <- split(para1_idx, cluster_names)
+    sizes <- vapply(para1_clusters, length, integer(1))
+    # Sort clusters by size descending (most prominent themes first),
+    # then alphabetically to keep stable output across runs.
+    para1_clusters <- para1_clusters[order(-sizes, names(para1_clusters))]
+  }
+
+  # "other" (untagged / no match) always routes to tail regardless of size.
+  other_idx <- integer(0)
+  if ("other" %in% names(para1_clusters)) {
+    other_idx <- para1_clusters[["other"]]
+    para1_clusters[["other"]] <- NULL
+  }
+
+  featured_clusters <- Filter(function(x) length(x) >= 2, para1_clusters)
+  orphan_clusters   <- Filter(function(x) length(x) == 1, para1_clusters)
+  tail_idx <- c(unlist(orphan_clusters, use.names = FALSE), other_idx)
+  if (is.null(tail_idx)) tail_idx <- integer(0)
+
+  # The LLM must hyperlink: featured Section-1 posts + Section 2 + Section 3.
+  # Tail-orphan posts are hyperlinked by R, not the LLM.
+  llm_idx <- c(unlist(featured_clusters, use.names = FALSE), para2_idx, para3_idx)
+  llm_required_nums <- if (length(llm_idx) > 0) {
+    vapply(post_meta[llm_idx], `[[`, integer(1), "num")
+  } else integer(0)
+
+  cat("  Section 1: ", length(para1_idx), " posts -> ",
+      length(featured_clusters), " featured cluster(s) (",
+      length(unlist(featured_clusters, use.names = FALSE)), " posts) + ",
+      length(tail_idx), " tail orphan(s)\n", sep = "")
+  cat("  Section 2: ", length(para2_idx), " posts\n", sep = "")
+  cat("  Section 3: ", length(para3_idx), " posts\n", sep = "")
+
+  # ---- Word limit (covers only LLM-written content) ------------
+  n_llm <- length(llm_idx)
+  word_limit <- if (n_llm < 12L) 120L else if (n_llm < 25L) 150L else 225L
   word_limit_rule <- paste0(
-    "The three paragraphs combined must not exceed ", word_limit, " words in total."
+    "Total length across the three paragraphs MUST NOT exceed ", word_limit, " words. ",
+    "R will append a separator-delimited 'Complementing these:' list to paragraph 1 ",
+    "(covering ", length(tail_idx), " additional post(s)), so do not write that list yourself."
   )
   system_prompt <- gsub("{WORD_LIMIT_RULE}", word_limit_rule,
                         WRAPUP_LLM_SYSTEM_PROMPT, fixed = TRUE)
 
-  # ---- Build per-post brief (title, author, tags, excerpt) -----
+  # ---- Per-post brief (title, author, tags, excerpt) ----------
   make_post_brief <- function(p) {
     title_str  <- if (!is.null(p$title)       && nzchar(p$title))       p$title             else "(no title)"
     author_str <- if (!is.null(p$author_name) && nzchar(p$author_name)) p$author_name       else
@@ -785,54 +970,95 @@ generate_wrapup_llm <- function(post_meta) {
       if (nzchar(txt)) paste0("  Text   : ", txt, "\n") else ""
     )
   }
-
   briefs <- vapply(post_meta, make_post_brief, character(1))
 
-  # ---- Pre-bucket posts into paragraphs 1 / 2 / 3 -------------
-  para_assignments <- vapply(post_meta, function(p) wrapup_assign_para(p$tags), integer(1))
+  # ---- Build the user message ---------------------------------
+  make_featured_section1 <- function() {
+    if (length(featured_clusters) == 0) {
+      return(paste0(
+        "=== SECTION 1 -- Scientific themes (0 featured posts) ===\n",
+        "(No clusters of 2 or more posts. R will list every Section-1 post in the\n",
+        "tail. For paragraph 1, write ONLY the short opener sentence and nothing else.)\n"
+      ))
+    }
+    total <- sum(vapply(featured_clusters, length, integer(1)))
+    head <- paste0(
+      "=== SECTION 1 -- Scientific themes (", total, " featured posts in ",
+      length(featured_clusters), " cluster",
+      if (length(featured_clusters) != 1) "s" else "", ") ===\n",
+      "Cover EVERY post in EVERY cluster below. Within a cluster, weave the posts\n",
+      "together. Do NOT mention any post outside these clusters."
+    )
+    bodies <- character()
+    for (i in seq_along(featured_clusters)) {
+      cname <- names(featured_clusters)[i]
+      idx   <- featured_clusters[[i]]
+      bodies <- c(bodies, paste0(
+        "\n-- Cluster ", i, ": ", cname, " (", length(idx), " posts) --\n",
+        paste(briefs[idx], collapse = "\n")
+      ))
+    }
+    paste0(head, paste(bodies, collapse = ""))
+  }
 
-  make_section <- function(para_num, label) {
-    idx <- which(para_assignments == para_num)
+  make_simple_section <- function(para_num, label, idx) {
     if (length(idx) == 0) {
-      return(paste0("=== SECTION ", para_num, " — ", label, " (0 posts) ===\n",
-                    "(no posts assigned to this section)\n"))
+      return(paste0("=== SECTION ", para_num, " -- ", label, " (0 posts) ===\n",
+                    "(No posts in this section. Write ONLY a single short opener\n",
+                    "sentence noting the absence for this paragraph.)\n"))
     }
     paste0(
-      "=== SECTION ", para_num, " — ", label,
+      "=== SECTION ", para_num, " -- ", label,
       " (", length(idx), " post", if (length(idx) != 1) "s" else "", ") ===\n",
       paste(briefs[idx], collapse = "\n")
     )
   }
 
   sections <- paste(
-    make_section(1L, "Scientific themes"),
-    make_section(2L, "Methods, data and modelling"),
-    make_section(3L, "Community, jobs and events"),
+    make_featured_section1(),
+    make_simple_section(2L, "Methods, data and modelling", para2_idx),
+    make_simple_section(3L, "Community, jobs and events", para3_idx),
     sep = "\n"
   )
 
   user_msg <- paste0(
-    "Below are the ", n_posts, " posts in this digest, pre-grouped into three sections\n",
-    "matching the three paragraphs. Write each post's hyperlink in the paragraph\n",
-    "corresponding to its section — do not move posts across sections.\n\n",
+    "Below are the digest posts, pre-bucketed into three sections.\n",
+    "Section 1 has been further pre-clustered by thematic affinity.\n\n",
+    "Write three paragraphs as instructed by the system prompt. Each paragraph MUST\n",
+    "open with one short, simple general sentence (about 6 to 14 words) introducing\n",
+    "its theme, before covering the posts.\n\n",
+    "R will append a separator-delimited 'Complementing these:' list to paragraph 1\n",
+    "for the posts not in your clusters. Do NOT write that list yourself.\n\n",
     sections,
-    "\nWrite the three-paragraph academic summary now."
+    "\nWrite the three-paragraph summary now."
   )
+
+  # ---- Build the R-side "Complementing these:" tail line ------
+  build_tail_line <- function() {
+    if (length(tail_idx) == 0) return("")
+    links <- vapply(tail_idx, function(i) {
+      p <- post_meta[[i]]
+      label <- wrapup_link_label(p)
+      paste0("[", label, "](#post-", p$num, ")")
+    }, character(1))
+    paste0("Complementing these: ", paste(links, collapse = " &middot; "), ".")
+  }
+  tail_line <- build_tail_line()
 
   # ---- Helpers -------------------------------------------------
   clean_raw <- function(x) {
     x <- gsub("—", ",", x, fixed = TRUE)   # em dash
     x <- gsub("–", ",", x, fixed = TRUE)   # en dash
-    x <- gsub("--",     ",", x, fixed = TRUE)
+    x <- gsub("--",      ",", x, fixed = TRUE)
     trimws(x)
   }
 
-  find_missing <- function(text, all_nums) {
+  find_missing <- function(text, nums) {
     found <- suppressWarnings(
       as.integer(unique(regmatches(
         text, gregexpr("(?<=#post-)\\d+", text, perl = TRUE))[[1]]))
     )
-    sort(setdiff(all_nums, found[!is.na(found)]))
+    sort(setdiff(nums, found[!is.na(found)]))
   }
 
   all_nums <- vapply(post_meta, `[[`, integer(1), "num")
@@ -848,47 +1074,83 @@ generate_wrapup_llm <- function(post_meta) {
     raw <- clean_raw(as.character(chat$chat(user_msg)))
     if (nchar(raw) < 20) return(NULL)
 
-    # ---- Verification + targeted correction (max 2 attempts) ---
-    for (attempt in 1:2) {
-      missing <- find_missing(raw, all_nums)
+    # ---- Verification + targeted correction --------------------
+    # We only require the LLM to link the posts it was assigned; the
+    # tail orphans are linked by R below.
+    for (attempt in 1:3) {
+      missing <- find_missing(raw, llm_required_nums)
       if (length(missing) == 0) break
 
       cat("Wrap-up missing", length(missing), "post(s):",
-          paste(missing, collapse = ", "), "— asking LLM to fix...\n")
+          paste(missing, collapse = ", "), "-- asking LLM to fix (attempt", attempt, ")...\n")
 
-      # For each missing post, tell the LLM exactly which paragraph it belongs to.
       fix_items <- vapply(missing, function(m) {
-        idx  <- which(vapply(post_meta, function(p) p$num == m, logical(1)))
-        para <- para_assignments[idx]
-        para_label <- switch(as.character(para),
-          "1" = "PARAGRAPH 1 (scientific themes)",
-          "2" = "PARAGRAPH 2 (methods, data and modelling)",
-          "3" = "PARAGRAPH 3 (community, jobs and events)"
-        )
-        paste0("- POST ", m, " must appear in ", para_label, ".\n",
-               "  Brief: ", trimws(briefs[idx]))
+        idx <- which(vapply(post_meta, function(p) p$num == m, logical(1)))
+        para_label <- if (idx %in% para2_idx) {
+          "PARAGRAPH 2 (methods, data and modelling)"
+        } else if (idx %in% para3_idx) {
+          "PARAGRAPH 3 (community, jobs and events)"
+        } else {
+          which_cluster <- NA_character_
+          for (cn in names(featured_clusters)) {
+            if (idx %in% featured_clusters[[cn]]) { which_cluster <- cn; break }
+          }
+          paste0("PARAGRAPH 1 (cluster: ",
+                 if (is.na(which_cluster)) "scientific themes" else which_cluster, ")")
+        }
+        paste0("MISSING: POST ", m, " -- insert a hyperlink in ", para_label, ".\n",
+               trimws(briefs[idx]))
       }, character(1))
 
       fix_msg <- paste0(
-        "Your summary is missing a hyperlink to the following post(s).\n",
-        "Each line specifies the paragraph where the link must be inserted.\n",
-        "Do NOT move the post to a different paragraph.\n\n",
+        "REQUIRED CORRECTION: your summary is missing hyperlinks to ",
+        length(missing), " post(s).\n\n",
         paste(fix_items, collapse = "\n\n"),
-        "\n\nFor each missing post, insert a markdown hyperlink whose text is a\n",
-        "meaningful expression from the post content (taxon, method, finding) and\n",
-        "whose anchor is #post-N. Keep the three-paragraph structure intact.\n",
-        "Do not add a fourth paragraph. Return the complete revised summary."
+        "\n\nFor each missing post above:\n",
+        "1. Find the paragraph indicated.\n",
+        "2. Insert a markdown hyperlink [TEXT](#post-N) where TEXT is 1 to 3 words\n",
+        "   (a taxon, method, finding or concept). NEVER more than 3 words.\n",
+        "3. Do NOT use 'Post N' or a bare number as the link text.\n",
+        "4. Keep three paragraphs. Do not add a fourth. Do not exceed the word limit.\n",
+        "5. Do NOT write the phrase 'Complementing these' -- R appends that list.\n\n",
+        "Return the COMPLETE revised summary with ALL required posts linked."
       )
       raw <- clean_raw(as.character(chat$chat(fix_msg)))
     }
 
-    # ---- Final coverage report ---------------------------------
-    still_missing <- find_missing(raw, all_nums)
-    if (length(still_missing) > 0) {
-      warning("Wrap-up still missing post(s) after correction: ",
-              paste(still_missing, collapse = ", "))
+    # ---- Strip any accidental "Complementing these..." the LLM wrote ----
+    # The R-side tail is authoritative; we don't want duplicates. Only strip
+    # the phrase when it appears at a sentence boundary, and only up to the
+    # next sentence terminator, so legitimate prose elsewhere is preserved.
+    raw <- gsub("(^|[.!?]\\s+)complementing these[^.!?\n]*[.!?]?",
+                "\\1", raw, perl = TRUE, ignore.case = TRUE)
+    raw <- trimws(raw)
+
+    # ---- Splice the R-side tail into paragraph 1 ---------------
+    if (nzchar(tail_line)) {
+      paragraphs <- strsplit(raw, "\n\n+", perl = TRUE)[[1]]
+      if (length(paragraphs) >= 1) {
+        p1 <- trimws(paragraphs[1])
+        # Ensure paragraph 1 ends with sentence punctuation before we append.
+        if (!grepl("[.!?]\\s*$", p1)) p1 <- paste0(p1, ".")
+        paragraphs[1] <- paste0(p1, " ", tail_line)
+        raw <- paste(paragraphs, collapse = "\n\n")
+      } else {
+        # Degenerate case: LLM returned a single paragraph. Append anyway.
+        if (!grepl("[.!?]\\s*$", raw)) raw <- paste0(raw, ".")
+        raw <- paste0(raw, " ", tail_line)
+      }
+    }
+
+    # ---- Final coverage report across ALL posts -----------------
+    final_missing <- find_missing(raw, all_nums)
+    if (length(final_missing) > 0) {
+      warning("Wrap-up still missing post(s) after tail insertion: ",
+              paste(final_missing, collapse = ", "))
     } else {
-      cat("Wrap-up ok — all", n_posts, "posts referenced.\n")
+      cat("Wrap-up ok -- all ", n_posts, " posts referenced (",
+          length(llm_required_nums), " by LLM, ", length(tail_idx),
+          " in R-side tail).\n", sep = "")
     }
 
     paste0(raw, "\n\n", WRAPUP_CLOSING)
@@ -1548,14 +1810,23 @@ dir.create(feeds_dir,    showWarnings = FALSE, recursive = TRUE)
 X    <- CONFIG$digest_number %||% next_digest_number(archives_dir)
 slug <- digest_slug(end_date)
 
-# ---- Fetch feed --------------------------------------------
+# ---- Fetch feed (or load from snapshot cache) --------------
 if (!requireNamespace("bskyr",    quietly = TRUE)) install.packages("bskyr")
 if (!requireNamespace("xml2",     quietly = TRUE)) install.packages("xml2")
 if (!requireNamespace("curl",     quietly = TRUE)) install.packages("curl")
 
-feed <- bskyr::bs_get_feed(CONFIG$feed_uri, limit = CONFIG$feed_limit)
-feed <- feed[!sapply(feed$uri,   is.na),   ]
-feed <- feed[!sapply(feed$embed, is.null), ]
+feed_snapshot_path <- file.path(feeds_dir,
+                                paste0("feed_", strftime(end_date, "%V"), ".RData"))
+
+if (file.exists(feed_snapshot_path)) {
+  cat("Loading cached feed snapshot:", basename(feed_snapshot_path), "\n")
+  load(feed_snapshot_path)   # restores the 'feed' variable
+} else {
+  cat("Fetching feed from Bluesky...\n")
+  feed <- bskyr::bs_get_feed(CONFIG$feed_uri, limit = CONFIG$feed_limit)
+  feed <- feed[!sapply(feed$uri,   is.na),   ]
+  feed <- feed[!sapply(feed$embed, is.null), ]
+}
 
 posts       <- if (is.list(feed) && "feed" %in% names(feed)) feed$feed else feed
 handles_all <- vapply(posts$author, \(a) a$handle, character(1))
@@ -1897,8 +2168,11 @@ handles_df   <- data.frame(handles = kept_handles)
 handles_path <- file.path(dirname(here::here()), "postdm", "global_digest.csv")
 write.csv2(handles_df, handles_path, row.names = FALSE)
 
-# Save raw feed snapshot (backup only, never read back by the pipeline)
-save(feed, file = file.path(feeds_dir, paste0("feed_", strftime(end_date, "%V"), ".RData")))
+# Save raw feed snapshot if not already cached.
+if (!file.exists(feed_snapshot_path)) {
+  save(feed, file = feed_snapshot_path)
+  cat("Feed snapshot saved:", basename(feed_snapshot_path), "\n")
+}
 
 cat("\n--- done ---\n")
 cat("Digest   :   digest-", slug, " (#", X, ")\n", sep = "")

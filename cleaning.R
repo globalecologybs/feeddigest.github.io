@@ -72,28 +72,8 @@ if (MODE == "last") {
     cat("Registry updated:", length(reg) - length(keep), "entry removed.\n")
   }
 
-  # 3. Remove matching feeds RData snapshot.
-  # Slug is either YYYY-WW (new) or a plain number (legacy).
-  is_new_slug <- grepl("^\\d{4}-\\d+$", last_slug)
-  if (is_new_slug) {
-    year_part <- sub("-\\d+$",   "", last_slug)   # e.g. "2026"
-    week_part <- sub("^\\d{4}-", "", last_slug)   # e.g. "22"
-    feed_file <- file.path(archives_dir, "feeds", year_part,
-                           paste0("feed_", week_part, ".RData"))
-    remove_file(feed_file)
-  } else {
-    # Legacy slug (plain number): scan all year folders for any matching snapshot.
-    feeds_root <- file.path(archives_dir, "feeds")
-    if (dir.exists(feeds_root)) {
-      rdata_files <- list.files(feeds_root, pattern = "\\.RData$",
-                                recursive = TRUE, full.names = TRUE)
-      if (length(rdata_files) > 0) {
-        cat("Legacy slug — cannot match feed snapshot automatically.\n")
-        cat("Feed snapshots present (delete manually if needed):\n")
-        for (f in rdata_files) cat(" ", f, "\n")
-      }
-    }
-  }
+  # 3. Feed snapshot is intentionally kept — website.R will reload it
+  #    on the next run instead of re-fetching from Bluesky.
 
   # 4. Delete regenerated pages (will be rebuilt correctly on next run).
   remove_file(here("index.md"))
