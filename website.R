@@ -720,6 +720,118 @@ wrapup_assign_para <- function(tags, text = "", title = "") {
   1L
 }
 
+# ---- Past-event filter -------------------------------------
+# Drop event/job announcements whose date has already passed before
+# the digest is generated. Posts about research papers, even when they
+# mention historical conferences (e.g. "ESA 2024"), are NOT filtered
+# because they need to (a) trigger the WRAPUP_PARA3_PATTERNS regex AND
+# (b) have an extractable date that falls within a recent window of
+# ref_date. Pure year mentions ("2024") don't match the date patterns.
+
+WRAPUP_MONTH_MAP <- c(
+  january = 1L, february = 2L, march = 3L, april = 4L,
+  may = 5L, june = 6L, july = 7L, august = 8L,
+  september = 9L, october = 10L, november = 11L, december = 12L,
+  jan = 1L, feb = 2L, mar = 3L, apr = 4L, jun = 6L,
+  jul = 7L, aug = 8L, sep = 9L, sept = 9L, oct = 10L, nov = 11L, dec = 12L
+)
+
+# How far back to look when deciding whether an extracted past date is
+# an active "this event just happened" signal vs an old historical
+# reference. Posts run every two weeks, events are usually announced
+# 0-3 months ahead, so 180 days is generous but still well clear of
+# stale paper references to old conferences.
+WRAPUP_PAST_EVENT_WINDOW_DAYS <- 180L
+
+# Extract the most plausible event date from a post text.
+# Recognises three formats:
+#   1. ISO YYYY-MM-DD                  (e.g. 2026-05-28)
+#   2. "<Month> <Day>(suffix)?[, <Year>]?"    (e.g. May 27, 2026 / May 27th)
+#   3. "<Day>(suffix)? [of] <Month>[<Year>]?" (e.g. 28th of May 2026)
+# If multiple dates appear, prefers the earliest FUTURE date (the
+# "next" event); otherwise returns the latest past date.
+# Returns Date or NA.
+extract_event_date <- function(text, ref_date = Sys.Date()) {
+  if (is.null(text) || !nzchar(text)) return(as.Date(NA))
+  s <- tolower(text)
+  cur_year <- as.integer(format(ref_date, "%Y"))
+
+  safe_date <- function(y, m, d) {
+    if (is.na(y) || is.na(m) || is.na(d)) return(as.Date(NA))
+    if (m < 1L || m > 12L || d < 1L || d > 31L) return(as.Date(NA))
+    safe(as.Date(sprintf("%04d-%02d-%02d", y, m, d)), as.Date(NA))
+  }
+  month_to_num <- function(name) {
+    v <- WRAPUP_MONTH_MAP[tolower(name)]
+    if (length(v) == 0L || is.na(v)) NA_integer_ else as.integer(v)
+  }
+
+  collected <- list()
+  add <- function(d) {
+    if (!is.na(d)) collected[[length(collected) + 1L]] <<- d
+  }
+
+  # --- Pattern 1: ISO YYYY-MM-DD ---
+  m1 <- regmatches(s, gregexpr("\\b\\d{4}-\\d{1,2}-\\d{1,2}\\b", s, perl = TRUE))[[1]]
+  for (md in m1) {
+    parts <- as.integer(strsplit(md, "-")[[1]])
+    add(safe_date(parts[1], parts[2], parts[3]))
+  }
+
+  month_alt <- paste(names(WRAPUP_MONTH_MAP), collapse = "|")
+
+  # --- Pattern 2: "<Month> <Day>(suffix)?[, <Year>]?" ---
+  # The \b after the day prevents matching the "20" inside "May 2024".
+  pat2 <- paste0("\\b(", month_alt,
+                 ")\\s+(\\d{1,2})(?:st|nd|rd|th)?\\b(?:\\s*,?\\s*(\\d{4}))?")
+  m2_all <- regmatches(s, gregexpr(pat2, s, perl = TRUE))[[1]]
+  for (md in m2_all) {
+    parts <- regmatches(md, regexec(pat2, md, perl = TRUE))[[1]]
+    if (length(parts) >= 3) {
+      mo  <- month_to_num(parts[2])
+      day <- as.integer(parts[3])
+      yr  <- if (length(parts) >= 4 && nzchar(parts[4])) as.integer(parts[4]) else cur_year
+      add(safe_date(yr, mo, day))
+    }
+  }
+
+  # --- Pattern 3: "<Day>(suffix)? [of] <Month>[ <Year>]?" ---
+  pat3 <- paste0("\\b(\\d{1,2})(?:st|nd|rd|th)?\\s+(?:of\\s+)?(",
+                 month_alt, ")(?:\\s+(\\d{4}))?")
+  m3_all <- regmatches(s, gregexpr(pat3, s, perl = TRUE))[[1]]
+  for (md in m3_all) {
+    parts <- regmatches(md, regexec(pat3, md, perl = TRUE))[[1]]
+    if (length(parts) >= 3) {
+      day <- as.integer(parts[2])
+      mo  <- month_to_num(parts[3])
+      yr  <- if (length(parts) >= 4 && nzchar(parts[4])) as.integer(parts[4]) else cur_year
+      add(safe_date(yr, mo, day))
+    }
+  }
+
+  if (length(collected) == 0L) return(as.Date(NA))
+  candidates <- do.call(c, collected)
+  future <- candidates[candidates >= ref_date]
+  if (length(future) > 0L) return(min(future))
+  max(candidates)
+}
+
+# TRUE if the post is an event/job/deadline announcement whose date
+# has passed (within WRAPUP_PAST_EVENT_WINDOW_DAYS of ref_date) — i.e.
+# the post should be dropped from the digest. Requires BOTH a section-3
+# pattern match AND an extractable date in the recent past, so research
+# papers and dateless announcements are safe from accidental removal.
+is_past_event <- function(text, title = "", ref_date = Sys.Date()) {
+  combined <- tolower(paste(title %||% "", text %||% ""))
+  if (!nzchar(trimws(combined))) return(FALSE)
+  if (!grepl(WRAPUP_PARA3_PATTERNS, combined, perl = TRUE)) return(FALSE)
+  d <- extract_event_date(combined, ref_date)
+  if (is.na(d)) return(FALSE)
+  if (d >= ref_date) return(FALSE)
+  if (as.integer(ref_date - d) > WRAPUP_PAST_EVENT_WINDOW_DAYS) return(FALSE)
+  TRUE
+}
+
 # ---- Section-1 thematic clustering -------------------------
 # Affinity groups used to cluster paragraph-1 posts before the LLM
 # call. Each named entry maps a human-readable cluster label to the
@@ -833,6 +945,17 @@ WRAPUP_LLM_SYSTEM_PROMPT <- paste0(
   "in a cluster you have been given: R will append a separator-delimited list (starting\n",
   "with the exact words 'Complementing these:') for the remaining posts. NEVER write the\n",
   "phrase 'Complementing these' yourself.\n",
+  "\n",
+  "PARAGRAPH 1 PRIORITIES (different from paragraphs 2 and 3):\n",
+  "- Prose content: foreground the TAXA, ECOSYSTEMS, and KEY FINDINGS. Say what was\n",
+  "  studied (which species/group, which biome/region) and what was found. Do NOT\n",
+  "  foreground authors, methods, sample sizes, journals, or background context.\n",
+  "- Hyperlink text: prefer a TAXON or ECOSYSTEM as the link text wherever the post has\n",
+  "  one. Good paragraph-1 link text: [Posidonia oceanica], [alpine shrubs], [coral\n",
+  "  reefs], [boreal forest], [bumblebees], [Amazonian birds], [tropical trees],\n",
+  "  [tree diversity], [urban vertebrates]. Only fall back to a finding ([shrubification],\n",
+  "  [urban boldness]) or concept ([metaweb framework], [climate corridors]) when the\n",
+  "  post has no clearly focal taxon or ecosystem. Methods/datasets belong in paragraph 2.\n",
   "\n",
   "PARAGRAPH 2 -- Methods, data and modelling (covers SECTION 2 posts).\n",
   "After the opener, give one short, specific sentence per Section 2 post, each containing\n",
@@ -1917,6 +2040,15 @@ for (i in seq_len(cut_idx - 1L)) {
       return(list(status = "skip_short", handle = handle))
     }
 
+    # Drop event/job posts whose announced date has already passed
+    # before this digest goes out (end_date = the day it is generated).
+    # The check is conservative: it requires both an event/job/deadline
+    # pattern match AND an extractable date in the recent past, so
+    # research papers are not affected.
+    if (is_past_event(text, "", end_date)) {
+      return(list(status = "skip_past_event", handle = handle))
+    }
+
     name  <- safe(feed$author[[i]]$displayName)
     likes <- safe(feed$like_count[[i]], 0); if (is.null(likes)) likes <- 0
     uri   <- extract_uri(feed$record[[i]], feed$embed[[i]])
@@ -2068,9 +2200,10 @@ for (i in seq_len(cut_idx - 1L)) {
       if (!is.null(res$handle)) kept_handles <- c(kept_handles, paste0("@", res$handle))
       cat("i=", i, " ", res$handle, "ok\n")
     },
-    skip_range = cat("i=", i, " ", res$handle, "skip (out of range)\n"),
-    skip_short = cat("i=", i, " ", res$handle, "skip (too short)\n"),
-    error      = cat("i=", i, " ", res$handle, "ERROR:", res$msg, "\n")
+    skip_range      = cat("i=", i, " ", res$handle, "skip (out of range)\n"),
+    skip_short      = cat("i=", i, " ", res$handle, "skip (too short)\n"),
+    skip_past_event = cat("i=", i, " ", res$handle, "skip (past event)\n"),
+    error           = cat("i=", i, " ", res$handle, "ERROR:", res$msg, "\n")
   )
 }
 
