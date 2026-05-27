@@ -8,6 +8,8 @@ MODE <- "last"   # "last"  →  remove only the most recent digest
 library(here)
 library(yaml)
 
+`%||%` <- function(a, b) if (!is.null(a)) a else b
+
 archives_dir <- here("archives")
 data_path    <- here("_data", "digests.yml")
 
@@ -62,19 +64,36 @@ if (MODE == "last") {
     # Find entry whose slug or url matches last_slug.
     keep <- Filter(function(e) {
       slug_match <- identical(as.character(e$slug %||% ""), last_slug)
-      url_match  <- grepl(last_slug, as.character(e$url %||% ""), fixed = TRUE)
+      url_match  <- grepl(paste0("digest-", last_slug, "/"),
+                          as.character(e$url %||% ""), fixed = TRUE)
       !slug_match && !url_match
     }, reg)
     write_registry(keep, data_path)
     cat("Registry updated:", length(reg) - length(keep), "entry removed.\n")
   }
 
-  # 3. Remove matching feeds RData snapshot (any year).
-  week_part  <- sub("^\\d{4}-", "", last_slug)   # e.g. "22"
-  year_part  <- sub("-\\d+$",   "", last_slug)   # e.g. "2026"
-  feed_file  <- file.path(archives_dir, "feeds", year_part,
-                          paste0("feed_", week_part, ".RData"))
-  remove_file(feed_file)
+  # 3. Remove matching feeds RData snapshot.
+  # Slug is either YYYY-WW (new) or a plain number (legacy).
+  is_new_slug <- grepl("^\\d{4}-\\d+$", last_slug)
+  if (is_new_slug) {
+    year_part <- sub("-\\d+$",   "", last_slug)   # e.g. "2026"
+    week_part <- sub("^\\d{4}-", "", last_slug)   # e.g. "22"
+    feed_file <- file.path(archives_dir, "feeds", year_part,
+                           paste0("feed_", week_part, ".RData"))
+    remove_file(feed_file)
+  } else {
+    # Legacy slug (plain number): scan all year folders for any matching snapshot.
+    feeds_root <- file.path(archives_dir, "feeds")
+    if (dir.exists(feeds_root)) {
+      rdata_files <- list.files(feeds_root, pattern = "\\.RData$",
+                                recursive = TRUE, full.names = TRUE)
+      if (length(rdata_files) > 0) {
+        cat("Legacy slug — cannot match feed snapshot automatically.\n")
+        cat("Feed snapshots present (delete manually if needed):\n")
+        for (f in rdata_files) cat(" ", f, "\n")
+      }
+    }
+  }
 
   # 4. Delete regenerated pages (will be rebuilt correctly on next run).
   remove_file(here("index.md"))

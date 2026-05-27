@@ -118,8 +118,8 @@ Curated digest of the 🦋 <a href='https://bsky.app/profile/did:plc:ppsghcl5bbp
 ## Digests
 
 <div style='border:1px solid #e5e5e5;border-radius:10px;padding:1.1rem 1.3rem;margin:0.6rem 0 1.1rem;background:#fafbfc;'>
-  <div style='font-size:1.15rem;font-weight:700;'>Digest from May 12, 2026 to May 26, 2026</div>
-  <div style='color:#666;font-size:0.92rem;margin:0.25rem 0 0.9rem;'>33 posts curated</div>
+  <div style='font-size:1.15rem;font-weight:700;'>Digest from May 13, 2026 to May 27, 2026</div>
+  <div style='color:#666;font-size:0.92rem;margin:0.25rem 0 0.9rem;'>43 posts curated</div>
   <a href='/feeddigest.github.io/archives/digest-2026-22/' style='display:inline-block;padding:10px 18px;background:#83b27e;color:white;border-radius:6px;text-decoration:none;font-weight:600;'>Read this digest →</a>
 </div>
 
